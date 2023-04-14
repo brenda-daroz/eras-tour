@@ -38,15 +38,13 @@ const Img = styled.img`{
 }`
 
 export default function Tracks({ tracks, handleToggle }) {
-
-
   return (
     <Wrapper>
       <Ul>
-        {tracks.fearless.map((track, i) => {
+        {tracks.map((track, i) => {
           return (
-            <Li>
-              <Track track={track} handleToggle={handleToggle} key={i} />
+            <Li key={i}>
+              <Track track={track} handleToggle={handleToggle} />
             </Li>
           )
         }

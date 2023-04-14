@@ -1,226 +1,207 @@
 {
-  "fearless": [
+  "albums": [
     {
       "id": 1,
-      "title": "fearless",
-      "complete": false
+      "title": "Fearless",
+      "year": 2008,
+
+      "cover": "",
+      "tracks": [
+        {
+          "id": 1,
+          "title": "fearless",
+          "complete": false,
+          "special": true
+        },
+        {
+          "id": 2,
+          "title": "fifteen",
+          "complete": false
+        },
+        {
+          "id": 3,
+          "title": "love story",
+          "complete": false
+        },
+        {
+          "id": 4,
+          "title": "hey stephen",
+          "complete": false
+        },
+        {
+          "id": 5,
+          "title": "white horse",
+          "complete": true
+        },
+        {
+          "id": 6,
+          "title": "you belong with me",
+          "complete": false
+        },
+        {
+          "id": 7,
+          "title": "breathe",
+          "complete": false
+        },
+        {
+          "id": 8,
+          "title": "tell me why",
+          "complete": false
+        },
+        {
+          "id": 9,
+          "title": "you're not sorry",
+          "complete": false
+        },
+        {
+          "id": 10,
+          "title": "the way i loved you",
+          "complete": false
+        },
+        {
+          "id": 11,
+          "title": "forever and always",
+          "complete": false
+        },
+        {
+          "id": 12,
+          "title": "the best day",
+          "complete": false
+        },
+        {
+          "id": 13,
+          "title": "change",
+          "complete": false
+        },
+        {
+          "id": 14,
+          "title": "jump then fall",
+          "complete": true
+        },
+        {
+          "id": 15,
+          "title": "untouchable",
+          "complete": false
+        },
+        {
+          "id": 17,
+          "title": "come in with the rain",
+          "complete": false
+        },
+        {
+          "id": 18,
+          "title": "superstar",
+          "complete": false
+        },
+        {
+          "id": 19,
+          "title": "the other side of the door",
+          "complete": false
+        },
+        {
+          "id": 20,
+          "title": "today was a fairy tale",
+          "complete": false
+        },
+        {
+          "id": 21,
+          "title": "you all over me",
+          "complete": false
+        },
+        {
+          "id": 22,
+          "title": "mr. perfectly fine",
+          "complete": false
+        },
+        {
+          "id": 23,
+          "title": "we were happy",
+          "complete": false
+        },
+        {
+          "id": 24,
+          "title": "that's when",
+          "complete": false
+        },
+        {
+          "id": 25,
+          "title": "don't you",
+          "complete": false
+        },
+        {
+          "id": 26,
+          "title": "bye bye baby",
+          "complete": false
+        }
+      ]
     },
     {
       "id": 2,
-      "title": "fifteen",
-      "complete": false
-    },
-    {
-      "id": 3,
-      "title": "love story",
-      "complete": false
-    },
-    {
-      "id": 4,
-      "title": "hey stephen",
-      "complete": false
-    },
-    {
-      "id": 5,
-      "title": "white horse",
-      "complete": true
-    },
-    {
-      "id": 6,
-      "title": "you belong with me",
-      "complete": false
-    },
-    {
-      "id": 7,
-      "title": "breathe",
-      "complete": false
-    },
-    {
-      "id": 8,
-      "title": "tell me why",
-      "complete": false
-    },
-    {
-      "id": 9,
-      "title": "you're not sorry",
-      "complete": false
-    },
-    {
-      "id": 10,
-      "title": "the way i loved you",
-      "complete": false
-    },
-    {
-      "id": 11,
-      "title": "forever and always",
-      "complete": false
-    },
-    {
-      "id": 12,
-      "title": "the best day",
-      "complete": false
-    },
-    {
-      "id": 13,
-      "title": "change",
-      "complete": false
-    },
-    {
-      "id": 14,
-      "title": "jump then fall",
-      "complete": true
-    },
-    {
-      "id": 15,
-      "title": "untouchable",
-      "complete": false
-    },
-    {
-      "id": 17,
-      "title": "come in with the rain",
-      "complete": false
-    },
-    {
-      "id": 18,
-      "title": "superstar",
-      "complete": false
-    },
-    {
-      "id": 19,
-      "title": "the other side of the door",
-      "complete": false
-    },
-    {
-      "id": 20,
-      "title": "today was a fairy tale",
-      "complete": false
-    },
-    {
-      "id": 21,
-      "title": "you all over me",
-      "complete": false
-    },
-    {
-      "id": 22,
-      "title": "mr. perfectly fine",
-      "complete": false
-    },
-    {
-      "id": 23,
-      "title": "we were happy",
-      "complete": false
-    },
-    {
-      "id": 24,
-      "title": "that's when",
-      "complete": false
-    },
-    {
-      "id": 25,
-      "title": "don't you",
-      "complete": false
-    },
-    {
-      "id": 26,
-      "title": "bye bye baby",
-      "complete": false
-    }
-  ],
-  "speakNow": [
-    {
-      "id": 27,
-      "title": "mine",
-      "complete": false
-    },
-    {
-      "id": 28,
-      "title": "sparks fly",
-      "complete": false
-    },
-    {
-      "id": 29,
-      "title": "back to december",
-      "complete": false
-    },
-    {
-      "id": 30,
-      "title": "mean",
-      "complete": false
-    },
-    {
-      "id": 31,
-      "title": "the story of us",
-      "complete": false
-    },
-    {
-      "id": 32,
-      "title": "never grow up",
-      "complete": false
-    },
-    {
-      "id": 33,
-      "title": "enchanted",
-      "complete": false
-    },
-    {
-      "id": 34,
-      "title": "better than revenge",
-      "complete": false
-    },
-    {
-      "id": 35,
-      "title": "innocent",
-      "complete": false
-    },
-    {
-      "id": 36,
-      "title": "haunted",
-      "complete": false
-    },
-    {
-      "id": 37,
-      "title": "last kiss",
-      "complete": false
-    },
-    {
-      "id": 38,
-      "title": "long live",
-      "complete": false
-    },
-    {
-      "id": 39,
-      "title": "if this was a movie",
-      "complete": false
-    },
-    {
-      "id": 40,
-      "title": "superman",
-      "complete": false
-    },
-    {
-      "id": 41,
-      "title": "speak now",
-      "complete": false
-    },
-    {
-      "id": 42,
-      "title": "dear john",
-      "complete": false
-    },
-    {
-      "id": 43,
-      "title": "the lucky one",
-      "complete": false
-    },
-    {
-      "id": 44,
-      "title": "everything has changed",
-      "complete": false
-    },
-    {
-      "id": 45,
-      "title": "starlight",
-      "complete": false
+      "title": "Speak Now",
+      "year": 2010,
+      "cover": "http://www.taylorswift.com/images/albums/speaknow.jpg",
+      "tracks": [
+        {
+          "id": 27,
+          "title": "mine",
+          "complete": false
+        },
+        {
+          "id": 28,
+          "title": "sparks fly",
+          "complete": false
+        },
+        {
+          "id": 29,
+          "title": "back to december",
+          "complete": false
+        },
+        {
+          "id": 30,
+          "title": "mean",
+          "complete": false
+        },
+        {
+          "id": 31,
+          "title": "the story of us",
+          "complete": false
+        },
+        {
+          "id": 32,
+          "title": "never grow up",
+          "complete": false
+        },
+        {
+          "id": 33,
+          "title": "enchanted",
+          "complete": false
+        },
+        {
+          "id": 34,
+          "title": "better than revenge",
+          "complete": false
+        },
+        {
+          "id": 35,
+          "title": "innocent",
+          "complete": false
+        },
+        {
+          "id": 36,
+          "title": "haunted",
+          "complete": false
+        },
+        {
+          "id": 37,
+          "title": "last kiss",
+          "complete": false
+        },
+        {
+          "id": 38,
+          "title": "long live",
+          "complete": false
+        }
+      ]
     }
   ]
 }

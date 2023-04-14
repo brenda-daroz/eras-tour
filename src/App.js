@@ -7,23 +7,34 @@ import { useState } from "react";
 
 const Container = styled.div`
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  // align-items: center;
+  // flex-direction: column;
 `;
 
 function App() {
 
-  const [tracks, setTracks] = useState(data);
+  const [albums, setAlbums] = useState(data.albums);
 
-  const handleToggle = (id) => {
-    let mapped = tracks.fearless.map(track => {
-      return track.id === Number(id) ? { ...track, complete: !track.complete } : { ...track };
-    });
-    setTracks(mapped);
+  const handleToggle = (albumName) => {
+    return (id) => {
+      setAlbums(albums.map(album => {
+        return album.title === albumName ? {
+          ...album, tracks: album.tracks.map(track => {
+            return track.id === Number(id) ? { ...track, complete: !track.complete } : { ...track };
+          })
+        } : { ...album };
+      })
+      )
+    }
   }
+
   return (
     <Container>
-      <Tracks tracks={tracks} handleToggle={handleToggle} />
+      {albums.map(album => {
+        return (
+          <Tracks tracks={album.tracks} handleToggle={handleToggle(album.title)} key={album.title} />
+        )
+      })}
     </Container>
   );
 }
