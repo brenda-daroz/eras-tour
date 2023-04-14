@@ -23,7 +23,6 @@ function App() {
   }
   return (
     <Container>
-      <h1>Eras Tour App</h1>
       <Tracks tracks={tracks} handleToggle={handleToggle} />
     </Container>
   );

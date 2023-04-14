@@ -7,7 +7,7 @@
   {
     "id": 2,
     "title": "fifteen",
-    "complete": true
+    "complete": false
   },
   {
     "id": 3,
@@ -27,27 +27,27 @@
   {
     "id": 6,
     "title": "you belong with me",
-    "complete": true
+    "complete": false
   },
   {
     "id": 7,
     "title": "breathe",
-    "complete": true
+    "complete": false
   },
   {
     "id": 8,
     "title": "tell me why",
-    "complete": true
+    "complete": false
   },
   {
     "id": 9,
     "title": "you're not sorry",
-    "complete": true
+    "complete": false
   },
   {
     "id": 10,
     "title": "the way i loved you",
-    "complete": true
+    "complete": false
   },
   {
     "id": 11,
@@ -67,16 +67,11 @@
   {
     "id": 14,
     "title": "jump then fall",
-    "complete": false
+    "complete": true
   },
   {
     "id": 15,
     "title": "untouchable",
-    "complete": false
-  },
-  {
-    "id": 16,
-    "title": "forever and always (piano version)",
     "complete": false
   },
   {
@@ -101,7 +96,7 @@
   },
   {
     "id": 21,
-    "title": "you all over me (feat. maren morris)",
+    "title": "you all over me",
     "complete": false
   },
   {
@@ -116,17 +111,17 @@
   },
   {
     "id": 24,
-    "title": "that's when (feat. keith urban)",
+    "title": "that's when",
     "complete": false
   },
   {
     "id": 25,
     "title": "don't you",
-    "complete": true
+    "complete": false
   },
   {
     "id": 26,
     "title": "bye bye baby",
-    "complete": true
+    "complete": false
   }
 ]
