@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import styled from "styled-components";
+import Tracks from './components/Tracks';
+import data from './data/fearless.json';
+import { useState } from "react";
+
+
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
 
 function App() {
+
+  const [tracks, setTracks] = useState(data);
+
+  const handleToggle = (id) => {
+    let mapped = tracks.map(track => {
+      console.log(track.complete)
+      return track.id === Number(id) ? { ...track, complete: !track.complete } : { ...track};
+    });
+    setTracks(mapped);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <h1>Eras Tour App</h1>
+      <Tracks tracks={tracks} handleToggle={handleToggle}/>
+    </Container>
   );
 }
 

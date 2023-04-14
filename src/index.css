@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.track {
+  cursor: pointer;
+}
+
+.strike {
+  text-decoration: line-through;
+}
