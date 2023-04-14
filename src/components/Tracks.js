@@ -43,7 +43,7 @@ export default function Tracks({ tracks, handleToggle }) {
   return (
     <Wrapper>
       <Ul>
-        {tracks.map((track, i) => {
+        {tracks.fearless.map((track, i) => {
           return (
             <Li>
               <Track track={track} handleToggle={handleToggle} key={i} />

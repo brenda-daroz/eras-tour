@@ -1,7 +1,7 @@
 import './App.css';
 import styled from "styled-components";
 import Tracks from './components/Tracks';
-import data from './data/fearless.json';
+import data from './data/ts-discography.json';
 import { useState } from "react";
 
 
@@ -16,7 +16,7 @@ function App() {
   const [tracks, setTracks] = useState(data);
 
   const handleToggle = (id) => {
-    let mapped = tracks.map(track => {
+    let mapped = tracks.fearless.map(track => {
       return track.id === Number(id) ? { ...track, complete: !track.complete } : { ...track };
     });
     setTracks(mapped);
