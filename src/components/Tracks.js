@@ -6,15 +6,17 @@ const Ul = styled.ul`{
   display: flex;
   gap: 10px;
   flex-direction: column;
+  align-items: center;
+  padding: 0;
 }`
 
-// const Li = styled.li`{
-//   list-style: none;
-//   text-transform: capitalize;
-//   color: black;
-//   padding: 10px;
-//   font-size: 20px;
-// };`
+const Li = styled.li`{
+  list-style: none;
+  text-transform: capitalize;
+  color: black;
+  padding: 10px;
+  font-size: 1.2rem;
+};`
 
 // const Button = styled.button`
 //   border: none;
@@ -33,7 +35,9 @@ export default function Tracks({ tracks, handleToggle }) {
       <Ul>
         {tracks.map((track, i) => {
           return (
+            <Li>
             <Track track={track} handleToggle={handleToggle} key={i}/>
+            </Li>
           )
         }
         )}

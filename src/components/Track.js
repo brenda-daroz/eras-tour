@@ -1,5 +1,11 @@
 import React from "react";
+import styled from "styled-components";
 
+
+const CompletedDiv = styled.div`
+cursor: pointer;
+text-decoration: ${props => props.completed ? "line-through" : ""};
+`
 
 const Track = ({ track, handleToggle }) => {
 
@@ -8,15 +14,15 @@ const Track = ({ track, handleToggle }) => {
     handleToggle(e.currentTarget.id)
   }
   return (
-    <div
+    <CompletedDiv
       id={track.id}
       name="track"
       value={track.id}
       onClick={handleClick}
-      className={track.complete ? "track" : "track strike"}
+      completed={track.complete}
     >
       {track.title}
-    </div>
+    </CompletedDiv>
   );
 };
 

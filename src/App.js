@@ -17,15 +17,14 @@ function App() {
 
   const handleToggle = (id) => {
     let mapped = tracks.map(track => {
-      console.log(track.complete)
-      return track.id === Number(id) ? { ...track, complete: !track.complete } : { ...track};
+      return track.id === Number(id) ? { ...track, complete: !track.complete } : { ...track };
     });
     setTracks(mapped);
   }
   return (
     <Container>
       <h1>Eras Tour App</h1>
-      <Tracks tracks={tracks} handleToggle={handleToggle}/>
+      <Tracks tracks={tracks} handleToggle={handleToggle} />
     </Container>
   );
 }
