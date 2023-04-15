@@ -32,7 +32,7 @@ function App() {
     <Container>
       {albums.map(album => {
         return (
-          <Tracks tracks={album.tracks} handleToggle={handleToggle(album.title)} key={album.title} />
+          <Tracks image={album.cover} bgColor={album.color} tracks={album.tracks} handleToggle={handleToggle(album.title)} key={album.title} />
         )
       })}
     </Container>

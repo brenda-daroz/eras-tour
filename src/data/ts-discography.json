@@ -1,11 +1,115 @@
 {
   "albums": [
     {
+      "id": 0,
+      "title": "Taylor Swift",
+      "year": 2006,
+      "color": "#6cc2af",
+      "cover": "../images/taylorSwift.png",
+      "tracks": [
+        {
+          "id": 64,
+          "title": "tim mcgraw",
+          "complete": false
+        },
+        {
+          "id": 65,
+          "title": "teardrops on my guitar",
+          "complete": false
+        },
+        {
+          "id": 66,
+          "title": "our song",
+          "complete": false
+        },
+        {
+          "id": 67,
+          "title": "picture to burn",
+          "complete": false
+        },
+        {
+          "id": 68,
+          "title": "cold as you",
+          "complete": false
+        },
+        {
+          "id": 69,
+          "title": "the outside",
+          "complete": false
+        },
+        {
+          "id": 70,
+          "title": "tied together with a smile",
+          "complete": false
+        },
+        {
+          "id": 71,
+          "title": "stay beautiful",
+          "complete": false
+        },
+        {
+          "id": 72,
+          "title": "should've said no",
+          "complete": false
+        },
+        {
+          "id": 73,
+          "title": "mary's song (oh my my my)",
+          "complete": false
+        },
+        {
+          "id": 74,
+          "title": "invisible",
+          "complete": false
+        },
+        {
+          "id": 75,
+          "title": "a perfectly good heart",
+          "complete": false
+        },
+        {
+          "id": 76,
+          "title": "fifteen",
+          "complete": false
+        },
+        {
+          "id": 77,
+          "title": "the outside",
+          "complete": false
+        },
+        {
+          "id": 78,
+          "title": "teardrops on my guitar",
+          "complete": false
+        },
+        {
+          "id": 79,
+          "title": "cold as you",
+          "complete": false
+        },
+        {
+          "id": 80,
+          "title": "tied together with a smile",
+          "complete": false
+        },
+        {
+          "id": 81,
+          "title": "stay beautiful",
+          "complete": false
+        },
+        {
+          "id": 82,
+          "title": "should've said no",
+          "complete": false
+        }
+      ]
+    },
+    {
       "id": 1,
       "title": "Fearless",
       "year": 2008,
-
-      "cover": "",
+      "color": "#d9c78f",
+      "cover": "../images/fearless.png",
       "tracks": [
         {
           "id": 1,
@@ -139,7 +243,8 @@
       "id": 2,
       "title": "Speak Now",
       "year": 2010,
-      "cover": "http://www.taylorswift.com/images/albums/speaknow.jpg",
+      "color": "#b46d97",
+      "cover": "../images/speakNow.png",
       "tracks": [
         {
           "id": 27,
@@ -158,47 +263,249 @@
         },
         {
           "id": 30,
-          "title": "mean",
+          "title": "speak now",
           "complete": false
         },
         {
           "id": 31,
-          "title": "the story of us",
+          "title": "dear john",
           "complete": false
         },
         {
           "id": 32,
-          "title": "never grow up",
+          "title": "mean",
           "complete": false
         },
         {
           "id": 33,
-          "title": "enchanted",
+          "title": "the story of us",
           "complete": false
         },
         {
           "id": 34,
-          "title": "better than revenge",
+          "title": "never grow up",
           "complete": false
         },
         {
           "id": 35,
-          "title": "innocent",
+          "title": "enchanted",
           "complete": false
         },
         {
           "id": 36,
-          "title": "haunted",
+          "title": "better than revenge",
           "complete": false
         },
         {
           "id": 37,
-          "title": "last kiss",
+          "title": "innocent",
           "complete": false
         },
         {
           "id": 38,
+          "title": "haunted",
+          "complete": false
+        },
+        {
+          "id": 39,
+          "title": "last kiss",
+          "complete": false
+        },
+        {
+          "id": 40,
           "title": "long live",
+          "complete": false
+        },
+        {
+          "id": 41,
+          "title": "our",
+          "complete": false
+        },
+        {
+          "id": 42,
+          "title": "if this was a movie",
+          "complete": false
+        },
+        {
+          "id": 43,
+          "title": "superman"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Red",
+      "year": 2012,
+      "color": "#c4546b",
+      "cover": "../images/red.png",
+      "tracks": [
+        {
+          "id": 44,
+          "title": "state of grace",
+          "complete": false
+        },
+        {
+          "id": 45,
+          "title": "red",
+          "complete": false
+        },
+        {
+          "id": 46,
+          "title": "treacherous",
+          "complete": false
+        },
+        {
+          "id": 47,
+          "title": "i knew you were trouble",
+          "complete": false
+        },
+        {
+          "id": 48,
+          "title": "all too well",
+          "complete": false
+        },
+        {
+          "id": 49,
+          "title": "22",
+          "complete": false
+        },
+        {
+          "id": 50,
+          "title": "i almost do",
+          "complete": false
+        },
+        {
+          "id": 51,
+          "title": "we are never ever getting back together",
+          "complete": false
+        },
+        {
+          "id": 52,
+          "title": "stay stay stay",
+          "complete": false
+        },
+        {
+          "id": 53,
+          "title": "the last time",
+          "complete": false
+        },
+        {
+          "id": 54,
+          "title": "holy ground",
+          "complete": false
+        },
+        {
+          "id": 55,
+          "title": "sad beautiful tragic",
+          "complete": false
+        },
+        {
+          "id": 56,
+          "title": "the lucky one",
+          "complete": false
+        },
+        {
+          "id": 57,
+          "title": "everything has changed",
+          "complete": false
+        },
+        {
+          "id": 58,
+          "title": "starlight",
+          "complete": false
+        },
+        {
+          "id": 59,
+          "title": "begin again",
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "1989",
+      "year": 2014,
+      "color": "#4169e1",
+      "cover": "../images/1989.png",
+      "tracks": [
+        {
+          "id": 60,
+          "title": "welcome to new york",
+          "complete": false
+        },
+        {
+          "id": 61,
+          "title": "blank space",
+          "complete": false
+        },
+        {
+          "id": 62,
+          "title": "style",
+          "complete": false
+        },
+        {
+          "id": 63,
+          "title": "out of the woods",
+          "complete": false
+        },
+        {
+          "id": 83,
+          "title": "all you had to do was stay",
+          "complete": false
+        },
+        {
+          "id": 84,
+          "title": "shake it off",
+          "complete": false
+        },
+        {
+          "id": 85,
+          "title": "i wish you would",
+          "complete": false
+        },
+        {
+          "id": 86,
+          "title": "bad blood",
+          "complete": false
+        },
+        {
+          "id": 87,
+          "title": "wildest dreams",
+          "complete": false
+        },
+        {
+          "id": 88,
+          "title": "how you get the girl",
+          "complete": false
+        },
+        {
+          "id": 89,
+          "title": "this love",
+          "complete": false
+        },
+        {
+          "id": 90,
+          "title": "i know places",
+          "complete": false
+        },
+        {
+          "id": 91,
+          "title": "clean",
+          "complete": false
+        },
+        {
+          "id": 92,
+          "title": "wonderland",
+          "complete": false
+        },
+        {
+          "id": 93,
+          "title": "you are in love",
+          "complete": false
+        },
+        {
+          "id": 94,
+          "title": "new romantics",
           "complete": false
         }
       ]

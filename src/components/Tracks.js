@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import Track from "./Track";
-import fearless from "../assets/fearless.png";
 
-const Wrapper = styled.div`
-background-color: #d9c78f;
-padding-top: 20px;
-`
+
+const Wrapper = styled.div`{
+  padding-top: 20px;
+  background-color: ${props => props.bgColor};
+  width: 20%;
+}`
 
 const Ul = styled.ul`{
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,18 +28,19 @@ const Li = styled.li`{
 };`
 
 const Img = styled.img`{
-  object-fit: cover;
-  object-position: center;
-  margin: 0 auto;
+  object-fit: contain;
+  margin-left: 50%;
+  transform: translateX(-50%);
   padding: 0;
   display: block;
-  width: 300px;
+  width: 400px;
+  overflow: hidden;
 
 }`
 
-export default function Tracks({ tracks, handleToggle }) {
+export default function Tracks({ tracks, handleToggle, bgColor, image }) {
   return (
-    <Wrapper>
+    <Wrapper bgColor={bgColor}>
       <Ul>
         {tracks.map((track, i) => {
           return (
@@ -50,7 +51,7 @@ export default function Tracks({ tracks, handleToggle }) {
         }
         )}
       </Ul>
-      <Img src={fearless} alt="Fearless (Taylor's Version)"></Img>
+      <Img src={image} alt="Fearless (Taylor's Version)"></Img>
     </Wrapper>
   );
 }
