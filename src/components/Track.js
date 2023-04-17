@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const CompletedDiv = styled.div`{
 cursor: pointer;
-color: ${props => props.complete ? props.completeColor : props.defaultColor}
+color: ${props => (props.special ? props.specialColor : props.fixed ? props.fixedColor : "#f3f6f4")}
 }`
 
 
@@ -24,9 +24,10 @@ const Track = ({ track, handleToggle, color }) => {
         name="track"
         value={track.id}
         onClick={handleClick}
-        complete={track.complete}
-        defaultColor={color.default}
-        completeColor={color.complete}
+        special={track.special}
+        specialColor={color.special}
+        fixed={track.fixed}
+        fixedColor={color.fixed}
       >
         {track.title}
       </CompletedDiv >

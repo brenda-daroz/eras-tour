@@ -6,106 +6,85 @@
       "year": 2006,
       "color": {
         "background": "#6cc2af",
-        "complete": "#c1f2e7",
-        "special": "#f7f7f7",
-        "default": "#0d6552"
+        "special": "#0cf334",
+        "fixed": "#5b5b5b"
       },
       "cover": "../images/taylorSwift.png",
       "tracks": [
         {
           "id": 64,
           "title": "tim mcgraw",
-          "complete": true
+          "special": true,
+          "fixed": false
         },
         {
           "id": 65,
-          "title": "teardrops on my guitar",
-          "complete": false
+          "title": "picture to burn",
+          "special": false,
+          "fixed": false
         },
         {
           "id": 66,
-          "title": "our song",
-          "complete": true
+          "title": "teardrops on my guitar",
+          "special": true,
+          "fixed": false
         },
         {
           "id": 67,
-          "title": "picture to burn",
-          "complete": false
+          "title": "a place in this world",
+          "special": false,
+          "fixed": false
         },
         {
           "id": 68,
           "title": "cold as you",
-          "complete": false
+          "special": false
         },
         {
           "id": 69,
           "title": "the outside",
-          "complete": false
+          "special": false
         },
         {
           "id": 70,
           "title": "tied together with a smile",
-          "complete": false
+          "special": false
         },
         {
           "id": 71,
           "title": "stay beautiful",
-          "complete": false
+          "special": false
         },
         {
           "id": 72,
           "title": "should've said no",
-          "complete": false
+          "special": false
         },
         {
           "id": 73,
           "title": "mary's song (oh my my my)",
-          "complete": false
+          "special": false
         },
         {
           "id": 74,
+          "title": "our song",
+          "special": true,
+          "fixed": false
+        },
+        {
+          "id": 95,
+          "title": "i'm only me when i'm with you",
+          "special": false
+        },
+        {
+          "id": 96,
           "title": "invisible",
-          "complete": false
+          "special": false
         },
         {
-          "id": 75,
+          "id": 97,
           "title": "a perfectly good heart",
-          "complete": false
-        },
-        {
-          "id": 76,
-          "title": "fifteen",
-          "complete": false
-        },
-        {
-          "id": 77,
-          "title": "the outside",
-          "complete": false
-        },
-        {
-          "id": 78,
-          "title": "teardrops on my guitar",
-          "complete": false
-        },
-        {
-          "id": 79,
-          "title": "cold as you",
-          "complete": false
-        },
-        {
-          "id": 80,
-          "title": "tied together with a smile",
-          "complete": false
-        },
-        {
-          "id": 81,
-          "title": "stay beautiful",
-          "complete": false
-        },
-        {
-          "id": 82,
-          "title": "should've said no",
-          "complete": false
+          "special": false
         }
       ]
     },
@@ -115,136 +94,139 @@
       "year": 2008,
       "color": {
         "background": "#d9c78f",
-        "complete": "#efe2bc",
-        "special": "#f7f7f7",
-        "default": "#856911"
+        "special": "#ffee59",
+        "fixed": "#5b5b5b"
       },
       "cover": "../images/fearless.png",
       "tracks": [
         {
           "id": 1,
           "title": "fearless",
-          "complete": false
+          "special": false,
+          "fixed": true
         },
         {
           "id": 2,
           "title": "fifteen",
-          "complete": false
+          "special": false
         },
         {
           "id": 3,
           "title": "love story",
-          "complete": false
+          "special": false,
+          "fixed": true
         },
         {
           "id": 4,
           "title": "hey stephen",
-          "complete": false
+          "special": true,
+          "fixed": false
         },
         {
           "id": 5,
           "title": "white horse",
-          "complete": true
+          "special": true
         },
         {
           "id": 6,
           "title": "you belong with me",
-          "complete": false
+          "special": false,
+          "fixed": true
         },
         {
           "id": 7,
           "title": "breathe",
-          "complete": false
+          "special": false
         },
         {
           "id": 8,
           "title": "tell me why",
-          "complete": false
+          "special": false
         },
         {
           "id": 9,
           "title": "you're not sorry",
-          "complete": false
+          "special": false
         },
         {
           "id": 10,
           "title": "the way i loved you",
-          "complete": false
+          "special": false
         },
         {
           "id": 11,
           "title": "forever and always",
-          "complete": false
+          "special": false
         },
         {
           "id": 12,
           "title": "the best day",
-          "complete": false
+          "special": false
         },
         {
           "id": 13,
           "title": "change",
-          "complete": false
+          "special": false
         },
         {
           "id": 14,
           "title": "jump then fall",
-          "complete": true
+          "special": true
         },
         {
           "id": 15,
           "title": "untouchable",
-          "complete": false
+          "special": false
         },
         {
           "id": 17,
           "title": "come in with the rain",
-          "complete": false
+          "special": false
         },
         {
           "id": 18,
           "title": "superstar",
-          "complete": false
+          "special": false
         },
         {
           "id": 19,
           "title": "the other side of the door",
-          "complete": false
+          "special": false
         },
         {
           "id": 20,
           "title": "today was a fairy tale",
-          "complete": false
+          "special": false
         },
         {
           "id": 21,
           "title": "you all over me",
-          "complete": false
+          "special": false
         },
         {
           "id": 22,
           "title": "mr. perfectly fine",
-          "complete": false
+          "special": false
         },
         {
           "id": 23,
           "title": "we were happy",
-          "complete": false
+          "special": false
         },
         {
           "id": 24,
           "title": "that's when",
-          "complete": false
+          "special": false
         },
         {
           "id": 25,
           "title": "don't you",
-          "complete": false
+          "special": false
         },
         {
           "id": 26,
           "title": "bye bye baby",
-          "complete": false
+          "special": false
         }
       ]
     },
@@ -254,91 +236,92 @@
       "year": 2010,
       "color": {
         "background": "#b46d97",
-        "complete": "#ffffff",
-        "special": "#f7f7f7",
-        "default": "#7c0d4f"
+        "special": "#b102c2",
+        "fixed": "#5b5b5b"
       },
       "cover": "../images/speakNow.png",
       "tracks": [
         {
           "id": 27,
           "title": "mine",
-          "complete": false
+          "special": false
         },
         {
           "id": 28,
           "title": "sparks fly",
-          "complete": false
+          "special": false
         },
         {
           "id": 29,
           "title": "back to december",
-          "complete": false
+          "special": false
         },
         {
           "id": 30,
           "title": "speak now",
-          "complete": false
+          "special": true,
+          "fixed": false
         },
         {
           "id": 31,
           "title": "dear john",
-          "complete": false
+          "special": false
         },
         {
           "id": 32,
           "title": "mean",
-          "complete": false
+          "special": false
         },
         {
           "id": 33,
           "title": "the story of us",
-          "complete": false
+          "special": false
         },
         {
           "id": 34,
           "title": "never grow up",
-          "complete": false
+          "special": false
         },
         {
           "id": 35,
           "title": "enchanted",
-          "complete": false
+          "special": false,
+          "fixed": true
         },
         {
           "id": 36,
           "title": "better than revenge",
-          "complete": false
+          "special": false
         },
         {
           "id": 37,
           "title": "innocent",
-          "complete": false
+          "special": false
         },
         {
           "id": 38,
           "title": "haunted",
-          "complete": false
+          "special": false
         },
         {
           "id": 39,
           "title": "last kiss",
-          "complete": false
+          "special": false
         },
         {
           "id": 40,
           "title": "long live",
-          "complete": false
+          "special": false
         },
         {
           "id": 41,
           "title": "our",
-          "complete": false
+          "special": false
         },
         {
           "id": 42,
           "title": "if this was a movie",
-          "complete": false
+          "special": false
         },
         {
           "id": 43,
@@ -352,91 +335,94 @@
       "year": 2012,
       "color": {
         "background": "#c4546b",
-        "complete": "#ffffff",
-        "special": "#f7f7f7",
-        "default": "#750b21"
+        "special": "#c00404",
+        "fixed": "#5b5b5b"
       },
       "cover": "../images/red.png",
       "tracks": [
         {
           "id": 44,
           "title": "state of grace",
-          "complete": false
+          "special": false
         },
         {
           "id": 45,
           "title": "red",
-          "complete": false
+          "special": false
         },
         {
           "id": 46,
           "title": "treacherous",
-          "complete": false
+          "special": true
         },
         {
           "id": 47,
           "title": "i knew you were trouble",
-          "complete": false
+          "special": false,
+          "fixed": true
         },
         {
           "id": 48,
           "title": "all too well",
-          "complete": false
+          "special": false,
+          "fixed": true
         },
         {
           "id": 49,
           "title": "22",
-          "complete": false
+          "special": false,
+          "fixed": true
         },
         {
           "id": 50,
           "title": "i almost do",
-          "complete": false
+          "special": false
         },
         {
           "id": 51,
           "title": "we are never ever getting back together",
-          "complete": false
+          "special": false,
+          "fixed": true
         },
         {
           "id": 52,
           "title": "stay stay stay",
-          "complete": false
+          "special": false
         },
         {
           "id": 53,
           "title": "the last time",
-          "complete": false
+          "special": false
         },
         {
           "id": 54,
           "title": "holy ground",
-          "complete": false
+          "special": false
         },
         {
           "id": 55,
           "title": "sad beautiful tragic",
-          "complete": false
+          "special": false
         },
         {
           "id": 56,
           "title": "the lucky one",
-          "complete": false
+          "special": false
         },
         {
           "id": 57,
           "title": "everything has changed",
-          "complete": false
+          "special": false
         },
         {
           "id": 58,
           "title": "starlight",
-          "complete": false
+          "special": false
         },
         {
           "id": 59,
           "title": "begin again",
-          "complete": false
+          "special": false
         }
       ]
     },
@@ -446,91 +432,95 @@
       "year": 2014,
       "color": {
         "background": "#4169e1",
-        "complete": "#ffffff",
-        "special": "#f7f7f7",
-        "default": "#081d5c"
+        "special": "#000fff",
+        "fixed": "#5b5b5b"
       },
       "cover": "../images/1989.png",
       "tracks": [
         {
           "id": 60,
           "title": "welcome to new york",
-          "complete": false
+          "special": false,
+          "fixed": true
         },
         {
           "id": 61,
           "title": "blank space",
-          "complete": false
+          "special": false,
+          "fixed": true
         },
         {
           "id": 62,
           "title": "style",
-          "complete": false
+          "special": false,
+          "fixed": true
         },
         {
           "id": 63,
           "title": "out of the woods",
-          "complete": false
+          "special": false
         },
         {
           "id": 83,
           "title": "all you had to do was stay",
-          "complete": false
+          "special": false
         },
         {
           "id": 84,
           "title": "shake it off",
-          "complete": false
+          "special": false,
+          "fixed": true
         },
         {
           "id": 85,
           "title": "i wish you would",
-          "complete": false
+          "special": false
         },
         {
           "id": 86,
           "title": "bad blood",
-          "complete": false
+          "special": false
         },
         {
           "id": 87,
           "title": "wildest dreams",
-          "complete": false
+          "special": false
         },
         {
           "id": 88,
           "title": "how you get the girl",
-          "complete": false
+          "special": false
         },
         {
           "id": 89,
           "title": "this love",
-          "complete": false
+          "special": false
         },
         {
           "id": 90,
           "title": "i know places",
-          "complete": false
+          "special": false
         },
         {
           "id": 91,
           "title": "clean",
-          "complete": false
+          "special": true,
+          "fixed": false
         },
         {
           "id": 92,
           "title": "wonderland",
-          "complete": false
+          "special": false
         },
         {
           "id": 93,
           "title": "you are in love",
-          "complete": false
+          "special": false
         },
         {
           "id": 94,
           "title": "new romantics",
-          "complete": false
+          "special": true
         }
       ]
     }

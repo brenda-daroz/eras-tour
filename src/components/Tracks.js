@@ -33,7 +33,7 @@ const Img = styled.img`{
   transform: translateX(-50%);
   padding: 0;
   display: block;
-  width: 450px;
+  width: 400px;
   overflow: hidden;
 
 }`
