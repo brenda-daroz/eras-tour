@@ -4,13 +4,18 @@
       "id": 0,
       "title": "Taylor Swift",
       "year": 2006,
-      "color": "#6cc2af",
+      "color": {
+        "background": "#6cc2af",
+        "complete": "#c1f2e7",
+        "special": "#f7f7f7",
+        "default": "#0d6552"
+      },
       "cover": "../images/taylorSwift.png",
       "tracks": [
         {
           "id": 64,
           "title": "tim mcgraw",
-          "complete": false
+          "complete": true
         },
         {
           "id": 65,
@@ -20,7 +25,7 @@
         {
           "id": 66,
           "title": "our song",
-          "complete": false
+          "complete": true
         },
         {
           "id": 67,
@@ -108,14 +113,18 @@
       "id": 1,
       "title": "Fearless",
       "year": 2008,
-      "color": "#d9c78f",
+      "color": {
+        "background": "#d9c78f",
+        "complete": "#efe2bc",
+        "special": "#f7f7f7",
+        "default": "#856911"
+      },
       "cover": "../images/fearless.png",
       "tracks": [
         {
           "id": 1,
           "title": "fearless",
-          "complete": false,
-          "special": true
+          "complete": false
         },
         {
           "id": 2,
@@ -243,7 +252,12 @@
       "id": 2,
       "title": "Speak Now",
       "year": 2010,
-      "color": "#b46d97",
+      "color": {
+        "background": "#b46d97",
+        "complete": "#ffffff",
+        "special": "#f7f7f7",
+        "default": "#7c0d4f"
+      },
       "cover": "../images/speakNow.png",
       "tracks": [
         {
@@ -336,7 +350,12 @@
       "id": 3,
       "title": "Red",
       "year": 2012,
-      "color": "#c4546b",
+      "color": {
+        "background": "#c4546b",
+        "complete": "#ffffff",
+        "special": "#f7f7f7",
+        "default": "#750b21"
+      },
       "cover": "../images/red.png",
       "tracks": [
         {
@@ -425,7 +444,12 @@
       "id": 4,
       "title": "1989",
       "year": 2014,
-      "color": "#4169e1",
+      "color": {
+        "background": "#4169e1",
+        "complete": "#ffffff",
+        "special": "#f7f7f7",
+        "default": "#081d5c"
+      },
       "cover": "../images/1989.png",
       "tracks": [
         {

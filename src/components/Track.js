@@ -3,28 +3,39 @@ import styled from "styled-components";
 
 
 
-const CompletedDiv = styled.div`
+const CompletedDiv = styled.div`{
 cursor: pointer;
-color: ${props => props.completed ? "#865829" : "white"};
-`
+color: ${props => props.complete ? props.completeColor : props.defaultColor}
+}`
 
-const Track = ({ track, handleToggle }) => {
+
+
+
+const Track = ({ track, handleToggle, color }) => {
 
   const handleClick = (e) => {
     e.preventDefault()
     handleToggle(e.currentTarget.id)
   }
   return (
+    <>
       <CompletedDiv
         id={track.id}
         name="track"
         value={track.id}
         onClick={handleClick}
-        completed={track.complete}
+        complete={track.complete}
+        defaultColor={color.default}
+        completeColor={color.complete}
       >
         {track.title}
-      </CompletedDiv>
+      </CompletedDiv >
+
+    </>
   );
+
+
+
 };
 
 export default Track;

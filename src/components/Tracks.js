@@ -23,7 +23,7 @@ const Li = styled.li`{
   list-style: none;
   text-transform: uppercase;
   font-weight: 500;
-  color: white;
+  color: ${props => props.fontColor};
   font-size: 1rem;
 };`
 
@@ -33,19 +33,19 @@ const Img = styled.img`{
   transform: translateX(-50%);
   padding: 0;
   display: block;
-  width: 400px;
+  width: 450px;
   overflow: hidden;
 
 }`
 
-export default function Tracks({ tracks, handleToggle, bgColor, image }) {
+export default function Tracks({ tracks, handleToggle, color, image }) {
   return (
-    <Wrapper bgColor={bgColor}>
+    <Wrapper bgColor={color.background}>
       <Ul>
         {tracks.map((track, i) => {
           return (
-            <Li key={i}>
-              <Track track={track} handleToggle={handleToggle} />
+            <Li key={i} fontColor={color.default}>
+              <Track track={track} color={color} handleToggle={handleToggle}/>
             </Li>
           )
         }

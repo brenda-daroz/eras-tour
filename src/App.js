@@ -31,9 +31,11 @@ function App() {
   return (
     <Container>
       {albums.map(album => {
+
         return (
-          <Tracks image={album.cover} bgColor={album.color} tracks={album.tracks} handleToggle={handleToggle(album.title)} key={album.title} />
+          <Tracks image={album.cover} color={album.color} tracks={album.tracks} handleToggle={handleToggle(album.title)} key={album.title} />
         )
+
       })}
     </Container>
   );
