@@ -431,7 +431,7 @@
       "title": "1989",
       "year": 2014,
       "color": {
-        "background": "#4169e1",
+        "background": "#6488F5",
         "special": "#000fff",
         "fixed": "#5b5b5b"
       },
@@ -521,6 +521,523 @@
           "id": 94,
           "title": "new romantics",
           "special": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "reputation",
+      "year": 2017,
+      "color": {
+        "background": "#272626 ",
+        "special": "#ff0000",
+        "fixed": "#D1C8C2  "
+      },
+      "cover": "../images/reputation.png",
+      "tracks": [
+        {
+          "id": 95,
+          "title": "ready for it?",
+          "special": false,
+          "fixed": true
+        },
+        {
+          "id": 96,
+          "title": "end game",
+          "special": false
+        },
+        {
+          "id": 97,
+          "title": "i did something bad",
+          "special": false
+        },
+        {
+          "id": 98,
+          "title": "don't blame me",
+          "special": false,
+          "fixed": true
+        },
+        {
+          "id": 99,
+          "title": "delicate",
+          "special": false
+        },
+        {
+          "id": 100,
+          "title": "look what you made me do",
+          "special": false
+        },
+        {
+          "id": 101,
+          "title": "so it goes...",
+          "special": false
+        },
+        {
+          "id": 102,
+          "title": "gorgeous",
+          "special": false
+        },
+        {
+          "id": 103,
+          "title": "getaway car",
+          "special": false
+        },
+        {
+          "id": 104,
+          "title": "king of my heart",
+          "special": false
+        },
+        {
+          "id": 105,
+          "title": "dancing with our hands tied",
+          "special": false
+        },
+        {
+          "id": 106,
+          "title": "dress",
+          "special": false
+        },
+        {
+          "id": 107,
+          "title": "this is why we can't have nice things",
+          "special": false
+        },
+        {
+          "id": 108,
+          "title": "call it what you want",
+          "special": false
+        },
+        {
+          "id": 109,
+          "title": "new year's day",
+          "special": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "lover",
+      "year": 2019,
+      "color": {
+        "background": "#F395C4 ",
+        "special": "#FF0097 ",
+        "fixed": "#9D0350"
+      },
+      "cover": "../images/lover.png",
+      "tracks": [
+        {
+          "id": 110,
+          "title": "i forgot that you existed",
+          "special": false
+        },
+        {
+          "id": 111,
+          "title": "cruel summer",
+          "special": false,
+          "fixed": true
+        },
+        {
+          "id": 112,
+          "title": "lover",
+          "special": false
+        },
+        {
+          "id": 113,
+          "title": "the man",
+          "special": false,
+          "fixed": true
+        },
+        {
+          "id": 114,
+          "title": "the archer",
+          "special": false,
+          "fixed": true
+        },
+        {
+          "id": 115,
+          "title": "i think he knows",
+          "special": false
+        },
+        {
+          "id": 116,
+          "title": "miss americana & the heartbreak prince",
+          "special": false,
+          "fixed": true
+        },
+        {
+          "id": 117,
+          "title": "paper rings",
+          "special": false
+        },
+        {
+          "id": 118,
+          "title": "cornelia street",
+          "special": false
+        },
+        {
+          "id": 119,
+          "title": "death by a thousand cuts",
+          "special": true
+        },
+        {
+          "id": 120,
+          "title": "london boy",
+          "special": false
+        },
+        {
+          "id": 121,
+          "title": "soon you'll get better",
+          "special": false
+        },
+        {
+          "id": 122,
+          "title": "false god",
+          "special": false
+        },
+        {
+          "id": 123,
+          "title": "you need to calm down",
+          "special": false,
+          "fixed": true
+        },
+        {
+          "id": 124,
+          "title": "afterglow",
+          "special": false
+        },
+        {
+          "id": 125,
+          "title": "me!",
+          "special": false
+        },
+        {
+          "id": 126,
+          "title": "it's nice to have a friend",
+          "special": false
+        },
+        {
+          "id": 127,
+          "title": "daylight",
+          "special": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "folklore",
+      "year": 2020,
+      "color": {
+        "background": "#939393  ",
+        "special": "#000000",
+        "fixed": "#393838"
+      },
+      "cover": "../images/folklore.png",
+      "tracks": [
+        {
+          "id": 128,
+          "title": "the 1",
+          "special": false
+        },
+        {
+          "id": 129,
+          "title": "cardigan",
+          "special": false,
+          "fixed": true
+        },
+        {
+          "id": 130,
+          "title": "the last great american dynasty",
+          "special": false
+        },
+        {
+          "id": 131,
+          "title": "exile",
+          "special": false
+        },
+        {
+          "id": 132,
+          "title": "my tears ricochet",
+          "special": false
+        },
+        {
+          "id": 133,
+          "title": "mirrorball",
+          "special": true
+        },
+        {
+          "id": 134,
+          "title": "seven",
+          "special": false
+        },
+        {
+          "id": 135,
+          "title": "august",
+          "special": false
+        },
+        {
+          "id": 136,
+          "title": "this is me trying",
+          "special": false
+        },
+        {
+          "id": 137,
+          "title": "illicit affairs",
+          "special": false,
+          "fixed": true
+        },
+        {
+          "id": 138,
+          "title": "invisible string",
+          "special": false
+        },
+        {
+          "id": 139,
+          "title": "mad woman",
+          "special": true
+        },
+        {
+          "id": 140,
+          "title": "epiphany",
+          "special": false
+        },
+        {
+          "id": 141,
+          "title": "betty",
+          "special": false
+        },
+        {
+          "id": 142,
+          "title": "peace",
+          "special": false
+        },
+        {
+          "id": 143,
+          "title": "hoax",
+          "special": false
+        },
+        {
+          "id": 144,
+          "title": "the lakes",
+          "special": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "evermore",
+      "year": 2020,
+      "color": {
+        "background": "#DFA97F",
+        "special": "#FA7005",
+        "fixed": "#A97145"
+      },
+      "cover": "../images/evermore.png",
+      "tracks": [
+        {
+          "id": 145,
+          "title": "willow",
+          "special": false,
+          "fixed": true
+        },
+        {
+          "id": 146,
+          "title": "champagne problems",
+          "special": false
+        },
+        {
+          "id": 147,
+          "title": "gold rush",
+          "special": false
+        },
+        {
+          "id": 148,
+          "title": "tis the damn season",
+          "special": false
+        },
+        {
+          "id": 149,
+          "title": "torelate it",
+          "special": false
+        },
+        {
+          "id": 150,
+          "title": "no body, no crime",
+          "special": false
+        },
+        {
+          "id": 151,
+          "title": "happines",
+          "special": false
+        },
+        {
+          "id": 152,
+          "title": "dorothea",
+          "special": false
+        },
+        {
+          "id": 153,
+          "title": "coney island",
+          "special": false
+        },
+        {
+          "id": 154,
+          "title": "ivy",
+          "special": false
+        },
+        {
+          "id": 155,
+          "title": "cowboy like me",
+          "special": true
+        },
+        {
+          "id": 156,
+          "title": "long story short",
+          "special": false
+        },
+        {
+          "id": 157,
+          "title": "marjorie",
+          "special": false
+        },
+        {
+          "id": 158,
+          "title": "closure",
+          "special": false
+        },
+        {
+          "id": 159,
+          "title": "evermore",
+          "special": false
+        },
+        {
+          "id": 160,
+          "title": "right where you left me",
+          "special": false
+        },
+        {
+          "id": 161,
+          "title": "it's time to go",
+          "special": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "midnights",
+      "year": 2022,
+      "color": {
+        "background": "#02149C",
+        "special": "#3E55FF",
+        "fixed": "#60658E"
+      },
+      "cover": "../images/midnights.png",
+      "tracks": [
+        {
+          "id": 162,
+          "title": "lavander haze",
+          "special": false
+        },
+        {
+          "id": 163,
+          "title": "maroon",
+          "special": false
+        },
+        {
+          "id": 164,
+          "title": "anti-hero",
+          "special": false,
+          "fixed": true
+        },
+        {
+          "id": 165,
+          "title": "snow on the beach",
+          "special": false
+        },
+        {
+          "id": 166,
+          "title": "you're on your own, kid",
+          "special": false
+        },
+        {
+          "id": 167,
+          "title": "midnight rain",
+          "special": false
+        },
+        {
+          "id": 168,
+          "title": "question...?",
+          "special": false
+        },
+        {
+          "id": 169,
+          "title": "vigilante shit",
+          "special": false
+        },
+        {
+          "id": 170,
+          "title": "bejeweled",
+          "special": false
+        },
+        {
+          "id": 171,
+          "title": "labyrinth",
+          "special": false
+        },
+        {
+          "id": 172,
+          "title": "karma",
+          "special": false
+        },
+        {
+          "id": 173,
+          "title": "sweet nothing",
+          "special": false
+        },
+        {
+          "id": 174,
+          "title": "mastermind",
+          "special": false
+        },
+        {
+          "id": 175,
+          "title": "the great war",
+          "special": true,
+          "fixed": false
+        },
+        {
+          "id": 176,
+          "title": "bigger than the whole sky",
+          "special": false
+        },
+        {
+          "id": 177,
+          "title": "paris",
+          "special": false
+        },
+        {
+          "id": 178,
+          "title": "high infidelity",
+          "special": false
+        },
+        {
+          "id": 179,
+          "title": "glitch",
+          "special": false
+        },
+        {
+          "id": 180,
+          "title": "would've, could've, should've",
+          "special": false
+        },
+        {
+          "id": 181,
+          "title": "dear reader",
+          "special": false
+        },
+        {
+          "id": 182,
+          "title": "hits different",
+          "special": false
         }
       ]
     }

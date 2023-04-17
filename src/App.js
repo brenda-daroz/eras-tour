@@ -7,6 +7,7 @@ import { useState } from "react";
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
   // align-items: center;
   // flex-direction: column;
 `;

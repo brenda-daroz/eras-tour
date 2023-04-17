@@ -7,7 +7,7 @@ const Wrapper = styled.div`{
   padding-top: 20px;
   background-color: ${props => props.bgColor};
   width: 20%;
-
+  overflow: hidden;
 }`
 
 const Ul = styled.ul`{
@@ -27,7 +27,7 @@ const Li = styled.li`{
   text-transform: uppercase;
   font-weight: 500;
   color: ${props => props.fontColor};
-  font-size: 1rem;
+  font-size: 0.95rem;
 };`
 
 const Img = styled.img`{
