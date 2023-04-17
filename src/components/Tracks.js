@@ -7,6 +7,7 @@ const Wrapper = styled.div`{
   padding-top: 20px;
   background-color: ${props => props.bgColor};
   width: 20%;
+
 }`
 
 const Ul = styled.ul`{
@@ -17,6 +18,8 @@ const Ul = styled.ul`{
   width: fit-content;
   padding: 0 10px;
   margin: 0 auto;
+  height: 60%;
+  justify-content: center
 }`
 
 const Li = styled.li`{
@@ -33,8 +36,10 @@ const Img = styled.img`{
   transform: translateX(-50%);
   padding: 0;
   display: block;
-  width: 400px;
+  width: 450px;
+  height: 450px;
   overflow: hidden;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 10%, transparent 100%);
 
 }`
 
@@ -45,7 +50,7 @@ export default function Tracks({ tracks, handleToggle, color, image }) {
         {tracks.map((track, i) => {
           return (
             <Li key={i} fontColor={color.default}>
-              <Track track={track} color={color} handleToggle={handleToggle}/>
+              <Track track={track} color={color} handleToggle={handleToggle} />
             </Li>
           )
         }
