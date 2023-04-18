@@ -36,9 +36,10 @@ const Img = styled.img`{
   transform: translateX(-50%);
   padding: 0;
   display: block;
-  width: 450px;
+  // width: 600px;
   height: 450px;
   overflow: hidden;
+  z-index: 100;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 10%, transparent 100%);
 
 }`
