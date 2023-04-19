@@ -44,7 +44,7 @@ const Img = styled.img`{
 
 }`
 
-export default function Tracks({ tracks, handleToggle, color, image }) {
+export default function Tracks({ tracks, handleToggle, color, image, title }) {
   return (
     <Wrapper bgColor={color.background}>
       <Ul>
@@ -57,7 +57,7 @@ export default function Tracks({ tracks, handleToggle, color, image }) {
         }
         )}
       </Ul>
-      <Img src={image} alt="Fearless (Taylor's Version)"></Img>
+      <Img src={image} alt={title}></Img>
     </Wrapper>
   );
 }
