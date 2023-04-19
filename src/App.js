@@ -34,7 +34,7 @@ function App() {
       setAlbums(albums.map(album => {
         return album.title === albumName ? {
           ...album, tracks: album.tracks.map(track => {
-            return track.id === Number(id) ? { ...track, special: !track.special } : { ...track };
+            return track.id === Number(id) && !track.fixed ? { ...track, special: !track.special } : { ...track };
           })
         } : { ...album };
       })
