@@ -1,8 +1,8 @@
 import './App.css';
 import styled from "styled-components";
 import Tracks from './components/Tracks';
-import data from './data/ts-discography.json';
-import { useState } from "react";
+import handleAlbums from './services/handleAlbums';
+import { useEffect, useState } from "react";
 
 
 const Container = styled.div`
@@ -14,7 +14,20 @@ const Container = styled.div`
 
 function App() {
 
-  const [albums, setAlbums] = useState(data.albums);
+  const [albums, setAlbums] = useState([]);
+
+  const getAlbums = async () => {
+    try {
+      const response = await handleAlbums();
+      setAlbums(response)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  useEffect(() => {
+    getAlbums()
+  }, [])
 
   const handleToggle = (albumName) => {
     return (id) => {
