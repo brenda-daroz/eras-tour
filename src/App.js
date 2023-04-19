@@ -47,7 +47,12 @@ function App() {
       {albums.map(album => {
 
         return (
-          <Tracks image={album.cover} color={album.color} tracks={album.tracks} handleToggle={handleToggle(album.title)} key={album.title} />
+          <Tracks
+            title={album.title}
+            image={album.cover}
+            color={album.color}
+            tracks={album.tracks}
+            handleToggle={handleToggle(album.title)} key={album.title} />
         )
 
       })}
