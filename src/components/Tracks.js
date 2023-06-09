@@ -4,10 +4,11 @@ import Track from "./Track";
 
 
 const Wrapper = styled.div`{
-  padding-top: 20px;
+  padding-top: 60px;
   background-color: ${props => props.bgColor};
   width: 20%;
   overflow: hidden;
+  height: 100vh;
 }`
 
 const Ul = styled.ul`{
@@ -27,7 +28,8 @@ const Li = styled.li`{
   text-transform: uppercase;
   font-weight: 500;
   color: ${props => props.fontColor};
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  text-align: center;
 };`
 
 const Img = styled.img`{
