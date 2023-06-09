@@ -14,7 +14,7 @@
         {
           "id": 64,
           "title": "tim mcgraw",
-          "fixed": false
+          "special": true
         },
         {
           "id": 65,
@@ -452,7 +452,8 @@
         },
         {
           "id": 184,
-          "title": "come back... be here"
+          "title": "come back… be here",
+          "special": true
         },
         {
           "id": 185,
@@ -473,7 +474,7 @@
         },
         {
           "id": 189,
-          "title": "babes"
+          "title": "babe"
         },
         {
           "id": 190,
@@ -602,8 +603,8 @@
       "year": 2017,
       "color": {
         "background": "#272626 ",
-        "special": "#ff0000",
-        "fixed": "#D1C8C2  "
+        "special": "#F05E59",
+        "fixed": "#5b5b5b"
       },
       "cover": "../images/reputation.png",
       "tracks": [
@@ -632,12 +633,12 @@
         {
           "id": 99,
           "title": "delicate",
-          "special": false
+          "fixed": true
         },
         {
           "id": 100,
           "title": "look what you made me do",
-          "special": false
+          "fixed": true
         },
         {
           "id": 101,
@@ -691,9 +692,9 @@
       "title": "lover",
       "year": 2019,
       "color": {
-        "background": "#F395C4 ",
+        "background": "#F395C4",
         "special": "#FF0097 ",
-        "fixed": "#9D0350"
+        "fixed": "#5b5b5b"
       },
       "cover": "../images/lover.png",
       "tracks": [
@@ -705,24 +706,21 @@
         {
           "id": 111,
           "title": "cruel summer",
-          "special": false,
           "fixed": true
         },
         {
           "id": 112,
           "title": "lover",
-          "special": false
+          "fixed": true
         },
         {
           "id": 113,
           "title": "the man",
-          "special": false,
           "fixed": true
         },
         {
           "id": 114,
           "title": "the archer",
-          "special": false,
           "fixed": true
         },
         {
@@ -808,7 +806,7 @@
         {
           "id": 128,
           "title": "the 1",
-          "special": false
+          "fixed": true
         },
         {
           "id": 129,
@@ -829,7 +827,7 @@
         {
           "id": 132,
           "title": "my tears ricochet",
-          "special": false
+          "fixed": true
         },
         {
           "id": 133,
@@ -844,7 +842,7 @@
         {
           "id": 135,
           "title": "august",
-          "special": false
+          "fixed": true
         },
         {
           "id": 136,
@@ -859,7 +857,7 @@
         {
           "id": 138,
           "title": "invisible string",
-          "special": false
+          "fixed": true
         },
         {
           "id": 139,
@@ -900,7 +898,7 @@
       "color": {
         "background": "#DFA97F",
         "special": "#FA7005",
-        "fixed": "#A97145"
+        "fixed": "#5b5b5b"
       },
       "cover": "../images/evermore.png",
       "tracks": [
