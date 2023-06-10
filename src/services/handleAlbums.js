@@ -2,14 +2,15 @@ const handleAlbums = async () => {
   const response = await fetch('http://localhost:3000/albums')
   // const response = await fetch("http://localhost:3000/albums")
   const data = await response.json()
-  console.log(data)
+  // console.log(data)
   return data
 }
 
 const handleSpecial = async () => {
   const response = await fetch('http://localhost:5000/data')
   const data = await response.json()
-  const sets = data.setlist.map(set => set.sets)
+  const filterSets = data.setlist.filter(set => set.sets !== undefined)
+  const sets = filterSets.map(set => set.sets)
   const nonEmptySets = sets.filter(set => set.set.length > 0)
   const set = nonEmptySets.map(set => set.set[9].song)
   const name = set.map(song => song.map(song => song.name))
