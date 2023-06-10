@@ -298,7 +298,7 @@
         {
           "id": 38,
           "title": "haunted",
-          "special": false
+          "special": true
         },
         {
           "id": 39,
@@ -397,7 +397,7 @@
         {
           "id": 50,
           "title": "i almost do",
-          "special": false
+          "special": true
         },
         {
           "id": 51,
