@@ -5,7 +5,8 @@ import Track from "./Track";
 
 const Wrapper = styled.div`{
   padding-top: 60px;
-  background-color: ${props => props.bgColor};
+  background: linear-gradient(to bottom, ${props => props.bgColor} 50%, transparent 100%);
+
   width: 20%;
   overflow: hidden;
   height: 100vh;
@@ -38,11 +39,11 @@ const Img = styled.img`{
   transform: translateX(-50%);
   padding: 0;
   display: block;
-  // width: 600px;
+
   height: 450px;
   overflow: hidden;
   z-index: 100;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 10%, transparent 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 40%, transparent 100%);
 
 }`
 
