@@ -6,7 +6,7 @@
       "year": 2006,
       "color": {
         "background": "#6cc2af",
-        "special": "#0cf334",
+        "special": "#066516",
         "fixed": "#5b5b5b"
       },
       "cover": "../images/taylorSwift.png",
@@ -133,7 +133,7 @@
         {
           "id": 7,
           "title": "breathe",
-          "special": false
+          "special": true
         },
         {
           "id": 8,
@@ -232,7 +232,7 @@
       "title": "Speak Now",
       "year": 2010,
       "color": {
-        "background": "#b46d97",
+        "background": "#b78dc9",
         "special": "#b102c2",
         "fixed": "#5b5b5b"
       },
@@ -312,7 +312,7 @@
         },
         {
           "id": 41,
-          "title": "our",
+          "title": "ours",
           "special": false
         },
         {
@@ -355,8 +355,8 @@
       "title": "Red",
       "year": 2012,
       "color": {
-        "background": "#c4546b",
-        "special": "#c00404",
+        "background": "#cf6767",
+        "special": "#AB0303",
         "fixed": "#5b5b5b"
       },
       "cover": "../images/red.png",
@@ -536,7 +536,7 @@
         {
           "id": 83,
           "title": "all you had to do was stay",
-          "special": false
+          "special": true
         },
         {
           "id": 84,
@@ -552,12 +552,12 @@
         {
           "id": 86,
           "title": "bad blood",
-          "special": false
+          "fixed": true
         },
         {
           "id": 87,
           "title": "wildest dreams",
-          "special": false
+          "fixed": true
         },
         {
           "id": 88,
@@ -594,6 +594,11 @@
           "id": 94,
           "title": "new romantics",
           "special": false
+        },
+        {
+          "id": 201,
+          "title": "i don't wanna live forever",
+          "special": true
         }
       ]
     },
@@ -817,7 +822,7 @@
         {
           "id": 130,
           "title": "the last great american dynasty",
-          "special": false
+          "fixed": true
         },
         {
           "id": 131,
@@ -996,7 +1001,7 @@
       "year": 2022,
       "color": {
         "background": "#02149C",
-        "special": "#3E55FF",
+        "special": "#94A0FF",
         "fixed": "#60658E"
       },
       "cover": "../images/midnights.png",
@@ -1004,7 +1009,7 @@
         {
           "id": 162,
           "title": "lavander haze",
-          "special": false
+          "fixed": true
         },
         {
           "id": 163,

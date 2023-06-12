@@ -47,14 +47,14 @@ const Img = styled.img`{
 
 }`
 
-export default function Tracks({ tracks, handleToggle, color, image, title }) {
+export default function Tracks({ tracks, handleToggle, color, image, title, latest }) {
   return (
     <Wrapper bgColor={color.background}>
       <Ul>
         {tracks.map((track, i) => {
           return (
             <Li key={i} fontColor={color.default}>
-              <Track track={track} color={color} handleToggle={handleToggle} />
+              <Track track={track} color={color} handleToggle={handleToggle} latest={latest} />
             </Li>
           )
         }

@@ -4,11 +4,17 @@ import Tracks from './components/Tracks';
 import { handleAlbums, handleSpecial, putAlbum } from './services/handleAlbums';
 import { useEffect, useState } from "react";
 
-
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
+
+const Latest = styled.span`
+  color: red;
+  font-size: 0.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  `
 
 function App() {
 
@@ -47,13 +53,6 @@ function App() {
     }
   }
 
-  // function toggleTrackSpecial(album, id) {
-  //   return {
-  //     ...album, tracks: album.tracks.map(track => {
-  //       return track.id === Number(id) && !track.fixed ? { ...track, special: !track.special } : { ...track };
-  //     })
-  //   };
-  // }
 
   const handleToggle = (albumName) => {
     return (id) => {
@@ -64,9 +63,10 @@ function App() {
         return album.title === albumName ? updatedAlbum : album;
       })
       )
-
     }
   }
+
+  const latest = special.slice(0, 2)
 
   return (
     <Container>
@@ -78,7 +78,10 @@ function App() {
             image={album.cover}
             color={album.color}
             tracks={album.tracks}
-            handleToggle={handleToggle(album.title)} key={album.title} />
+            handleToggle={handleToggle(album.title)} key={album.title}
+            latest={latest}
+          />
+
         )
 
       })}
