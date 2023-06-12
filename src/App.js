@@ -9,13 +9,6 @@ const Container = styled.div`
   flex-wrap: wrap;
 `;
 
-const Latest = styled.span`
-  color: red;
-  font-size: 0.5rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  `
-
 function App() {
 
   const [albums, setAlbums] = useState([]);
@@ -67,6 +60,7 @@ function App() {
   }
 
   const latest = special.slice(0, 2)
+
 
   return (
     <Container>
