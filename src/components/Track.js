@@ -25,10 +25,10 @@ const Div = styled.div`{
 
 const Track = ({ track, handleToggle, color, latest }) => {
 
-  const handleClick = (e) => {
-    e.preventDefault()
-    handleToggle(e.currentTarget.id)
-  }
+  // const handleClick = (e) => {
+  //   e.preventDefault()
+  //   handleToggle(e.currentTarget.id)
+  // }
 
 
   return (
@@ -37,13 +37,13 @@ const Track = ({ track, handleToggle, color, latest }) => {
         id={track.id}
         name="track"
         value={track.id}
-        onClick={track.fixed ? null : handleClick}
-        special={track.special}
-        specialColor={color.special}
-        fixed={track.fixed}
-        fixedColor={color.fixed}
+        // onClick={track.fixed ? null : handleClick}
+        special={track.status.type === "surprise"}
+        specialColor={color.textSurprise}
+        fixed={track.status.type === "fixed"}
+        fixedColor={color.textFixed}
       >
-        {latest.includes(track.title) ? <Div>{track.title} <Latest>latest</Latest></Div> : <div>{track.title}</div>}
+        {track.status.latest ? <Div>{track.title} <Latest>Latest</Latest></Div>: <div>{track.title}</div>}
       </CompletedDiv >
 
     </>
