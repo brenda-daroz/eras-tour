@@ -1,0 +1,18 @@
+tela = [album]
+
+album = {
+  cor: {
+    fundo: string,
+    textoFixo: string,
+    textoEspecial: string,
+  },
+  imagem: string,
+  musicas: [musica]
+
+}
+
+musica = {
+  titulo: string,
+
+  status: ({ type: naoTocada }, { type: fixa }, { type: especial, latest: boolean }})
+}
