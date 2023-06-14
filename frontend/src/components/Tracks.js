@@ -6,10 +6,13 @@ import Track from "./Track";
 const Wrapper = styled.div`{
   padding-top: 60px;
   background: linear-gradient(to bottom, ${props => props.bgColor} 50%, transparent 100%);
-
   width: 20%;
   overflow: hidden;
   height: 100vh;
+
+  @media only screen and (max-width: 700px) {
+    width: 100%;
+  }
 }`
 
 const Ul = styled.ul`{
@@ -44,7 +47,6 @@ const Img = styled.img`{
   overflow: hidden;
   z-index: 100;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 40%, transparent 100%);
-
 }`
 
 export default function Tracks({ tracks, color, image, title, latest }) {
