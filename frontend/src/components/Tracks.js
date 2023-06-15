@@ -5,7 +5,7 @@ import Track from "./Track";
 
 const Wrapper = styled.div`{
   padding-top: 60px;
-  background: linear-gradient(to bottom, ${props => props.bgColor} 50%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(${props => props.bgColor}, 0.7) 50%, transparent 100%);
   width: 20%;
   overflow: hidden;
   height: 100vh;
@@ -31,6 +31,7 @@ const Li = styled.li`{
   list-style: none;
   text-transform: uppercase;
   font-weight: 500;
+  line-height: 1.35;
   color: ${props => props.fontColor};
   font-size: 0.85rem;
   text-align: center;
