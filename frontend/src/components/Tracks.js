@@ -22,7 +22,7 @@ const Ul = styled.ul`{
   padding: 0;
   width: fit-content;
   padding: 0 10px;
-  margin: 0 auto;
+  margin: 5px auto;
   height: 60%;
   justify-content: center
 }`
@@ -34,16 +34,19 @@ const Li = styled.li`{
   color: ${props => props.fontColor};
   font-size: 0.85rem;
   text-align: center;
+  @media only screen and (max-width: 700px) {
+    font-size: 1rem;
+  }
 };`
 
 const Img = styled.img`{
   object-fit: contain;
   margin-left: 50%;
   transform: translateX(-50%);
+  zoom: 1.2;
   padding: 0;
   display: block;
-
-  height: 450px;
+  height: 400px;
   overflow: hidden;
   z-index: 100;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 40%, transparent 100%);
