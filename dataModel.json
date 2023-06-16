@@ -14,5 +14,5 @@ album = {
 musica = {
   titulo: string,
 
-  status: ({ type: naoTocada }, { type: fixa }, { type: especial, latest: boolean }})
+  status: ({ type: naoTocada }, { type: fixa }, { type: especial, latest: boolean, info: {date: string, location: string} }})
 }
