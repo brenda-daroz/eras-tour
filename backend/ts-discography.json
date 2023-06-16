@@ -1000,8 +1000,8 @@
       "title": "midnights",
       "year": 2022,
       "color": {
-        "background": "#02149C",
-        "special": "#94A0FF",
+        "background": "#020E69",
+        "special": "#9EA9FF",
         "fixed": "#60658E"
       },
       "cover": "../images/midnights.png",
