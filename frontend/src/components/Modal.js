@@ -5,7 +5,7 @@ const DarkBg = styled.div`{
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 0;
+  z-index: 10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -18,9 +18,9 @@ const ModalDiv = styled.div`{
   justify-content: space-evenly;
   background-color: white;
   border-radius: 5px;
-  width: 10vw;
-  height: 10vh;
-  z-index: 999;
+  width: 15vw;
+  height: 15vh;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -44,9 +44,11 @@ const Modal = ({ setIsOpen, track }) => {
   return (
     <DarkBg onClick={() => setIsOpen(false)}>
       <ModalDiv>
-        <ModalText>Date: {track.info.date}</ModalText>
-        <ModalText>City: {track.info.location}</ModalText>
-        <ModalText>Venue: {track.info.venue}</ModalText>
+        <ModalText>Song: {track.title}</ModalText>
+        <ModalText>Date: {track.status.concertInfo.date}</ModalText>
+        <ModalText>Venue: {track.status.concertInfo.venue.name}</ModalText>
+        <ModalText>City: {track.status.concertInfo.venue.city.name}</ModalText>
+        <ModalText>Country: {track.status.concertInfo.venue.city.country.name}</ModalText>
       </ModalDiv>
     </DarkBg>
   )
