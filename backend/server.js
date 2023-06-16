@@ -17,8 +17,8 @@ const __dirname = dirname(__filename);
 
 app.use(cors());
 const corsOptions = {
-  // origin: "http://localhost:3000"
-  origin: "https://solitary-fire-5581.fly.dev"
+  // origin: "http://localhost:3001"
+  origin: "https://eras-tour.brenda.fyi"
 };
 
 function url(pageNumber) {
@@ -48,15 +48,9 @@ app.get('/data', cors(corsOptions), async (req, res) => {
     const response = combine(surpriseSongs(setlistData.setlist), discography);
     res.json(response);
   } catch (error) {
+    console.error(error)
     res.status(500).send({ error: error.message });
   }
-})
-
-app.use(express.static(path.join(__dirname, 'public')))
-
-app.get('*', async (req, res) => {
-  console.log(path.join(__dirname, 'public/index.html'))
-  res.sendFile(path.join(__dirname, 'public/index.html'))
 })
 
 
@@ -65,23 +59,45 @@ function parseDate(eventDate) {
   return new Date(y, parseInt(m) - 1, d)
 }
 
+function enrichSong(concert) {
+  // console.log(concert)
+  const info = {
+    date: concert.eventDate,
+    venue: concert.venue
+  }
+  // const location = concert.venue.city.name;
+
+  return concert.sets.set.map(set => {
+    return {
+      ...set, song: set.song.map(song => {
+        return { ...song, concertInfo: info }
+      })
+    }
+  })
+
+}
 function surpriseSongs(setlist) {
 
   const sets = setlist
     .filter(concert => concert.sets)
     .toSorted((a, b) => parseDate(a.eventDate) - parseDate(b.eventDate))
-    .map(concert => concert.sets.set)
+    .map(concert => enrichSong(concert))
     .filter(sets => sets.length > 0)
-    .map(sets => sets.find((set) => set.name?.includes("Surprise")).song)
-    .map(songs => songs.map(song => { return { name: song.name.toLowerCase() } }))
-
-  const x = [...sets.slice(0, sets.length - 1), sets[sets.length - 1].map(song => { return { name: song.name, latest: true } })]
+    .map(sets => sets.filter((set) => set.name?.includes("Surprise") || set.name?.includes("Taylor Swift (Debut)")).map(set => set.song).flat())
+    .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
+  console.log(sets[0])
+  const x = [...sets.slice(0, sets.length - 1), sets[sets.length - 1].map(song => {
+    console.log(song)
+    return {
+      ...song,
+      latest: true,
+    }
+  })]
   const songs = x.flat()
-  console.log(songs.length)
-  songs.push({ name: "tim mcgraw" })
-
+  // console.log(songs.length)
   return songs
 }
+
 
 const status = (track, surpriseSongs) => {
   if (track.fixed) {
@@ -91,7 +107,8 @@ const status = (track, surpriseSongs) => {
   } else if (surpriseSongs.find((song) => song.name === track.title.toLowerCase())) {
     return {
       type: "surprise",
-      latest: surpriseSongs.find((song) => song.name === track.title.toLowerCase()).latest
+      latest: surpriseSongs.find((song) => song.name === track.title.toLowerCase()).latest,
+      concertInfo: surpriseSongs.find((song) => song.name === track.title.toLowerCase()).concertInfo
     }
   } else {
     return {
@@ -99,6 +116,19 @@ const status = (track, surpriseSongs) => {
     }
   }
 }
+
+// const info = (track, status, surpriseSongs) => {
+//   const randDate = Math.floor(Math.random() * 10)
+//   const cities = ["Tampa", "New York", "Pittsburg", "Los Angeles"]
+//   const ranCities = Math.floor(Math.random() * cities.length)
+//   if (status.type === "surprise") {
+//     return {
+//       date: randDate,
+//       location: cities[ranCities],
+//       venue: "stadium"
+//     }
+//   }
+// }
 
 const combine = (surpriseSongs, discography) => {
   return discography.albums.toSorted((a, b) => a.year - b.year).map(album => {
@@ -115,7 +145,8 @@ const combine = (surpriseSongs, discography) => {
         return {
           id: track.id,
           title: track.title,
-          status: status(track, surpriseSongs)
+          status: status(track, surpriseSongs),
+
         }
       })
     }
@@ -138,7 +169,7 @@ async function fetchPages(pageNumber = 1) {
   // console.log(response)
 
   if (response.itemsPerPage * response.page < response.total) {
-    await sleep(100)
+    await sleep(500)
     const nextPage = await fetchPages(pageNumber + 1)
 
     return { setlist: response.setlist.concat(nextPage.setlist) }
