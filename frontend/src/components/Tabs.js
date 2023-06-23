@@ -3,7 +3,7 @@ import { useState } from "react";
 
 
 const Tab = styled.a`
-color : white;
+color : #EBEBEB;
 cursor: pointer;
 opacity: 0.8;
 font-weight: 500;
