@@ -3,11 +3,12 @@ import styled from "styled-components";
 import Modal from "./Modal";
 
 const CompletedDiv = styled.div`{
-cursor: ${props => (props.fixed ? "default" : "pointer")};
-color: ${props => (props.special ? props.specialColor : props.fixed ? props.fixedColor : "#f3f6f4")}
+cursor: ${props => (props.fixed || props.unplayed ? "default" : "pointer")};
+color: ${props => (props.special ? props.specialColor : props.fixed ? props.fixedColor : "#f3f6f4")};
+text-decoration: ${props => (props.special ? "underline dotted" : "none")};
 }`
 
-const Latest = styled.span`
+const Latest = styled.div`
   color: red;
   font-size: 0.6rem;
   background: #f3f6f4;
@@ -57,6 +58,7 @@ const Track = ({ track, handleToggle, color }) => {
         special={track.status.type === "surprise"}
         specialColor={color.textSurprise}
         fixed={track.status.type === "fixed"}
+        unplayed={track.status.type === "unplayed"}
         fixedColor={color.textFixed}
       >
         {track.status.latest ? <Div>{track.title} <Latest>Latest</Latest></Div> : <div>{track.title}</div>}
