@@ -4,7 +4,7 @@ import Modal from "./Modal";
 
 const CompletedDiv = styled.div`{
 cursor: ${props => (props.fixed || props.unplayed ? "default" : "pointer")};
-color: ${props => (props.special ? props.specialColor : props.fixed ? props.fixedColor : "#f3f6f4")};
+color: ${props => (props.special ? props.specialColor : props.fixed ? props.fixedColor : "#547873")};
 text-decoration: ${props => (props.special ? "underline dotted" : "none")};
 }`
 
