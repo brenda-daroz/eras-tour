@@ -17,8 +17,8 @@ const __dirname = dirname(__filename);
 
 app.use(cors());
 const corsOptions = {
-  // origin: "http://localhost:3001"
-  origin: "https://eras-tour.brenda.fyi"
+  origin: "http://localhost:3001"
+  // origin: "https://eras-tour.brenda.fyi"
 };
 
 function url(pageNumber) {
@@ -140,6 +140,7 @@ const combine = (surpriseSongs, discography) => {
         textSurprise: album.color.special
       },
       cover: album.cover,
+      coverCredit: album.coverCredit,
       tracks: album.tracks.map(track => {
 
         return {
