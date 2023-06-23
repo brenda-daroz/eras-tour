@@ -69,7 +69,6 @@ const Credit = styled.figcaption`{
       padding: 0;
       margin-top: -160px;
       opacity: 1;
-      z-index: 10;
       color: black;
     }
 }`
