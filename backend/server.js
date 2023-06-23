@@ -17,8 +17,8 @@ const __dirname = dirname(__filename);
 
 app.use(cors());
 const corsOptions = {
-  origin: "http://localhost:3001"
-  // origin: "https://eras-tour.brenda.fyi"
+  // origin: "http://localhost:3001"
+  origin: "https://eras-tour.brenda.fyi"
 };
 
 function url(pageNumber) {
