@@ -81,4 +81,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 7. Lover - East Rutherford, NJ - May 26th, 2023. Photographed by Alexander Lewis.
 8. Folklore - Photographed by Octavio Jones.
 9. Evermore - Photographed by Octavio Jones.
-10. Midnights - Foxborough, MA - May 19th, 2023. Photographed by Scott Eisen
+10. Midnights - Foxborough, MA - May 19th, 2023. Photographed by Scott Eisen.
