@@ -66,10 +66,13 @@ const Credit = styled.figcaption`{
     padding: 3px 3px;
     margin-top: -20px;
     @media only screen and (max-width: 700px) {
-      padding: 0;
       margin-top: -160px;
       opacity: 1;
-      color: black;
+      color: grey;
+      position: absolute;
+      z-index: 1000;
+      background-color: white;
+      padding: 0.5px 4px;
     }
 }`
 
