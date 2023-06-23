@@ -54,6 +54,7 @@ function App() {
           <Tracks
             key={i}
             image={album.cover}
+            credit={album.coverCredit}
             color={album.color}
             tracks={album.tracks}
           />
