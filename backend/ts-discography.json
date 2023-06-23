@@ -5,8 +5,8 @@
       "title": "Taylor Swift",
       "year": 2006,
       "color": {
-        "background": "#6cc2af",
-        "special": "#066516",
+        "background": "#BDD6A8",
+        "special": "#2F411F",
         "fixed": "#5b5b5b"
       },
       "cover": "../images/taylorSwift.png",
@@ -91,8 +91,8 @@
       "title": "Fearless",
       "year": 2008,
       "color": {
-        "background": "#d9c78f",
-        "special": "#ffee59",
+        "background": "#E4D396",
+        "special": "#453D12",
         "fixed": "#5b5b5b"
       },
       "cover": "../images/fearless.png",
@@ -234,8 +234,8 @@
       "title": "Speak Now",
       "year": 2010,
       "color": {
-        "background": "#b78dc9",
-        "special": "#b102c2",
+        "background": "#CBB0D9",
+        "special": "#3A2145",
         "fixed": "#5b5b5b"
       },
       "cover": "../images/speakNow.png",
@@ -358,8 +358,8 @@
       "title": "Red",
       "year": 2012,
       "color": {
-        "background": "#cf6767",
-        "special": "#AB0303",
+        "background": "#D37387",
+        "special": "#48141F",
         "fixed": "#5b5b5b"
       },
       "cover": "../images/red.png",
@@ -508,8 +508,8 @@
       "title": "1989",
       "year": 2014,
       "color": {
-        "background": "#6488F5",
-        "special": "#000fff",
+        "background": "#ABD5F8",
+        "special": "#07375F",
         "fixed": "#5b5b5b"
       },
       "cover": "../images/1989.png",
@@ -612,7 +612,7 @@
       "title": "reputation",
       "year": 2017,
       "color": {
-        "background": "#272626 ",
+        "background": "#272626",
         "special": "#F05E59",
         "fixed": "#5b5b5b"
       },
@@ -703,8 +703,8 @@
       "title": "lover",
       "year": 2019,
       "color": {
-        "background": "#F395C4",
-        "special": "#FF0097 ",
+        "background": "#EAAED0",
+        "special": "#611942",
         "fixed": "#5b5b5b"
       },
       "cover": "../images/lover.png",
@@ -914,8 +914,8 @@
       "title": "evermore",
       "year": 2020,
       "color": {
-        "background": "#DFA97F",
-        "special": "#FA7005",
+        "background": "#E4B696",
+        "special": "#553116",
         "fixed": "#5b5b5b"
       },
       "cover": "../images/evermore.png",
