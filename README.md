@@ -68,3 +68,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Photos credits
+
+1. Taylor Swift - Photographed by Scott Eisen.
+2. Fearless - Glendale, AZ - March 18th, 2023. Photographed by John Shearer (instagram.com/johnshearer).
+3. Speak Now - Nashville, TN - May 06, 2023. Photographed by John Shearer.
+4. RED - Las Vegas, NV - March 24th, 2023. Photographed by Ethan Miller.
+5. 1989 - Glendale, AZ - March 17th, 2023. Photographed by Kevin Mazur (instagram/kevinmazur).
+6. Reputation - Arlington, TX - March 31st, 2023. Photographed by Omar Vega.
+7. Lover - East Rutherford, NJ - May 26th, 2023. Photographed by Alexander Lewis.
+8. Folklore - Photographed by Octavio Jones.
+9. Evermore - Photographed by Octavio Jones.
+10. Midnights - Foxborough, MA - May 19th, 2023. Photographed by Scott Eisen
