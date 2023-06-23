@@ -612,8 +612,8 @@
       "title": "reputation",
       "year": 2017,
       "color": {
-        "background": "#272626",
-        "special": "#F05E59",
+        "background": "E7E4E4",
+        "special": "#272626",
         "fixed": "#5b5b5b"
       },
       "cover": "../images/reputation.png",
