@@ -50,10 +50,10 @@ const Footer = () => {
   return (
     <Container>
 
-      <Author>Made by <a href="https://www.brenda.fyi">brenda daroz</a> © 2023</Author>
+      <Author>Made by <a href="https://www.brenda.fyi" target="_blank" rel="noreferrer">brenda daroz</a> © 2023</Author>
       <SocialMedia>
-        <a href="https://www.linkedin.com/in/brendadz/"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/brenda-daroz"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/brendadz/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/brenda-daroz" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
       </SocialMedia>
 
     </Container>
