@@ -7,6 +7,11 @@ const Container = styled.footer`
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+  @media only screen and (max-width: 700px) {
+    padding: 20px 10px;
+    flex-direction: column;
+    height: 8vh;
+  }
 `;
 
 const Author = styled.div`
