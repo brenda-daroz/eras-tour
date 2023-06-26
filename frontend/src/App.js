@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Tracks from './components/Tracks';
 import { handleData } from './services/handleAlbums';
 import { useEffect, useState } from "react";
+import Footer from './components/Footer';
 
 const Container = styled.div`
   display: flex;
@@ -48,6 +49,7 @@ function App() {
   // }
 
   return (
+    <>
     <Container>
       {data.map((album, i) => {
         return (
@@ -63,6 +65,8 @@ function App() {
 
       })}
     </Container>
+    <Footer/>
+    </>
   );
 
 }
