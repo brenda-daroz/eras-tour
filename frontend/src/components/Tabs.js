@@ -23,7 +23,7 @@ const ButtonGroup = styled.div`
   display: flex;
   border: 0 5px 0 5px solid #ccc;
   justify-content: space-evenly;
-  padding: 8px 0;
+  padding: 5px 0px;
   background-color: #d3d3d3;
   opacity: 0.6;
   box-shadow: 0px 9px 24px -3px rgba(0,0,0,0.3);
