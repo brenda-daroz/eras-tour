@@ -9,6 +9,7 @@ const Wrapper = styled.div`{
   width: 20%;
   overflow: hidden;
   height: 100vh;
+  position: relative;
   @media only screen and (max-width: 700px) {
     width: 100%;
   }
@@ -56,7 +57,7 @@ const Img = styled.img`{
     zoom: 1.6;
 }`
 
-const Credit = styled.figcaption`{
+const Credit = styled.div`{
     // background-color: #000;
     opacity: 0.8;
     border-radius: 5px;
@@ -66,33 +67,37 @@ const Credit = styled.figcaption`{
     padding: 3px 3px;
     margin-top: -20px;
     @media only screen and (max-width: 700px) {
-      margin-top: -170px;
-      opacity: 1;
+
+      align-items: center;
+      bottom: 0;
+      opacity: 0.8;
       color: grey;
       position: absolute;
       z-index: 5;
       background-color: white;
-      padding: 0.5px 4px;
+      padding: 0.5px 3px;
     }
+}`
+
+const Figure = styled.figure`{
+  margin: 0 auto;
 }`
 
 export default function Tracks({ tracks, color, image, title, latest, credit }) {
   const fixedTracks = tracks.filter((track) => track.status.type === "fixed")
+  const unplayedTracks = tracks.filter((track) => track.status.type === "unplayed")
+  const surpriseTracks = tracks.filter((track) => track.status.type === "surprise")
   return (
     <Wrapper bgColor={color.background}>
 
       <Tabs children={[
         {
           name: "Surprise", content:
-
             <Ul>
-              {tracks.map((track, i) => {
-                if (track.status.type === "surprise") {
-                  return (
-                    TracksList(i, track)
-                  )
-                }
-                return null
+              {surpriseTracks.map((track, i) => {
+                return (
+                  TracksList(i, track)
+                )
               }
               )}
             </Ul>
@@ -115,23 +120,20 @@ export default function Tracks({ tracks, color, image, title, latest, credit }) 
         {
           name: "Unplayed", content:
             <Ul>
-              {tracks.map((track, i) => {
-                if (track.status.type === "unplayed") {
-                  return (
-                    TracksList(i, track)
-                  )
-                }
-                return null;
+              {unplayedTracks.map((track, i) => {
+                return (
+                  TracksList(i, track)
+                )
               }
               )}
             </Ul>
         },
       ]}
       />
-      <figure>
+      <Figure>
         <Img src={image} alt={title}></Img>
         <Credit>{credit}</Credit>
-      </figure>
+      </Figure>
     </Wrapper>
   );
 
