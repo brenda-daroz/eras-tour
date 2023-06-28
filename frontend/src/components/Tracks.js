@@ -77,13 +77,14 @@ const Credit = styled.figcaption`{
 }`
 
 export default function Tracks({ tracks, color, image, title, latest, credit }) {
-
+  const fixedTracks = tracks.filter((track) => track.status.type === "fixed")
   return (
     <Wrapper bgColor={color.background}>
 
       <Tabs children={[
         {
           name: "Surprise", content:
+
             <Ul>
               {tracks.map((track, i) => {
                 if (track.status.type === "surprise") {
@@ -91,22 +92,25 @@ export default function Tracks({ tracks, color, image, title, latest, credit }) 
                     TracksList(i, track)
                   )
                 }
+                return null
               }
               )}
             </Ul>
         },
         {
+
           name: "Fixed", content:
-            <Ul>
-              {tracks.map((track, i) => {
-                if (track.status.type === "fixed") {
+
+            (fixedTracks.length > 0) ?
+              (<Ul>
+                {fixedTracks.map((track, i) => {
                   return (
                     TracksList(i, track)
                   )
                 }
-              }
-              )}
-            </Ul>
+                )}
+              </Ul>)
+              : <Ul><p>No fixed tracks</p></Ul>
         },
         {
           name: "Unplayed", content:
@@ -117,11 +121,13 @@ export default function Tracks({ tracks, color, image, title, latest, credit }) 
                     TracksList(i, track)
                   )
                 }
+                return null;
               }
               )}
             </Ul>
         },
-      ]} />
+      ]}
+      />
       <figure>
         <Img src={image} alt={title}></Img>
         <Credit>{credit}</Credit>
@@ -130,8 +136,10 @@ export default function Tracks({ tracks, color, image, title, latest, credit }) 
   );
 
   function TracksList(i, track) {
-    return <Li key={i} fontColor={color.default}>
-      <Track track={track} color={color} latest={latest} />
-    </Li>;
+    return (
+      <Li key={i} fontColor={color.default}>
+        <Track track={track} color={color} latest={latest} />
+      </Li>
+    )
   }
 }
