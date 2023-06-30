@@ -518,8 +518,7 @@
         {
           "id": 60,
           "title": "welcome to new york",
-          "special": true,
-          "fixed": true
+          "special": true
         },
         {
           "id": 61,
