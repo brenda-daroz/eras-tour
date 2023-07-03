@@ -18,8 +18,8 @@ const ModalDiv = styled.div`{
   justify-content: space-evenly;
   background-color: white;
   border-radius: 5px;
-  width: 15vw;
-  height: 15vh;
+  width: fit-content;
+  height: 17vh;
 
   top: 50%;
   left: 50%;
@@ -27,8 +27,8 @@ const ModalDiv = styled.div`{
   position: absolute;
   margin: 0 auto;
   @media only screen and (max-width: 700px) {
-    width: 50vw;
-    height: 10vh;
+    width: fit-content;
+    height: 12vh;
   }
 }`
 
