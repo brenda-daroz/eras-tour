@@ -37,14 +37,20 @@ const ModalText = styled.p`{
   text-align: center;
   padding: 0 5px;
   margin: 0;
+}`
 
+const ModalTtitle = styled.h3`{
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0 5px;
+  margin: 0;
 }`
 
 const Modal = ({ setIsOpen, track }) => {
   return (
     <DarkBg onClick={() => setIsOpen(false)}>
       <ModalDiv>
-        <ModalText>Song: {track.title}</ModalText>
+        <ModalTtitle>{track.title}</ModalTtitle>
         <ModalText>Date: {track.status.concertInfo.date}</ModalText>
         <ModalText>Venue: {track.status.concertInfo.venue.name}</ModalText>
         <ModalText>City: {track.status.concertInfo.venue.city.name}</ModalText>
