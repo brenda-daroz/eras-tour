@@ -6,7 +6,12 @@ const CompletedDiv = styled.div`{
 cursor: ${props => (props.fixed || props.unplayed ? "default" : "pointer")};
 color: ${props => (props.special ? props.specialColor : props.fixed ? props.fixedColor : "#547873")};
 text-decoration: ${props => (props.special ? "underline dotted" : "none")};
+
 }`
+
+// const CompleteTrack = styled.div`{
+//   text-decoration: ${props => (props.special ? "underline dotted" : "none")};
+// }`
 
 const Latest = styled.div`
   color: red;
@@ -16,6 +21,7 @@ const Latest = styled.div`
   padding: 0 5px;
   font-weight: 500;
   text-transform: uppercase;
+  text-decoration-style: none !important;
   `
 const Div = styled.div`
   display: flex;
