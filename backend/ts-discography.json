@@ -474,7 +474,8 @@
         },
         {
           "id": 188,
-          "title": "nothing new"
+          "title": "nothing new",
+          "special": true
         },
         {
           "id": 189,
