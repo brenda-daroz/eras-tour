@@ -16,24 +16,23 @@ const ModalDiv = styled.div`{
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 10px;
   background-color: white;
   border-radius: 5px;
   width: fit-content;
-  height: 17vh;
-
+  padding: 10px 15px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
   margin: 0 auto;
   @media only screen and (max-width: 700px) {
-    width: fit-content;
-    height: 12vh;
+    width: 50%;
   }
 }`
 
 const ModalText = styled.p`{
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   text-align: center;
   padding: 0 5px;
   margin: 0;
@@ -44,7 +43,19 @@ const ModalTtitle = styled.h3`{
   text-align: center;
   padding: 0 5px;
   margin: 0;
+  text-transform: uppercase;
 }`
+
+const Anchor = styled.a`{
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+  background-color: pink;
+  padding: 3px 6px;
+  border-radius: 5px;
+  margin-top: 5px;
+}`
+
 
 const Modal = ({ setIsOpen, track }) => {
   return (
@@ -55,6 +66,8 @@ const Modal = ({ setIsOpen, track }) => {
         <ModalText>Venue: {track.status.concertInfo.venue.name}</ModalText>
         <ModalText>City: {track.status.concertInfo.venue.city.name}</ModalText>
         <ModalText>Country: {track.status.concertInfo.venue.city.country.name}</ModalText>
+        {(track.video) ? <ModalText><Anchor href={track.video} target="_blank" rel="noreferrer">Live Performance (TikTok)</Anchor></ModalText> : null}
+
       </ModalDiv>
     </DarkBg>
   )
