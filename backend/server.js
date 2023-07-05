@@ -56,13 +56,27 @@ app.get('/data', cors(corsOptions), async (req, res) => {
 
 function parseDate(eventDate) {
   const [d, m, y] = eventDate.split("-")
-  return new Date(y, parseInt(m) - 1, d)
+  const monthNum = parseInt(m) - 1
+  return new Date(y, monthNum, d)
+}
+
+function formatDate(date) {
+  const [d, m, y] = date.split("-")
+  const monthNum = parseInt(m) - 1
+  const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Nov", "Dec"][monthNum]
+  return month + " " + ordinal(d) + ", " + y
+}
+
+function ordinal(n) {
+  const s = ["th", "st", "nd", "rd"];
+  const v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
 }
 
 function enrichSong(concert) {
   // console.log(concert)
   const info = {
-    date: concert.eventDate,
+    date: formatDate(concert.eventDate),
     venue: concert.venue
   }
   // const location = concert.venue.city.name;
@@ -85,9 +99,9 @@ function surpriseSongs(setlist) {
     .filter(sets => sets.length > 0)
     .map(sets => sets.filter((set) => set.name?.includes("Surprise") || set.name?.includes("Taylor Swift (Debut)")).map(set => set.song).flat())
     .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
-  console.log(sets[0])
+  // console.log(sets[0])
   const x = [...sets.slice(0, sets.length - 1), sets[sets.length - 1].map(song => {
-    console.log(song)
+    // console.log(song)
     return {
       ...song,
       latest: true,
@@ -117,19 +131,6 @@ const status = (track, surpriseSongs) => {
   }
 }
 
-// const info = (track, status, surpriseSongs) => {
-//   const randDate = Math.floor(Math.random() * 10)
-//   const cities = ["Tampa", "New York", "Pittsburg", "Los Angeles"]
-//   const ranCities = Math.floor(Math.random() * cities.length)
-//   if (status.type === "surprise") {
-//     return {
-//       date: randDate,
-//       location: cities[ranCities],
-//       venue: "stadium"
-//     }
-//   }
-// }
-
 const combine = (surpriseSongs, discography) => {
   return discography.albums.toSorted((a, b) => a.year - b.year).map(album => {
     return {
@@ -147,6 +148,7 @@ const combine = (surpriseSongs, discography) => {
           id: track.id,
           title: track.title,
           status: status(track, surpriseSongs),
+          video: track.video
 
         }
       })
@@ -180,7 +182,7 @@ async function fetchPages(pageNumber = 1) {
   }
 }
 
-const fetchPagesMemoized = memoizee(fetchPages, { promise: true, maxAge: 1000 * 60 * 60 })
+const fetchPagesMemoized = memoizee(fetchPages, { promise: true, maxAge: 1000 * 60 * 60 * 60 })
 
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
