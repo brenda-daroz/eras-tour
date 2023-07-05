@@ -6,27 +6,22 @@ const CompletedDiv = styled.div`{
 cursor: ${props => (props.fixed || props.unplayed ? "default" : "pointer")};
 color: ${props => (props.special ? props.specialColor : props.fixed ? props.fixedColor : "#547873")};
 text-decoration: ${props => (props.special ? "underline dotted" : "none")};
-
 }`
-
-// const CompleteTrack = styled.div`{
-//   text-decoration: ${props => (props.special ? "underline dotted" : "none")};
-// }`
 
 const Latest = styled.div`
   color: red;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   background: #f3f6f4;
   border-radius: 5px;
   padding: 0 5px;
   font-weight: 500;
   text-transform: uppercase;
-  text-decoration-style: none !important;
   `
 const Div = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
+  font-weight: 700;
   `
 
 const Track = ({ track, handleToggle, color }) => {
