@@ -30,7 +30,6 @@ const Ul = styled.ul`{
 
 const Li = styled.li`{
   list-style: none;
-  text-transform: uppercase;
   font-weight: 500;
   line-height: 1.7;
   color: ${props => props.fontColor};
