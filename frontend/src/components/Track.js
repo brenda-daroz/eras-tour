@@ -26,7 +26,7 @@ const Latest = styled.div`
 const Div = styled.div`
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   `
 
 const Track = ({ track, handleToggle, color }) => {
@@ -39,37 +39,23 @@ const Track = ({ track, handleToggle, color }) => {
     setIsOpen(true)
   }
 
-  // const checkInfo = () => {
-  //   if (track.info) {
-  //     console.log(track.info.venue)
-  //     setToggle(!toggle)
-  //   } else {
-  //     return null
-  //   }
-  // }
-
-  // const renderInfo = () => {
-  //   <PopUpText
-  //     show={toggle}>{track.info ? track.info.venue : null}
-  //   </PopUpText>
-  // }
+  const completeTrack = <CompletedDiv
+    id={track.id}
+    name="track"
+    value={track.id}
+    onClick={handleClick}
+    special={track.status.type === "surprise"}
+    specialColor={color.textSurprise}
+    fixed={track.status.type === "fixed"}
+    unplayed={track.status.type === "unplayed"}
+    fixedColor={color.textFixed}
+  >
+    {track.title}
+  </CompletedDiv>;
 
   return (
     <>
-      <CompletedDiv
-        id={track.id}
-        name="track"
-        value={track.id}
-        onClick={handleClick}
-        special={track.status.type === "surprise"}
-        specialColor={color.textSurprise}
-        fixed={track.status.type === "fixed"}
-        unplayed={track.status.type === "unplayed"}
-        fixedColor={color.textFixed}
-      >
-        {track.status.latest ? <Div>{track.title} <Latest>Latest</Latest></Div> : <div>{track.title}</div>}
-      </CompletedDiv >
-
+      {(track.status.latest) ? <Div>{completeTrack}<Latest>Latest</Latest></Div> : <>{completeTrack}</>}
       {track.status.type === "surprise" && isOpen ? < Modal setIsOpen={setIsOpen} track={track} /> : null}
 
     </>
