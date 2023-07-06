@@ -17,6 +17,10 @@ font-size: 0.8rem;
     color: #333;
 
   `}
+  @media only screen and (min-width: 1600px) {
+    font-size: 1.1rem;
+
+  }
 `;
 const ButtonGroup = styled.div`
   // margin: 10px 25px;
