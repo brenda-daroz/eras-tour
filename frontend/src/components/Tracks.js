@@ -10,6 +10,9 @@ const Wrapper = styled.div`{
   overflow: hidden;
   height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @media only screen and (max-width: 700px) {
     width: 100%;
   }
@@ -31,13 +34,17 @@ const Ul = styled.ul`{
 const Li = styled.li`{
   list-style: none;
   font-weight: 500;
-  line-height: 1.7;
+  line-height: 1.8;
   color: ${props => props.fontColor};
   font-size: 0.85rem;
   text-align: center;
   text-decoration: dotted;
   @media only screen and (max-width: 700px) {
     font-size: 1rem;
+  }
+  @media only screen and (min-width: 1600px) {
+    font-size: 1.15rem;
+    line-height: 2;
   }
 };`
 
