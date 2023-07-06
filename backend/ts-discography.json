@@ -15,32 +15,25 @@
         {
           "id": 64,
           "title": "tim mcgraw",
-          "special": true,
           "video": "https://www.tiktok.com/@arielmirandamusic/video/7212330008738614574?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 65,
-          "title": "picture to burn",
-          "fixed": false
+          "title": "picture to burn"
         },
         {
           "id": 66,
           "title": "teardrops on my guitar",
-          "fixed": false,
-          "special": true,
           "video": "https://www.tiktok.com/@rabbitsandtea/video/7230099389337898282?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 67,
           "title": "a place in this world",
-          "fixed": false,
-          "special": true,
           "video": "https://www.tiktok.com/@valeriasaaucedo/video/7227794864509865222?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 68,
           "title": "cold as you",
-          "special": true,
           "video": "https://www.tiktok.com/@a.gracefulobsession/video/7225482800609103147?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
@@ -49,48 +42,39 @@
         },
         {
           "id": 70,
-          "title": "tied together with a smile",
-          "special": false
+          "title": "tied together with a smile"
         },
         {
           "id": 71,
-          "title": "stay beautiful",
-          "special": false
+          "title": "stay beautiful"
         },
         {
           "id": 72,
           "title": "should've said no",
-          "special": true,
           "video": "https://www.tiktok.com/@astoldbykarina/video/7235847131687390507?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 73,
-          "title": "mary's song (oh my my my)",
-          "special": false
+          "title": "mary's song (oh my my my)"
         },
         {
           "id": 74,
           "title": "our song",
-          "special": true,
-          "fixed": false,
           "video": "https://www.tiktok.com/@theerastourcontent/video/7214529248646745346?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 95,
           "title": "i'm only me when i'm with you",
-          "special": false,
           "video": "https://www.tiktok.com/@sarahabigailcahil/video/7250699209689632042?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 96,
           "title": "invisible",
-          "special": true,
           "video": "https://www.tiktok.com/@timothymincer/video/7236137497888083246?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 97,
-          "title": "a perfectly good heart",
-          "special": false
+          "title": "a perfectly good heart"
         }
       ]
     },
@@ -109,143 +93,117 @@
         {
           "id": 1,
           "title": "fearless",
-          "special": false,
           "fixed": true
         },
         {
           "id": 2,
           "title": "fifteen",
-          "special": true,
           "video": "https://www.tiktok.com/@amal221b/video/7230505137666575662?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 3,
           "title": "love story",
-          "special": false,
           "fixed": true
         },
         {
           "id": 4,
           "title": "hey stephen",
-          "special": true,
-          "fixed": false,
           "video": "https://www.tiktok.com/@avalava9/video/7233250391758998826?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 5,
           "title": "white horse",
-          "special": true,
           "video": "https://www.tiktok.com/@dreamerofdreamss/video/7215059830720171310?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 6,
           "title": "you belong with me",
-          "special": false,
           "fixed": true
         },
         {
           "id": 7,
           "title": "breathe",
-          "special": true,
           "video": "https://www.tiktok.com/@steph76836/video/7243280337105636651?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 8,
-          "title": "tell me why",
-          "special": false
+          "title": "tell me why"
         },
         {
           "id": 9,
           "title": "you're not sorry",
-          "special": true,
           "video": "https://www.tiktok.com/@dani.avelino95/video/7224965697200327979?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 10,
-          "title": "the way i loved you",
-          "special": false
+          "title": "the way i loved you"
         },
         {
           "id": 11,
           "title": "forever & always",
-          "special": false,
           "video": "https://www.tiktok.com/@hannahkim102/video/7232913836666277163?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 12,
           "title": "the best day",
-          "special": true,
           "video": "https://www.tiktok.com/@all_too_unwell/video/7233579450141510958?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 13,
-          "title": "change",
-          "special": false
+          "title": "change"
         },
         {
           "id": 14,
           "title": "jump then fall",
-          "special": true,
           "video": "https://www.tiktok.com/@nicolegraber6/video/7217737541519232299?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 15,
-          "title": "untouchable",
-          "special": false
+          "title": "untouchable"
         },
         {
           "id": 17,
-          "title": "come in with the rain",
-          "special": false
+          "title": "come in with the rain"
         },
         {
           "id": 18,
-          "title": "superstar",
-          "special": false
+          "title": "superstar"
         },
         {
           "id": 19,
           "title": "the other side of the door",
-          "special": true,
           "video": "https://www.tiktok.com/@___allisonnn/video/7227323373574032683?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 20,
           "title": "today was a fairytale",
-          "special": false,
           "video": "https://www.tiktok.com/@risky_lizness/video/7225657376572017962?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 21,
           "title": "you all over me",
-          "special": true,
           "video": "https://www.tiktok.com/@cami.gorospe/video/7240828982491467051?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 22,
           "title": "mr. perfectly fine",
-          "special": false,
           "video": "https://www.tiktok.com/@intheswingoverthecreek/video/7245519041664650542?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 23,
-          "title": "we were happy",
-          "special": false
+          "title": "we were happy"
         },
         {
           "id": 24,
-          "title": "that's when",
-          "special": false
+          "title": "that's when"
         },
         {
           "id": 25,
-          "title": "don't you",
-          "special": false
+          "title": "don't you"
         },
         {
           "id": 26,
-          "title": "bye bye baby",
-          "special": false
+          "title": "bye bye baby"
         }
       ]
     },
@@ -264,91 +222,75 @@
         {
           "id": 27,
           "title": "mine",
-          "special": true,
           "video": "https://www.tiktok.com/@heyhaley27/video/7231742236721958186?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 28,
           "title": "sparks fly",
-          "special": true,
           "video": "https://www.tiktok.com/@lily___august/video/7230100929759005994?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 29,
-          "title": "back to december",
-          "special": false
+          "title": "back to december"
         },
         {
           "id": 30,
           "title": "speak now",
-          "special": true,
           "video": "https://www.tiktok.com/@laranaw/video/7222451114900360494?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 31,
           "title": "dear john",
-          "special": false,
           "video": "https://www.tiktok.com/@jeannalees/video/7248505140808830214?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 32,
           "title": "mean",
-          "special": true,
           "video": "https://www.tiktok.com/@morrgyy/video/7222502703555988779?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 33,
           "title": "the story of us",
-          "special": false,
           "video": "https://www.tiktok.com/@oh_katy/video/7245877321092074795?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 34,
-          "title": "never grow up",
-          "special": false
+          "title": "never grow up"
         },
         {
           "id": 35,
           "title": "enchanted",
-          "special": false,
           "fixed": true
         },
         {
           "id": 36,
-          "title": "better than revenge",
-          "special": false
+          "title": "better than revenge"
         },
         {
           "id": 37,
-          "title": "innocent",
-          "special": false
+          "title": "innocent"
         },
         {
           "id": 38,
           "title": "haunted",
-          "special": true,
           "video": "https://www.tiktok.com/@drjaynekessel/video/7243058937929436458?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 39,
-          "title": "last kiss",
-          "special": false
+          "title": "last kiss"
         },
         {
           "id": 40,
-          "title": "long live",
-          "special": false
+          "title": "long live"
         },
         {
           "id": 41,
           "title": "ours",
-          "special": false,
           "video": "https://www.tiktok.com/@elasticemily/video/7217267028837567790?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 42,
           "title": "if this was a movie",
-          "special": false,
           "video": "https://www.tiktok.com/@djcrocs/video/7248146989240700202?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
@@ -396,106 +338,88 @@
         {
           "id": 44,
           "title": "state of grace",
-          "special": true,
           "video": "https://www.tiktok.com/@katelynkb_/video/7212493001384316203?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 45,
           "title": "red",
-          "special": true,
           "video": "https://www.tiktok.com/@haileylax11/video/7236178108020165931?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 46,
           "title": "treacherous",
-          "special": true,
           "video": "https://www.tiktok.com/@je.ne_sais.pas/video/7221761394834804010?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 47,
           "title": "i knew you were trouble",
-          "special": false,
           "fixed": true
         },
         {
           "id": 48,
           "title": "all too well",
-          "special": false,
           "fixed": true
         },
         {
           "id": 49,
           "title": "22",
-          "special": false,
           "fixed": true
         },
         {
           "id": 50,
           "title": "i almost do",
-          "special": true,
           "video": "https://www.tiktok.com/@jedp__/video/7243032202445884677?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 51,
           "title": "we are never ever getting back together",
-          "special": false,
           "fixed": true
         },
         {
           "id": 52,
-          "title": "stay stay stay",
-          "special": false
+          "title": "stay stay stay"
         },
         {
           "id": 53,
           "title": "the last time",
-          "special": false,
           "video": "https://www.tiktok.com/@tomivany/video/7245518478566985006?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 54,
           "title": "holy ground",
-          "special": true,
           "video": "https://www.tiktok.com/@aaron.millerr/video/7238090458092686634?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 55,
           "title": "sad beautiful tragic",
-          "special": true,
           "video": "https://www.tiktok.com/@nelsonnabua27/video/7247726872891657518?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 56,
           "title": "the lucky one",
-          "special": true,
           "video": "https://www.tiktok.com/@_rileylynne_/video/7218379026837146923?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 57,
-          "title": "everything has changed",
-          "special": false
+          "title": "everything has changed"
         },
         {
           "id": 58,
-          "title": "starlight",
-          "special": false
+          "title": "starlight"
         },
         {
           "id": 59,
           "title": "begin again",
-          "special": true,
           "video": "https://www.tiktok.com/@ashmassey7/video/7226102197749058858?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 183,
           "title": "the moment i knew",
-          "special": true,
           "video": "https://www.tiktok.com/@diegoalbert_/video/7241075130758155526?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 184,
           "title": "come back… be here",
-          "special": true,
           "video": "https://www.tiktok.com/@thesassyrose/video/7232679586885061931?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
@@ -509,13 +433,11 @@
         {
           "id": 187,
           "title": "better man",
-          "special": true,
           "video": "https://www.tiktok.com/@msraymond/video/7235095635622546734?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 188,
-          "title": "nothing new",
-          "special": true
+          "title": "nothing new"
         },
         {
           "id": 189,
@@ -528,7 +450,6 @@
         {
           "id": 191,
           "title": "i bet you think about me",
-          "special": true,
           "video": "https://www.tiktok.com/@head_first_fearless13/video/7228574408472857899?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
@@ -560,43 +481,36 @@
         {
           "id": 60,
           "title": "welcome to new york",
-          "special": true,
           "video": "https://www.tiktok.com/@taylor.smith.everyone/video/7238726478848953642?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 61,
           "title": "blank space",
-          "special": false,
           "fixed": true
         },
         {
           "id": 62,
           "title": "style",
-          "special": false,
           "fixed": true
         },
         {
           "id": 63,
           "title": "out of the woods",
-          "special": true,
           "video": "https://www.tiktok.com/@marygreen3/video/7230316309354122542?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 83,
           "title": "all you had to do was stay",
-          "special": true,
           "video": "https://www.tiktok.com/@autumnboyd903/video/7243307919410990382?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 84,
           "title": "shake it off",
-          "special": false,
           "fixed": true
         },
         {
           "id": 85,
           "title": "i wish you would",
-          "special": true,
           "video": "https://www.tiktok.com/@nitesaresostarry/video/7240887382281686314?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
@@ -612,46 +526,38 @@
         {
           "id": 88,
           "title": "how you get the girl",
-          "special": true,
           "video": "https://www.tiktok.com/@janeee0920/video/7228584735214341422?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 89,
           "title": "this love",
-          "special": true,
           "video": "https://www.tiktok.com/@swiftbunnies/video/7234593737370799402?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 90,
-          "title": "i know places",
-          "special": false
+          "title": "i know places"
         },
         {
           "id": 91,
           "title": "clean",
-          "special": true,
           "video": "https://www.tiktok.com/@theonefromcl/video/7238460597698841862?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 92,
           "title": "wonderland",
-          "special": true,
           "video": "https://www.tiktok.com/@joselynamartinezz/video/7224970749415623982?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 93,
-          "title": "you are in love",
-          "special": false
+          "title": "you are in love"
         },
         {
           "id": 94,
-          "title": "new romantics",
-          "special": false
+          "title": "new romantics"
         },
         {
           "id": 201,
           "title": "i don't wanna live forever",
-          "special": true,
           "video": "https://www.tiktok.com/@cameracaptures/video/7241038046706175278?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         }
       ]
@@ -671,23 +577,19 @@
         {
           "id": 95,
           "title": "ready for it?",
-          "special": false,
           "fixed": true
         },
         {
           "id": 96,
-          "title": "end game",
-          "special": false
+          "title": "end game"
         },
         {
           "id": 97,
-          "title": "i did something bad",
-          "special": false
+          "title": "i did something bad"
         },
         {
           "id": 98,
           "title": "don't blame me",
-          "special": false,
           "fixed": true
         },
         {
@@ -702,51 +604,42 @@
         },
         {
           "id": 101,
-          "title": "so it goes...",
-          "special": false
+          "title": "so it goes..."
         },
         {
           "id": 102,
           "title": "gorgeous",
-          "special": true,
           "video": "https://www.tiktok.com/@saby0430/video/7233514687105617194?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 103,
           "title": "getaway car",
-          "special": true,
           "video": "https://www.tiktok.com/@christinanicolettaa/video/7237714520637033770?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 104,
-          "title": "king of my heart",
-          "special": false
+          "title": "king of my heart"
         },
         {
           "id": 105,
-          "title": "dancing with our hands tied",
-          "special": false
+          "title": "dancing with our hands tied"
         },
         {
           "id": 106,
-          "title": "dress",
-          "special": false
+          "title": "dress"
         },
         {
           "id": 107,
-          "title": "this is why we can't have nice things",
-          "special": false
+          "title": "this is why we can't have nice things"
         },
         {
           "id": 108,
           "title": "call it what you want",
-          "special": false,
           "video": "https://www.tiktok.com/@beccaleitch20/video/7251086405584178475?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 109,
-          "title": "new year's day",
-          "special": false
+          "title": "new year's day"
         }
       ]
     },
@@ -764,8 +657,7 @@
       "tracks": [
         {
           "id": 110,
-          "title": "i forgot that you existed",
-          "special": false
+          "title": "i forgot that you existed"
         },
         {
           "id": 111,
@@ -790,68 +682,56 @@
         {
           "id": 115,
           "title": "i think he knows",
-          "special": true,
           "video": "https://www.tiktok.com/@mickymorelli/video/7236154926034996526?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 116,
           "title": "miss americana & the heartbreak prince",
-          "special": false,
           "fixed": true
         },
         {
           "id": 117,
           "title": "paper rings",
-          "special": true,
           "video": "https://www.tiktok.com/@hcoakley13/video/7248245907752258862?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 118,
-          "title": "cornelia street",
-          "special": false
+          "title": "cornelia street"
         },
         {
           "id": 119,
           "title": "death by a thousand cuts",
-          "special": true,
           "video": "https://www.tiktok.com/@lucelian/video/7217339424877595950?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 120,
-          "title": "london boy",
-          "special": false
+          "title": "london boy"
         },
         {
           "id": 121,
-          "title": "soon you'll get better",
-          "special": false
+          "title": "soon you'll get better"
         },
         {
           "id": 122,
           "title": "false god",
-          "special": true,
           "video": "https://www.tiktok.com/@kdiddy423/video/7238094135578807598?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 123,
           "title": "you need to calm down",
-          "special": false,
           "fixed": true
         },
         {
           "id": 124,
-          "title": "afterglow",
-          "special": false
+          "title": "afterglow"
         },
         {
           "id": 125,
-          "title": "me!",
-          "special": false
+          "title": "me!"
         },
         {
           "id": 126,
-          "title": "it's nice to have a friend",
-          "special": false
+          "title": "it's nice to have a friend"
         },
         {
           "id": 127,
@@ -860,8 +740,7 @@
         },
         {
           "id": 202,
-          "title": "all of the girls you loved before",
-          "special": false
+          "title": "all of the girls you loved before"
         }
       ]
     },
@@ -885,7 +764,6 @@
         {
           "id": 129,
           "title": "cardigan",
-          "special": false,
           "fixed": true
         },
         {
@@ -920,7 +798,6 @@
         {
           "id": 136,
           "title": "this is me trying",
-          "special": true,
           "video": "https://www.tiktok.com/@kaylagroover3/video/7212309433635065134?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
@@ -936,33 +813,27 @@
         {
           "id": 139,
           "title": "mad woman",
-          "special": true,
           "video": "https://www.tiktok.com/@adrianmarren7/video/7228392697994677546?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 140,
-          "title": "epiphany",
-          "special": false
+          "title": "epiphany"
         },
         {
           "id": 141,
-          "title": "betty",
-          "special": false
+          "title": "betty"
         },
         {
           "id": 142,
-          "title": "peace",
-          "special": false
+          "title": "peace"
         },
         {
           "id": 143,
-          "title": "hoax",
-          "special": false
+          "title": "hoax"
         },
         {
           "id": 144,
           "title": "the lakes",
-          "special": true,
           "video": "https://www.tiktok.com/@jdellamarggio/video/7240501644633427242?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         }
       ]
@@ -982,7 +853,6 @@
         {
           "id": 145,
           "title": "willow",
-          "special": false,
           "fixed": true
         },
         {
@@ -993,7 +863,6 @@
         {
           "id": 147,
           "title": "gold rush",
-          "special": true,
           "video": "https://www.tiktok.com/@oddgirlsmedia/video/7232782902960917802?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
@@ -1008,41 +877,34 @@
         },
         {
           "id": 150,
-          "title": "no body, no crime",
-          "special": false
+          "title": "no body, no crime"
         },
         {
           "id": 151,
-          "title": "happines",
-          "special": false
+          "title": "happines"
         },
         {
           "id": 152,
-          "title": "dorothea",
-          "special": false
+          "title": "dorothea"
         },
         {
           "id": 153,
           "title": "coney island",
-          "special": true,
           "video": "https://www.tiktok.com/@kingofmaiheart/video/7227509473554926894?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 154,
           "title": "ivy",
-          "special": true,
           "video": "https://www.tiktok.com/@adriennejames_/video/7251251929400118574?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 155,
           "title": "cowboy like me",
-          "special": true,
           "video": "https://www.tiktok.com/@coastalcherryco/video/7214931240124779819?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 156,
-          "title": "long story short",
-          "special": false
+          "title": "long story short"
         },
         {
           "id": 157,
@@ -1051,24 +913,20 @@
         },
         {
           "id": 158,
-          "title": "closure",
-          "special": false
+          "title": "closure"
         },
         {
           "id": 159,
           "title": "evermore",
-          "special": false,
           "video": "https://www.tiktok.com/@stacey.0403/video/7250695978297199914?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 160,
-          "title": "right where you left me",
-          "special": false
+          "title": "right where you left me"
         },
         {
           "id": 161,
-          "title": "it's time to go",
-          "special": false
+          "title": "it's time to go"
         }
       ]
     },
@@ -1092,114 +950,94 @@
         {
           "id": 163,
           "title": "maroon",
-          "special": true,
           "video": "https://www.tiktok.com/@drswiftieover50/video/7237743289036770602?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 164,
           "title": "anti-hero",
-          "special": false,
           "fixed": true
         },
         {
           "id": 165,
           "title": "snow on the beach",
-          "special": true,
           "video": "https://www.tiktok.com/@cassywiththeyellowhair/video/7214677149230435630?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 166,
-          "title": "you're on your own, kid",
-          "special": false
+          "title": "you're on your own, kid"
         },
         {
           "id": 167,
           "title": "midnight rain",
-          "special": false,
           "fixed": true
         },
         {
           "id": 168,
           "title": "question...?",
-          "special": true,
           "video": "https://www.tiktok.com/@sofiaeatsnyc/video/7235498849853279530?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 169,
           "title": "vigilante shit",
-          "special": false,
           "fixed": true
         },
         {
           "id": 170,
           "title": "bejeweled",
-          "special": false,
           "fixed": true
         },
         {
           "id": 171,
-          "title": "labyrinth",
-          "special": false
+          "title": "labyrinth"
         },
         {
           "id": 172,
           "title": "karma",
-          "special": false,
           "fixed": true
         },
         {
           "id": 173,
-          "title": "sweet nothing",
-          "special": false
+          "title": "sweet nothing"
         },
         {
           "id": 174,
           "title": "mastermind",
-          "special": false,
           "fixed": true
         },
         {
           "id": 175,
           "title": "the great war",
-          "special": true,
           "video": "https://www.tiktok.com/@marvivenes/video/7223510617100143918?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 176,
-          "title": "bigger than the whole sky",
-          "special": false
+          "title": "bigger than the whole sky"
         },
         {
           "id": 177,
-          "title": "paris",
-          "special": false
+          "title": "paris"
         },
         {
           "id": 178,
           "title": "high infidelity",
-          "special": true,
           "video": "https://www.tiktok.com/@its.stefunny/video/7227717100016569643?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 179,
-          "title": "glitch",
-          "special": false
+          "title": "glitch"
         },
         {
           "id": 180,
           "title": "would've, could've, should've",
-          "special": true,
           "video": "https://www.tiktok.com/@bestdaybrenna/video/7232365248093670699?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         },
         {
           "id": 181,
-          "title": "dear reader",
-          "special": false
+          "title": "dear reader"
         },
         {
           "id": 182,
           "title": "hits different",
-          "special": true,
           "video": "https://www.tiktok.com/@dino.s.rex/video/7241638402213383470?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
         }
       ]
