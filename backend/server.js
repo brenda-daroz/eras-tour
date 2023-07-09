@@ -74,12 +74,10 @@ function ordinal(n) {
 }
 
 function enrichSong(concert) {
-  // console.log(concert)
   const info = {
     date: formatDate(concert.eventDate),
     venue: concert.venue
   }
-  // const location = concert.venue.city.name;
 
   return concert.sets.set.map(set => {
     return {
@@ -99,24 +97,26 @@ function surpriseSongs(setlist) {
     .filter(sets => sets.length > 0)
     .map(sets => sets.filter((set) => set.name?.includes("Surprise") || set.name?.includes("Taylor Swift (Debut)")).map(set => set.song).flat())
     .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
-  // console.log(sets[0])
-  const x = [...sets.slice(0, sets.length - 1), sets[sets.length - 1].map(song => {
-    // console.log(song)
+  const latestSong = [...sets.slice(0, sets.length - 1), sets[sets.length - 1].map(song => {
     return {
       ...song,
       latest: true,
     }
   })]
-  const songs = x.flat()
-  // console.log(songs.length)
+  const songs = latestSong.flat()
+  console.log(songs)
   return songs
 }
 
 
-const status = (track, surpriseSongs) => {
+const status = (track, surpriseSongs, allSongs) => {
   if (track.fixed) {
     return {
       type: "fixed"
+    }
+  } else if (track.special) {
+    return {
+      type: "special"
     }
   } else if (surpriseSongs.find((song) => song.name === track.title.toLowerCase())) {
     return {
