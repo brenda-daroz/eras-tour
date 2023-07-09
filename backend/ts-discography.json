@@ -440,7 +440,8 @@
         },
         {
           "id": 188,
-          "title": "nothing new"
+          "title": "nothing new",
+          "special": true
         },
         {
           "id": 189,
@@ -824,7 +825,8 @@
         },
         {
           "id": 141,
-          "title": "betty"
+          "title": "betty",
+          "fixed": true
         },
         {
           "id": 142,
