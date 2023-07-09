@@ -93,6 +93,7 @@ export default function Tracks({ tracks, color, image, title, latest, credit }) 
   const fixedTracks = tracks.filter((track) => track.status.type === "fixed")
   const unplayedTracks = tracks.filter((track) => track.status.type === "unplayed")
   const surpriseTracks = tracks.filter((track) => track.status.type === "surprise")
+  const specialTracks = tracks.filter((track) => track.status.type === "special")
   return (
     <Wrapper bgColor={color.background}>
 
@@ -106,6 +107,11 @@ export default function Tracks({ tracks, color, image, title, latest, credit }) 
                 )
               }
               )}
+              {specialTracks.map((track, i) => {
+                return (
+                  TracksList(i, track)
+                )
+              })}
             </Ul>
         },
         {

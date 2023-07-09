@@ -40,7 +40,7 @@ const Track = ({ track, handleToggle, color }) => {
     name="track"
     value={track.id}
     onClick={handleClick}
-    special={track.status.type === "surprise"}
+    special={track.status.type === "surprise" || track.status.type === "special"}
     specialColor={color.textSurprise}
     fixed={track.status.type === "fixed"}
     unplayed={track.status.type === "unplayed"}
