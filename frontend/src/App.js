@@ -16,7 +16,7 @@ function App() {
   const getData = async () => {
     try {
       const response = await handleData();
-      console.log(response)
+      // console.log(response)
       setData(response)
     } catch (err) {
       console.log(err)
