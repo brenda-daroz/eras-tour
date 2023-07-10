@@ -104,25 +104,40 @@ function surpriseSongs(setlist) {
     }
   })]
   const songs = latestSong.flat()
-  console.log(songs)
+  // console.log(songs)
   return songs
 }
 
+// function allSongs(setlist) {
+//   const sets = setlist
+//     .filter(concert => concert.sets)
+//     .toSorted((a, b) => parseDate(a.eventDate) - parseDate(b.eventDate))
+//     .map(concert => enrichSong(concert))
+//     .map(sets => sets.filter((set) => set.name?.includes("")).map(set => set.song).flat())
+//     .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
+//   // .map(sets => sets.sets.set.map(set => set.song).flat())
+//   // .map(set => set.song)
+//   // .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
+//   console.log(sets)
+//   return sets
+// }
 
-const status = (track, surpriseSongs, allSongs) => {
+
+const status = (track, surpriseSongs) => {
   if (track.fixed) {
     return {
       type: "fixed"
-    }
-  } else if (track.special) {
-    return {
-      type: "special"
     }
   } else if (surpriseSongs.find((song) => song.name === track.title.toLowerCase())) {
     return {
       type: "surprise",
       latest: surpriseSongs.find((song) => song.name === track.title.toLowerCase()).latest,
       concertInfo: surpriseSongs.find((song) => song.name === track.title.toLowerCase()).concertInfo
+    }
+  } else if (track.special) {
+    return {
+      type: "special"
+      // concertInfo: allSongs.find((song) => song.name === track.title.toLowerCase()).concertInfo
     }
   } else {
     return {
@@ -132,6 +147,7 @@ const status = (track, surpriseSongs, allSongs) => {
 }
 
 const combine = (surpriseSongs, discography) => {
+  // console.log(discography)
   return discography.albums.toSorted((a, b) => a.year - b.year).map(album => {
     return {
       id: album.id,
