@@ -45,7 +45,7 @@ app.get('/data', cors(corsOptions), async (req, res) => {
   try {
     const setlistData = await fetchPagesMemoized();
     const discography = await readDiscography();
-    const response = combine(surpriseSongs(setlistData.setlist), discography);
+    const response = combine(allSongs(setlistData.setlist), surpriseSongs(setlistData.setlist), discography);
     res.json(response);
   } catch (error) {
     console.error(error)
@@ -108,22 +108,24 @@ function surpriseSongs(setlist) {
   return songs
 }
 
-// function allSongs(setlist) {
-//   const sets = setlist
-//     .filter(concert => concert.sets)
-//     .toSorted((a, b) => parseDate(a.eventDate) - parseDate(b.eventDate))
-//     .map(concert => enrichSong(concert))
-//     .map(sets => sets.filter((set) => set.name?.includes("")).map(set => set.song).flat())
-//     .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
-//   // .map(sets => sets.sets.set.map(set => set.song).flat())
-//   // .map(set => set.song)
-//   // .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
-//   console.log(sets)
-//   return sets
-// }
+function allSongs(setlist) {
+  const sets = setlist
+    .filter(concert => concert.sets)
+    .toSorted((a, b) => parseDate(a.eventDate) - parseDate(b.eventDate))
+    .map(concert => enrichSong(concert))
+    .filter(sets => sets.length > 0)
+
+    .map(sets => sets.filter((set) => set.name?.includes("")).map(set => set.song).flat())
+    .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
+  // .map(sets => sets.sets.set.map(set => set.song).flat())
+  // .map(set => set.song)
+  // .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
+  console.log(sets.flat())
+  return sets.flat()
+}
 
 
-const status = (track, surpriseSongs) => {
+const status = (track, surpriseSongs, allSongs) => {
   if (track.fixed) {
     return {
       type: "fixed"
@@ -136,8 +138,10 @@ const status = (track, surpriseSongs) => {
     }
   } else if (track.special) {
     return {
-      type: "special"
-      // concertInfo: allSongs.find((song) => song.name === track.title.toLowerCase()).concertInfo
+      type: "special",
+      concertInfo: allSongs.find((song) => {
+        return song.name === track.title.toLowerCase()
+      }).concertInfo
     }
   } else {
     return {
@@ -146,7 +150,7 @@ const status = (track, surpriseSongs) => {
   }
 }
 
-const combine = (surpriseSongs, discography) => {
+const combine = (allSongs, surpriseSongs, discography) => {
   // console.log(discography)
   return discography.albums.toSorted((a, b) => a.year - b.year).map(album => {
     return {
@@ -163,7 +167,7 @@ const combine = (surpriseSongs, discography) => {
         return {
           id: track.id,
           title: track.title,
-          status: status(track, surpriseSongs),
+          status: status(track, surpriseSongs, allSongs),
           video: track.video
 
         }
