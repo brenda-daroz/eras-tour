@@ -202,7 +202,7 @@ async function fetchPages(pageNumber = 1) {
   }
 }
 
-const fetchPagesMemoized = memoizee(fetchPages, { promise: true, maxAge: 1000 * 60 * 60 * 60 })
+const fetchPagesMemoized = memoizee(fetchPages, { promise: true, maxAge: 1000 * 60 * 60 * 4 })
 
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
