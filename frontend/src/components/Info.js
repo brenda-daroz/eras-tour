@@ -29,6 +29,9 @@ const Author = styled.div`
       transition: 0.3s ease-out;
     }
     }
+    span {
+      padding: 0 5px;
+    }
 `;
 
 
@@ -57,9 +60,7 @@ text-transform: uppercase;
 margin: 0;
 text-align: center;
 padding: 20px 50px 0;
-span {
-  padding: 0 5px;
-}
+
 `;
 
 const Text = styled.p`
@@ -70,7 +71,7 @@ text-align: center;
 padding: 0 50px;
   }`
 
-const Header = styled.header `
+const Header = styled.header`
   display: flex;
   flex-direction: column;
 }`
@@ -80,12 +81,12 @@ const Info = () => {
   return (
     <Wrapper>
       <Header>
-        <Title><span><i class="fa-solid fa-heart" style={{ color: "#9512af", }}></i></span>Taylor Swift - The Eras Tour Surprise Songs Tracker<span><i class="fa-solid fa-heart" style={{ color: "#9512af", }}></i></span></Title>
+        <Title>Taylor Swift - The Eras Tour Surprise Songs Tracker</Title>
         <Text>Website built by a swiftie to all swifties. Here you can find all the surprise songs sung by Taylor during
           her tour with details about when and where, as well as the live performances videos from TikTok.</Text>
       </Header>
       <Container>
-        <Author>Made by <a href="https://www.brenda.fyi" target="_blank" rel="noreferrer">brenda daroz</a> © 2023</Author>
+        <Author>Made by <a href="https://www.brenda.fyi" target="_blank" rel="noreferrer">brenda daroz</a> © 2023<span><i class="fa-solid fa-heart" style={{ color: "#9512af", }}></i></span></Author>
         <SocialMedia>
           <a href="https://www.linkedin.com/in/brendadz/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="https://github.com/brenda-daroz" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
