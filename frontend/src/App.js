@@ -16,7 +16,6 @@ function App() {
   const getData = async () => {
     try {
       const response = await handleData();
-      // console.log(response)
       setData(response)
     } catch (err) {
       console.log(err)
@@ -27,26 +26,6 @@ function App() {
     getData()
   }, [])
 
-
-  // function markSpecial(album) {
-  //   return {
-  //     ...album, tracks: album.tracks.map(track => {
-  //       return special.includes(track.title) ? { ...track, special: true } : { ...track };
-  //     })
-  //   }
-  // }
-
-  // const handleToggle = (albumName) => {
-  //   return (id) => {
-  //     const selectedAlbum = albums.find(album => album.title === albumName)
-  //     const updatedAlbum = markSpecial(selectedAlbum, id)
-  //     putAlbum(updatedAlbum)
-  //     setAlbums(albums.map(album => {
-  //       return album.title === albumName ? updatedAlbum : album;
-  //     })
-  //     )
-  //   }
-  // }
 
   return (
     <>
@@ -60,9 +39,7 @@ function App() {
             color={album.color}
             tracks={album.tracks}
           />
-
         )
-
       })}
     </Container>
     <Footer/>
