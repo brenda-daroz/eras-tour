@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Tracks from './components/Tracks';
 import { handleData } from './services/handleAlbums';
 import { useEffect, useState } from "react";
-import Footer from './components/Footer';
+import Info from './components/Info';
 
 const Container = styled.div`
   display: flex;
@@ -42,7 +42,7 @@ function App() {
         )
       })}
     </Container>
-    <Footer/>
+    <Info/>
     </>
   );
 
