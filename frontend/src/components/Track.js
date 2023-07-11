@@ -52,7 +52,7 @@ const Track = ({ track, handleToggle, color }) => {
   return (
     <>
       {(track.status.latest) ? <Div>{completeTrack}<Latest>Latest</Latest></Div> : <>{completeTrack}</>}
-      {track.status.type === "surprise" && isOpen ? < Modal setIsOpen={setIsOpen} track={track} /> : null}
+      {(track.status.type === "surprise" || track.status.type === "special") && isOpen ? < Modal setIsOpen={setIsOpen} track={track} /> : null}
 
     </>
   );
