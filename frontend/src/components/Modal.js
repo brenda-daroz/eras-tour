@@ -30,9 +30,13 @@ const ModalDiv = styled.div`{
   transform: translate(-50%, -50%);
   // position: absolute;
   margin: 0 auto;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 641px) {
     width: 80%;
     flex-direction: column;
+  }
+  @media (min-width:641px) and (max-width: 1024px) {
+    width: 65%;
+    height: 55%;
   }
 }`
 
