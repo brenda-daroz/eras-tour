@@ -13,9 +13,12 @@ const Wrapper = styled.div`{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 641px) {
     width: 100%;
     position: relative;
+  }
+  @media (min-width:641px) and (max-width: 1024px) {
+    width: 50%;
   }
 }`
 
@@ -28,7 +31,7 @@ const Ul = styled.ul`{
   width: fit-content;
   padding: 0 10px;
   margin: 30px auto;
-  height: 45%;
+  height: 60%;
   justify-content: center
 }`
 
@@ -40,12 +43,15 @@ const Li = styled.li`{
   font-size: 0.85rem;
   text-align: center;
   text-decoration: dotted;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     font-size: 1rem;
   }
   @media only screen and (min-width: 1600px) {
     font-size: 1.15rem;
     line-height: 2;
+  }
+  @media (min-width:768px) and (max-width: 1024px) {
+   font-size: 1.4rem;
   }
 };`
 
@@ -56,12 +62,16 @@ const Img = styled.img`{
   zoom: 1.2;
   padding: 0;
   display: block;
-  height: 320px;
+  height: 300px;
   overflow: hidden;
   position: relative;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 70%, transparent 100%);
-  @media only screen and (max-width: 700px) {
-    zoom: 1.6;
+  @media only screen and (max-width: 768px) {
+    zoom: 1.65;
+  }
+  @media (min-width:768px) and (max-width: 1024px) {
+    zoom: 1.8;
+  }
 }`
 
 const Credit = styled.div`{
@@ -74,7 +84,6 @@ const Credit = styled.div`{
     padding: 3px 3px;
     margin-top: -20px;
     @media only screen and (max-width: 700px) {
-
       align-items: center;
       bottom: 0;
       opacity: 0.8;
