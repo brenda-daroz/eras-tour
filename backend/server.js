@@ -43,10 +43,10 @@ async function fetchSetlist(pageNumber) {
 }
 
 app.get('/data', cors(corsOptions), async (req, res) => {
+  console.info("Request received /data")
   try {
-    if (!cache) { throw new Error("Cache not ready") }
-    const setlistData = cache;
-    console.log(setlistData)
+    const setlistData = await readFromCache();
+    // console.log(setlistData)
     const discography = await readDiscography();
     const response = combine(allSongs(setlistData.setlist), surpriseSongs(setlistData.setlist), discography);
     res.json(response);
@@ -196,7 +196,7 @@ async function fetchPages(pageNumber = 1) {
   // console.log(response)
 
   if (response.itemsPerPage * response.page < response.total) {
-    await sleep(500)
+    await sleep(300)
     const nextPage = await fetchPages(pageNumber + 1)
 
     return { setlist: response.setlist.concat(nextPage.setlist) }
@@ -209,14 +209,33 @@ async function fetchPages(pageNumber = 1) {
 // const fetchPagesMemoized = memoizee(fetchPages, { promise: true, maxAge: 1000 * 60 * 60 * 4 })
 
 const fillCache = async () => {
-  try {
-    cache = await fetchPages();
-  } catch (error) {
-    console.error(error);
-  }
+  cache = await fetchPages();
+  console.info("Cache refreshed successfully")
 };
 
-setInterval(fillCache, 1000 * 60 * 30);
+const readFromCache = async () => {
+  if (cache) {
+    console.info("Cache hit")
+  } else {
+    console.info("Cache miss")
+    try {
+      await fillCache()
+    } catch (error) {
+      throw new Error("Cache not ready", { cause: error })
+    }
+  }
+  return cache
+}
+
+setInterval(() => {
+  console.info("Refreshing cache")
+  try {
+    fillCache()
+  } catch (error) {
+    console.error("Error refreshing cache", error)
+  }
+}, 1000 * 60 * 60 * 4);
+
 
 fillCache();
 
