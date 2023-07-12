@@ -9,12 +9,13 @@ const Wrapper = styled.div`{
   width: 20%;
   overflow: hidden;
   height: 100vh;
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   @media only screen and (max-width: 700px) {
     width: 100%;
+    position: relative;
   }
 }`
 
