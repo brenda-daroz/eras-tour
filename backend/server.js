@@ -184,11 +184,11 @@ async function readDiscography() {
   return JSON.parse(fs.readFileSync(filePath, { encoding: 'utf-8' }))
 }
 
-// function sleep(ms) {
-//   return new Promise((resolve) => {
-//     setTimeout(resolve, ms);
-//   });
-// }
+function sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
 
 async function fetchPages(pageNumber = 1) {
   console.log("making request", pageNumber)
@@ -196,7 +196,7 @@ async function fetchPages(pageNumber = 1) {
   // console.log(response)
 
   if (response.itemsPerPage * response.page < response.total) {
-    // await sleep(500)
+    await sleep(500)
     const nextPage = await fetchPages(pageNumber + 1)
 
     return { setlist: response.setlist.concat(nextPage.setlist) }
@@ -217,6 +217,7 @@ const fillCache = async () => {
 };
 
 setInterval(fillCache, 1000 * 60 * 30);
+
 fillCache();
 
 app.listen(PORT, () => {
