@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Modal from "./Modal";
 
@@ -25,15 +25,19 @@ const Div = styled.div`
   font-weight: 700;
   `
 
-const Track = ({ track, handleToggle, color }) => {
+const Track = ({ track, color }) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = (e) => {
     e.preventDefault()
-
     setIsOpen(true)
   }
+
+  useEffect(() => {
+    const body = document.querySelector('body');
+    body.style.overflow = isOpen ? 'hidden' : 'auto';
+  }, [isOpen])
 
   const completeTrack = <CompletedDiv
     id={track.id}
