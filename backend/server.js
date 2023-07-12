@@ -5,8 +5,9 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-import memoizee from 'memoizee';
+// import memoizee from 'memoizee';
 
+let cache = null;
 
 const PORT = 3000;
 const app = express();
@@ -43,7 +44,9 @@ async function fetchSetlist(pageNumber) {
 
 app.get('/data', cors(corsOptions), async (req, res) => {
   try {
-    const setlistData = await fetchPagesMemoized();
+    if (!cache) { throw new Error("Cache not ready") }
+    const setlistData = cache;
+    console.log(setlistData)
     const discography = await readDiscography();
     const response = combine(allSongs(setlistData.setlist), surpriseSongs(setlistData.setlist), discography);
     res.json(response);
@@ -120,7 +123,7 @@ function allSongs(setlist) {
   // .map(sets => sets.sets.set.map(set => set.song).flat())
   // .map(set => set.song)
   // .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
-  console.log(sets.flat())
+  // console.log(sets.flat())
   return sets.flat()
 }
 
@@ -181,18 +184,19 @@ async function readDiscography() {
   return JSON.parse(fs.readFileSync(filePath, { encoding: 'utf-8' }))
 }
 
-function sleep(ms) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
-}
+// function sleep(ms) {
+//   return new Promise((resolve) => {
+//     setTimeout(resolve, ms);
+//   });
+// }
 
 async function fetchPages(pageNumber = 1) {
+  console.log("making request", pageNumber)
   const response = await fetchSetlist(pageNumber);
   // console.log(response)
 
   if (response.itemsPerPage * response.page < response.total) {
-    await sleep(500)
+    // await sleep(500)
     const nextPage = await fetchPages(pageNumber + 1)
 
     return { setlist: response.setlist.concat(nextPage.setlist) }
@@ -202,7 +206,18 @@ async function fetchPages(pageNumber = 1) {
   }
 }
 
-const fetchPagesMemoized = memoizee(fetchPages, { promise: true, maxAge: 1000 * 60 * 60 * 4 })
+// const fetchPagesMemoized = memoizee(fetchPages, { promise: true, maxAge: 1000 * 60 * 60 * 4 })
+
+const fillCache = async () => {
+  try {
+    cache = await fetchPages();
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+setInterval(fillCache, 1000 * 60 * 30);
+fillCache();
 
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
