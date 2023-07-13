@@ -2,11 +2,15 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
 background-color: #f5f5f5;
+padding: 20px 100px;
 @media only screen and (min-width: 1600px) {
   display: flex;
   justify-content: space-evenly;
   padding: 0 50px;
   align-items: center;
+}
+@media only screen and (max-width: 648px) {
+  padding: 20px 30px;
 }
 }`
 
@@ -81,19 +85,19 @@ font-weight: 700;
 text-transform: uppercase;
 margin: 0;
 text-align: center;
-padding: 20px 50px 0;
+padding: 20px 0;
 @media only screen and (min-width: 1600px) {
   font-size: 1.5rem;
 }
 `;
 
 const Text = styled.p`
-font-size: 0.8rem;
+font-size: 0.9rem;
 // color: pink;
 // font-weight: 700;
 text-align: center;
-padding: 0 50px;
-@media only screen and (min-width: 160px) {
+padding: 0;
+@media only screen and (min-width: 1600px) {
    font-size: 1.1rem;
 }
   }`
