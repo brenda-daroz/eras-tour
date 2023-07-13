@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
 background-color: #f5f5f5;
+@media only screen and (min-width: 1600px) {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 50px;
+  align-items: center;
+}
 }`
 
 const Container = styled.footer`
@@ -15,6 +21,13 @@ const Container = styled.footer`
     flex-direction: column;
     height: 8vh;
   }
+  @media only screen and (min-width: 1600px) {
+   flex-direction: column;
+   height: 100%;
+  //  align-items: start;
+  //  justify-content: center;
+  }
+
 `;
 
 const Author = styled.div`
@@ -32,6 +45,9 @@ const Author = styled.div`
     span {
       padding: 0 5px;
     }
+  @media only screen and (min-width: 1600px) {
+    font-size: 1.5rem;
+  }
 `;
 
 
@@ -49,6 +65,12 @@ const SocialMedia = styled.div`
       transform: scale(1.2);
     }
    }
+  @media only screen and (min-width: 1600px) {
+    font-size: 2rem;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
 `;
 
 const Title = styled.h1`
@@ -60,7 +82,9 @@ text-transform: uppercase;
 margin: 0;
 text-align: center;
 padding: 20px 50px 0;
-
+@media only screen and (min-width: 1600px) {
+  font-size: 1.5rem;
+}
 `;
 
 const Text = styled.p`
@@ -69,11 +93,18 @@ font-size: 0.8rem;
 // font-weight: 700;
 text-align: center;
 padding: 0 50px;
+@media only screen and (min-width: 160px) {
+   font-size: 1.1rem;
+}
   }`
 
 const Header = styled.header`
   display: flex;
   flex-direction: column;
+  @media only screen and (min-width: 1600px) {
+    width: 60%;
+  }
+
 }`
 
 
