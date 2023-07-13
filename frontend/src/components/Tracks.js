@@ -24,6 +24,7 @@ const Wrapper = styled.div`{
 
 const Ul = styled.ul`{
   padding-top: 80px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,9 +47,12 @@ const Li = styled.li`{
   @media only screen and (max-width: 768px) {
     font-size: 1rem;
   }
-  @media only screen and (min-width: 1600px) {
-    font-size: 1.15rem;
+  @media only screen and (min-width: 1600px) and (max-width: 2000px) {
+    font-size: 1.1rem;
     line-height: 2;
+  }
+  @media only screen and (min-width: 2000px) {
+    font-size: 1.4rem;
   }
   @media (min-width:768px) and (max-width: 1024px) {
    font-size: 1.4rem;
@@ -72,6 +76,10 @@ const Img = styled.img`{
   @media (min-width:768px) and (max-width: 1024px) {
     zoom: 1.8;
   }
+  @media only screen and (min-width: 2000px) {
+    zoom: 2;
+  }
+
 }`
 
 const Credit = styled.div`{
