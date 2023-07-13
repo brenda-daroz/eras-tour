@@ -19,7 +19,7 @@ const ModalDiv = styled.div`{
   gap: 10px;
   height: 86%;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 50%;
   padding: 10px 10px;
   top: 50%;
@@ -36,6 +36,10 @@ const ModalDiv = styled.div`{
   }
   @media (min-width:641px) and (max-width: 1024px) {
     width: 65%;
+    height: 55%;
+  }
+  @media only screen and (min-width: 2000px) {
+    width: 40%;
     height: 55%;
   }
 }`
@@ -60,6 +64,9 @@ const ModalText = styled.p`{
   text-align: center;
   padding: 0 5px;
   margin: 0;
+  @media only screen and (min-width: 2000px) {
+    font-size: 1.2rem;
+  }
 }`
 
 const ModalTtitle = styled.h3`{
@@ -68,6 +75,9 @@ const ModalTtitle = styled.h3`{
   padding: 0 5px;
   margin: 0;
   text-transform: uppercase;
+  @media only screen and (min-width: 2000px) {
+    font-size: 1.4rem;
+  }
 }`
 
 
@@ -101,6 +111,8 @@ const Video = styled.iframe`{
   margin: 0 auto ;
   @media only screen and (max-width: 700px) {
     width: 100%;
+  }
+
   }`
 
 
