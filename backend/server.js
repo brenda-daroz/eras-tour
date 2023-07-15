@@ -209,6 +209,7 @@ async function fetchPages(pageNumber = 1) {
 // const fetchPagesMemoized = memoizee(fetchPages, { promise: true, maxAge: 1000 * 60 * 60 * 4 })
 
 const fillCache = async () => {
+  console.info("Refreshing cache")
   cache = await fetchPages();
   console.info("Cache refreshed successfully")
 };
@@ -228,14 +229,13 @@ const readFromCache = async () => {
 }
 
 setInterval(() => {
-  console.info("Refreshing cache")
+  console.info("Timebased refreshing cache")
   try {
     fillCache()
   } catch (error) {
     console.error("Error refreshing cache", error)
   }
 }, 1000 * 60 * 60 * 4);
-
 
 fillCache();
 
