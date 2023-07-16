@@ -14,4 +14,4 @@ primary_region = "ams"
   min_machines_running = 0
 
 [env]
-  CORS_ORIGIN = "erastour.live"
+  CORS_ORIGIN = "https://erastour.live"
