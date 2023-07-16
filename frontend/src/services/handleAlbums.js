@@ -1,6 +1,8 @@
 const handleData = async () => {
-  const response = await fetch('https://solitary-fire-5581.fly.dev/data')
+  // const response = await fetch('https://solitary-fire-5581.fly.dev/data')
   // const response = await fetch('http://localhost:3000/data')
+  const url = (process.env.REACT_APP_API_URL || 'http://localhost:3000') + '/data'
+  const response = await fetch(url)
   const data = await response.json()
   // console.log(data)
   return data

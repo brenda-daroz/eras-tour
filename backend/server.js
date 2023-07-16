@@ -18,8 +18,7 @@ const __dirname = dirname(__filename);
 
 app.use(cors());
 const corsOptions = {
-  // origin: "http://localhost:3001"
-  origin: "https://erastour.live"
+  origin: process.env.CORS_ORIGIN || "http://localhost:3001"
 };
 
 function url(pageNumber) {
