@@ -153,7 +153,6 @@ const status = (track, surpriseSongs, allSongs) => {
 }
 
 const combine = (allSongs, surpriseSongs, discography) => {
-  // console.log(discography)
   return discography.albums.toSorted((a, b) => a.year - b.year).map(album => {
     return {
       id: album.id,
