@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const DarkBg = styled.div`{
+const DarkBg = styled.div`
   background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
   width: 100%;
@@ -9,9 +9,9 @@ const DarkBg = styled.div`{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}`
+`
 
-const ModalDiv = styled.div`{
+const ModalDiv = styled.div`
   position: fixed;
   display: flex;
   align-items: center;
@@ -42,9 +42,9 @@ const ModalDiv = styled.div`{
     width: 40%;
     height: 55%;
   }
-}`
+`
 
-const ModalInfo = styled.div`{
+const ModalInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +59,7 @@ const ModalInfo = styled.div`{
     width: 100%;
   }
 }`
-const ModalText = styled.p`{
+const ModalText = styled.p`
   font-size: 0.9rem;
   text-align: center;
   padding: 0 5px;
@@ -67,9 +67,9 @@ const ModalText = styled.p`{
   @media only screen and (min-width: 2000px) {
     font-size: 1.2rem;
   }
-}`
+`
 
-const ModalTtitle = styled.h3`{
+const ModalTtitle = styled.h3`
   font-size: 1rem;
   text-align: center;
   padding: 0 5px;
@@ -78,10 +78,10 @@ const ModalTtitle = styled.h3`{
   @media only screen and (min-width: 2000px) {
     font-size: 1.4rem;
   }
-}`
+`
 
 
-const CloseButton = styled.button`{
+const CloseButton = styled.button`
   position: absolute;
   top: 5px;
   right: 5px;
@@ -101,9 +101,9 @@ const CloseButton = styled.button`{
     right: 5px;
 
   }
-}`
+`
 
-const Video = styled.iframe`{
+const Video = styled.iframe`
   width: fit-content;
   height: 100%;
   border: none;
@@ -113,7 +113,7 @@ const Video = styled.iframe`{
     width: 100%;
   }
 
-  }`
+  `
 
 
 const Modal = ({ setIsOpen, track }) => {
@@ -126,7 +126,7 @@ const Modal = ({ setIsOpen, track }) => {
       <DarkBg onClick={() => setIsOpen(false)}>
       </DarkBg>
       <ModalDiv onclick={(e) => e.stopPropagation()}>
-        <CloseButton onClick={() => setIsOpen(false)}><i class="fa-solid fa-xmark"></i></CloseButton>
+        <CloseButton onClick={() => setIsOpen(false)}><i className="fa-solid fa-xmark"></i></CloseButton>
         <ModalInfo>
           <ModalTtitle>{track.title}</ModalTtitle>
           <ModalText>Date: {track.status.concertInfo.date}</ModalText>
