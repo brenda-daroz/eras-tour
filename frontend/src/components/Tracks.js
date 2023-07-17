@@ -4,8 +4,8 @@ import Track from "./Track";
 import Tabs from "./Tabs";
 
 
-const Wrapper = styled.div`{
-  background: linear-gradient(to bottom, ${props => props.bgColor} 50%, transparent 100%);
+const Wrapper = styled.div`
+  background: linear-gradient(to bottom, ${props => props.$bgColor} 50%, transparent 100%);
   width: 20%;
   overflow: hidden;
   height: 100vh;
@@ -20,9 +20,9 @@ const Wrapper = styled.div`{
   @media (min-width:641px) and (max-width: 1024px) {
     width: 50%;
   }
-}`
+`
 
-const Ul = styled.ul`{
+const Ul = styled.ul`
   padding-top: 80px;
   box-sizing: border-box;
   display: flex;
@@ -34,9 +34,9 @@ const Ul = styled.ul`{
   margin: 30px auto;
   height: 60%;
   justify-content: center
-}`
+`
 
-const Li = styled.li`{
+const Li = styled.li`
   list-style: none;
   font-weight: 500;
   line-height: 1.8;
@@ -57,9 +57,9 @@ const Li = styled.li`{
   @media (min-width:768px) and (max-width: 1024px) {
    font-size: 1.4rem;
   }
-};`
+`
 
-const Img = styled.img`{
+const Img = styled.img`
   object-fit: contain;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -80,9 +80,9 @@ const Img = styled.img`{
     zoom: 2;
   }
 
-}`
+`
 
-const Credit = styled.div`{
+const Credit = styled.div`
     // background-color: #000;
     opacity: 0.8;
     border-radius: 5px;
@@ -101,11 +101,11 @@ const Credit = styled.div`{
       background-color: white;
       padding: 0.5px 3px;
     }
-}`
+`
 
-const Figure = styled.figure`{
+const Figure = styled.figure`
   margin: 0 auto;
-}`
+`
 
 export default function Tracks({ tracks, color, image, title, latest, credit }) {
   const fixedTracks = tracks.filter((track) => track.status.type === "fixed")
@@ -113,7 +113,7 @@ export default function Tracks({ tracks, color, image, title, latest, credit }) 
   const surpriseTracks = tracks.filter((track) => track.status.type === "surprise")
   const specialTracks = tracks.filter((track) => track.status.type === "special")
   return (
-    <Wrapper bgColor={color.background}>
+    <Wrapper $bgColor={color.background}>
 
       <Tabs children={[
         {
