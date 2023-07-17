@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Modal from "./Modal";
 
-const CompletedDiv = styled.div`{
-cursor: ${props => (props.fixed || props.unplayed ? "default" : "pointer")};
-color: ${props => (props.special ? props.specialColor : props.fixed ? props.fixedColor : "#547873")};
-text-decoration: ${props => (props.special ? "underline dotted" : "none")};
+const CompletedDiv = styled.div`
+cursor: ${props => (props.$fixed || props.$unplayed ? "default" : "pointer")};
+color: ${props => (props.$special ? props.$specialColor : props.$fixed ? props.$fixedColor : "#547873")};
+text-decoration: ${props => (props.$special ? "underline dotted" : "none")};
 text-transform: uppercase;
-}`
+`
 
 const Latest = styled.div`
   color: red;
@@ -44,11 +44,11 @@ const Track = ({ track, color }) => {
     name="track"
     value={track.id}
     onClick={handleClick}
-    special={track.status.type === "surprise" || track.status.type === "special"}
-    specialColor={color.textSurprise}
-    fixed={track.status.type === "fixed"}
-    unplayed={track.status.type === "unplayed"}
-    fixedColor={color.textFixed}
+    $special={track.status.type === "surprise" || track.status.type === "special"}
+    $specialColor={color.textSurprise}
+    $fixed={track.status.type === "fixed"}
+    $unplayed={track.status.type === "unplayed"}
+    $fixedColor={color.textFixed}
   >
     {track.title}
   </CompletedDiv>;
