@@ -126,10 +126,10 @@ const Info = () => {
         </Text>
       </Header>
       <Container>
-        <Author>Made by <a href="https://www.brenda.fyi" target="_blank" rel="noreferrer">brenda daroz</a> © 2023<span><i class="fa-solid fa-heart" style={{ color: "#9512af", }}></i></span></Author>
+        <Author>Made by <a href="https://www.brenda.fyi" target="_blank" rel="noreferrer">brenda daroz</a> © 2023<span><i className="fa-solid fa-heart" style={{ color: "#9512af", }}></i></span></Author>
         <SocialMedia>
-          <a href="https://www.linkedin.com/in/brendadz/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://github.com/brenda-daroz" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/brendadz/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/brenda-daroz" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
         </SocialMedia>
       </Container>
     </Wrapper>
