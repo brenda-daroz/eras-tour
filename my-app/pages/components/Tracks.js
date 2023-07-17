@@ -71,7 +71,7 @@ const Img = styled.img`
   height: 300px;
   overflow: hidden;
   position: relative;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 70%, transparent 100%);
   @media only screen and (max-width: 768px) {
     zoom: 1.65;
   }
