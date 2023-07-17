@@ -235,7 +235,7 @@ export const discography =
         {
           "id": 29,
           "title": "back to december",
-          "video": "https://www.tiktok.com/@paigelykuyo/video/7256279227513752875?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+          "video": "https://www.tiktok.com/@bryce.risner/video/7256297280154684715?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 30,
@@ -415,7 +415,7 @@ export const discography =
         {
           "id": 58,
           "title": "starlight",
-          "video": "https://www.tiktok.com/@paigelykuyo/video/7256284186473106734?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+          "video": "https://www.tiktok.com/@thatgalkat25/video/7256303670055243054?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 59,
