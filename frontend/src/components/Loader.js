@@ -34,9 +34,9 @@ const LoadingDot = styled.span` {
 function Loader() {
   return (
     <Loading>
-      <LoadingDot class="loading__dot"></LoadingDot>
-      <LoadingDot class="loading__dot"></LoadingDot>
-      <LoadingDot class="loading__dot"></LoadingDot>
+      <LoadingDot className="loading__dot"></LoadingDot>
+      <LoadingDot className="loading__dot"></LoadingDot>
+      <LoadingDot className="loading__dot"></LoadingDot>
     </Loading>
   )
 }
