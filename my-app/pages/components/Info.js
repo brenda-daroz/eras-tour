@@ -1,6 +1,10 @@
 "use client"
 
 import styled from "styled-components";
+// import { faLinkedinIn } from "@fortawesome/free-regular-svg-icons";
+import {faHeart} from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn, faGithub  } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Wrapper = styled.div`
 background-color: #f5f5f5;
@@ -128,10 +132,10 @@ const Info = () => {
         </Text>
       </Header>
       <Container>
-        <Author>Made by <a href="https://www.brenda.fyi" target="_blank" rel="noreferrer">brenda daroz</a> © 2023<span><i className="fa-solid fa-heart" style={{ color: "#9512af", }}></i></span></Author>
+        <Author>Made by <a href="https://www.brenda.fyi" target="_blank" rel="noreferrer">brenda daroz</a> © 2023<span><FontAwesomeIcon icon={faHeart} style={{ color: "#9512af", }}/></span></Author>
         <SocialMedia>
-          <a href="https://www.linkedin.com/in/brendadz/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://github.com/brenda-daroz" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/brendadz/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+          <a href="https://github.com/brenda-daroz" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
         </SocialMedia>
       </Container>
     </Wrapper>
