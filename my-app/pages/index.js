@@ -1,10 +1,12 @@
-import BigUseClient from "@/pages/components/BigUseClient";
-import { fazTudo } from "@/pages/api/setlist";
+import BigUseClient from "@/components/BigUseClient";
+import { fazTudo } from "@/lib/setlist";
 import Head from "next/head";
+
+console.log("msg especifica")
 
 export default function Page({ data }) {
   const kofi =
-  `<script>
+    `<script>
     kofiWidgetOverlay.draw('pixelbakery', {
     'type': 'floating-chat',
     'floating-chat.donateButton.text': 'Support me',
@@ -12,8 +14,6 @@ export default function Page({ data }) {
     'floating-chat.donateButton.text-color': '#fff'
     });
   </script>`
-
-  console.log("PAGEJS", data)
 
   return (
 
@@ -44,13 +44,12 @@ export default function Page({ data }) {
         <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' />
       </Head>
       <BigUseClient data={data} />
- <div dangerouslySetInnerHTML={{ __html: kofi }}></div>
+      <div dangerouslySetInnerHTML={{ __html: kofi }}></div>
     </>
   );
 }
 
 export const getServerSideProps = async () => {
   const data = await fazTudo()
-  console.log("SERVERSIDE", data)
   return { props: { data } }
 }

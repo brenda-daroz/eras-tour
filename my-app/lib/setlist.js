@@ -1,4 +1,4 @@
-import { discography } from '../../discography.js';
+import { discography } from '../discography.js';
 
 
 let cache = null;
@@ -20,12 +20,14 @@ async function fetchSetlist(pageNumber) {
   if (response.status >= 400) {
     throw new Error(response.statusText);
   } else {
-    console.log("Fetched setlist data from API")
+    console.info("Fetched setlist data from API")
     return response.json();
   }
 }
 
 export async function fazTudo() {
+  throw new Error("fazTudo is deprecated. Use readFromCache instead")
+  // console.log("fazTudo")
   const setlistData = await readFromCache();
   // console.log(typeof setlistData.setlist)
   const readDiscography = await discography;
@@ -42,7 +44,6 @@ export default async function handler(req, res) {
     const readDiscography = await discography;
     // console.log(discographyData)
     const response = combine(allSongs(setlistData.setlist), surpriseSongs(setlistData.setlist), readDiscography);
-    console.log(response)
     res.json(response);
   } catch (error) {
     console.error(error)
@@ -101,13 +102,12 @@ function surpriseSongs(setlist) {
     }
   })]
   const songs = latestSong.flat()
-  console.log(songs)
   return songs
 }
 
 function allSongs(setlist) {
   // console.log(setlist)
-  console.log(Object.prototype.toString.call(setlist) == '[object Array]')
+  // console.log(Object.prototype.toString.call(setlist) == '[object Array]')
   const sets = setlist
     .filter(concert => concert.sets)
     .sort((a, b) => parseDate(a.eventDate) - parseDate(b.eventDate))
@@ -150,8 +150,8 @@ const status = (track, surpriseSongs, allSongs) => {
 }
 
 const combine = (allSongs, surpriseSongs, discography) => {
-  console.log(Object.prototype.toString.call(discography.albums) == '[object Array]')
-  console.log(discography.albums)
+  // console.log(Object.prototype.toString.call(discography.albums) == '[object Array]')
+  // console.log(discography.albums)
   return discography.albums.sort((a, b) => { a.year - b.year }).map(album => {
     return {
       id: album.id,
@@ -178,7 +178,6 @@ const combine = (allSongs, surpriseSongs, discography) => {
 
 
 async function fetchPages(pageNumber = 1) {
-  console.log("making request", pageNumber)
   const response = await fetchSetlist(pageNumber);
   // console.log(response)
 
