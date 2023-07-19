@@ -26,7 +26,7 @@ async function fetchSetlist(pageNumber) {
 }
 
 export async function fazTudo() {
-  throw new Error("fazTudo is deprecated. Use readFromCache instead")
+  // throw new Error("fazTudo is deprecated. Use readFromCache instead")
   // console.log("fazTudo")
   const setlistData = await readFromCache();
   // console.log(typeof setlistData.setlist)
