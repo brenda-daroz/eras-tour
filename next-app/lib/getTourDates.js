@@ -3,7 +3,7 @@ import fs from 'fs'
 
 const getTourDates = async () => {
   // const res = await fetch("https://www.taylorswift.com/tour/")
-  const data = fs.readFileSync("foo.html", "utf8")
+  const data = fs.readFileSync("tourDates.html", "utf8")
   // console.log(data.toString())
   // const html = await data.text()
 
