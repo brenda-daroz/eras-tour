@@ -1,10 +1,13 @@
 import BigUseClient from "@/components/BigUseClient";
+// import getTourDates from "@/lib/getTourDates";
 import { fazTudo } from "@/lib/setlist";
 import Head from "next/head";
 
 console.log("msg especifica")
 
+
 export default function Page({ data }) {
+
   const kofi =
     `<script>
     kofiWidgetOverlay.draw('pixelbakery', {
@@ -51,5 +54,7 @@ export default function Page({ data }) {
 
 export const getServerSideProps = async () => {
   const data = await fazTudo()
+  // const tourDates = await getTourDates()
+  // console.log(tourDates)
   return { props: { data } }
 }
