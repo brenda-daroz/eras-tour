@@ -54,7 +54,7 @@ export default function Page({ data }) {
 
 export const getServerSideProps = async () => {
   const data = await fazTudo()
-  // const tourDates = await getTourDates()
+  // const tourDates = await getTourDates("tourDatesInternational.html")
   // console.log(tourDates)
   return { props: { data } }
 }
