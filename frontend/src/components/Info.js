@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
 background-color: #f5f5f5;
-padding: 20px 100px;
+padding: 20px 200px;
 @media only screen and (min-width: 1600px) {
   display: flex;
   justify-content: space-evenly;
