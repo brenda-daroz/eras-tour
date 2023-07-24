@@ -1060,7 +1060,12 @@ export const discography =
           "id": 182,
           "title": "hits different",
           "video": "https://www.tiktok.com/@upsetbec/video/7241629448838073643?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+        },
+        {
+          "id": 203,
+          "title": "you're losing me"
         }
+
       ]
     }
   ]
