@@ -22,13 +22,13 @@ export default function Page({ data }) {
 
     <>
       <Head>
-        <title>The Eras Tour</title>
+        <title>The Eras Tour - Surprise Songs Tracker</title>
         <meta charSet="utf-8" />
         <meta name="description" content="Taylor Swift - The Eras Tour Surprise Songs Tracker" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://eras-tour.brenda.fyi" />
+        <meta property="og:url" content="https://erastour.live" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Eras Tour" />
         <meta property="og:description" content="The Eras Tour - Surprise songs tracker" />
@@ -37,8 +37,8 @@ export default function Page({ data }) {
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="eras-tour.brenda.fyi" />
-        <meta property="twitter:url" content="https://eras-tour.brenda.fyi" />
+        <meta property="twitter:domain" content="erastour.live" />
+        <meta property="twitter:url" content="https://erastour.live" />
         <meta name="twitter:title" content="Eras Tour" />
         <meta name="twitter:description" content="The Eras Tour - Surprise songs tracker" />
         <meta name="twitter:image" content="https://res.cloudinary.com/dkminbfry/image/upload/v1688041171/Group_2_ald1rg.png" />
