@@ -30,6 +30,7 @@ export default function BigUseClient({ data }) {
                 credit={album.coverCredit}
                 color={album.color}
                 tracks={album.tracks}
+                title={album.title}
               />
             )
           })}

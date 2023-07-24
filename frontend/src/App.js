@@ -49,6 +49,7 @@ function App() {
                 credit={album.coverCredit}
                 color={album.color}
                 tracks={album.tracks}
+                title={album.title}
               />
             )
           })}
