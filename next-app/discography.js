@@ -410,7 +410,8 @@ export const discography =
         },
         {
           "id": 57,
-          "title": "everything has changed"
+          "title": "everything has changed",
+          "video": "https://www.tiktok.com/@campbellrenae/video/7258928469520829739?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 58,
@@ -642,7 +643,8 @@ export const discography =
         },
         {
           "id": 107,
-          "title": "this is why we can't have nice things"
+          "title": "this is why we can't have nice things",
+          "video": "https://www.tiktok.com/@fluffyfluffymeow/video/7258914781858516266?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 108,
