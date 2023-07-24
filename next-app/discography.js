@@ -45,7 +45,8 @@ export const discography =
         },
         {
           "id": 70,
-          "title": "tied together with a smile"
+          "title": "tied together with a smile",
+          "video": "https://www.tiktok.com/@mackenzhughes/video/7259275531642817838?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 71,
@@ -458,7 +459,8 @@ export const discography =
         },
         {
           "id": 190,
-          "title": "message in a bottle"
+          "title": "message in a bottle",
+          "video": "https://www.tiktok.com/@missellenyin/video/7259299367998229803?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 191,
