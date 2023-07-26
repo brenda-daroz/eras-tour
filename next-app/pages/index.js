@@ -10,7 +10,7 @@ export default function Page({ data }) {
 
   const kofi =
     `<script>
-    kofiWidgetOverlay.draw('pixelbakery', {
+    kofiWidgetOverlay.draw('brendadaroz', {
     'type': 'floating-chat',
     'floating-chat.donateButton.text': 'Support me',
     'floating-chat.donateButton.background-color': '#ff38b8',
