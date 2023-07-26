@@ -48,6 +48,7 @@ const ModalDiv = styled.div`
 
 const ModalInfo = styled.div`
   display: flex;
+  // background-color: white;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -116,6 +117,14 @@ const Video = styled.iframe`
   }
 `
 
+const ModalCard = styled.div`
+  background-color: #ebebeb;
+  padding: 20px;
+  width: 70%;
+  border-radius: 10px;
+`
+
+
 
 const Modal = ({ setIsOpen, track }) => {
   const regex = /video\/(\d+)/;
@@ -132,13 +141,15 @@ const Modal = ({ setIsOpen, track }) => {
         <CloseButton onClick={() => setIsOpen(false)}><i className="fa-solid fa-xmark"></i></CloseButton>
         <ModalInfo>
           <ModalTtitle>{track.title}</ModalTtitle>
+
           {track.status.concertInfo.map((info, i) => {
             return (
-              <>
+              <ModalCard>
+              {track.status.concertInfo.length > 1 ? <p style={{margin: "0 0 4px 0"}} key={i}>Day {i+1}</p> : null}
               <ModalText key={i}>{info.date}</ModalText>
               <ModalText key={i}>{info.venue.name}</ModalText>
               <ModalText key={i}>{info.venue.city.name} - {info.venue.city.country.name}</ModalText>
-              </>
+              </ModalCard>
             )
           }
           )}
