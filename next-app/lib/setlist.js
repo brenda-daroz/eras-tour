@@ -102,6 +102,7 @@ function surpriseSongs(setlist) {
     }
   })]
   const songs = latestSong.flat()
+  // console.log(songs)
   return songs
 }
 
@@ -124,23 +125,33 @@ function allSongs(setlist) {
   return sets.flat()
 }
 
+function surpriseSong(surpriseSongs, track) {
+  const songs = surpriseSongs.filter((song) => {
+    return song.name.includes(track.title.toLowerCase())
+  })
+    return songs
+}
+
+
 const status = (track, surpriseSongs, allSongs) => {
   if (track.fixed) {
     return {
       type: "fixed"
     }
   } else if (surpriseSongs.find((song) => song.name === track.title.toLowerCase())) {
+    console.log(track.title, surpriseSong(surpriseSongs, track).map(x => x.concertInfo))
+    const songs = surpriseSong(surpriseSongs, track)
     return {
       type: "surprise",
-      latest: surpriseSongs.find((song) => song.name === track.title.toLowerCase()).latest || false,
-      concertInfo: surpriseSongs.find((song) => song.name === track.title.toLowerCase()).concertInfo
+      latest: songs.find(x => x.latest) || false,
+      concertInfo: songs.map(x => x.concertInfo)
     }
   } else if (track.special) {
     return {
       type: "special",
-      concertInfo: allSongs.find((song) => {
+      concertInfo: [allSongs.find((song) => {
         return song.name === track.title.toLowerCase()
-      }).concertInfo
+      }).concertInfo]
     }
   } else {
     return {
