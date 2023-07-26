@@ -146,9 +146,9 @@ const Modal = ({ setIsOpen, track }) => {
             return (
               <ModalCard>
               {track.status.concertInfo.length > 1 ? <p style={{margin: "0 0 4px 0"}} key={i}>Day {i+1}</p> : null}
-              <ModalText key={i}>{info.date}</ModalText>
-              <ModalText key={i}>{info.venue.name}</ModalText>
-              <ModalText key={i}>{info.venue.city.name} - {info.venue.city.country.name}</ModalText>
+              <ModalText key={i}>Date: {info.date}</ModalText>
+              <ModalText key={i}>Venue: {info.venue.name}</ModalText>
+              <ModalText key={i}>Location: {info.venue.city.name} - {info.venue.city.country.name}</ModalText>
               </ModalCard>
             )
           }
