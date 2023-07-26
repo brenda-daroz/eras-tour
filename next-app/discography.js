@@ -22,7 +22,7 @@ export const discography =
         {
           "id": 65,
           "title": "picture to burn",
-          "video": "https://www.tiktok.com/@katyandakindle/video/7255912851502599467?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+          "video": "https://www.tiktok.com/@ashleysaedpersonal/video/7256976410588482862?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 66,
@@ -74,7 +74,7 @@ export const discography =
         {
           "id": 96,
           "title": "invisible",
-          "video": "https://www.tiktok.com/@timothymincer/video/7236137497888083246?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
+          "video": "https://www.tiktok.com/@k.kundyph/video/7235514043023428910?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 97,
@@ -236,7 +236,7 @@ export const discography =
         {
           "id": 29,
           "title": "back to december",
-          "video": "https://www.tiktok.com/@bryce.risner/video/7256297280154684715?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+          "video": "https://www.tiktok.com/@laurentaki/video/7256315347953896747?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 30,
@@ -261,7 +261,7 @@ export const discography =
         {
           "id": 34,
           "title": "never grow up",
-          "video": "https://www.tiktok.com/@stacey.0403/video/7253309410091486506?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
+          "video": "https://www.tiktok.com/@courtneyvallecillos/video/7253480423819431211?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 35,
@@ -279,7 +279,7 @@ export const discography =
         {
           "id": 38,
           "title": "haunted",
-          "video": "https://www.tiktok.com/@drjaynekessel/video/7243058937929436458?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
+          "video": "https://www.tiktok.com/@nabakhannot/video/7242905801017773358?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 39,
@@ -312,7 +312,7 @@ export const discography =
         {
           "id": 196,
           "title": "when emma falls in love",
-          "video": "https://www.tiktok.com/@skyhawk401/video/7253517810234740014?is_from_webapp=1&sender_device=pc&web_id=7254497713164027397"
+          "video": "https://www.tiktok.com/@shilashadows/video/7253339313864265003?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 197,
@@ -378,7 +378,7 @@ export const discography =
         {
           "id": 50,
           "title": "i almost do",
-          "video": "https://www.tiktok.com/@jedp__/video/7243032202445884677?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
+          "video": "https://www.tiktok.com/@sourcardigan/video/7243420675065531690?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 51,
@@ -412,7 +412,7 @@ export const discography =
         {
           "id": 57,
           "title": "everything has changed",
-          "video": "https://www.tiktok.com/@campbellrenae/video/7258928469520829739?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+          "video": "https://www.tiktok.com/@delaneymeow/video/7259114142806723886?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 58,
