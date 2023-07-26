@@ -122,6 +122,8 @@ const Modal = ({ setIsOpen, track }) => {
   const match = track.video ? track.video.match(regex) : "";
 
   const url = `https://www.tiktok.com/embed/v2/${match[1]}`;
+
+
   return (
     <>
       <DarkBg onClick={() => setIsOpen(false)}>
@@ -130,9 +132,17 @@ const Modal = ({ setIsOpen, track }) => {
         <CloseButton onClick={() => setIsOpen(false)}><i className="fa-solid fa-xmark"></i></CloseButton>
         <ModalInfo>
           <ModalTtitle>{track.title}</ModalTtitle>
-          <ModalText>Date: {track.status.concertInfo.date}</ModalText>
-          <ModalText>Venue: {track.status.concertInfo.venue.name}</ModalText>
-          <ModalText>Location: {track.status.concertInfo.venue.city.name} - {track.status.concertInfo.venue.city.country.name}</ModalText>
+          {track.status.concertInfo.map((info, i) => {
+            return (
+              <>
+              <ModalText key={i}>{info.date}</ModalText>
+              <ModalText key={i}>{info.venue.name}</ModalText>
+              <ModalText key={i}>{info.venue.city.name} - {info.venue.city.country.name}</ModalText>
+              </>
+            )
+          }
+          )}
+
         </ModalInfo>
         <>
           {(track.video) ? <Video src={url} frameborder="0" title="dasd"></Video> : null}
