@@ -85,16 +85,29 @@ const SocialMedia = styled.div`
 `;
 
 const Title = styled.h1`
-font-size: 1rem;
+font-size: 1.1rem;
 font-family: "Anonymous Pro", sans-serif;
 color: #020E69;
 font-weight: 700;
 text-transform: uppercase;
 margin: 0;
 text-align: center;
-padding: 20px 0;
+padding: 20px 0 5px 0;
 @media only screen and (min-width: 1600px) {
   font-size: 1.5rem;
+}
+`;
+
+const Subtitle = styled.h2`
+font-size: 1.1rem;
+font-family: "Anonymous Pro", sans-serif;
+color: #020E69;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+margin: 5px 0 15px 0;
+@media only screen and (min-width: 1600px) {
+  font-size: 1.2rem;
 }
 `;
 
@@ -123,7 +136,8 @@ const Info = () => {
   return (
     <Wrapper>
       <Header>
-        <Title>Taylor Swift - The Eras Tour Surprise Songs Tracker</Title>
+        <Title>Taylor Swift - The Eras Tour </Title>
+        <Subtitle>Surprise Songs Tracker</Subtitle>
         <Author>Website built by a <a href="https://www.brenda.fyi" target="_blank" rel="noreferrer">swiftie </a>to all swifties.</Author>
         {/* <Text>Website built by a swiftie to all swifties.</Text> */}
         <Text>
