@@ -1,6 +1,8 @@
 "use client"
 
 import styled from 'styled-components'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faXmark} from "@fortawesome/free-solid-svg-icons";
 
 const DarkBg = styled.div`
   background-color: rgba(0, 0, 0, 0.2);
@@ -138,7 +140,7 @@ const Modal = ({ setIsOpen, track }) => {
       <DarkBg onClick={() => setIsOpen(false)}>
       </DarkBg>
       <ModalDiv onclick={(e) => e.stopPropagation()}>
-        <CloseButton onClick={() => setIsOpen(false)}><i className="fa-solid fa-xmark"></i></CloseButton>
+        <CloseButton onClick={() => setIsOpen(false)}><FontAwesomeIcon icon={faXmark} /></CloseButton>
         <ModalInfo>
           <ModalTtitle>{track.title}</ModalTtitle>
 
