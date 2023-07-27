@@ -54,8 +54,8 @@ const Track = ({ track, color }) => {
     body.style.overflow = isOpen ? 'hidden' : 'auto';
   }, [isOpen])
 
-  // const numberOfPlays = track.status.concertInfo.length;
-  // console.log(numberOfPlays)
+  const numberOfPlays = track.status.concertInfo?.length;
+  console.log(numberOfPlays)
 
   const completeTrack = <CompletedDiv
     id={track.id}
@@ -73,9 +73,13 @@ const Track = ({ track, color }) => {
 
   return (
     <>
-      {(track.status.latest) ? <Div>{completeTrack}<Latest>Latest</Latest></Div> : <>{completeTrack}</>}
-      {(track.status.type === "surprise" || track.status.type === "special") && isOpen ? < Modal setIsOpen={setIsOpen} track={track} /> : null}
+      {(track.status.latest) ? <Div>{completeTrack}<Latest>Latest</Latest></Div> :
+      (track.status.type === "surprise" && numberOfPlays > 1) ?
+      <div style={{display: "flex", gap:"2px"}}>{completeTrack}<Sup>{numberOfPlays}</Sup></div> :
+      <>{completeTrack}</>}
 
+      {(track.status.type === "surprise" || track.status.type === "special") && isOpen ? < Modal setIsOpen={setIsOpen} track={track} /> : null}
+      {/* {(track.status.type === "surprise" && numberOfPlays > 1) ? <Sup>{numberOfPlays}</Sup> : null} */}
     </>
   );
 
