@@ -54,8 +54,8 @@ const Track = ({ track, color }) => {
     body.style.overflow = isOpen ? 'hidden' : 'auto';
   }, [isOpen])
 
-  const numberOfPlays = track.status.concertInfo.length;
-  console.log(numberOfPlays)
+  // const numberOfPlays = track.status.concertInfo.length;
+  // console.log(numberOfPlays)
 
   const completeTrack = <CompletedDiv
     id={track.id}
@@ -68,7 +68,7 @@ const Track = ({ track, color }) => {
     $unplayed={track.status.type === "unplayed"}
     $fixedColor={color.textFixed}
   >
-    {(numberOfPlays > 1) ? <>{track.title} <Sup>{numberOfPlays}</Sup></> : track.title}
+   {track.title}
   </CompletedDiv>;
 
   return (
