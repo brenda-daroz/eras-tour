@@ -31,7 +31,7 @@ const Sup = styled.sup`
   font-size: 0.7rem;
   color: #333;
   font-weight: 700;
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 1600px) {
     font-size: 0.8rem;
   }
   @media only screen and (min-width: 2000px) {
