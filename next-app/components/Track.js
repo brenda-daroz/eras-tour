@@ -27,6 +27,13 @@ const Div = styled.div`
   font-weight: 700;
   `
 
+const Sup = styled.sup`
+  font-size: 0.7rem;
+  color: #333;
+  font-weight: 700;
+  `
+
+
 const Track = ({ track, color }) => {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -41,6 +48,9 @@ const Track = ({ track, color }) => {
     body.style.overflow = isOpen ? 'hidden' : 'auto';
   }, [isOpen])
 
+  const numberOfPlays = track.status.concertInfo.length;
+  console.log(numberOfPlays)
+
   const completeTrack = <CompletedDiv
     id={track.id}
     name="track"
@@ -52,7 +62,7 @@ const Track = ({ track, color }) => {
     $unplayed={track.status.type === "unplayed"}
     $fixedColor={color.textFixed}
   >
-    {track.title}
+    {(numberOfPlays > 1) ? <>{track.title} <Sup>{numberOfPlays}</Sup></> : track.title}
   </CompletedDiv>;
 
   return (
