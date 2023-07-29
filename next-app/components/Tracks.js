@@ -33,7 +33,7 @@ const Ul = styled.ul`
   padding: 0;
   width: fit-content;
   padding: 0 10px;
-  margin: 30px auto;
+  margin: 10px auto;
   height: 60%;
   justify-content: center
 `
