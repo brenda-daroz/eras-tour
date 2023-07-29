@@ -221,7 +221,7 @@ export const discography =
         "fixed": "#5b5b5b"
       },
       "cover": "../images/speakNow.png",
-      "coverCredit": "Photographed by John Shearer",
+      "coverCredit": "Photographed by Fernando Leon",
       "tracks": [
         {
           "id": 27,
@@ -344,7 +344,7 @@ export const discography =
         "fixed": "#5b5b5b"
       },
       "cover": "../images/red.png",
-      "coverCredit": "Photographed by Ethan Miller",
+      "coverCredit": "Photographed by John Shearer",
       "tracks": [
         {
           "id": 44,
@@ -670,7 +670,7 @@ export const discography =
         "fixed": "#5b5b5b"
       },
       "cover": "../images/lover.png",
-      "coverCredit": "Photographed by Alexander Lewis",
+      "coverCredit": "TAS Rights Management",
       "tracks": [
         {
           "id": 110,
@@ -866,7 +866,7 @@ export const discography =
         "fixed": "#5b5b5b"
       },
       "cover": "../images/evermore.png",
-      "coverCredit": "Photographed by Octavio Jones",
+      "coverCredit": "Photographed by Taylor Hill",
       "tracks": [
         {
           "id": 145,
