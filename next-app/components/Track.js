@@ -8,6 +8,7 @@ const CompletedDiv = styled.div`
 cursor: ${props => (props.$fixed || props.$unplayed ? "default" : "pointer")};
 color: ${props => (props.$special ? props.$specialColor : props.$fixed ? props.$fixedColor : "#547873")};
 text-decoration: ${props => (props.$special ? "underline dotted" : "none")};
+-webkit-text-decoration: ${props => (props.$special ? "underline dotted" : "none")};
 text-transform: uppercase;
 `
 
