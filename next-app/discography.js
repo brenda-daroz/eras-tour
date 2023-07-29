@@ -320,7 +320,8 @@ export const discography =
         },
         {
           "id": 198,
-          "title": "castles crumbling"
+          "title": "castles crumbling",
+          "video": "https://www.tiktok.com/@gyspiemagic/video/7261157772606131499?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 199,
@@ -942,7 +943,8 @@ export const discography =
         },
         {
           "id": 160,
-          "title": "right where you left me"
+          "title": "right where you left me",
+          "video": "https://www.tiktok.com/@phosphormagazine/video/7261147538688838954?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 161,
