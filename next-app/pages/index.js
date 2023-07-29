@@ -18,6 +18,15 @@ export default function Page({ data }) {
     });
   </script>`
 
+  const analytics =
+  `<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-93V6BZEDW5');
+</script>`
+
   return (
 
     <>
@@ -48,6 +57,12 @@ export default function Page({ data }) {
       </Head>
       <BigUseClient data={data} />
       <div dangerouslySetInnerHTML={{ __html: kofi }}></div>
+
+      <script defer data-domain="erastour.live" src="https://plausible.io/js/script.js"></script>
+
+      {/* Google tag (gtag.js) */}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-93V6BZEDW5"></script>
+  <script dangerouslySetInnerHTML={{ __html: analytics }}></script>
     </>
   );
 }
