@@ -388,7 +388,8 @@ export const discography =
         },
         {
           "id": 52,
-          "title": "stay stay stay"
+          "title": "stay stay stay",
+          "video": "https://www.tiktok.com/@tamananaaa/video/7261512990388669738?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 53,
@@ -757,7 +758,8 @@ export const discography =
         },
         {
           "id": 202,
-          "title": "all of the girls you loved before"
+          "title": "all of the girls you loved before",
+          "video": "https://www.tiktok.com/@merjemm5/video/7261497050976554282?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         }
       ]
     },
