@@ -36,3 +36,6 @@ next-env.d.ts
 
 # static folder for DigitalOcean App Platform
 _static
+
+# Sentry Auth Token
+.sentryclirc
