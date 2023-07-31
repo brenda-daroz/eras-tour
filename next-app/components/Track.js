@@ -55,8 +55,7 @@ const Track = ({ track, color }) => {
     body.style.overflow = isOpen ? 'hidden' : 'auto';
   }, [isOpen])
 
-  const numberOfPlays = track.status.concertInfo?.length;
-  console.log(numberOfPlays)
+  const numberOfPlays = track.status.concertInfo?.length;3
 
   const completeTrack = <CompletedDiv
     id={track.id}
