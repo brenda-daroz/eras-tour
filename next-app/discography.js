@@ -653,7 +653,7 @@ export const discography =
         {
           "id": 108,
           "title": "call it what you want",
-          "video": "https://www.tiktok.com/@beccaleitch20/video/7251086405584178475?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
+          "video": "https://www.tiktok.com/@hollz_0719/video/7251828092535082282?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 109,
@@ -710,7 +710,7 @@ export const discography =
         {
           "id": 117,
           "title": "paper rings",
-          "video": "https://www.tiktok.com/@hcoakley13/video/7248245907752258862?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
+          "video": "https://www.tiktok.com/@hannahkathryne/video/7248343775548837163?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 118,
@@ -974,7 +974,7 @@ export const discography =
         {
           "id": 163,
           "title": "maroon",
-          "video": "https://www.tiktok.com/@drswiftieover50/video/7237743289036770602?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
+          "video": "https://www.tiktok.com/@nicolecefola/video/7237719910762237230?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 164,
@@ -1032,7 +1032,7 @@ export const discography =
         {
           "id": 175,
           "title": "the great war",
-          "video": "https://www.tiktok.com/@marvivenes/video/7223510617100143918?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
+          "video": "https://www.tiktok.com/@wadupashleyyy/video/7222267720899759403?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 176,
