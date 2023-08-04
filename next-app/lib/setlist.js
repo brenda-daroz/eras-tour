@@ -230,7 +230,7 @@ setInterval(() => {
   } catch (error) {
     console.error("Error refreshing cache", error)
   }
-}, 1000 * 60 * 60 * 24);
+}, 1000 * 60 * 60);
 
 function sleep(ms) {
   return new Promise((resolve) => {
