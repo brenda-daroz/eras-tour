@@ -30,7 +30,7 @@ const Div = styled.div`
 
 const Sup = styled.sup`
   font-size: 0.7rem;
-  color: #333;
+  color: ${props => props.$specialColor};
   font-weight: 700;
   @media only screen and (min-width: 1600px) {
     font-size: 0.8rem;
@@ -38,6 +38,10 @@ const Sup = styled.sup`
   @media only screen and (min-width: 2000px) {
     font-size: 1rem;
   }
+  `
+const SupDiv = styled.div`
+  display: flex;
+  gap: 2px;
   `
 
 
@@ -55,7 +59,7 @@ const Track = ({ track, color }) => {
     body.style.overflow = isOpen ? 'hidden' : 'auto';
   }, [isOpen])
 
-  const numberOfPlays = track.status.concertInfo?.length;3
+  const numberOfPlays = track.status.concertInfo?.length;
 
   const completeTrack = <CompletedDiv
     id={track.id}
@@ -73,13 +77,13 @@ const Track = ({ track, color }) => {
 
   return (
     <>
-      {(track.status.latest) ? <Div>{completeTrack}<Latest>Latest</Latest></Div> :
+      {(track.status.latest && (track.status.type === "surprise" && numberOfPlays > 1)) ? <Div><SupDiv>{completeTrack}<Sup $specialColor={color.textSurprise}>{numberOfPlays}</Sup></SupDiv><Latest>Latest</Latest></Div> :
+      (track.status.latest) ? <Div>{completeTrack}<Latest>Latest</Latest></Div> :
       (track.status.type === "surprise" && numberOfPlays > 1) ?
-      <div style={{display: "flex", gap:"2px"}}>{completeTrack}<Sup>{numberOfPlays}</Sup></div> :
+      <SupDiv>{completeTrack}<Sup $specialColor={color.textSurprise}>{numberOfPlays}</Sup></SupDiv> :
       <>{completeTrack}</>}
 
       {(track.status.type === "surprise" || track.status.type === "special") && isOpen ? < Modal setIsOpen={setIsOpen} track={track} /> : null}
-      {/* {(track.status.type === "surprise" && numberOfPlays > 1) ? <Sup>{numberOfPlays}</Sup> : null} */}
     </>
   );
 
