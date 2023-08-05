@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   width: 20%;
   overflow: hidden;
   height: 100vh;
-  // position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -70,7 +70,7 @@ const Img = styled.img`
   display: block;
   height: 300px;
   overflow: hidden;
-  position: relative;
+  // position: relative;
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 70%, transparent 100%);
   @media only screen and (max-width: 768px) {
     zoom: 1.65;
@@ -85,14 +85,16 @@ const Img = styled.img`
 `
 
 const Credit = styled.div`
-    // background-color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
     opacity: 0.8;
     border-radius: 5px;
     color: grey;
     font-size: 0.7rem;
     text-align: center;
     padding: 3px 3px;
-    margin-top: -20px;
+
+    position: absolute;
+    bottom: 0;
     @media only screen and (max-width: 700px) {
       align-items: center;
       bottom: 0;
@@ -106,7 +108,7 @@ const Credit = styled.div`
 `
 
 const Figure = styled.figure`
-  margin: 0 auto;
+  // margin: 0 auto;
 `
 
 export default function Tracks({ tracks, color, image, title, latest, credit }) {
