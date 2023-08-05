@@ -316,7 +316,8 @@ export const discography =
         },
         {
           "id": 197,
-          "title": "i can see you"
+          "title": "i can see you",
+          "video": "https://www.tiktok.com/@skibiscuit/video/7263378489359797546?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 198,
@@ -566,7 +567,8 @@ export const discography =
         },
         {
           "id": 93,
-          "title": "you are in love"
+          "title": "you are in love",
+          "video": "https://www.tiktok.com/@densietv/video/7263731040202706222?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 94,
