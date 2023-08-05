@@ -121,7 +121,7 @@ const Video = styled.iframe`
 
 const ModalCard = styled.div`
   background-color: #ebebeb;
-  padding: 20px;
+  padding: 10px;
   width: 70%;
   border-radius: 10px;
 `
@@ -131,9 +131,7 @@ const ModalCard = styled.div`
 const Modal = ({ setIsOpen, track }) => {
   const regex = /video\/(\d+)/;
   const match = track.video ? track.video.match(regex) : "";
-
   const url = `https://www.tiktok.com/embed/v2/${match[1]}`;
-
 
   return (
     <>
@@ -146,19 +144,21 @@ const Modal = ({ setIsOpen, track }) => {
 
           {track.status.concertInfo.map((info, i) => {
             return (
+
               <ModalCard>
               {track.status.concertInfo.length > 1 ? <p style={{margin: "0 0 4px 0"}} key={i}>Day {i+1}</p> : null}
               <ModalText key={i}>Date: {info.date}</ModalText>
               <ModalText key={i}>Venue: {info.venue.name}</ModalText>
-              <ModalText key={i}>Location: {info.venue.city.name} - {info.venue.city.country.name}</ModalText>
+              <ModalText key={i}>Location: {info.venue.city.name} - {info.venue.city.country.code}</ModalText>
               </ModalCard>
             )
           }
           )}
 
+
         </ModalInfo>
         <>
-          {(track.video) ? <Video src={url} frameborder="0" title="dasd"></Video> : null}
+          {(track.video) ? <Video src={url} frameBorder="0" title="dasd"></Video> : null}
         </>
 
       </ModalDiv>
