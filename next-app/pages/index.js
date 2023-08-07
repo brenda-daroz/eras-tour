@@ -19,12 +19,13 @@ export default function Page({ data }) {
     });
   </script>`
 
-
   return (
 
     <>
       <Head>
+        {/* HTML Meta Tags */}
         <title>The Eras Tour - Surprise Songs Tracker</title>
+        <link rel="icon" href="/favicon.ico" />
         <meta charSet="utf-8" />
         <meta name="description" content="Taylor Swift - The Eras Tour Surprise Songs Tracker" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -45,22 +46,26 @@ export default function Page({ data }) {
         <meta name="twitter:description" content="The Eras Tour - Surprise songs tracker" />
         <meta name="twitter:image" content="https://res.cloudinary.com/dkminbfry/image/upload/v1688041171/Group_2_ald1rg.png" />
 
-        {/* Kofi */}
-        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' />
-        {/* Plausible */}
-        <script defer data-domain="erastour.live" src="https://plausible.io/js/script.js"></script>
-        {/* Google tag (gtag.js) */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-93V6BZEDW5"/>
-        <Script id="google-analytics">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-
-            gtag('config', 'G-93V6BZEDW5');
-          `}
-        </Script>
       </Head>
+
+      {/* Kofi */}
+      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+
+      {/* Plausible */}
+      <Script defer data-domain="erastour.live" src="https://plausible.io/js/script.js"></Script>
+
+      {/* Google tag (gtag.js) */}
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-93V6BZEDW5"/>
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+
+          gtag('config', 'G-93V6BZEDW5');
+        `}
+      </Script>
+
       <div dangerouslySetInnerHTML={{ __html: kofi }}></div>
       <BigUseClient data={data} />
     </>
