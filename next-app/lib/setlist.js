@@ -139,7 +139,7 @@ const status = (track, surpriseSongs, allSongs) => {
       type: "fixed"
     }
   } else if (surpriseSongs.find((song) => song.name === track.title.toLowerCase())) {
-    console.log(track.title, surpriseSong(surpriseSongs, track).map(x => x.concertInfo))
+    // console.log(track.title, surpriseSong(surpriseSongs, track).map(x => x.concertInfo))
     const songs = surpriseSong(surpriseSongs, track)
     return {
       type: "surprise",
