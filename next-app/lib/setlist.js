@@ -172,6 +172,7 @@ const combine = (allSongs, surpriseSongs, discography) => {
         textSurprise: album.color.special
       },
       cover: album.cover,
+      title: album.title,
       coverCredit: album.coverCredit,
       tracks: album.tracks.map(track => {
 
