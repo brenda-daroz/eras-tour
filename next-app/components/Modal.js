@@ -21,7 +21,8 @@ const ModalDiv = styled.div`
   align-items: center;
   justify-content: space-evenly;
   gap: 10px;
-  height: 86%;
+  overflow: scroll;
+  height: 85vh;
   background-color: white;
   border-radius: 10px;
   width: 50%;
@@ -32,7 +33,6 @@ const ModalDiv = styled.div`
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   transform: translate(-50%, -50%);
-  // position: absolute;
   margin: 0 auto;
   @media only screen and (max-width: 641px) {
     width: 80%;
