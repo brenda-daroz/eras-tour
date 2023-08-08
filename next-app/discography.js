@@ -645,7 +645,8 @@ export const discography =
         },
         {
           "id": 106,
-          "title": "dress"
+          "title": "dress",
+          "video": "https://www.tiktok.com/@speaaknow/video/7264832300771233056?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 107,
