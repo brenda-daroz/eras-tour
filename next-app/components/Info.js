@@ -14,6 +14,7 @@ padding: 20px 200px;
   justify-content: space-evenly;
   padding: 0 50px;
   align-items: center;
+  // flex-direction: column;
 }
 @media only screen and (max-width: 648px) {
   padding: 20px 30px;
@@ -79,7 +80,7 @@ const SocialMedia = styled.div`
    }
   @media only screen and (min-width: 1600px) {
     font-size: 2rem;
-    width: 100%;
+    width: 150px;
     justify-content: space-evenly;
     padding: 20px 0;
   }
