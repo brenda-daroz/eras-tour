@@ -44,6 +44,7 @@ export default async function handler(req, res) {
     const readDiscography = await discography;
     // console.log(discographyData)
     const response = combine(allSongs(setlistData.setlist), surpriseSongs(setlistData.setlist), readDiscography);
+    // console.log(response)
     res.json(response);
   } catch (error) {
     console.error(error)
@@ -139,12 +140,12 @@ const status = (track, surpriseSongs, allSongs) => {
       type: "fixed"
     }
   } else if (surpriseSongs.find((song) => song.name === track.title.toLowerCase())) {
-    // console.log(track.title, surpriseSong(surpriseSongs, track).map(x => x.concertInfo))
     const songs = surpriseSong(surpriseSongs, track)
     return {
       type: "surprise",
       latest: songs.find(x => x.latest) || false,
-      concertInfo: songs.map(x => x.concertInfo)
+      concertInfo: songs.map(x => x.concertInfo),
+      // info: songs.map(x => x.info)
     }
   } else if (track.special) {
     return {
@@ -193,7 +194,7 @@ async function fetchPages(pageNumber = 1) {
   const response = await fetchSetlist(pageNumber);
   // console.log(response)
   if (response.itemsPerPage * response.page < response.total) {
-    await sleep(600)
+    await sleep(1000)
     const nextPage = await fetchPages(pageNumber + 1)
 
     return { setlist: response.setlist.concat(nextPage.setlist) }
