@@ -192,9 +192,8 @@ const combine = (allSongs, surpriseSongs, discography) => {
 async function fetchPages(pageNumber = 1) {
   const response = await fetchSetlist(pageNumber);
   // console.log(response)
-
   if (response.itemsPerPage * response.page < response.total) {
-    await sleep(300)
+    await sleep(600)
     const nextPage = await fetchPages(pageNumber + 1)
 
     return { setlist: response.setlist.concat(nextPage.setlist) }
