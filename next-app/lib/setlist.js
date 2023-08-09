@@ -193,7 +193,7 @@ async function fetchPages(pageNumber = 1) {
   const response = await fetchSetlist(pageNumber);
   // console.log(response)
   if (response.itemsPerPage * response.page < response.total) {
-    await sleep(600)
+    await sleep(1000)
     const nextPage = await fetchPages(pageNumber + 1)
 
     return { setlist: response.setlist.concat(nextPage.setlist) }
@@ -230,7 +230,7 @@ setInterval(() => {
   } catch (error) {
     console.error("Error refreshing cache", error)
   }
-}, 1000 * 60 * 60);
+}, 1000 * 60 * 30);
 
 function sleep(ms) {
   return new Promise((resolve) => {
