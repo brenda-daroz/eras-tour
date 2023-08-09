@@ -553,7 +553,8 @@ export const discography =
         },
         {
           "id": 90,
-          "title": "i know places"
+          "title": "i know places",
+          "video": "https://www.tiktok.com/@kalenasto/video/7265201836099915054?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 91,
@@ -637,7 +638,8 @@ export const discography =
         },
         {
           "id": 104,
-          "title": "king of my heart"
+          "title": "king of my heart",
+          "video": "https://www.tiktok.com/@samandryan/video/7265211663110999338?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 105,
@@ -795,7 +797,8 @@ export const discography =
         },
         {
           "id": 131,
-          "title": "exile"
+          "title": "exile",
+          "video": "https://www.tiktok.com/@shira_and_clooney/video/7264879890363600170?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 132,
