@@ -15,11 +15,14 @@ text-transform: uppercase;
 const Latest = styled.div`
   color: red;
   font-size: 0.7rem;
-  background: #f3f6f4;
+  background-color: #fcf7f8;
   border-radius: 5px;
   padding: 0 5px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  // box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   `
 const Div = styled.div`
   display: flex;
