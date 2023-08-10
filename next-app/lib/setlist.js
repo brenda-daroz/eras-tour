@@ -16,11 +16,13 @@ async function fetchSetlist(pageNumber) {
       'x-api-key': SETLIST_API_KEY
     }
   }
+  console.info("Fetching page " + pageNumber + " from API")
   const response = await fetch(url(pageNumber), fetchOptions);
   if (response.status >= 400) {
+    console.error("Error fetching page " + pageNumber + " from API")
     throw new Error(response.statusText);
   } else {
-    console.info("Fetched setlist data from API")
+    console.info("Success fetching page " + pageNumber + " from API")
     return response.json();
   }
 }
@@ -145,7 +147,7 @@ const status = (track, surpriseSongs, allSongs) => {
       type: "surprise",
       latest: songs.find(x => x.latest) || false,
       concertInfo: songs.map(x => x.concertInfo),
-      // info: songs.map(x => x.info)
+      info: songs.map(x => x.info)
     }
   } else if (track.special) {
     return {
