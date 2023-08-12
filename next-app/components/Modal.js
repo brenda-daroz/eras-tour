@@ -133,6 +133,7 @@ const Modal = ({ setIsOpen, track }) => {
   const match = track.video ? track.video.match(regex) : "";
   const url = `https://www.tiktok.com/embed/v2/${match[1]}`;
 
+
   return (
     <>
       <DarkBg onClick={() => setIsOpen(false)}>
@@ -150,6 +151,7 @@ const Modal = ({ setIsOpen, track }) => {
               <ModalText key={i}>Date: {info.date}</ModalText>
               <ModalText key={i}>Venue: {info.venue.name}</ModalText>
               <ModalText key={i}>Location: {info.venue.city.name} - {info.venue.city.country.code}</ModalText>
+              <ModalText>{track.status.instrument?.[0] === "piano" ? "🎹" : "🎸"}</ModalText>
               </ModalCard>
             )
           }
