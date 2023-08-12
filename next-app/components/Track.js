@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {faGuitar} from "@fortawesome/free-solid-svg-icons";
 import Modal from "./Modal";
 
 const CompletedDiv = styled.div`
@@ -63,6 +65,7 @@ const Track = ({ track, color }) => {
   }, [isOpen])
 
   const numberOfPlays = track.status.concertInfo?.length;
+  const instrument = track.status.instrument
 
   const completeTrack = <CompletedDiv
     id={track.id}
@@ -75,8 +78,10 @@ const Track = ({ track, color }) => {
     $unplayed={track.status.type === "unplayed"}
     $fixedColor={color.textFixed}
   >
-   {track.title}
+    {track.status.type === "surprise" ? (instrument?.[0] === "piano") ? "🎹" : "🎸" : null} {track.title}
   </CompletedDiv>;
+
+
 
   return (
     <>
