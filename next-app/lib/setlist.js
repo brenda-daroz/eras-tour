@@ -1,4 +1,5 @@
 import { discography } from '../discography.js';
+import fs from 'fs';
 
 
 let cache = null;
@@ -28,13 +29,18 @@ async function fetchSetlist(pageNumber) {
 }
 
 export async function fazTudo() {
-  // throw new Error("fazTudo is deprecated. Use readFromCache instead")
   // console.log("fazTudo")
   const setlistData = await readFromCache();
   // console.log(typeof setlistData.setlist)
   const readDiscography = await discography;
   // console.log(discographyData)
   const response = combine(allSongs(setlistData.setlist), surpriseSongs(setlistData.setlist), readDiscography);
+  // console.log(JSON.stringify(response))
+  fs.writeFile("output/setlistData.json", JSON.stringify(setlistData), function (err) {
+    if (err) {
+      console.log(err);
+    }
+  });
   return response;
 }
 
@@ -136,6 +142,23 @@ function surpriseSong(surpriseSongs, track) {
 }
 
 
+// const renderInstrument = (info) => {
+//   const instrument = info.toString().toLowerCase().split(" ")
+//   console.log(instrument)
+
+//   if (instrument.find((item) => item === "guitar" || item === "guitar;" || item === "guitar,")) {
+//     return "guitar"
+//   } else if (instrument.find((item) => item === "acoustic" || item === "piano" || item === "piano;" || item === "piano," )) {
+//     return "piano"
+//   }  else if (instrument.find((item) => item === ("live" && "debut;" && "acoustic") || item === ("tour" && "debut;" && "acoustic"))) {
+//     return "guitar"
+//   }
+//   else {
+//     return null
+//   }
+// }
+
+
 const status = (track, surpriseSongs, allSongs) => {
   if (track.fixed) {
     return {
@@ -147,7 +170,8 @@ const status = (track, surpriseSongs, allSongs) => {
       type: "surprise",
       latest: songs.find(x => x.latest) || false,
       concertInfo: songs.map(x => x.concertInfo),
-      info: songs.map(x => x.info)
+      // instrument: songs.map(song => renderInstrument(song.info)),
+      // info: songs.map(song => song.info)
     }
   } else if (track.special) {
     return {
@@ -233,7 +257,7 @@ setInterval(() => {
   } catch (error) {
     console.error("Error refreshing cache", error)
   }
-}, 1000 * 60 * 10);
+}, 1000 * 60 * 24);
 
 function sleep(ms) {
   return new Promise((resolve) => {
