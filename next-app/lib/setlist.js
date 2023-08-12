@@ -1,5 +1,8 @@
 import { discography } from '../discography.js';
-import fs from 'fs';
+// import fs from 'fs';
+import parseDate from '../utils/parseDate.js';
+import formatDate from '../utils/formatDate.js';
+import sleep from '../utils/sleep.js';
 
 
 let cache = null;
@@ -17,30 +20,29 @@ async function fetchSetlist(pageNumber) {
       'x-api-key': SETLIST_API_KEY
     }
   }
-  console.info("Fetching page " + pageNumber + " from API")
+  console.info(Math.floor(Date.now() /1000) + "Fetching page " + pageNumber + " from API")
   const response = await fetch(url(pageNumber), fetchOptions);
   if (response.status >= 400) {
-    console.error("Error fetching page " + pageNumber + " from API")
+    console.error(Math.floor(Date.now() / 1000) + "Error fetching page " + pageNumber + " from API")
     throw new Error(response.statusText);
   } else {
-    console.info("Success fetching page " + pageNumber + " from API")
+    console.info(Math.floor(Date.now() /1000) + "Success fetching page " + pageNumber + " from API")
     return response.json();
   }
 }
 
 export async function fazTudo() {
-  // console.log("fazTudo")
   const setlistData = await readFromCache();
   // console.log(typeof setlistData.setlist)
   const readDiscography = await discography;
   // console.log(discographyData)
   const response = combine(allSongs(setlistData.setlist), surpriseSongs(setlistData.setlist), readDiscography);
   // console.log(JSON.stringify(response))
-  fs.writeFile("output/setlistData.json", JSON.stringify(setlistData), function (err) {
-    if (err) {
-      console.log(err);
-    }
-  });
+  // fs.writeFile("output/setlistData.json", JSON.stringify(setlistData), function (err) {
+  //   if (err) {
+  //     console.log(err);
+  //   }
+  // });
   return response;
 }
 
@@ -76,27 +78,7 @@ function enrichSong(concert) {
   })
 }
 
-function parseDate(eventDate) {
-  const [d, m, y] = eventDate.split("-")
-  const monthNum = parseInt(m) - 1
-  return new Date(y, monthNum, d)
-}
-
-function formatDate(date) {
-  const [d, m, y] = date.split("-")
-  const monthNum = parseInt(m) - 1
-  const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Nov", "Dec"][monthNum]
-  return month + " " + ordinal(d) + ", " + y
-}
-
-function ordinal(n) {
-  const s = ["th", "st", "nd", "rd"];
-  const v = n % 100;
-  return n + (s[(v - 20) % 10] || s[v] || s[0]);
-}
-
 function surpriseSongs(setlist) {
-  // console.log(setlist[0])
   const sets = setlist
     .filter(concert => concert.sets)
     .sort((a, b) => parseDate(a.eventDate) - parseDate(b.eventDate))
@@ -116,8 +98,6 @@ function surpriseSongs(setlist) {
 }
 
 function allSongs(setlist) {
-  // console.log(setlist)
-  // console.log(Object.prototype.toString.call(setlist) == '[object Array]')
   const sets = setlist
     .filter(concert => concert.sets)
     .sort((a, b) => parseDate(a.eventDate) - parseDate(b.eventDate))
@@ -126,11 +106,7 @@ function allSongs(setlist) {
 
     .map(sets => sets.filter((set) => set.name?.includes("")).map(set => set.song).flat())
     .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
-  // // // .map(sets => sets.sets.set.map(set => set.song).flat())
-  // // .map(set => set.song)
-  // // .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
-  // // console.log(sets.flat())
-  // console.log(sets, typeof sets)
+
   return sets.flat()
 }
 
@@ -142,21 +118,25 @@ function surpriseSong(surpriseSongs, track) {
 }
 
 
-// const renderInstrument = (info) => {
-//   const instrument = info.toString().toLowerCase().split(" ")
-//   console.log(instrument)
+const renderInstrument = (info) => {
+const piano = /(piano)/g;
 
-//   if (instrument.find((item) => item === "guitar" || item === "guitar;" || item === "guitar,")) {
-//     return "guitar"
-//   } else if (instrument.find((item) => item === "acoustic" || item === "piano" || item === "piano;" || item === "piano," )) {
-//     return "piano"
-//   }  else if (instrument.find((item) => item === ("live" && "debut;" && "acoustic") || item === ("tour" && "debut;" && "acoustic"))) {
-//     return "guitar"
-//   }
-//   else {
-//     return null
-//   }
-// }
+  switch (info) {
+    case "acoustic":
+      return "piano";
+    case "live debut; acoustic":
+      return "guitar";
+    case "tour debut; acoustic":
+      return "guitar";
+    case "tour debut":
+      return "piano"
+    default:
+    if (info.match(piano)) {
+      return "piano"
+    }
+    return "guitar"
+  }
+}
 
 
 const status = (track, surpriseSongs, allSongs) => {
@@ -170,7 +150,7 @@ const status = (track, surpriseSongs, allSongs) => {
       type: "surprise",
       latest: songs.find(x => x.latest) || false,
       concertInfo: songs.map(x => x.concertInfo),
-      // instrument: songs.map(song => renderInstrument(song.info)),
+      instrument: songs.map(song => renderInstrument(song.info)),
       // info: songs.map(song => song.info)
     }
   } else if (track.special) {
@@ -188,8 +168,6 @@ const status = (track, surpriseSongs, allSongs) => {
 }
 
 const combine = (allSongs, surpriseSongs, discography) => {
-  // console.log(Object.prototype.toString.call(discography.albums) == '[object Array]')
-  // console.log(discography.albums)
   return discography.albums.sort((a, b) => { a.year - b.year }).map(album => {
     return {
       id: album.id,
@@ -217,6 +195,7 @@ const combine = (allSongs, surpriseSongs, discography) => {
 
 
 async function fetchPages(pageNumber = 1) {
+  await sleep(1000)
   const response = await fetchSetlist(pageNumber);
   // console.log(response)
   if (response.itemsPerPage * response.page < response.total) {
@@ -258,9 +237,3 @@ setInterval(() => {
     console.error("Error refreshing cache", error)
   }
 }, 1000 * 60 * 24);
-
-function sleep(ms) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
-}
