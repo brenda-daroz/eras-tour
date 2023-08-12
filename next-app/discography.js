@@ -573,7 +573,8 @@ export const discography =
         },
         {
           "id": 94,
-          "title": "new romantics"
+          "title": "new romantics",
+          "video": "https://www.tiktok.com/@kimberly_joy_/video/7265596687371095338?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 201,
@@ -662,7 +663,8 @@ export const discography =
         },
         {
           "id": 109,
-          "title": "new year's day"
+          "title": "new year's day",
+          "video": "https://www.tiktok.com/@cojadawg/video/7265600571829210370?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         }
       ]
     },
