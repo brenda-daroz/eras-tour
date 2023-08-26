@@ -37,7 +37,7 @@ export async function fazTudo() {
   const readDiscography = await discography;
   // console.log(discographyData)
   const response = combine(allSongs(setlistData.setlist), surpriseSongs(setlistData.setlist), readDiscography);
-  // console.log(JSON.stringify(response))
+  console.log(JSON.stringify(response))
   // fs.writeFile("output/setlistData.json", JSON.stringify(setlistData), function (err) {
   //   if (err) {
   //     console.log(err);
@@ -60,7 +60,6 @@ export default async function handler(req, res) {
     console.error(error)
     res.status(500).send({ error: error.message });
   }
-
 }
 
 function enrichSong(concert) {
@@ -84,7 +83,8 @@ function surpriseSongs(setlist) {
     .sort((a, b) => parseDate(a.eventDate) - parseDate(b.eventDate))
     .map(concert => enrichSong(concert))
     .filter(sets => sets.length > 0)
-    .map(sets => sets.filter((set) => set.name?.includes("Surprise") || set.name?.includes("Taylor Swift (Debut)")).map(set => set.song).flat())
+    .map(sets => sets.filter((set) => set.name?.includes("Surprise") || set.name?.includes("Suprise") || set.name?.includes("Taylor Swift (Debut)"))
+    .map(set => set.song).flat())
     .map(songs => songs.map(song => { return { ...song, name: song.name.toLowerCase() } }))
   const latestSong = [...sets.slice(0, sets.length - 1), sets[sets.length - 1].map(song => {
     return {
@@ -93,6 +93,11 @@ function surpriseSongs(setlist) {
     }
   })]
   const songs = latestSong.flat()
+  // fs.writeFile("output/setlistData.json", JSON.stringify(songs), function (err) {
+  //   if (err) {
+  //     console.log(err);
+  //   }
+  // });
   // console.log(songs)
   return songs
 }
@@ -114,7 +119,8 @@ function surpriseSong(surpriseSongs, track) {
   const songs = surpriseSongs.filter((song) => {
     return song.name.includes(track.title.toLowerCase())
   })
-    return songs
+  // console.log(songs)
+  return songs
 }
 
 
