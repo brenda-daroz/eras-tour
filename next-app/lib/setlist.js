@@ -236,4 +236,4 @@ setInterval(() => {
   } catch (error) {
     console.error("Error refreshing cache", error)
   }
-}, 1000 * 60 * 10);
+}, 1000 * 60 * 11);
