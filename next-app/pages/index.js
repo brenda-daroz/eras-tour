@@ -46,6 +46,7 @@ export default function Page({ data }) {
         <meta name="twitter:description" content="The Eras Tour - Surprise songs tracker" />
         <meta name="twitter:image" content="https://res.cloudinary.com/dkminbfry/image/upload/v1688041171/Group_2_ald1rg.png" />
 
+        <meta name="google-site-verification" content="1xvZejr7rmGf8emfOH2FHoj74Ps2xx359lbkUzU7W5g" />
       </Head>
 
       {/* Kofi */}
