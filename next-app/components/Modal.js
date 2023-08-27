@@ -18,11 +18,11 @@ const DarkBg = styled.div`
 const ModalDiv = styled.div`
   position: fixed;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-evenly;
   gap: 10px;
-  overflow: scroll;
-  height: 85vh;
+  overflow-y: auto;
+  max-height: 85vh;
   background-color: white;
   border-radius: 10px;
   width: 50%;
@@ -39,8 +39,8 @@ const ModalDiv = styled.div`
     flex-direction: column;
   }
   @media (min-width:641px) and (max-width: 1024px) {
-    width: 65%;
-    height: 55%;
+    width: 85%;
+    height: 75%;
   }
   @media only screen and (min-width: 2000px) {
     width: 40%;
@@ -50,17 +50,15 @@ const ModalDiv = styled.div`
 
 const ModalInfo = styled.div`
   display: flex;
-  // background-color: white;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
   height: 100%;
   width: 50%;
-  padding: 10px 10px;
-  @media only screen and (max-width: 700px) {
-    gap: 5px;
-    height: fit-content;
+  padding: 10px 0px;
+  @media only screen and (max-width:  641px) {
+    min-height: fit-content;
     width: 100%;
   }
 `
@@ -92,7 +90,6 @@ const CloseButton = styled.button`
   right: 5px;
   display: block;
   background-color: transparent;
-  // border-radius: 50%;
   border: none;
   font-size: 1.2rem;
   color: #333;
@@ -102,9 +99,21 @@ const CloseButton = styled.button`
     color: #EAAED0;
     transition: 0.3s ease-out;
   }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 641px) {
     right: 5px;
 
+  }
+`
+
+const Wrapper = styled.div`
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-items: start;
+  @media only screen and (max-width:  641px) {
+    position: relative;
+    max-height: inherit;
+    flex-direction: column;
   }
 `
 
@@ -114,8 +123,8 @@ const Video = styled.iframe`
   border: none;
   border-radius: 5px;
   margin: 0 auto ;
-  @media only screen and (max-width: 700px) {
-    width: 100%;
+  @media only screen and (max-width:  641px) {
+   height: inherit;
   }
 `
 
@@ -139,6 +148,7 @@ const Modal = ({ setIsOpen, track }) => {
       <DarkBg onClick={() => setIsOpen(false)}>
       </DarkBg>
       <ModalDiv onclick={(e) => e.stopPropagation()}>
+      <Wrapper>
         <CloseButton onClick={() => setIsOpen(false)}><FontAwesomeIcon icon={faXmark} /></CloseButton>
         <ModalInfo>
           <ModalTtitle>{track.title}</ModalTtitle>
@@ -156,13 +166,11 @@ const Modal = ({ setIsOpen, track }) => {
             )
           }
           )}
-
-
         </ModalInfo>
         <>
-          {(track.video) ? <Video src={url} frameBorder="0" title="dasd"></Video> : null}
+          {(track.video) ? <div style={{height: '700px', position: 'sticky', top: '0'}}> <Video src={url} frameBorder="0" title="dasd"></Video></div> : null}
         </>
-
+        </Wrapper>
       </ModalDiv>
 
     </>
