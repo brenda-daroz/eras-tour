@@ -131,7 +131,8 @@ export const discography =
         },
         {
           "id": 8,
-          "title": "tell me why"
+          "title": "tell me why",
+          "video": "https://www.tiktok.com/@onlydaniellaj/video/7271622182969560326?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 9,
@@ -664,7 +665,7 @@ export const discography =
         {
           "id": 109,
           "title": "new year's day",
-          "video": "https://www.tiktok.com/@cojadawg/video/7265600571829210370?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+          "video": "https://www.tiktok.com/@heartsfromkady/video/7265613941227769134?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         }
       ]
     },
@@ -682,7 +683,8 @@ export const discography =
       "tracks": [
         {
           "id": 110,
-          "title": "i forgot that you existed"
+          "title": "i forgot that you existed",
+          "video": "https://www.tiktok.com/@midnights_afterglow/video/7271306146307181854?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 111,
@@ -721,7 +723,8 @@ export const discography =
         },
         {
           "id": 118,
-          "title": "cornelia street"
+          "title": "cornelia street",
+          "video": "https://www.tiktok.com/@vivects13/video/7271903959617391878?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 119,
@@ -800,7 +803,7 @@ export const discography =
         {
           "id": 131,
           "title": "exile",
-          "video": "https://www.tiktok.com/@shira_and_clooney/video/7264879890363600170?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+          "video": "https://www.tiktok.com/@hi_itzme_lyn/video/7271469988764994821?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 132,
@@ -1030,7 +1033,8 @@ export const discography =
         },
         {
           "id": 173,
-          "title": "sweet nothing"
+          "title": "sweet nothing",
+          "video": "https://www.tiktok.com/@dactar_siri/video/7271837386248572166?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 174,
