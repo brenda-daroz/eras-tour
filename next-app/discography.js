@@ -578,6 +578,30 @@ export const discography =
           "video": "https://www.tiktok.com/@kimberly_joy_/video/7265596687371095338?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
+          "id": 205,
+          "title": `"Slut!"`
+        },
+        {
+          "id": 206,
+          "title": "say don't go"
+        },
+        {
+          "id": 207,
+          "title": "now that we don't talk"
+        },
+        {
+          "id": 208,
+          "title": "suburban legends"
+        },
+        {
+          "id": 209,
+          "title": "is it over now?"
+        },
+        {
+          "id": 210,
+          "title": "sweeter than fiction"
+        },
+        {
           "id": 201,
           "title": "i don't wanna live forever",
           "video": "https://www.tiktok.com/@cameracaptures/video/7241038046706175278?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
