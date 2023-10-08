@@ -74,7 +74,7 @@ export const discography =
         {
           "id": 96,
           "title": "invisible",
-          "video": "https://www.tiktok.com/@k.kundyph/video/7235514043023428910?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+          "video": "https://www.tiktok.com/@forthehopeofitall.13/video/7236156387330395438?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 97,
@@ -132,7 +132,7 @@ export const discography =
         {
           "id": 8,
           "title": "tell me why",
-          "video": "https://www.tiktok.com/@onlydaniellaj/video/7271622182969560326?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+          "video": "https://www.tiktok.com/@karmaismyicedcoffee13/video/7273221193476394248?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 9,
@@ -295,7 +295,7 @@ export const discography =
         {
           "id": 41,
           "title": "ours",
-          "video": "https://www.tiktok.com/@elasticemily/video/7217267028837567790?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861"
+          "video": "https://www.tiktok.com/@swiftiesupremacy013/video/7276093259326278918?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 42,
@@ -318,7 +318,7 @@ export const discography =
         {
           "id": 197,
           "title": "i can see you",
-          "video": "https://www.tiktok.com/@skibiscuit/video/7263378489359797546?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+          "video": "https://www.tiktok.com/@martincastaneda05/video/7263476253150170414?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 198,
@@ -684,7 +684,7 @@ export const discography =
         {
           "id": 110,
           "title": "i forgot that you existed",
-          "video": "https://www.tiktok.com/@midnights_afterglow/video/7271306146307181854?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+          "video": "https://www.tiktok.com/@karmaismyicedcoffee13/video/7273221476470279442?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 111,
@@ -751,7 +751,8 @@ export const discography =
         },
         {
           "id": 124,
-          "title": "afterglow"
+          "title": "afterglow",
+          "video": "https://www.tiktok.com/@carolinagzam/video/7272253599374216454?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 125,
@@ -1034,7 +1035,7 @@ export const discography =
         {
           "id": 173,
           "title": "sweet nothing",
-          "video": "https://www.tiktok.com/@dactar_siri/video/7271837386248572166?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
+          "video": "https://www.tiktok.com/@mayeruteaga/video/7271151683844033797?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493"
         },
         {
           "id": 174,
