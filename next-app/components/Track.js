@@ -81,8 +81,6 @@ const Track = ({ track, color }) => {
     {track.status.type === "surprise" ? (instrument?.[0] === "piano") ? "🎹" : "🎸" : null} {track.title}
   </CompletedDiv>;
 
-
-
   return (
     <>
       {(track.status.latest && (track.status.type === "surprise" && numberOfPlays > 1)) ? <Div><SupDiv>{completeTrack}<Sup $specialColor={color.textSurprise}>{numberOfPlays}</Sup></SupDiv><Latest>Latest</Latest></Div> :
