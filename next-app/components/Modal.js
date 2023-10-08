@@ -109,7 +109,7 @@ const Wrapper = styled.div`
   display: flex;
   gap: 20px;
   width: 100%;
-  align-items: start;
+  align-items: center;
   @media only screen and (max-width:  641px) {
     position: relative;
     max-height: inherit;
@@ -168,7 +168,7 @@ const Modal = ({ setIsOpen, track }) => {
           )}
         </ModalInfo>
         <>
-          {(track.video) ? <div style={{height: '700px', position: 'sticky', top: '0'}}> <Video src={url} frameBorder="0" title="dasd"></Video></div> : null}
+          {(track.video) ? <div style={{height: '700px', position: 'sticky', top: '0', margin: '0 auto'}}> <Video src={url} frameBorder="0" title="dasd"></Video></div> : null}
         </>
         </Wrapper>
       </ModalDiv>
