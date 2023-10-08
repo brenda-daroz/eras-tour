@@ -33,11 +33,8 @@ async function fetchSetlist(pageNumber) {
 
 export async function fazTudo() {
   const setlistData = await readFromCache();
-  // console.log(typeof setlistData.setlist)
   const readDiscography = await discography;
-  // console.log(discographyData)
   const response = combine(allSongs(setlistData.setlist), surpriseSongs(setlistData.setlist), readDiscography);
-  console.log(JSON.stringify(response))
   // fs.writeFile("output/setlistData.json", JSON.stringify(setlistData), function (err) {
   //   if (err) {
   //     console.log(err);
@@ -50,11 +47,8 @@ export default async function handler(req, res) {
   console.info("Request received /data")
   try {
     const setlistData = await readFromCache();
-    // console.log(typeof setlistData.setlist)
     const readDiscography = await discography;
-    // console.log(discographyData)
     const response = combine(allSongs(setlistData.setlist), surpriseSongs(setlistData.setlist), readDiscography);
-    // console.log(response)
     res.json(response);
   } catch (error) {
     console.error(error)
