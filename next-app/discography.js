@@ -82,7 +82,7 @@ export const discography = {
           id: 96,
           title: "invisible",
           video:
-            "https://www.tiktok.com/@forthehopeofitall.13/video/7236156387330395438?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
+            "https://www.tiktok.com/@swiftiesupremacy013/video/7280545088621661445?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 97,
@@ -128,7 +128,7 @@ export const discography = {
           id: 5,
           title: "white horse",
           video:
-            "https://www.tiktok.com/@dreamerofdreamss/video/7215059830720171310?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861",
+            "https://www.tiktok.com/@swiftiesupremacy013/video/7281564854752791814?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 6,
@@ -1110,7 +1110,7 @@ export const discography = {
           id: 163,
           title: "maroon",
           video:
-            "https://www.tiktok.com/@nicolecefola/video/7237719910762237230?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
+            "https://www.tiktok.com/@carolinagzam/video/7272279826126376198?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 164,
