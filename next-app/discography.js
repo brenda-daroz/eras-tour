@@ -663,7 +663,7 @@ export const discography = {
         },
         {
           id: 209,
-          title: "is it over now?",
+          title: "is it over now",
         },
         {
           id: 210,
