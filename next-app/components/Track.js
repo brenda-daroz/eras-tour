@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
@@ -7,12 +7,19 @@ import styled from "styled-components";
 import Modal from "./Modal";
 
 const CompletedDiv = styled.div`
-cursor: ${props => (props.$fixed || props.$unplayed ? "default" : "pointer")};
-color: ${props => (props.$special ? props.$specialColor : props.$fixed ? props.$fixedColor : "#547873")};
-text-decoration: ${props => (props.$special ? "underline dotted" : "none")};
--webkit-text-decoration: ${props => (props.$special ? "underline dotted" : "none")};
-text-transform: uppercase;
-`
+  cursor: ${(props) =>
+    props.$fixed || props.$unplayed ? "default" : "pointer"};
+  color: ${(props) =>
+    props.$special
+      ? props.$specialColor
+      : props.$fixed
+      ? props.$fixedColor
+      : "#547873"};
+  text-decoration: ${(props) => (props.$special ? "underline dotted" : "none")};
+  -webkit-text-decoration: ${(props) =>
+    props.$special ? "underline dotted" : "none"};
+  text-transform: uppercase;
+`;
 
 const Latest = styled.div`
   color: red;
@@ -22,20 +29,19 @@ const Latest = styled.div`
   padding: 0 5px;
   font-weight: 600;
   text-transform: uppercase;
-  // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  // box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  `
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+`;
 const Div = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
   font-weight: 700;
-  `
+`;
 
 const Sup = styled.sup`
   font-size: 0.7rem;
-  color: ${props => props.$specialColor};
+  color: ${(props) => props.$specialColor};
   font-weight: 700;
   @media only screen and (min-width: 1600px) {
     font-size: 0.8rem;
@@ -43,57 +49,83 @@ const Sup = styled.sup`
   @media only screen and (min-width: 2000px) {
     font-size: 1rem;
   }
-  `
+`;
 const SupDiv = styled.div`
   display: flex;
   gap: 2px;
-  `
-
+`;
 
 const Track = ({ track, color }) => {
-
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = (e) => {
-    e.preventDefault()
-    setIsOpen(true)
-  }
+    e.preventDefault();
+    setIsOpen(true);
+  };
 
   useEffect(() => {
-    const body = document.querySelector('body');
-    body.style.overflow = isOpen ? 'hidden' : 'auto';
-  }, [isOpen])
+    const body = document.querySelector("body");
+    body.style.overflow = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
 
   const numberOfPlays = track.status.concertInfo?.length;
-  const instrument = track.status.instrument
+  const instrument = track.status.instrument;
 
-  const completeTrack = <CompletedDiv
-    id={track.id}
-    name="track"
-    value={track.id}
-    onClick={handleClick}
-    $special={track.status.type === "surprise" || track.status.type === "special"}
-    $specialColor={color.textSurprise}
-    $fixed={track.status.type === "fixed"}
-    $unplayed={track.status.type === "unplayed"}
-    $fixedColor={color.textFixed}
-  >
-    {track.status.type === "surprise" ? (instrument?.[0] === "piano") ? "🎹" : "🎸" : null} {track.title}
-  </CompletedDiv>;
+  const completeTrack = (
+    <CompletedDiv
+      id={track.id}
+      name="track"
+      value={track.id}
+      onClick={handleClick}
+      $special={
+        track.status.type === "surprise" || track.status.type === "special"
+      }
+      $specialColor={color.textSurprise}
+      $fixed={track.status.type === "fixed"}
+      $unplayed={track.status.type === "unplayed"}
+      $fixedColor={color.textFixed}
+    >
+      {track.status.type === "surprise"
+        ? instrument?.[0] === "piano"
+          ? "🎹"
+          : "🎸"
+        : null}{" "}
+      {track.title}
+    </CompletedDiv>
+  );
 
   return (
     <>
-      {(track.status.latest && (track.status.type === "surprise" && numberOfPlays > 1)) ? <Div><SupDiv>{completeTrack}<Sup $specialColor={color.textSurprise}>{numberOfPlays}</Sup></SupDiv><Latest>Latest</Latest></Div> :
-      (track.status.latest) ? <Div>{completeTrack}<Latest>Latest</Latest></Div> :
-      (track.status.type === "surprise" && numberOfPlays > 1) ?
-      <SupDiv>{completeTrack}<Sup $specialColor={color.textSurprise}>{numberOfPlays}</Sup></SupDiv> :
-      <>{completeTrack}</>}
+      {track.status.latest &&
+      track.status.type === "surprise" &&
+      numberOfPlays > 1 ? (
+        <Div>
+          <SupDiv>
+            {completeTrack}
+            <Sup $specialColor={color.textSurprise}>{numberOfPlays}</Sup>
+          </SupDiv>
+          <Latest>Latest</Latest>
+        </Div>
+      ) : track.status.latest ? (
+        <Div>
+          {completeTrack}
+          <Latest>Latest</Latest>
+        </Div>
+      ) : track.status.type === "surprise" && numberOfPlays > 1 ? (
+        <SupDiv>
+          {completeTrack}
+          <Sup $specialColor={color.textSurprise}>{numberOfPlays}</Sup>
+        </SupDiv>
+      ) : (
+        <>{completeTrack}</>
+      )}
 
-      {(track.status.type === "surprise" || track.status.type === "special") && isOpen ? < Modal setIsOpen={setIsOpen} track={track} /> : null}
+      {(track.status.type === "surprise" || track.status.type === "special") &&
+      isOpen ? (
+        <Modal setIsOpen={setIsOpen} track={track} />
+      ) : null}
     </>
   );
-
-
 };
 
 export default Track;
