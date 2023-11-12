@@ -664,6 +664,8 @@ export const discography = {
         {
           id: 209,
           title: "is it over now?",
+          video:
+            "https://www.tiktok.com/@notolsennchris/video/7300408435336580395?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 210,
@@ -697,6 +699,8 @@ export const discography = {
         {
           id: 96,
           title: "end game",
+          video:
+            "https://www.tiktok.com/@notolsennchris/video/7300409799869615406?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 97,
