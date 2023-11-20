@@ -55,6 +55,8 @@ export const discography = {
         {
           id: 71,
           title: "stay beautiful",
+          video:
+            "https://www.tiktok.com/@carolspaludo/video/7302641975583411461?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 72,
@@ -660,6 +662,8 @@ export const discography = {
         {
           id: 208,
           title: "suburban legends",
+          video:
+            "https://www.tiktok.com/@hbettarello/video/7302659100607909125?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 209,
@@ -746,6 +750,8 @@ export const discography = {
         {
           id: 105,
           title: "dancing with our hands tied",
+          video:
+            "https://www.tiktok.com/@yasminascente/video/7303394965571276038?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 106,
@@ -1185,6 +1191,8 @@ export const discography = {
         {
           id: 176,
           title: "bigger than the whole sky",
+          video:
+            "https://www.tiktok.com/@leticial33/video/7303385647899741446?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 177,
