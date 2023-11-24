@@ -1042,7 +1042,7 @@ export const discography = {
         },
         {
           id: 151,
-          title: "happines",
+          title: "happiness",
         },
         {
           id: 152,
