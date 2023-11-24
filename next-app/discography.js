@@ -728,6 +728,7 @@ export const discography = {
         {
           id: 101,
           title: "so it goes...",
+          video: "https://www.tiktok.com/@lele_rgs/video/7303764337892625670?is_from_webapp=1&sender_device=pc&web_id=7305170461821584902"
         },
         {
           id: 102,
@@ -874,6 +875,7 @@ export const discography = {
         {
           id: 125,
           title: "me!",
+          video: "https://www.tiktok.com/@itsnotaboutts/video/7303870659774532870?is_from_webapp=1&sender_device=pc&web_id=7305170461821584902"
         },
         {
           id: 126,
