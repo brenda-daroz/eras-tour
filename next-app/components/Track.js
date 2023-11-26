@@ -21,7 +21,7 @@ const CompletedDiv = styled.div`
 
 const Latest = styled.div`
   color: red;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   background-color: #fcf7f8;
   border-radius: 5px;
   padding: 0 5px;
