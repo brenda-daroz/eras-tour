@@ -542,6 +542,10 @@ export const discography = {
           video:
             "https://www.tiktok.com/@flor_scopp/video/7299682651936410886?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
+        {
+          id: 211,
+          title: "Safe & Sound"
+        }
       ],
     },
     {
