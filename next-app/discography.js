@@ -744,7 +744,8 @@ export const discography = {
         {
           id: 101,
           title: "so it goes...",
-          video: "https://www.tiktok.com/@lele_rgs/video/7303764337892625670?is_from_webapp=1&sender_device=pc&web_id=7305170461821584902"
+          video:
+            "https://www.tiktok.com/@lele_rgs/video/7303764337892625670?is_from_webapp=1&sender_device=pc&web_id=7305170461821584902",
         },
         {
           id: 102,
@@ -891,7 +892,8 @@ export const discography = {
         {
           id: 125,
           title: "me!",
-          video: "https://www.tiktok.com/@itsnotaboutts/video/7303870659774532870?is_from_webapp=1&sender_device=pc&web_id=7305170461821584902"
+          video:
+            "https://www.tiktok.com/@itsnotaboutts/video/7303870659774532870?is_from_webapp=1&sender_device=pc&web_id=7305170461821584902",
         },
         {
           id: 126,
@@ -1184,7 +1186,7 @@ export const discography = {
           id: 171,
           title: "labyrinth",
           video:
-            "https://www.tiktok.com/@swakbeauty/video/7299659062860369194?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
+            "https://www.tiktok.com/@mel_mansilla/video/7301475519919410438?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
         },
         {
           id: 172,
