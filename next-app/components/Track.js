@@ -2,8 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {faGuitar} from "@fortawesome/free-solid-svg-icons";
 import Modal from "./Modal";
 
 const CompletedDiv = styled.div`
@@ -23,7 +21,7 @@ const CompletedDiv = styled.div`
 
 const Latest = styled.div`
   color: red;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   background-color: #fcf7f8;
   border-radius: 5px;
   padding: 0 5px;

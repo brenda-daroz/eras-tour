@@ -270,6 +270,7 @@ const readFromCache = async () => {
     try {
       await fillCache();
     } catch (error) {
+      console.log(error)
       throw new Error("Cache not ready", { cause: error });
     }
   }
