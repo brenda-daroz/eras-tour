@@ -46,7 +46,7 @@ const Li = styled.li`
   font-weight: 500;
   line-height: 1.8;
   color: ${(props) => props.fontColor};
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   text-align: center;
   text-decoration: dotted;
   @media only screen and (max-width: 768px) {

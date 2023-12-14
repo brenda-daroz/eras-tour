@@ -184,6 +184,8 @@ export const discography = {
         {
           id: 15,
           title: "untouchable",
+          video:
+            "https://www.tiktok.com/@tayclips13/video/7305616083703139590?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 17,
@@ -303,10 +305,14 @@ export const discography = {
         {
           id: 36,
           title: "better than revenge",
+          video:
+            "https://www.tiktok.com/@roomillan/video/7300773894946934022?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 37,
           title: "innocent",
+          video:
+            "https://www.tiktok.com/@tayclips13/video/7305233223263587590?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 38,
@@ -540,7 +546,13 @@ export const discography = {
           id: 194,
           title: "the very first night",
           video:
-            "https://www.tiktok.com/@flor_scopp/video/7299682651936410886?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
+            "https://www.tiktok.com/@swiftiesupremacy013/video/7303554555558579461?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
+        },
+        {
+          id: 211,
+          title: "safe & sound",
+          video:
+            "https://www.tiktok.com/@tayclips13/video/7305601758619880710?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
       ],
     },
@@ -650,10 +662,14 @@ export const discography = {
         {
           id: 205,
           title: `"Slut!"`,
+          video:
+            "https://www.tiktok.com/@felimiliaa/video/7302113808938536197?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 206,
           title: "say don't go",
+          video:
+            "https://www.tiktok.com/@brunarsfps/video/7306631054666894597?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 207,
@@ -669,7 +685,7 @@ export const discography = {
           id: 209,
           title: "is it over now?",
           video:
-            "https://www.tiktok.com/@notolsennchris/video/7300408435336580395?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
+            "https://www.tiktok.com/@erastour2023_24/video/7302823749332520225?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 210,
@@ -704,7 +720,7 @@ export const discography = {
           id: 96,
           title: "end game",
           video:
-            "https://www.tiktok.com/@notolsennchris/video/7300409799869615406?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
+            "https://www.tiktok.com/@swiftiesupremacy013/video/7310615802502286598?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 97,
@@ -728,6 +744,8 @@ export const discography = {
         {
           id: 101,
           title: "so it goes...",
+          video:
+            "https://www.tiktok.com/@swiftiesupremacy013/video/7307097470868163846?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
         {
           id: 102,
@@ -1096,6 +1114,8 @@ export const discography = {
         {
           id: 161,
           title: "it's time to go",
+          video:
+            "https://www.tiktok.com/@ali1989tv13/video/7306247777695190302?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
       ],
     },
