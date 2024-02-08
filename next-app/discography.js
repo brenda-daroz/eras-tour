@@ -554,6 +554,11 @@ export const discography = {
           video:
             "https://www.tiktok.com/@tayclips13/video/7305601758619880710?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
+        {
+          id: 212,
+          title: "eyes open",
+          
+        }
       ],
     },
     {
