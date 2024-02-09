@@ -37,7 +37,7 @@ const Ul = styled.ul`
   width: fit-content;
   padding: 0 10px;
   margin: 20px auto;
-  height: 60%;
+  height: 80%;
   justify-content: center;
 `;
 
