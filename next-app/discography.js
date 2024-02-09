@@ -45,6 +45,8 @@ export const discography = {
         {
           id: 69,
           title: "the outside",
+          video:
+            "https://www.tiktok.com/@gyan_ts_1989/video/7333582314812886277?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
         },
         {
           id: 70,
@@ -346,10 +348,14 @@ export const discography = {
         {
           id: 43,
           title: "superman",
+          video:
+            "https://www.tiktok.com/@taylorseraa/video/7333600167364644142?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
         },
         {
           id: 195,
           title: "electric touch",
+          video:
+            "https://www.tiktok.com/@tylerfreitas36/video/7333198244085845291?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
         },
         {
           id: 196,
@@ -557,8 +563,9 @@ export const discography = {
         {
           id: 212,
           title: "eyes open",
-          
-        }
+          video:
+            "https://www.tiktok.com/@ebifriedjp/video/7333248977309109537?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
+        },
       ],
     },
     {
@@ -1244,6 +1251,8 @@ export const discography = {
         {
           id: 181,
           title: "dear reader",
+          video:
+            "https://www.tiktok.com/@satsuki914/video/7332886138106989825?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
         },
         {
           id: 182,
