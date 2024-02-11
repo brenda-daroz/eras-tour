@@ -147,33 +147,34 @@ const Info = () => {
           to all swifties.
         </Author>
         <Text>
-          A Brazilian-born, Berlin-based swiftie who's been a fan of Taylor's
+          {`A Brazilian-born, Berlin-based swiftie who's been a fan of Taylor's
           work since 2008, I'm very proud to have created this website. I hope
-          you enjoy it as much as I enjoyed building it! Feel free to get in
-          <Link href="mailto:brenda.daroz@gmail.com">touch</Link> with
-          suggestions, feedback, or just to say hi. I'd love to hear from you!
+          you enjoy it as much as I enjoyed building it! Feel free to get in`}
+          <Link href="mailto:brenda.daroz@gmail.com">touch</Link>{" "}
+          {`with
+          suggestions, feedback, or just to say hi. I'd love to hear from you!`}
         </Text>
         <Text>
-          This website displays all albums Taylor's put out so far each divided
+          {`This website displays all albums Taylor's put out so far each divided
           into three categories: Surprise, Fixed, and Unplayed. The Surprise
           section showcases the songs she's already performed (even the ones
           she's already repeated), leaving you wondering for what might come
           next. The Fixed category features the must-hear songs that grace every
           concert, ensuring you don't miss out on any of the classics. Lastly,
           the Unplayed section builds up anticipation as it lists the songs
-          Taylor has yet to unveil on this tour.
+          Taylor has yet to unveil on this tour.`}
         </Text>
         <Text>
-          By clicking on the surprise songs, a magical modal window appears,
+          {`By clicking on the surprise songs, a magical modal window appears,
           revealing details such as the date and location of the performance.
           But that's not all! To make your experience even more exciting, each
           surprise song comes with a special TikTok fan video capturing the
           unforgettable moments from that particular performance. It's like
-          having a front-row seat to Taylor's concert!
+          having a front-row seat to Taylor's concert!`}
         </Text>
         <Text>
-          I'll be at the Eras Tour in São Paulo nights 2 & 3, Münich night 1,
-          and Milan night 1. See you there!
+          {`I'll be at the Eras Tour in São Paulo nights 2 & 3, Münich night 1,
+          and Milan night 1. See you there!`}
         </Text>
       </Header>
       <Container>

@@ -142,7 +142,7 @@ export default function Tracks({
   return (
     <Wrapper $bgColor={color.background}>
       <Tabs
-        children={[
+        tabs={[
           {
             name: "Surprise",
             content: SurpriseTracks({
@@ -193,7 +193,6 @@ function SurpriseTracks({ surpriseTracks, specialTracks, TracksList }) {
     </Ul>
   );
 }
-
 
 function FixedTracks({ fixedTracks, TracksList }) {
   return fixedTracks.length > 0 ? (

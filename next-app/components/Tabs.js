@@ -42,7 +42,7 @@ const ButtonGroup = styled.ul`
 
 const types = ["Surprise", "Fixed", "Unplayed"];
 
-function Tabs({ children }) {
+function Tabs({ tabs }) {
   const [active, setActive] = useState(types[0]);
 
   return (
@@ -60,7 +60,7 @@ function Tabs({ children }) {
         ))}
       </ButtonGroup>
       {
-        children.find((child) => {
+        tabs.find((child) => {
           return child.name === active;
         }).content
       }
