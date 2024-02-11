@@ -140,7 +140,7 @@ const Info = () => {
         <Title>Taylor Swift - The Eras Tour </Title>
         <Subtitle>Surprise Songs Tracker</Subtitle>
         <Author>
-          Website built by a{" "}
+          Website built by a
           <Link href="https://www.brenda.fyi" target="_blank" rel="noreferrer">
             swiftie{" "}
           </Link>
@@ -149,7 +149,7 @@ const Info = () => {
         <Text>
           A Brazilian-born, Berlin-based swiftie who's been a fan of Taylor's
           work since 2008, I'm very proud to have created this website. I hope
-          you enjoy it as much as I enjoyed building it! Feel free to get in{" "}
+          you enjoy it as much as I enjoyed building it! Feel free to get in
           <Link href="mailto:brenda.daroz@gmail.com">touch</Link> with
           suggestions, feedback, or just to say hi. I'd love to hear from you!
         </Text>
