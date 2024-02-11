@@ -1,5 +1,4 @@
 import BigUseClient from "@/components/BigUseClient";
-// import getTourDates from "@/lib/getTourDates";
 import { fazTudo } from "@/lib/setlist";
 import Head from "next/head";
 import Script from "next/script";
@@ -89,6 +88,9 @@ export default function Page({ data }) {
 }
 
 export const getServerSideProps = async () => {
+  const data2023 = await fazTudo(2023);
+  const data2024 = await fazTudo(2024);
   const data = await fazTudo();
-  return { props: { data } };
+
+  return { props: { data: { data2023, data2024, data } } };
 };
