@@ -42,19 +42,14 @@ async function fetchSetlist(pageNumber) {
   }
 }
 
-export async function fazTudo() {
+export async function fazTudo(year = null) {
   const setlistData = await readFromCache();
   const readDiscography = await discography;
   const response = combine(
     allSongs(setlistData.setlist),
-    surpriseSongs(setlistData.setlist),
+    surpriseSongs(setlistData.setlist, year),
     readDiscography
   );
-  // fs.writeFile("output/setlistData.json", JSON.stringify(setlistData), function (err) {
-  //   if (err) {
-  //     console.log(err);
-  //   }
-  // });
   return response;
 }
 
@@ -91,9 +86,17 @@ function enrichSong(concert) {
   });
 }
 
-function surpriseSongs(setlist) {
-  const sets = setlist
-    .filter((concert) => concert.sets)
+function surpriseSongs(setlist, year) {
+  let sets = setlist.filter((concert) => concert.sets);
+
+  if (year !== null) {
+    sets = sets.filter((concert) => {
+      const concertYear = parseDate(concert.eventDate).getFullYear();
+      return concertYear === year;
+    });
+  }
+
+  sets = sets
     .sort((a, b) => parseDate(a.eventDate) - parseDate(b.eventDate))
     .map((concert) => enrichSong(concert))
     .filter((sets) => sets.length > 0)
@@ -113,22 +116,16 @@ function surpriseSongs(setlist) {
         return { ...song, name: song.name.toLowerCase() };
       })
     );
+
   const latestSong = [
     ...sets.slice(0, sets.length - 1),
-    sets[sets.length - 1].map((song) => {
-      return {
-        ...song,
-        latest: true,
-      };
-    }),
+    sets[sets.length - 1].map((song) => ({
+      ...song,
+      latest: true,
+    })),
   ];
+
   const songs = latestSong.flat();
-  // fs.writeFile("output/setlistData.json", JSON.stringify(songs), function (err) {
-  //   if (err) {
-  //     console.log(err);
-  //   }
-  // });
-  // console.log(songs)
   return songs;
 }
 
@@ -158,7 +155,6 @@ function surpriseSong(surpriseSongs, track) {
   const songs = surpriseSongs.filter((song) => {
     return song.name.includes(track.title.toLowerCase());
   });
-  // console.log(songs)
   return songs;
 }
 
@@ -196,7 +192,6 @@ const status = (track, surpriseSongs, allSongs) => {
       latest: songs.find((x) => x.latest) || false,
       concertInfo: songs.map((x) => x.concertInfo),
       instrument: songs.map((song) => renderInstrument(song.info)),
-      // info: songs.map(song => song.info)
     };
   } else if (track.special) {
     return {
@@ -245,7 +240,6 @@ const combine = (allSongs, surpriseSongs, discography) => {
 async function fetchPages(pageNumber = 1) {
   await sleep(1000);
   const response = await fetchSetlist(pageNumber);
-  // console.log(response)
   if (response.itemsPerPage * response.page < response.total) {
     await sleep(1000);
     const nextPage = await fetchPages(pageNumber + 1);
@@ -270,7 +264,7 @@ const readFromCache = async () => {
     try {
       await fillCache();
     } catch (error) {
-      console.log(error)
+      console.log(error);
       throw new Error("Cache not ready", { cause: error });
     }
   }
