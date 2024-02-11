@@ -151,7 +151,7 @@ const Modal = ({ setIsOpen, track }) => {
 
             {track.status.concertInfo.map((info, i) => {
               return (
-                <ModalCard>
+                <ModalCard key={i}>
                   {track.status.concertInfo.length > 1 ? (
                     <p style={{ margin: "0 0 4px 0" }} key={i}>
                       Day {i + 1}
