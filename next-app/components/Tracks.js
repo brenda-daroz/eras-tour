@@ -4,6 +4,9 @@ import React from "react";
 import styled from "styled-components";
 import Track from "./Track";
 import Tabs from "./Tabs";
+import { SurpriseTracks } from "./tracks-categories/surprise-songs";
+import { FixedTracks } from "./tracks-categories/fixed-songs";
+import { UnplayedTracks } from "./tracks-categories/unplayed-songs";
 
 const Wrapper = styled.div`
   background: linear-gradient(
@@ -25,20 +28,6 @@ const Wrapper = styled.div`
   @media (min-width: 641px) and (max-width: 1024px) {
     width: 50%;
   }
-`;
-
-const Ul = styled.ul`
-  padding-top: 80px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  width: fit-content;
-  padding: 0 10px;
-  margin: 20px auto;
-  height: 80%;
-  justify-content: center;
 `;
 
 const Li = styled.li`
@@ -175,44 +164,4 @@ export default function Tracks({
       </Li>
     );
   }
-}
-
-function SurpriseTracks({ surpriseTracks, specialTracks, TracksList }) {
-  return surpriseTracks.length > 0 ? (
-    <Ul>
-      {surpriseTracks.map((track, i) => {
-        return TracksList(i, track);
-      })}
-      {specialTracks.map((track, i) => {
-        return TracksList(i, track);
-      })}
-    </Ul>
-  ) : (
-    <Ul>
-      <p>No 2024 surprise tracks yet.</p>
-    </Ul>
-  );
-}
-
-function FixedTracks({ fixedTracks, TracksList }) {
-  return fixedTracks.length > 0 ? (
-    <Ul>
-      {fixedTracks.map((track, i) => {
-        return TracksList(i, track);
-      })}
-    </Ul>
-  ) : (
-    <Ul>
-      <p>No fixed tracks</p>
-    </Ul>
-  );
-}
-function UnplayedTracks({ unplayedTracks, TracksList }) {
-  return (
-    <Ul>
-      {unplayedTracks.map((track, i) => {
-        return TracksList(i, track);
-      })}
-    </Ul>
-  );
 }
