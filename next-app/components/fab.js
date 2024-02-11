@@ -1,5 +1,5 @@
 // Fab.js
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 
 const FloatActions = styled.div`
@@ -7,25 +7,25 @@ const FloatActions = styled.div`
   bottom: 20px;
   right: 20px;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 const FloatingActionButton = styled.button`
-  background-color: #007bff;
+  background-color: #625548;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   height: 60px;
   width: 60px;
+  font-size: 1.1rem;
   border-radius: 50%;
   display: block;
-  color: #fff;
+  color: #edece8;
   text-align: center;
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: #625548b3;
     cursor: pointer;
   }
 `;
@@ -40,16 +40,18 @@ const OptionsContainer = styled.div`
 `;
 
 const OptionButton = styled.button`
-  margin: 5px 0;
+  margin: 10px 0;
   height: 40px;
   width: 40px;
   background-color: blue;
   border-radius: 50%;
   display: block;
   border: none;
-  background-color: white;
+  background-color: #edece8;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   border-radius: 50px;
+  font-family: "Anonymous Pro", monospace;
 
   &:hover {
     background-color: #f0f0f0;
@@ -60,6 +62,24 @@ const OptionButton = styled.button`
 const FabYear = ({ options, year }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(year);
+
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const handleButtonClick = () => {
     setIsOpen(!isOpen);
@@ -72,9 +92,9 @@ const FabYear = ({ options, year }) => {
   };
 
   return (
-    <FloatActions>
+    <FloatActions ref={containerRef}>
       <FloatingActionButton onClick={handleButtonClick}>
-        {selectedOption || "Year"}
+        {selectedOption}
       </FloatingActionButton>
       <OptionsContainer isOpen={isOpen}>
         {options.map((option) => (
