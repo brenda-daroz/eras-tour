@@ -4,7 +4,7 @@ import Head from "next/head";
 import Script from "next/script";
 
 export default function Page({ data }) {
-  const kofi = `<script>
+  const kofi = `<Script>
     kofiWidgetOverlay.draw('brendadaroz', {
     'type': 'floating-chat',
     'floating-chat.donateButton.text': 'Support me',
@@ -60,14 +60,14 @@ export default function Page({ data }) {
       </Head>
 
       {/* Kofi */}
-      <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+      <Script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js" />
 
       {/* Plausible */}
       <Script
         defer
         data-domain="erastour.live"
         src="https://plausible.io/js/script.js"
-      ></Script>
+      />
 
       {/* Google tag (gtag.js) */}
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-93V6BZEDW5" />
