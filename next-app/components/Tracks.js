@@ -124,6 +124,7 @@ export default function Tracks({
   title,
   latest,
   credit,
+  year,
 }) {
   const fixedTracks = tracks.filter((track) => track.status.type === "fixed");
   const unplayedTracks = tracks.filter(
@@ -132,50 +133,31 @@ export default function Tracks({
   const surpriseTracks = tracks.filter(
     (track) => track.status.type === "surprise"
   );
-  const specialTracks = tracks.filter(
-    (track) => track.status.type === "special"
-  );
+  let specialTracks = tracks.filter((track) => track.status.type === "special");
+
+  if (year === 2024) {
+    specialTracks = [];
+  }
+
   return (
     <Wrapper $bgColor={color.background}>
       <Tabs
         children={[
           {
             name: "Surprise",
-            content: (
-              <Ul>
-                {surpriseTracks.map((track, i) => {
-                  return TracksList(i, track);
-                })}
-                {specialTracks.map((track, i) => {
-                  return TracksList(i, track);
-                })}
-              </Ul>
-            ),
+            content: SurpriseTracks({
+              surpriseTracks,
+              specialTracks,
+              TracksList,
+            }),
           },
           {
             name: "Fixed",
-            content:
-              fixedTracks.length > 0 ? (
-                <Ul>
-                  {fixedTracks.map((track, i) => {
-                    return TracksList(i, track);
-                  })}
-                </Ul>
-              ) : (
-                <Ul>
-                  <p>No fixed tracks</p>
-                </Ul>
-              ),
+            content: FixedTracks({ fixedTracks, TracksList }),
           },
           {
             name: "Unplayed",
-            content: (
-              <Ul>
-                {unplayedTracks.map((track, i) => {
-                  return TracksList(i, track);
-                })}
-              </Ul>
-            ),
+            content: UnplayedTracks({ unplayedTracks, TracksList }),
           },
         ]}
       />
@@ -193,4 +175,45 @@ export default function Tracks({
       </Li>
     );
   }
+}
+
+function SurpriseTracks({ surpriseTracks, specialTracks, TracksList }) {
+  return surpriseTracks.length > 0 ? (
+    <Ul>
+      {surpriseTracks.map((track, i) => {
+        return TracksList(i, track);
+      })}
+      {specialTracks.map((track, i) => {
+        return TracksList(i, track);
+      })}
+    </Ul>
+  ) : (
+    <Ul>
+      <p>No 2024 surprise tracks yet.</p>
+    </Ul>
+  );
+}
+
+
+function FixedTracks({ fixedTracks, TracksList }) {
+  return fixedTracks.length > 0 ? (
+    <Ul>
+      {fixedTracks.map((track, i) => {
+        return TracksList(i, track);
+      })}
+    </Ul>
+  ) : (
+    <Ul>
+      <p>No fixed tracks</p>
+    </Ul>
+  );
+}
+function UnplayedTracks({ unplayedTracks, TracksList }) {
+  return (
+    <Ul>
+      {unplayedTracks.map((track, i) => {
+        return TracksList(i, track);
+      })}
+    </Ul>
+  );
 }
