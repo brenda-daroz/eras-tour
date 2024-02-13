@@ -11,7 +11,7 @@ export default function Page({ data }) {
     'floating-chat.donateButton.background-color': '#ff38b8',
     'floating-chat.donateButton.text-color': '#fff'
     });
-  </script>`;
+  </Script>`;
 
   return (
     <>
@@ -60,7 +60,8 @@ export default function Page({ data }) {
       </Head>
 
       {/* Kofi */}
-      <Script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js" />
+      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+      <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js" />
 
       {/* Plausible */}
       <Script
