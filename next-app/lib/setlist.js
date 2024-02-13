@@ -1,8 +1,10 @@
 import { discography } from "../discography.js";
-// import fs from 'fs';
 import parseDate from "../utils/parseDate.js";
 import formatDate from "../utils/formatDate.js";
 import sleep from "../utils/sleep.js";
+import fs from "fs";
+import { computeUIData } from "@/lib/logic.ts";
+import { discographySchema, setlistResponseSchema } from "@/lib/logic.ts";
 
 let cache = null;
 const SETLIST_API_KEY = process.env.SETLIST_API_KEY;
@@ -45,11 +47,12 @@ async function fetchSetlist(pageNumber) {
 export async function fazTudo(year = null) {
   const setlistData = await readFromCache();
   const readDiscography = await discography;
-  const response = combine(
-    allSongs(setlistData.setlist),
-    surpriseSongs(setlistData.setlist, year),
-    readDiscography
-  );
+  // const response = combine(
+  //   allSongs(setlistData.setlist),
+  //   surpriseSongs(setlistData.setlist, year),
+  //   readDiscography
+  // );
+  const response = computeUIData({discography: discographySchema.parse(readDiscography), setlistResponse: setlistResponseSchema.parse(setlistData), year: year})
   return response;
 }
 
@@ -254,6 +257,7 @@ const fillCache = async () => {
   console.info("Refreshing cache");
   cache = await fetchPages();
   console.info("Cache refreshed successfully");
+  fs.writeFileSync("cache.json", JSON.stringify(cache));
 };
 
 const readFromCache = async () => {
