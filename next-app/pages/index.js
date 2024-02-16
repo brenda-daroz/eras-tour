@@ -8,7 +8,7 @@ export default function Page({ data }) {
     kofiWidgetOverlay.draw('brendadaroz', {
     'type': 'floating-chat',
     'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#ff38b8',
+    'floating-chat.donateButton.background-color': '#5bc0de',
     'floating-chat.donateButton.text-color': '#fff'
     });
   </Script>`;
