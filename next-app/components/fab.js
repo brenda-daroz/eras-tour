@@ -1,16 +1,27 @@
-// Fab.js
 import React, { useState, useRef, useEffect } from "react";
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
+
+const pulsate = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
 const FloatActions = styled.div`
   position: fixed;
-  bottom: 20px;
+  bottom: 15px;
   right: 20px;
   z-index: 1;
 `;
 
 const FloatingActionButton = styled.button`
-  background-color: #625548;
+  background-color: #b30012;
   border: none;
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
@@ -19,14 +30,24 @@ const FloatingActionButton = styled.button`
   font-size: 1.1rem;
   border-radius: 50%;
   display: block;
-  color: #edece8;
+
   text-align: center;
   font-family: "Anonymous Pro", monospace;
   font-weight: 700;
+  p {
+    color: #fff;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
 
+  ${({ isClicked }) =>
+    !isClicked &&
+    css`
+      animation: ${pulsate} 2s infinite;
+    `} /* Apply pulsating animation only if button is not clicked */
   &:hover {
-    background-color: #625548b3;
+    background-color: #b30012b3;
     cursor: pointer;
+    animation: none; /* Disable animation on hover */
   }
 `;
 
@@ -47,11 +68,16 @@ const OptionButton = styled.button`
   border-radius: 50%;
   display: block;
   border: none;
-  background-color: #edece8;
+  background-color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   border-radius: 50px;
   font-family: "Anonymous Pro", monospace;
+  p {
+    color: #b30012;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+  }
 
   &:hover {
     background-color: #f0f0f0;
@@ -62,6 +88,7 @@ const OptionButton = styled.button`
 const FabYear = ({ options, year }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(year);
+  const [isClicked, setIsClicked] = useState(false); // Track whether button is clicked
 
   const containerRef = useRef(null);
 
@@ -83,6 +110,7 @@ const FabYear = ({ options, year }) => {
 
   const handleButtonClick = () => {
     setIsOpen(!isOpen);
+    setIsClicked(true); // Set isClicked to true on first click
   };
 
   const handleOptionClick = (option) => {
@@ -93,8 +121,8 @@ const FabYear = ({ options, year }) => {
 
   return (
     <FloatActions ref={containerRef}>
-      <FloatingActionButton onClick={handleButtonClick}>
-        {selectedOption}
+      <FloatingActionButton onClick={handleButtonClick} isClicked={isClicked}>
+        <p>{selectedOption}</p>
       </FloatingActionButton>
       <OptionsContainer isOpen={isOpen}>
         {options.map((option) => (
@@ -102,7 +130,7 @@ const FabYear = ({ options, year }) => {
             key={option.name}
             onClick={() => handleOptionClick(option)}
           >
-            {option.name}
+            <p> {option.name}</p>
           </OptionButton>
         ))}
       </OptionsContainer>
