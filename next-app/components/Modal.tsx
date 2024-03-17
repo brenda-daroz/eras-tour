@@ -1,8 +1,8 @@
-"use client";
-
+import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { UITrack } from "@/lib/logic";
 
 const DarkBg = styled.div`
   background-color: rgba(0, 0, 0, 0.2);
@@ -133,45 +133,60 @@ const ModalCard = styled.div`
   border-radius: 10px;
 `;
 
-const Modal = ({ setIsOpen, track }) => {
+type ModalProps = {
+  onClose: () => void;
+  track: UITrack;
+};
+
+function videoEmbedUrl(track: UITrack) {
   const regex = /video\/(\d+)/;
   const match = track.video ? track.video.match(regex) : "";
-  const url = `https://www.tiktok.com/embed/v2/${match[1]}`;
+  if (match) {
+    return `https://www.tiktok.com/embed/v2/${match[1]}`;
+  }
+}
 
+const Modal = ({ onClose, track }: ModalProps) => {
+  const url = videoEmbedUrl(track);
   return (
     <>
-      <DarkBg onClick={() => setIsOpen(false)}></DarkBg>
-      <ModalDiv onclick={(e) => e.stopPropagation()}>
+      <DarkBg onClick={onClose}></DarkBg>
+      <ModalDiv onClick={(e) => e.stopPropagation()}>
         <Wrapper>
-          <CloseButton onClick={() => setIsOpen(false)}>
+          <CloseButton onClick={onClose}>
             <FontAwesomeIcon icon={faXmark} />
           </CloseButton>
           <ModalInfo>
             <ModalTtitle>{track.title}</ModalTtitle>
 
-            {track.status.concertInfo.map((info, i) => {
-              return (
-                <ModalCard key={i}>
-                  {track.status.concertInfo.length > 1 ? (
-                    <p style={{ margin: "0 0 4px 0" }} key={i}>
-                      Day {i + 1}
-                    </p>
-                  ) : null}
-                  <ModalText key={i}>Date: {info.date}</ModalText>
-                  <ModalText key={i}>Venue: {info.venue.name}</ModalText>
-                  <ModalText key={i}>
-                    Location: {info.venue.city.name} -{" "}
-                    {info.venue.city.country.code}
-                  </ModalText>
-                  <ModalText>
-                    {track.status.instrument?.[0] === "piano" ? "🎹" : "🎸"}
-                  </ModalText>
-                </ModalCard>
-              );
-            })}
+            {track.status.type === "surprise" &&
+              track.status.concertInfo.map((info, i) => {
+                return (
+                  <ModalCard key={i}>
+                    {track.status.type === "surprise" &&
+                    track.status.concertInfo.length > 1 ? (
+                      <p style={{ margin: "0 0 4px 0" }} key={i}>
+                        Day {i + 1}
+                      </p>
+                    ) : null}
+                    <ModalText key={i}>Date: {info.date}</ModalText>
+                    <ModalText key={i}>Venue: {info.venue.name}</ModalText>
+                    <ModalText key={i}>
+                      Location: {info.venue.city.name} -{" "}
+                      {info.venue.city.country.code}
+                    </ModalText>
+                    <ModalText>
+                      {track.status.type === "surprise" &&
+                      track.status.instrument?.[0] === "piano"
+                        ? "🎹"
+                        : "🎸"}
+                    </ModalText>
+                  </ModalCard>
+                );
+              })}
           </ModalInfo>
           <>
-            {track.video ? (
+            {track.video && (
               <div
                 style={{
                   height: "700px",
@@ -180,11 +195,8 @@ const Modal = ({ setIsOpen, track }) => {
                   margin: "0 auto",
                 }}
               >
-                {" "}
-                <Video src={url} frameBorder="0" title="dasd"></Video>
+                <Video src={url} title="dasd"></Video>
               </div>
-            ) : (
-              <div></div>
             )}
           </>
         </Wrapper>

@@ -30,7 +30,8 @@ const FloatingActionButton = styled.button`
   }
 `;
 
-const OptionsContainer = styled.div`
+
+const OptionsContainer = styled.div<{isOpen: boolean}>`
   position: fixed;
   bottom: 80px;
   right: 20px;
@@ -59,17 +60,22 @@ const OptionButton = styled.button`
   }
 `;
 
-const FabYear = ({ options, year }) => {
+type Option = {
+  name: string;
+  onSelect: () => void;
+};
+
+const FabYear = ({ options, year }: {options: Option[], year: string}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(year);
 
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutside = (event: MouseEvent) => {
       if (
         containerRef.current &&
-        !containerRef.current.contains(event.target)
+        !containerRef.current.contains(event.target as Node | null)
       ) {
         setIsOpen(false);
       }
@@ -85,9 +91,9 @@ const FabYear = ({ options, year }) => {
     setIsOpen(!isOpen);
   };
 
-  const handleOptionClick = (option) => {
+  const handleOptionClick = (option: Option) => {
     setSelectedOption(option.name);
-    option.func();
+    option.onSelect();
     setIsOpen(false);
   };
 
