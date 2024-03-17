@@ -1,17 +1,15 @@
-"use client";
-
 import React from "react";
 import styled from "styled-components";
-import Track from "./Track";
 import Tabs from "./Tabs";
-import { SurpriseTracks } from "./tracks-categories/surprise-songs";
-import { FixedTracks } from "./tracks-categories/fixed-songs";
-import { UnplayedTracks } from "./tracks-categories/unplayed-songs";
+import { SurpriseTracks } from "./tracks-categories/SurpriseSongs";
+import { FixedTracks } from "./tracks-categories/FixedSongs";
+import { UnplayedTracks } from "./tracks-categories/UnplayedSongs";
+import { UIAlbum, UITrack } from "@/lib/logic";
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ bgColor: string }>`
   background: linear-gradient(
     to bottom,
-    ${(props) => props.$bgColor} 50%,
+    ${(props) => props.bgColor} 50%,
     transparent 100%
   );
   width: 20%;
@@ -27,29 +25,6 @@ const Wrapper = styled.div`
   }
   @media (min-width: 641px) and (max-width: 1024px) {
     width: 50%;
-  }
-`;
-
-const Li = styled.li`
-  list-style: none;
-  font-weight: 500;
-  line-height: 1.8;
-  color: ${(props) => props.fontColor};
-  font-size: 0.75rem;
-  text-align: center;
-  text-decoration: dotted;
-  @media only screen and (max-width: 768px) {
-    font-size: 1rem;
-  }
-  @media only screen and (min-width: 1600px) and (max-width: 2000px) {
-    font-size: 1.1rem;
-    line-height: 2;
-  }
-  @media only screen and (min-width: 2000px) {
-    font-size: 1.4rem;
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 1.4rem;
   }
 `;
 
@@ -109,12 +84,10 @@ const Figure = styled.figure`
 export default function Tracks({
   tracks,
   color,
-  image,
+  cover,
   title,
-  latest,
-  credit,
-  year,
-}) {
+  coverCredit,
+}: UIAlbum) {
   const fixedTracks = tracks.filter((track) => track.status.type === "fixed");
   const unplayedTracks = tracks.filter(
     (track) => track.status.type === "unplayed"
@@ -122,14 +95,11 @@ export default function Tracks({
   const surpriseTracks = tracks.filter(
     (track) => track.status.type === "surprise"
   );
-  let specialTracks = tracks.filter((track) => track.status.type === "special");
 
-  if (year === 2024) {
-    specialTracks = [];
-  }
+  const specialTracks: Array<UITrack> = [];
 
   return (
-    <Wrapper $bgColor={color.background}>
+    <Wrapper bgColor={color.background}>
       <Tabs
         tabs={[
           {
@@ -137,31 +107,23 @@ export default function Tracks({
             content: SurpriseTracks({
               surpriseTracks,
               specialTracks,
-              TracksList,
+              color,
             }),
           },
           {
             name: "Fixed",
-            content: FixedTracks({ fixedTracks, TracksList }),
+            content: FixedTracks({ fixedTracks, color }),
           },
           {
             name: "Unplayed",
-            content: UnplayedTracks({ unplayedTracks, TracksList }),
+            content: UnplayedTracks({ unplayedTracks, color }),
           },
         ]}
       />
       <Figure>
-        <Img src={image} alt={title}></Img>
-        <Credit>{credit}</Credit>
+        <Img src={cover} alt={title}></Img>
+        <Credit>{coverCredit}</Credit>
       </Figure>
     </Wrapper>
   );
-
-  function TracksList(i, track) {
-    return (
-      <Li key={i} fontColor={color.default}>
-        <Track track={track} color={color} latest={latest} />
-      </Li>
-    );
-  }
 }
