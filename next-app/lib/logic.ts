@@ -1,7 +1,6 @@
 import { z } from "zod";
-import fs from "fs";
-import { discography } from "@/discography";
 import * as R from "ramda";
+import parseDate from "../utils/parseDate";
 
 const venueSchema = z.object({
   name: z.string(),
@@ -49,24 +48,26 @@ export const discographySchema = z.object({
   albums: z.array(albumSchema),
 });
 
-type UITrack = {
+export type UITrack = {
   id: number;
   title: string;
   status: Status;
   video: string | null;
 };
 
-type UIDataOutput = Array<{
+export type UIAlbum = {
   id: number;
   color: { background: string; textFixed: string; textSurprise: string };
   cover: string;
   title: string;
   coverCredit: string;
   tracks: Array<UITrack>;
-}>;
+};
+
+export type UIDataOutput = Array<UIAlbum>;
 
 type Discography = z.infer<typeof discographySchema>;
-type SetlistResponse = z.infer<typeof setlistResponseSchema>;
+export type SetlistResponse = z.infer<typeof setlistResponseSchema>;
 
 type Venue = z.infer<typeof venueSchema>;
 type ConcertInfo = {
@@ -120,20 +121,23 @@ const indexSongPlays = ({
   setlistResponse: SetlistResponse;
   year?: number;
 }) => {
-  console.log(setlistResponse);
   const concerts = year
     ? setlistResponse.setlist.filter((concert) => {
-        return new Date(concert.eventDate).getFullYear() === year;
+        return parseDate(concert.eventDate).getFullYear() === year;
       })
     : setlistResponse.setlist;
 
   const concertsWithLatest = R.adjust<Concert & { latest?: boolean }>(
-    -1,
+    0,
     R.assoc("latest", true),
     concerts.sort((a, b) => {
-      return new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime();
+      return (
+        parseDate(b.eventDate).getTime() - parseDate(a.eventDate).getTime()
+      );
     })
   );
+
+  console.log(concertsWithLatest);
 
   const allSongPlays: Play[] = concertsWithLatest.flatMap((concert) => {
     return concert.sets.set
@@ -150,7 +154,9 @@ const indexSongPlays = ({
         };
       });
   });
-
+  console.log(
+    allSongPlays.filter((song) => song.name.toLowerCase() === "nothing new")
+  );
   return R.groupBy((song) => song.name.toLowerCase(), allSongPlays);
 };
 
@@ -196,7 +202,6 @@ export const computeUIData = ({
   year?: number;
 }): UIDataOutput => {
   const allSongPlays = indexSongPlays({ setlistResponse, year });
-  console.log("allSongPlays", allSongPlays);
   return discography.albums
     .sort((a, b) => a.year - b.year)
     .map((album) => {
@@ -221,10 +226,3 @@ export const computeUIData = ({
       };
     });
 };
-
-const setlistResponse = setlistResponseSchema.parse(
-  JSON.parse(fs.readFileSync("cache.json", "utf-8"))
-);
-const discographyResponse = discographySchema.parse(discography);
-
-// const data = combine({ discography: discographyResponse, setlistResponse });
