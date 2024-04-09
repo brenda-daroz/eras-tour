@@ -177,7 +177,7 @@ const Modal = ({ onClose, track }: ModalProps) => {
                     </ModalText>
                     <ModalText>
                       {track.status.type === "surprise" &&
-                      track.status.instrument?.[0] === "piano"
+                      track.status.instrument[0] === "piano"
                         ? "🎹"
                         : "🎸"}
                     </ModalText>

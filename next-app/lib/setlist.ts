@@ -8,7 +8,7 @@ import {
   setlistResponseSchema,
 } from "@/lib/logic";
 
-let cache: any = null;
+let cache: SetlistResponse | null = null;
 const SETLIST_API_KEY = process.env.SETLIST_API_KEY;
 
 function url(pageNumber: number) {
@@ -48,9 +48,8 @@ async function fetchSetlist(pageNumber: number) {
 
 export async function fazTudo(year?: number) {
   const setlistData = await readFromCache();
-  const readDiscography = await discography;
   const response = computeUIData({
-    discography: discographySchema.parse(readDiscography),
+    discography: discographySchema.parse(discography),
     setlistResponse: setlistResponseSchema.parse(setlistData),
     year: year,
   });
@@ -95,9 +94,5 @@ const readFromCache = async () => {
 
 setInterval(() => {
   console.info("Timebased refreshing cache");
-  try {
-    fillCache();
-  } catch (error) {
-    console.error("Error refreshing cache", error);
-  }
+  fillCache().catch((error) => console.error("Error refreshing cache", error));
 }, 1000 * 60 * 11);

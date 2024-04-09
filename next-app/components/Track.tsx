@@ -73,7 +73,7 @@ const Track = ({ track, color }: TrackProps) => {
   }, [isOpen]);
 
   const numberOfPlays =
-    track.status.type === "surprise" ? track.status.concertInfo?.length : 0;
+    track.status.type === "surprise" ? track.status.concertInfo.length : 0;
   const instrument =
     track.status.type === "surprise" ? track.status.instrument : null;
 

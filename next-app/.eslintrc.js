@@ -7,7 +7,7 @@ module.exports = {
     "extends": [
         "eslint:recommended",
         "next/core-web-vitals",
-        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/strict-type-checked",
         "plugin:react/recommended"
     ],
     "overrides": [
@@ -34,5 +34,6 @@ module.exports = {
         "react"
     ],
     "rules": {
+      "@typescript-eslint/no-confusing-void-expression": "off"
     }
 }

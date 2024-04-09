@@ -38,19 +38,14 @@ export default function IndexPage({
   return (
     <>
       <Container>
-        <FabYear options={options} year={String(year) ?? "All"} />
+        <FabYear options={options} year={year ? String(year) : "All"} />
         {dataYear.length === 0 ? (
           <Loading>
             <Loader />
           </Loading>
         ) : (
           dataYear.map((album, i) => {
-            return (
-              <Tracks
-                key={i}
-                {...album}
-              />
-            );
+            return <Tracks key={i} {...album} />;
           })
         )}
       </Container>
