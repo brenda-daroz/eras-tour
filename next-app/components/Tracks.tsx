@@ -12,7 +12,7 @@ const Wrapper = styled.div<{ bgColor: string }>`
     ${(props) => props.bgColor} 50%,
     transparent 100%
   );
-  width: 20%;
+  width: 25%;
   overflow: hidden;
   height: 100vh;
   position: relative;
@@ -120,10 +120,12 @@ export default function Tracks({
           },
         ]}
       />
-      <Figure>
-        <Img src={cover} alt={title}></Img>
-        <Credit>{coverCredit}</Credit>
-      </Figure>
+      {cover ? (
+        <Figure>
+          <Img src={cover} alt={title}></Img>
+          <Credit>{coverCredit ? coverCredit : null}</Credit>
+        </Figure>
+      ) : null}
     </Wrapper>
   );
 }

@@ -46,7 +46,7 @@ async function fetchSetlist(pageNumber: number) {
   }
 }
 
-export async function fazTudo(year?: number) {
+export async function combineData(year?: number) {
   const setlistData = await readFromCache();
   const response = computeUIData({
     discography: discographySchema.parse(discography),
@@ -58,12 +58,15 @@ export async function fazTudo(year?: number) {
 
 async function fetchPages(pageNumber = 1): Promise<SetlistResponse> {
   await sleep(1000);
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const response = await fetchSetlist(pageNumber);
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   if (response.itemsPerPage * response.page < response.total) {
     await sleep(1000);
     const nextPage = await fetchPages(pageNumber + 1);
 
     return setlistResponseSchema.parse({
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
       setlist: response.setlist.concat(nextPage.setlist),
     });
   } else {
