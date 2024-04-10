@@ -1,12 +1,14 @@
 import React from "react";
 import { UIDataOutput } from "@/lib/logic";
-import { fazTudo } from "@/lib/setlist";
+import { combineData } from "@/lib/setlist";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import Head from "next/head";
 import Script from "next/script";
 import IndexPage from "@/components/IndexPage";
 
-export default function Page({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) {
+export default function Page({
+  data,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const kofi = `<Script>
     kofiWidgetOverlay.draw('brendadaroz', {
     'type': 'floating-chat',
@@ -93,9 +95,9 @@ export default function Page({ data }: InferGetServerSidePropsType<typeof getSer
 export const getServerSideProps: GetServerSideProps<{
   data: { data2023: UIDataOutput; data2024: UIDataOutput; data: UIDataOutput };
 }> = async () => {
-  const data2023 = await fazTudo(2023);
-  const data2024 = await fazTudo(2024);
-  const data = await fazTudo();
+  const data2023 = await combineData(2023);
+  const data2024 = await combineData(2024);
+  const data = await combineData();
 
   return { props: { data: { data2023, data2024, data } } };
 };

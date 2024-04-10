@@ -1266,5 +1266,96 @@ export const discography = {
         },
       ],
     },
+    {
+      id: 10,
+      title: "the tortured poets department",
+      year: 2024,
+      color: {
+        background: "#eeedeb",
+        special: "#625548;",
+        fixed: "#5b5b5b",
+      },
+      cover: "../images/tortured-poets.png",
+      coverCredit: "Photographed by Beth Garrabrant",
+      tracks: [
+        {
+          id: 213,
+          title: "fortnight",
+        },
+        {
+          id: 214,
+          title: "the tortured poets department",
+        },
+        {
+          id: 215,
+          title: "my boy only breaks his favorite toys",
+        },
+        {
+          id: 216,
+          title: "down bad",
+        },
+        {
+          id: 217,
+          title: "so long, london",
+        },
+        {
+          id: 218,
+          title: "but daddy i love him",
+        },
+        {
+          id: 219,
+          title: "fresh out the slammer",
+        },
+        {
+          id: 220,
+          title: "florida!!!",
+        },
+        {
+          id: 221,
+          title: "guilty as sin?",
+        },
+        {
+          id: 222,
+          title: "who's afraid of little old me?",
+        },
+        {
+          id: 223,
+          title: "i can fix him (no really i can)",
+        },
+        {
+          id: 224,
+          title: "Loml",
+        },
+        {
+          id: 225,
+          title: "i can do it with a broken heart",
+        },
+        {
+          id: 226,
+          title: "the smallest man who ever lived",
+        },
+        {
+          id: 227,
+          title: "the alchemy",
+        },
+        {
+          id: 228,
+          title: "clara bow",
+        },
+      ],
+    },
+    {
+      id: 11,
+      title: "mashup",
+      year: 2024,
+      color: {
+        background: "#fce2f3",
+        special: "#F9399D",
+        fixed: "#F9399D",
+      },
+      cover: "../images/mashup.png",
+      coverCredit: "",
+      tracks: [],
+    },
   ],
 };
