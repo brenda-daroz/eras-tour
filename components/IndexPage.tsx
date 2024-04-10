@@ -6,8 +6,8 @@ import Tracks from "./Tracks";
 import Loader from "./Loader";
 import Info from "./Info";
 import { useState } from "react";
-import FabYear from "./fab";
 import { UIDataOutput } from "@/lib/logic";
+import FabYear from "./fab";
 
 const Container = styled.div`
   display: flex;

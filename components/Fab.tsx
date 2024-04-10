@@ -98,7 +98,7 @@ type Option = {
 const FabYear = ({ options, year }: {options: Option[], year: string}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(year);
-  const [isClicked, setIsClicked] = useState(false); // Track whether button is clicked
+  const [isClicked, setIsClicked] = useState(false);
 
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -120,7 +120,7 @@ const FabYear = ({ options, year }: {options: Option[], year: string}) => {
 
   const handleButtonClick = () => {
     setIsOpen(!isOpen);
-    setIsClicked(true); // Set isClicked to true on first click
+    setIsClicked(true);
   };
 
   const handleOptionClick = (option: Option) => {
