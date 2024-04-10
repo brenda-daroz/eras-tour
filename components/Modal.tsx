@@ -25,8 +25,7 @@ const ModalDiv = styled.div`
   max-height: 85vh;
   background-color: white;
   border-radius: 10px;
-  width: 50%;
-  padding: 10px 10px;
+  padding: 30px;
   top: 50%;
   left: 50%;
   z-index: 11;
@@ -37,6 +36,7 @@ const ModalDiv = styled.div`
   @media only screen and (max-width: 641px) {
     width: 80%;
     flex-direction: column;
+    padding: 10px;
   }
   @media (min-width: 641px) and (max-width: 1024px) {
     width: 85%;
@@ -55,11 +55,12 @@ const ModalInfo = styled.div`
   justify-content: center;
   gap: 10px;
   height: 100%;
-  width: 50%;
+  width: 100%;
   padding: 10px 0px;
   @media only screen and (max-width: 641px) {
     min-height: fit-content;
     width: 100%;
+    margin-top: 1rem;
   }
 `;
 const ModalText = styled.p`
