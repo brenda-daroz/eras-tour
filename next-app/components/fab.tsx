@@ -20,7 +20,11 @@ const FloatActions = styled.div`
   z-index: 1;
 `;
 
-const FloatingActionButton = styled.button`
+interface FloatingActionButtonProps {
+  isClicked: boolean;
+}
+
+const FloatingActionButton = styled.button<FloatingActionButtonProps>`
   background-color: #b30012;
   border: none;
   cursor: pointer;
@@ -43,7 +47,7 @@ const FloatingActionButton = styled.button`
     !isClicked &&
     css`
       animation: ${pulsate} 2s infinite;
-    `} /* Apply pulsating animation only if button is not clicked */
+    `}
   &:hover {
     background-color: #b30012b3;
     cursor: pointer;

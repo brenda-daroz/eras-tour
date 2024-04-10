@@ -142,7 +142,7 @@ const Info = () => {
         <Author>
           Website built by a
           <Link href="https://www.brenda.fyi" target="_blank" rel="noreferrer">
-            swiftie{" "}
+          {" "}swiftie{" "}
           </Link>
           to all swifties.
         </Author>
