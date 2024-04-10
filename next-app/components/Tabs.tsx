@@ -1,9 +1,8 @@
-"use client";
-
+import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
 
-const Tab = styled.li`
+const Tab = styled.li<{ $active: boolean }>`
   color: grey;
   list-style: none;
   cursor: pointer;
@@ -40,30 +39,30 @@ const ButtonGroup = styled.ul`
   box-shadow: 0px 9px 24px -3px rgba(0, 0, 0, 0.3);
 `;
 
-const types = ["Surprise", "Fixed", "Unplayed"];
+type Tab = {
+  name: string;
+  content: React.ReactNode;
+};
 
-function Tabs({ tabs }) {
-  const [active, setActive] = useState(types[0]);
+function Tabs({ tabs }: { tabs: Array<Tab> }) {
+  const [selectedTabName, setSelectedTabName] = useState(tabs[0].name);
+  const selectedTab = tabs.find((tab) => tab.name === selectedTabName);
+  if (!selectedTab) return;
 
   return (
     <>
       <ButtonGroup>
-        {types.map((type) => (
+        {tabs.map((tab) => (
           <Tab
-            key={type}
-            name={type}
-            $active={active === type}
-            onClick={() => setActive(type)}
+            key={tab.name}
+            $active={selectedTabName === tab.name}
+            onClick={() => setSelectedTabName(tab.name)}
           >
-            {type.toUpperCase()}
+            {tab.name.toUpperCase()}
           </Tab>
         ))}
       </ButtonGroup>
-      {
-        tabs.find((child) => {
-          return child.name === active;
-        }).content
-      }
+      {selectedTab.content}
     </>
   );
 }
