@@ -192,6 +192,8 @@ export const discography = {
         {
           id: 17,
           title: "come in with the rain",
+          video:
+            "https://www.tiktok.com/@chaiifrominertia/video/7334104723500420357?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
         },
         {
           id: 18,
@@ -349,13 +351,13 @@ export const discography = {
           id: 43,
           title: "superman",
           video:
-            "https://www.tiktok.com/@taylorseraa/video/7333600167364644142?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
+            "https://www.tiktok.com/@vm_gd/video/7333672814723075330?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
         },
         {
           id: 195,
           title: "electric touch",
           video:
-            "https://www.tiktok.com/@tylerfreitas36/video/7333198244085845291?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
+            "https://www.tiktok.com/@user5513100131195/video/7334173090919828756?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
         },
         {
           id: 196,
@@ -409,7 +411,7 @@ export const discography = {
           id: 45,
           title: "red",
           video:
-            "https://www.tiktok.com/@haileylax11/video/7236178108020165931?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861",
+            "https://www.tiktok.com/@spacey__kacey__/video/7336211664674639106?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
         },
         {
           id: 46,
@@ -564,7 +566,7 @@ export const discography = {
           id: 212,
           title: "eyes open",
           video:
-            "https://www.tiktok.com/@ebifriedjp/video/7333248977309109537?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
+            "https://www.tiktok.com/@tearsofmascaraa/video/7333330122709175584?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
         },
       ],
     },
@@ -1263,6 +1265,8 @@ export const discography = {
         {
           id: 203,
           title: "you're losing me",
+          video:
+            "https://www.tiktok.com/@_siaaa0/video/7336175839958027563?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
         },
       ],
     },

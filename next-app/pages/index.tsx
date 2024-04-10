@@ -13,10 +13,10 @@ export default function Page({
     kofiWidgetOverlay.draw('brendadaroz', {
     'type': 'floating-chat',
     'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#ff38b8',
+    'floating-chat.donateButton.background-color': '#5bc0de',
     'floating-chat.donateButton.text-color': '#fff'
     });
-  </script>`;
+  </Script>`;
 
   return (
     <>
@@ -65,7 +65,8 @@ export default function Page({
       </Head>
 
       {/* Kofi */}
-      <Script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js" />
+      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+      <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js" />
 
       {/* Plausible */}
       <Script
