@@ -75,7 +75,7 @@ export function SurpriseTracks({
     </Ul>
   ) : (
     <Ul>
-      <p>No 2024 surprise tracks yet.</p>
+      <p>No surprise tracks yet.</p>
     </Ul>
   );
 }

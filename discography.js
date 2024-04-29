@@ -1346,6 +1346,66 @@ export const discography = {
           id: 228,
           title: "clara bow",
         },
+        {
+          id: 229,
+          title: "the black dog"
+        },
+        {
+          id: 230,
+          title: "imgonnagetyouback",
+        },
+        {
+          id: 231,
+          title: "the albatross"
+        },
+        {
+          id: 232,
+          title: "Chloe or Sam or Sophia or Marcus"
+        },
+        {
+          id: 233,
+          title: "How Did It End?"
+        },
+        {
+          id: 234,
+          title: "so high school"
+        },
+        {
+          id: 235,
+          title: "i hate it here"
+        },
+        {
+          id: 236,
+          title: "thank you aimee"
+        },
+        {
+          id: 237,
+          title: "I Look in People's Windows"
+        },
+        {
+          id: 238,
+          title: "the prophecy"
+        },
+        {
+          id: 239,
+          title: "cassandra"
+        },
+        {
+          id: 240,
+          title: "peter"
+        },
+        {
+          id: 241,
+          title: "the bolter",
+        },
+        {
+          id: 242,
+          title: "robin",
+        },
+        {
+          id: 243,
+          title: "the manuscript",
+        },
       ],
     },
     {

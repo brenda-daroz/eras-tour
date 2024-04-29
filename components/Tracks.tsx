@@ -14,7 +14,7 @@ const Wrapper = styled.div<{ bgColor: string }>`
   );
   width: 25%;
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -28,16 +28,18 @@ const Wrapper = styled.div<{ bgColor: string }>`
   }
 `;
 
+const Figure = styled.figure`
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+`;
+
 const Img = styled.img`
-  object-fit: contain;
-  margin-left: 50%;
-  transform: translateX(-50%);
   zoom: 1.2;
-  padding: 0;
-  display: block;
   height: 300px;
   overflow: hidden;
-  // position: relative;
   -webkit-mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.9) 70%,
@@ -75,10 +77,6 @@ const Credit = styled.div`
     background-color: white;
     padding: 0.5px 3px;
   }
-`;
-
-const Figure = styled.figure`
-  // margin: 0 auto;
 `;
 
 export default function Tracks({
@@ -120,12 +118,22 @@ export default function Tracks({
           },
         ]}
       />
-      {cover ? (
-        <Figure>
-          <Img src={cover} alt={title}></Img>
-          <Credit>{coverCredit ? coverCredit : null}</Credit>
-        </Figure>
-      ) : null}
+
+      <Figure>
+        <Img src={cover} alt={title}></Img>
+        <div
+          style={{
+            fontSize: "28px",
+            position: "absolute",
+            bottom: "20px",
+            textAlign: "center",
+            color: "#3a3b3c",
+          }}
+        >
+          {title.toUpperCase()}
+        </div>
+        <Credit>{coverCredit ? coverCredit : null}</Credit>
+      </Figure>
     </Wrapper>
   );
 }
