@@ -84,14 +84,15 @@ type Status =
   | {
       type: "surprise";
       latest: boolean;
-      mashup: boolean;
       concertInfo: Array<ConcertInfo>;
       instrument: Array<Instrument>;
+      info: Array<Info>;
     }
   | { type: "unplayed" };
 type Song = z.infer<typeof songSchema>;
 type Concert = z.infer<typeof concertSchema>;
 type Instrument = "guitar" | "piano";
+export type Info = Array<string> | string;
 
 const instrument = (info: Song["info"]): Instrument => {
   const piano = /(piano)/g;
@@ -116,6 +117,7 @@ const instrument = (info: Song["info"]): Instrument => {
 type Play = {
   concertInfo: ConcertInfo;
   instrument: Instrument;
+  info: Info;
   latest: boolean;
   mashup: boolean;
 } & Song;
@@ -154,6 +156,7 @@ const computeAllSongsPlays = ({
             venue: concert.venue,
           },
           instrument: instrument(song.info),
+          info: song.info ?? "",
           mashup:
             (song.info?.includes("mashup") ||
               song.info?.includes("contains elements")) ??
@@ -163,39 +166,37 @@ const computeAllSongsPlays = ({
         };
       });
   });
-  // console.log(
-  //   allSongPlays.filter((song) => song.name.toLowerCase() === "nothing new")
-  // );
   return allSongPlays;
 };
-const indexSongsPlays = (songPlays: Play[]) => {
+
+const indexPlaysByName = (songPlays: Play[]) => {
   return R.groupBy((song) => song.name.toLowerCase(), songPlays);
 };
 
 function status({
   track,
-  indexedSongPlays,
+  playsByName,
 }: {
   track: Track;
-  indexedSongPlays: Partial<Record<string, Array<Play>>>;
+  playsByName: Partial<Record<string, Array<Play>>>;
 }): Status {
   if (track.fixed) {
     return {
       type: "fixed",
     };
   }
-  const plays = indexedSongPlays[track.title.toLowerCase()];
-  if (plays && plays.length > 0) {
+  const plays = playsByName[track.title.toLowerCase()];
+  if (plays?.length) {
     const latest = R.any((play) => play.latest, plays);
-    const mashup = R.any((play) => play.mashup, plays);
     const concertInfo = plays.map((play) => {
       return play.concertInfo;
     });
+    const info = plays.map((play) => play.info);
     const instrument = plays.map((play) => play.instrument);
     return {
       type: "surprise",
       latest,
-      mashup,
+      info,
       concertInfo,
       instrument,
     };
@@ -217,7 +218,6 @@ export const computeUIData = ({
 }): UIDataOutput => {
   const allSongPlays = computeAllSongsPlays({ setlistResponse, year });
   const mashups = allSongPlays.filter((play) => play.mashup);
-  console.log(mashups);
   const mashupTracks = mashups.map((mashup) => {
     return {
       title: mashup.name,
@@ -228,11 +228,13 @@ export const computeUIData = ({
         mashup: true,
         concertInfo: [mashup.concertInfo],
         instrument: [mashup.instrument],
+        info: [mashup.info],
       } as Status,
       video: null,
     };
   });
-  const indexedSongPlays = indexSongsPlays(allSongPlays);
+
+  const playsByName = indexPlaysByName(allSongPlays);
 
   const discographyAlbums = discography.albums
     .sort((a, b) => a.year - b.year)
@@ -251,7 +253,7 @@ export const computeUIData = ({
           return {
             id: track.id,
             title: track.title,
-            status: status({ track, indexedSongPlays }),
+            status: status({ track, playsByName }),
             video: track.video || null,
           };
         }),

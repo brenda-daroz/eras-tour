@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import { UITrack } from "@/lib/logic";
+import { Info, UITrack } from "@/lib/logic";
 
 const DarkBg = styled.div`
   background-color: rgba(0, 0, 0, 0.2);
@@ -149,6 +149,7 @@ function videoEmbedUrl(track: UITrack) {
 
 const Modal = ({ onClose, track }: ModalProps) => {
   const url = videoEmbedUrl(track);
+
   return (
     <>
       <DarkBg onClick={onClose}></DarkBg>
@@ -173,7 +174,7 @@ const Modal = ({ onClose, track }: ModalProps) => {
                     <ModalText key={i}>Date: {info.date}</ModalText>
                     <ModalText key={i}>Venue: {info.venue.name}</ModalText>
                     <ModalText key={i}>
-                      Location: {info.venue.city.name} -{" "}
+                      Location: {info.venue.city.name} -
                       {info.venue.city.country.code}
                     </ModalText>
                     <ModalText>
@@ -181,6 +182,9 @@ const Modal = ({ onClose, track }: ModalProps) => {
                       track.status.instrument[0] === "piano"
                         ? "🎹"
                         : "🎸"}
+                    </ModalText>
+                    <ModalText>
+                      {track.status.type === "surprise" && track.status.info[0]}
                     </ModalText>
                   </ModalCard>
                 );
