@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { discography } from "../discography.js";
 import sleep from "../utils/sleep.js";
 import {
@@ -7,6 +6,7 @@ import {
   discographySchema,
   setlistResponseSchema,
 } from "@/lib/logic";
+// import fs from "fs";
 
 let cache: SetlistResponse | null = null;
 const SETLIST_API_KEY = process.env.SETLIST_API_KEY;
@@ -28,12 +28,12 @@ async function fetchSetlist(pageNumber: number) {
   );
   const response = await fetch(url(pageNumber), fetchOptions);
   if (response.status >= 400) {
-    console.error(
-      Math.floor(Date.now() / 1000) +
-        "Error fetching page " +
-        pageNumber +
-        " from API"
-    );
+    console.error(`
+      ${Math.floor(Date.now() / 1000)}
+        Error fetching page
+        ${pageNumber}
+        from API
+    `);
     throw new Error(response.statusText);
   } else {
     console.info(
@@ -46,27 +46,25 @@ async function fetchSetlist(pageNumber: number) {
   }
 }
 
-export async function combineData(year?: number) {
+export async function fetchAndTransformData(year?: number) {
   const setlistData = await readFromCache();
   const response = computeUIData({
     discography: discographySchema.parse(discography),
     setlistResponse: setlistResponseSchema.parse(setlistData),
     year: year,
   });
+  // fs.writeFileSync("data.json", JSON.stringify(response));
   return response;
 }
 
 async function fetchPages(pageNumber = 1): Promise<SetlistResponse> {
   await sleep(1000);
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const response = await fetchSetlist(pageNumber);
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   if (response.itemsPerPage * response.page < response.total) {
     await sleep(1000);
     const nextPage = await fetchPages(pageNumber + 1);
 
     return setlistResponseSchema.parse({
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
       setlist: response.setlist.concat(nextPage.setlist),
     });
   } else {
@@ -88,7 +86,7 @@ const readFromCache = async () => {
     try {
       await fillCache();
     } catch (error) {
-      console.log(error);
+      console.error(error);
       throw new Error("Cache not ready", { cause: error });
     }
   }

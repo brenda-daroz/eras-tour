@@ -1,6 +1,6 @@
 import React from "react";
 import { UIDataOutput } from "@/lib/logic";
-import { combineData } from "@/lib/setlist";
+import { fetchAndTransformData } from "@/lib/setlist";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import Head from "next/head";
 import Script from "next/script";
@@ -96,9 +96,9 @@ export default function Page({
 export const getServerSideProps: GetServerSideProps<{
   data: { data2023: UIDataOutput; data2024: UIDataOutput; data: UIDataOutput };
 }> = async () => {
-  const data2023 = await combineData(2023);
-  const data2024 = await combineData(2024);
-  const data = await combineData();
+  const data2023 = await fetchAndTransformData(2023);
+  const data2024 = await fetchAndTransformData(2024);
+  const data = await fetchAndTransformData();
 
   return { props: { data: { data2023, data2024, data } } };
 };
