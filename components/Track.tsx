@@ -81,7 +81,7 @@ const Track = ({ track, color }: TrackProps) => {
     <TrackDetails
       onClick={handleClick}
       $color={
-        track.status.type === "surprise" // || track.status.type === "special"
+        track.status.type === "surprise"
           ? color.textSurprise
           : track.status.type === "fixed"
           ? color.textFixed
@@ -93,7 +93,7 @@ const Track = ({ track, color }: TrackProps) => {
         ? instrument?.[0] === "piano"
           ? "🎹"
           : "🎸"
-        : null}
+        : null}{" "}
       {track.title}
     </TrackDetails>
   );
