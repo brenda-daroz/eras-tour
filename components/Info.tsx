@@ -1,5 +1,4 @@
 import React from "react";
-
 import styled from "styled-components";
 import {
   faLinkedinIn,
@@ -16,7 +15,6 @@ const Wrapper = styled.div`
     justify-content: space-evenly;
     padding: 0 50px;
     align-items: center;
-    // flex-direction: column;
   }
   @media only screen and (max-width: 648px) {
     padding: 20px 30px;
@@ -37,8 +35,6 @@ const Container = styled.footer`
   @media only screen and (min-width: 1600px) {
     flex-direction: column;
     height: 100%;
-    //  align-items: start;
-    //  justify-content: center;
   }
 `;
 
@@ -115,8 +111,6 @@ const Subtitle = styled.h2`
 
 const Text = styled.p`
   font-size: 0.9rem;
-  // color: pink;
-  // font-weight: 700;
   text-align: center;
   line-height: 1.5;
   padding: 0;
@@ -150,7 +144,7 @@ const Info = () => {
           {`A Brazilian-born, Berlin-based swiftie who's been a fan of Taylor's
           work since 2008, I'm very proud to have created this website. I hope
           you enjoy it as much as I enjoyed building it! Feel free to get in`}
-          <Link href="mailto:brenda.daroz@gmail.com">touch</Link>{" "}
+          <Link href="mailto:brenda.daroz@gmail.com">{" "}touch</Link>{" "}
           {`with
           suggestions, feedback, or just to say hi. I'd love to hear from you!`}
         </Text>
