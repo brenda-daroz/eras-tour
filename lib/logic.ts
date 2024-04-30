@@ -222,6 +222,9 @@ export const computeUIData = ({
     if (mashup.name === "Getaway Car") {
       mashup.name = "getaway car / august / the other side of the door";
     }
+    if (mashup.name === "Death by a Thousand Cuts") {
+      mashup.name = "Death by a Thousand Cuts / Babe";
+    }
     if (mashup.name === "Come Back… Be Here") {
       mashup.name = "Come Back… Be Here / Daylight";
     }
