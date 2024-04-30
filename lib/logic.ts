@@ -219,6 +219,12 @@ export const computeUIData = ({
   const allSongPlays = computeAllSongsPlays({ setlistResponse, year });
   const mashups = allSongPlays.filter((play) => play.mashup);
   const mashupTracks = mashups.map((mashup) => {
+    if (mashup.name === "Getaway Car") {
+      mashup.name = "getaway car / august / the other side of the door";
+    }
+    if (mashup.name === "Come Back… Be Here") {
+      mashup.name = "Come Back… Be Here / Daylight";
+    }
     return {
       title: mashup.name,
       id: Math.random(),
@@ -233,6 +239,8 @@ export const computeUIData = ({
       video: null,
     };
   });
+
+  console.log(mashupTracks);
 
   const playsByName = indexPlaysByName(allSongPlays);
 
