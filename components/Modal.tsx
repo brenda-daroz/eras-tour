@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import { Info, UITrack } from "@/lib/logic";
+import { UITrack } from "@/lib/logic";
 
 const DarkBg = styled.div`
   background-color: rgba(0, 0, 0, 0.2);
@@ -55,7 +55,7 @@ const ModalInfo = styled.div`
   justify-content: center;
   gap: 10px;
   height: 100%;
-  width: 100%;
+  max-width: 400px;
   padding: 10px 0px;
   @media only screen and (max-width: 641px) {
     min-height: fit-content;
@@ -73,7 +73,7 @@ const ModalText = styled.p`
   }
 `;
 
-const ModalTtitle = styled.h3`
+const ModalTitle = styled.h3`
   font-size: 1rem;
   text-align: center;
   padding: 0 5px;
@@ -130,7 +130,7 @@ const Video = styled.iframe`
 const ModalCard = styled.div`
   background-color: #ebebeb;
   padding: 10px;
-  width: 70%;
+  width: 80%;
   border-radius: 10px;
 `;
 
@@ -159,34 +159,39 @@ const Modal = ({ onClose, track }: ModalProps) => {
             <FontAwesomeIcon icon={faXmark} />
           </CloseButton>
           <ModalInfo>
-            <ModalTtitle>{track.title}</ModalTtitle>
+            <ModalTitle>{track.title}</ModalTitle>
 
             {track.status.type === "surprise" &&
               track.status.concertInfo.map((info, i) => {
                 return (
-                  <ModalCard key={i}>
-                    {track.status.type === "surprise" &&
-                    track.status.concertInfo.length > 1 ? (
-                      <p style={{ margin: "0 0 4px 0" }} key={i}>
-                        Day {i + 1}
-                      </p>
-                    ) : null}
-                    <ModalText key={i}>Date: {info.date}</ModalText>
-                    <ModalText key={i}>Venue: {info.venue.name}</ModalText>
-                    <ModalText key={i}>
-                      Location: {info.venue.city.name} -
-                      {info.venue.city.country.code}
-                    </ModalText>
-                    <ModalText>
+                  <>
+                    <ModalCard key={i}>
                       {track.status.type === "surprise" &&
-                      track.status.instrument[0] === "piano"
-                        ? "🎹"
-                        : "🎸"}
-                    </ModalText>
-                    <ModalText>
-                      {track.status.type === "surprise" && track.status.info[0]}
-                    </ModalText>
-                  </ModalCard>
+                      track.status.concertInfo.length > 1 ? (
+                        <p style={{ margin: "0 0 4px 0" }} key={i}>
+                          Day {i + 1}
+                        </p>
+                      ) : null}
+                      <ModalText key={i}>Date: {info.date}</ModalText>
+                      <ModalText key={i}>Venue: {info.venue.name}</ModalText>
+                      <ModalText key={i}>
+                        Location: {info.venue.city.name} -
+                        {info.venue.city.country.code}
+                      </ModalText>
+                      {/* <ModalText>
+                        {track.status.type === "surprise" &&
+                        track.status.instrument[0] === "piano"
+                          ? "🎹"
+                          : "🎸"}
+                      </ModalText> */}
+                    </ModalCard>
+                    <ModalCard style={{ backgroundColor: "pink" }}>
+                      <ModalText>
+                        Info: {track.status.type === "surprise" &&
+                          track.status.info[0]}
+                      </ModalText>
+                    </ModalCard>
+                  </>
                 );
               })}
           </ModalInfo>
