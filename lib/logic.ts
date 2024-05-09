@@ -131,7 +131,7 @@ const computeAllSongsPlays = ({
 }) => {
   const concerts = year
     ? setlistResponse.setlist.filter((concert) => {
-        return parseDate(concert.eventDate).getFullYear() === year;
+        return parseDate(concert.eventDate).getFullYear() === year && concert.sets.set.length > 0;
       })
     : setlistResponse.setlist;
 
@@ -242,8 +242,6 @@ export const computeUIData = ({
       video: null,
     };
   });
-
-  console.log(mashupTracks);
 
   const playsByName = indexPlaysByName(allSongPlays);
 
