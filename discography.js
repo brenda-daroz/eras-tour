@@ -1285,6 +1285,7 @@ export const discography = {
         {
           id: 213,
           title: "fortnight",
+          fixed: true,
         },
         {
           id: 214,
@@ -1297,6 +1298,7 @@ export const discography = {
         {
           id: 216,
           title: "down bad",
+          fixed: true,
         },
         {
           id: 217,
@@ -1305,6 +1307,7 @@ export const discography = {
         {
           id: 218,
           title: "but daddy i love him",
+          fixed: true,
         },
         {
           id: 219,
@@ -1321,6 +1324,7 @@ export const discography = {
         {
           id: 222,
           title: "who's afraid of little old me?",
+          fixed: true,
         },
         {
           id: 223,
@@ -1333,10 +1337,12 @@ export const discography = {
         {
           id: 225,
           title: "i can do it with a broken heart",
+          fixed: true,
         },
         {
           id: 226,
           title: "the smallest man who ever lived",
+          fixed: true,
         },
         {
           id: 227,
@@ -1368,7 +1374,8 @@ export const discography = {
         },
         {
           id: 234,
-          title: "so high school"
+          title: "so high school",
+          fixed: true,
         },
         {
           id: 235,
