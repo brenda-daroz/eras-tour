@@ -21,7 +21,7 @@ const FloatActions = styled.div`
 `;
 
 interface FloatingActionButtonProps {
-  isClicked: boolean;
+  $isClicked: boolean;
 }
 
 const FloatingActionButton = styled.button<FloatingActionButtonProps>`
@@ -43,8 +43,8 @@ const FloatingActionButton = styled.button<FloatingActionButtonProps>`
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   }
 
-  ${({ isClicked }) =>
-    !isClicked &&
+  ${({ $isClicked }) =>
+    !$isClicked &&
     css`
       animation: ${pulsate} 2s infinite;
     `}
@@ -56,13 +56,13 @@ const FloatingActionButton = styled.button<FloatingActionButtonProps>`
 `;
 
 
-const OptionsContainer = styled.div<{isOpen: boolean}>`
+const OptionsContainer = styled.div<{$isOpen: boolean}>`
   position: fixed;
   bottom: 80px;
   right: 20px;
   border-radius: 5px;
   padding: 10px;
-  display: ${(props) => (props.isOpen ? "block" : "none")};
+  display: ${(props) => (props.$isOpen ? "block" : "none")};
 `;
 
 const OptionButton = styled.button`
@@ -131,10 +131,10 @@ const FabYear = ({ options, year }: {options: Option[], year: string}) => {
 
   return (
     <FloatActions ref={containerRef}>
-      <FloatingActionButton onClick={handleButtonClick} isClicked={isClicked}>
+      <FloatingActionButton onClick={handleButtonClick} $isClicked={isClicked}>
         <p>{selectedOption}</p>
       </FloatingActionButton>
-      <OptionsContainer isOpen={isOpen}>
+      <OptionsContainer $isOpen={isOpen}>
         {options.map((option) => (
           <OptionButton
             key={option.name}

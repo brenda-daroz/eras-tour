@@ -131,7 +131,10 @@ const computeAllSongsPlays = ({
 }) => {
   const concerts = year
     ? setlistResponse.setlist.filter((concert) => {
-        return parseDate(concert.eventDate).getFullYear() === year && concert.sets.set.length > 0;
+        return (
+          parseDate(concert.eventDate).getFullYear() === year &&
+          concert.sets.set.length > 0
+        );
       })
     : setlistResponse.setlist;
 
@@ -207,6 +210,17 @@ function status({
   }
 }
 
+function extractQuotedStrings(input: string): string[] {
+  const regex = /"([^"]*)"/g;
+  const matches: string[] = [];
+  let match;
+  while ((match = regex.exec(input)) !== null) {
+    matches.push(match[1]);
+  }
+  console.log(matches);
+  return matches;
+}
+
 export const computeUIData = ({
   discography,
   setlistResponse,
@@ -219,6 +233,9 @@ export const computeUIData = ({
   const allSongPlays = computeAllSongsPlays({ setlistResponse, year });
   const mashups = allSongPlays.filter((play) => play.mashup);
   const mashupTracks = mashups.map((mashup) => {
+    if (mashup.name === "Is It Over Now?") {
+      mashup.name = "is it over now? / I Wish You Would";
+    }
     if (mashup.name === "Getaway Car") {
       mashup.name = "getaway car / august / the other side of the door";
     }
@@ -228,8 +245,23 @@ export const computeUIData = ({
     if (mashup.name === "Come Back… Be Here") {
       mashup.name = "Come Back… Be Here / Daylight";
     }
+
+    const mashedUpSongNames = extractQuotedStrings(mashup.info);
+    const name = mashup.name + " / " + mashedUpSongNames.join(" / ");
+
+    function removeDuplicates(songNames: string): string {
+      const nameArray = songNames.split(" / ");
+      const uniqueNames = Array.from(new Set(nameArray));
+      return uniqueNames.join(" / ");
+    }
+
+    function removeTrailingDelimiter(songNames: string): string {
+      const names = removeDuplicates(songNames);
+      return names.endsWith(" / ") ? names.slice(0, -3) : names;
+    }
+
     return {
-      title: mashup.name,
+      title: removeTrailingDelimiter(name),
       id: Math.random(),
       status: {
         type: "surprise",
