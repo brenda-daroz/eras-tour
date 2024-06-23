@@ -24,7 +24,7 @@
     "zod": "^3.22.4"
   },
   "engines": {
-    "node": "21.6.1"
+    "node": "20"
   },
   "devDependencies": {
     "@types/node": "20.11.17",
