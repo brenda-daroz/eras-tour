@@ -58,10 +58,10 @@ export async function fetchAndTransformData(year?: number) {
 }
 
 async function fetchPages(pageNumber = 1): Promise<SetlistResponse> {
-  await sleep(1000);
+  // await sleep(1000);
   const response = await fetchSetlist(pageNumber);
   if (response.itemsPerPage * response.page < response.total) {
-    await sleep(1000);
+    await sleep(500);
     const nextPage = await fetchPages(pageNumber + 1);
 
     return setlistResponseSchema.parse({
