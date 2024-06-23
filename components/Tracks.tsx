@@ -6,10 +6,10 @@ import { FixedTracks } from "./tracks-categories/FixedSongs";
 import { UnplayedTracks } from "./tracks-categories/UnplayedSongs";
 import { UIAlbum, UITrack } from "@/lib/logic";
 
-const Wrapper = styled.div<{ bgColor: string }>`
+const Wrapper = styled.div<{ $bgColor: string }>`
   background: linear-gradient(
     to bottom,
-    ${(props) => props.bgColor} 50%,
+    ${(props) => props.$bgColor} 50%,
     transparent 100%
   );
   width: 25%;
@@ -97,7 +97,7 @@ export default function Tracks({
   const specialTracks: Array<UITrack> = [];
 
   return (
-    <Wrapper bgColor={color.background}>
+    <Wrapper $bgColor={color.background}>
       <Tabs
         tabs={[
           {

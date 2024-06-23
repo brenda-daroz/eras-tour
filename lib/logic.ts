@@ -217,7 +217,6 @@ function extractQuotedStrings(input: string): string[] {
   while ((match = regex.exec(input)) !== null) {
     matches.push(match[1]);
   }
-  console.log(matches);
   return matches;
 }
 
