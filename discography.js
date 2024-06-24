@@ -9,7 +9,7 @@ export const discography = {
         special: "#2F411F",
         fixed: "#5b5b5b",
       },
-      cover: "../images/taylorSwift.png",
+      cover: "/images/taylorSwift.png",
       coverCredit: "Photographed by Scott Eisen",
       tracks: [
         {
@@ -103,7 +103,7 @@ export const discography = {
         special: "#453D12",
         fixed: "#5b5b5b",
       },
-      cover: "../images/fearless.png",
+      cover: "/images/fearless.png",
       coverCredit: "Photographed by John Shearer",
       tracks: [
         {
@@ -250,7 +250,7 @@ export const discography = {
         special: "#3A2145",
         fixed: "#5b5b5b",
       },
-      cover: "../images/speakNow.png",
+      cover: "/images/speakNow.png",
       coverCredit: "Photographed by Fernando Leon",
       tracks: [
         {
@@ -398,7 +398,7 @@ export const discography = {
         special: "#48141F",
         fixed: "#5b5b5b",
       },
-      cover: "../images/red.png",
+      cover: "/images/red.png",
       coverCredit: "Photographed by John Shearer",
       tracks: [
         {
@@ -579,7 +579,7 @@ export const discography = {
         special: "#07375F",
         fixed: "#5b5b5b",
       },
-      cover: "../images/1989.png",
+      cover: "/images/1989.png",
       coverCredit: "Photographed by Kevin Mazur",
       tracks: [
         {
@@ -722,7 +722,7 @@ export const discography = {
         special: "#272626",
         fixed: "#5b5b5b",
       },
-      cover: "../images/reputation.png",
+      cover: "/images/reputation.png",
       coverCredit: "Photographed by Omar Vega",
       tracks: [
         {
@@ -820,7 +820,7 @@ export const discography = {
         special: "#611942",
         fixed: "#5b5b5b",
       },
-      cover: "../images/lover.png",
+      cover: "/images/lover.png",
       coverCredit: "TAS Rights Management",
       tracks: [
         {
@@ -936,7 +936,7 @@ export const discography = {
         special: "#000000",
         fixed: "#393838",
       },
-      cover: "../images/folklore.png",
+      cover: "/images/folklore.png",
       coverCredit: "Photographed by Octavio Jones",
       tracks: [
         {
@@ -1038,7 +1038,7 @@ export const discography = {
         special: "#553116",
         fixed: "#5b5b5b",
       },
-      cover: "../images/evermore.png",
+      cover: "/images/evermore.png",
       coverCredit: "Photographed by Taylor Hill",
       tracks: [
         {
@@ -1144,7 +1144,7 @@ export const discography = {
         special: "#9EA9FF",
         fixed: "#60658E",
       },
-      cover: "../images/midnights.png",
+      cover: "/images/midnights.png",
       coverCredit: "Photographed by Scott Eisen",
       tracks: [
         {
@@ -1279,7 +1279,7 @@ export const discography = {
         special: "#625548;",
         fixed: "#5b5b5b",
       },
-      cover: "../images/tortured-poets.png",
+      cover: "/images/tortured-poets.png",
       coverCredit: "Photographed by Beth Garrabrant",
       tracks: [
         {
@@ -1428,7 +1428,7 @@ export const discography = {
         special: "#F9399D",
         fixed: "#F9399D",
       },
-      cover: "../images/mashup.png",
+      cover: "/images/mashup.png",
       coverCredit: "",
       tracks: [],
     },
