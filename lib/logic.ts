@@ -87,6 +87,7 @@ type Status =
       concertInfo: Array<ConcertInfo>;
       instrument: Array<Instrument>;
       info: Array<Info>;
+      mashup: boolean;
     }
   | { type: "unplayed" };
 type Song = z.infer<typeof songSchema>;
@@ -162,7 +163,7 @@ const computeAllSongsPlays = ({
           info: song.info ?? "",
           mashup:
             (song.info?.includes("mashup") ||
-              song.info?.includes("contains elements")) ??
+              song.info?.includes("elements of")) ??
             false,
           latest: concert.latest ?? false,
           ...song,
@@ -202,6 +203,7 @@ function status({
       info,
       concertInfo,
       instrument,
+      mashup: plays.some((play) => play.mashup),
     };
   } else {
     return {
@@ -245,7 +247,13 @@ export const computeUIData = ({
       mashup.name = "Come Back… Be Here / Daylight";
     }
 
-    const mashedUpSongNames = extractQuotedStrings(mashup.info);
+    const allSongs = discography.albums.flatMap((album) =>
+      album.tracks.map((track) => track.title.toLowerCase())
+    );
+
+    const mashedUpSongNames = extractQuotedStrings(mashup.info).filter((song) =>
+      allSongs.includes(song.toLowerCase())
+    );
     const name = mashup.name + " / " + mashedUpSongNames.join(" / ");
 
     function removeDuplicates(songNames: string): string {
@@ -274,7 +282,27 @@ export const computeUIData = ({
     };
   });
 
-  const playsByName = indexPlaysByName(allSongPlays);
+  const separatedMashupPlays = mashups.flatMap((mashup) => {
+    const mashedUpSongNames = mashup.name.split(" / ");
+    return mashedUpSongNames.map((name) => ({
+      name,
+      type: "surprise",
+      concertInfo: mashup.concertInfo,
+      instrument: mashup.instrument,
+      info: mashup.info,
+      latest: mashup.latest,
+      mashup: true,
+    }));
+  });
+
+  const combinedSongs = [
+    ...separatedMashupPlays,
+    ...allSongPlays.filter((play) => !play.mashup),
+  ];
+
+  console.log(combinedSongs);
+
+  const playsByName = indexPlaysByName(combinedSongs);
 
   const discographyAlbums = discography.albums
     .sort((a, b) => a.year - b.year)
