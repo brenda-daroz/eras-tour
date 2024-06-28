@@ -48,6 +48,7 @@ async function fetchSetlist(pageNumber: number) {
 
 export async function fetchAndTransformData(year?: number) {
   const setlistData = await readFromCache();
+  // fs.writeFileSync("setlist.json", JSON.stringify(setlistData));
   const response = computeUIData({
     discography: discographySchema.parse(discography),
     setlistResponse: setlistResponseSchema.parse(setlistData),
@@ -61,7 +62,7 @@ async function fetchPages(pageNumber = 1): Promise<SetlistResponse> {
   // await sleep(1000);
   const response = await fetchSetlist(pageNumber);
   if (response.itemsPerPage * response.page < response.total) {
-    await sleep(500);
+    await sleep(600);
     const nextPage = await fetchPages(pageNumber + 1);
 
     return setlistResponseSchema.parse({
