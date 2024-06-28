@@ -169,7 +169,7 @@ const Modal = ({ onClose, track }: ModalProps) => {
                       {track.status.type === "surprise" &&
                       track.status.concertInfo.length > 1 ? (
                         <p style={{ margin: "0 0 4px 0" }} key={i}>
-                          Day {i + 1}
+                          Day {track.status.concertInfo.length - i}
                         </p>
                       ) : null}
                       <ModalText key={i}>Date: {info.date}</ModalText>
@@ -178,17 +178,11 @@ const Modal = ({ onClose, track }: ModalProps) => {
                         Location: {info.venue.city.name} -
                         {info.venue.city.country.code}
                       </ModalText>
-                      {/* <ModalText>
-                        {track.status.type === "surprise" &&
-                        track.status.instrument[0] === "piano"
-                          ? "🎹"
-                          : "🎸"}
-                      </ModalText> */}
-                    </ModalCard>
-                    <ModalCard style={{ backgroundColor: "pink" }}>
                       <ModalText>
-                        Info: {track.status.type === "surprise" &&
-                          track.status.info[0]}
+                        <strong>
+                          Info: {track.status.type === "surprise" &&
+                            track.status.info[i]}
+                        </strong>
                       </ModalText>
                     </ModalCard>
                   </>

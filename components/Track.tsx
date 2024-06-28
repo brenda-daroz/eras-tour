@@ -93,7 +93,7 @@ const Track = ({ track, color }: TrackProps) => {
         ? instrument?.[0] === "piano"
           ? "🎹"
           : "🎸"
-        : null}{" "}
+        : null}
       {track.title}
     </TrackDetails>
   );
