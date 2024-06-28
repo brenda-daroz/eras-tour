@@ -163,7 +163,7 @@ const computeAllSongsPlays = ({
           info: song.info ?? "",
           mashup:
             (song.info?.includes("mashup") ||
-              song.info?.includes("elements of")) ??
+              song.info?.includes("elements")) ??
             false,
           latest: concert.latest ?? false,
           ...song,
@@ -299,8 +299,6 @@ export const computeUIData = ({
     ...separatedMashupPlays,
     ...allSongPlays.filter((play) => !play.mashup),
   ];
-
-  console.log(combinedSongs);
 
   const playsByName = indexPlaysByName(combinedSongs);
 
