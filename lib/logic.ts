@@ -251,10 +251,8 @@ export const computeUIData = ({
       album.tracks.map((track) => track.title.toLowerCase())
     );
 
-    const mashedUpSongNames = extractQuotedStrings(mashup.info).filter(
-      (song) => {
-        allSongs.includes(song.toLowerCase());
-      }
+    const mashedUpSongNames = extractQuotedStrings(mashup.info).filter((song) =>
+      allSongs.includes(song.toLowerCase())
     );
 
     const name = mashup.name + " / " + mashedUpSongNames.join(" / ");
