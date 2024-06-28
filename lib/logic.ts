@@ -251,9 +251,12 @@ export const computeUIData = ({
       album.tracks.map((track) => track.title.toLowerCase())
     );
 
-    const mashedUpSongNames = extractQuotedStrings(mashup.info).filter((song) =>
-      allSongs.includes(song.toLowerCase())
+    const mashedUpSongNames = extractQuotedStrings(mashup.info).filter(
+      (song) => {
+        allSongs.includes(song.toLowerCase());
+      }
     );
+
     const name = mashup.name + " / " + mashedUpSongNames.join(" / ");
 
     function removeDuplicates(songNames: string): string {
@@ -267,8 +270,11 @@ export const computeUIData = ({
       return names.endsWith(" / ") ? names.slice(0, -3) : names;
     }
 
+    const updatedName = removeTrailingDelimiter(name);
+    mashup.name = updatedName;
+
     return {
-      title: removeTrailingDelimiter(name),
+      title: updatedName,
       id: Math.random(),
       status: {
         type: "surprise",
