@@ -1133,6 +1133,10 @@ export const discography = {
           video:
             "https://www.tiktok.com/@ali1989tv13/video/7306247777695190302?is_from_webapp=1&sender_device=pc&web_id=7255365409010943493",
         },
+        {
+          id: 245,
+          title: "carolina",
+        },
       ],
     },
     {
@@ -1354,7 +1358,7 @@ export const discography = {
         },
         {
           id: 229,
-          title: "the black dog"
+          title: "the black dog",
         },
         {
           id: 230,
@@ -1362,15 +1366,15 @@ export const discography = {
         },
         {
           id: 231,
-          title: "the albatross"
+          title: "the albatross",
         },
         {
           id: 232,
-          title: "Chloe or Sam or Sophia or Marcus"
+          title: "Chloe or Sam or Sophia or Marcus",
         },
         {
           id: 233,
-          title: "How Did It End?"
+          title: "How Did It End?",
         },
         {
           id: 234,
@@ -1379,27 +1383,27 @@ export const discography = {
         },
         {
           id: 235,
-          title: "i hate it here"
+          title: "i hate it here",
         },
         {
           id: 236,
-          title: "thank you aimee"
+          title: "thank you aimee",
         },
         {
           id: 237,
-          title: "I Look in People's Windows"
+          title: "I Look in People's Windows",
         },
         {
           id: 238,
-          title: "the prophecy"
+          title: "the prophecy",
         },
         {
           id: 239,
-          title: "cassandra"
+          title: "cassandra",
         },
         {
           id: 240,
-          title: "peter"
+          title: "peter",
         },
         {
           id: 241,
@@ -1415,8 +1419,8 @@ export const discography = {
         },
         {
           id: 244,
-          title: "us."
-        }
+          title: "us.",
+        },
       ],
     },
     {

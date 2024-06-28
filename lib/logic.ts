@@ -1,6 +1,7 @@
 import { z } from "zod";
 import * as R from "ramda";
 import parseDate from "../utils/parseDate";
+import { videoURLs } from "./videoUrls";
 
 const venueSchema = z.object({
   name: z.string(),
@@ -237,14 +238,29 @@ export const computeUIData = ({
     if (mashup.name === "Is It Over Now?") {
       mashup.name = "is it over now? / I Wish You Would";
     }
-    if (mashup.name === "Getaway Car") {
+    if (
+      mashup.name === "Getaway Car" &&
+      mashup.concertInfo.date === "17-02-2024"
+    ) {
       mashup.name = "getaway car / august / the other side of the door";
     }
-    if (mashup.name === "Death by a Thousand Cuts") {
+    if (
+      mashup.name === "Death by a Thousand Cuts" &&
+      mashup.concertInfo.date === "07-03-2024"
+    ) {
       mashup.name = "Death by a Thousand Cuts / Babe";
     }
-    if (mashup.name === "Come Back… Be Here") {
+    if (
+      mashup.name === "Come Back… Be Here" &&
+      mashup.concertInfo.date === "18-02-2024"
+    ) {
       mashup.name = "Come Back… Be Here / Daylight";
+    }
+    if (
+      mashup.name === "The Black Dog" &&
+      mashup.concertInfo.date === "21-06-2024"
+    ) {
+      mashup.name = "The Black Dog / Come Back… Be Here / Maroon";
     }
 
     const allSongs = discography.albums.flatMap((album) =>
@@ -271,6 +287,8 @@ export const computeUIData = ({
     const updatedName = removeTrailingDelimiter(name);
     mashup.name = updatedName;
 
+    const videoURL = videoURLs[updatedName] || null;
+
     return {
       title: updatedName,
       id: Math.random(),
@@ -282,7 +300,7 @@ export const computeUIData = ({
         instrument: [mashup.instrument],
         info: [mashup.info],
       } as Status,
-      video: null,
+      video: videoURL,
     };
   });
 
