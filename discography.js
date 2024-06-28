@@ -501,7 +501,7 @@ export const discography = {
         },
         {
           id: 184,
-          title: "come back… be here",
+          title: "Come Back… Be Here",
           video:
             "https://www.tiktok.com/@thesassyrose/video/7232679586885061931?is_from_webapp=1&sender_device=pc&web_id=7191502464532153861",
         },
@@ -1420,6 +1420,8 @@ export const discography = {
         {
           id: 244,
           title: "us.",
+          video:
+            "https://www.tiktok.com/@arkkaived/video/7383948443074530593?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
         },
       ],
     },
