@@ -136,7 +136,8 @@ const Info = () => {
         <Author>
           Website built by a
           <Link href="https://www.brenda.fyi" target="_blank" rel="noreferrer">
-          {" "}swiftie{" "}
+            {" "}
+            swiftie{" "}
           </Link>
           to all swifties.
         </Author>
@@ -144,19 +145,9 @@ const Info = () => {
           {`A Brazilian-born, Berlin-based swiftie who's been a fan of Taylor's
           work since 2008, I'm very proud to have created this website. I hope
           you enjoy it as much as I enjoyed building it! Feel free to get in`}
-          <Link href="mailto:brenda.daroz@gmail.com">{" "}touch</Link>{" "}
+          <Link href="mailto:brenda.daroz@gmail.com"> touch</Link>{" "}
           {`with
           suggestions, feedback, or just to say hi. I'd love to hear from you!`}
-        </Text>
-        <Text>
-          {`This website displays all albums Taylor's put out so far each divided
-          into three categories: Surprise, Fixed, and Unplayed. The Surprise
-          section showcases the songs she's already performed (even the ones
-          she's already repeated), leaving you wondering for what might come
-          next. The Fixed category features the must-hear songs that grace every
-          concert, ensuring you don't miss out on any of the classics. Lastly,
-          the Unplayed section builds up anticipation as it lists the songs
-          Taylor has yet to unveil on this tour.`}
         </Text>
         <Text>
           {`By clicking on the surprise songs, a magical modal window appears,
@@ -167,8 +158,18 @@ const Info = () => {
           having a front-row seat to Taylor's concert!`}
         </Text>
         <Text>
-          {`I'll be at the Eras Tour in São Paulo nights 2 & 3, Münich night 1,
-          and Milan night 1. See you there!`}
+          {`You can change the year on the bottom right button, so you can
+        see only played songs of 2024, of 2023 or a combination of both by selecting "All".`}
+        </Text>
+        <Text>
+          <strong>
+            {`If you enjoy the website and feel like donating and helping me maintain it, you can do so by using my Ko-fi "Support Me"
+          donation button as well.`}
+          </strong>
+        </Text>
+        <Text>
+          {`I went to the Eras Tour at São Paulo nights 2 & 3, and will be attending
+          Milan night 1. See you there!`}
         </Text>
       </Header>
       <Container>
