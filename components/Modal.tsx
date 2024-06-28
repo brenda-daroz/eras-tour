@@ -199,7 +199,7 @@ const Modal = ({ onClose, track }: ModalProps) => {
                   margin: "0 auto",
                 }}
               >
-                <Video src={url} title="dasd"></Video>
+                <Video src={url} title={track.title}></Video>
               </div>
             )}
           </>
