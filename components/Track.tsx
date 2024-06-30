@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Modal from "./Modal";
 import { UITrack } from "@/lib/logic";
+import { useModal } from "@/hooks/useModal";
 
 const TrackDetails = styled.div<{
   $color: string;
@@ -61,16 +62,7 @@ type TrackProps = {
 };
 
 const Track = ({ track, color }: TrackProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setIsOpen(true);
-  };
-
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "auto";
-  }, [isOpen]);
+  const { isOpen, selectedTrack, openModal, closeModal } = useModal();
 
   const numberOfPlays =
     track.status.type === "surprise" ? track.status.concertInfo.length : 0;
@@ -79,7 +71,7 @@ const Track = ({ track, color }: TrackProps) => {
 
   const trackDetails = (
     <TrackDetails
-      onClick={handleClick}
+      onClick={() => openModal(track)}
       $color={
         track.status.type === "surprise"
           ? color.textSurprise
@@ -124,7 +116,9 @@ const Track = ({ track, color }: TrackProps) => {
         <>{trackDetails}</>
       )}
 
-      {isOpen ? <Modal onClose={() => setIsOpen(false)} track={track} /> : null}
+      {isOpen && selectedTrack && (
+        <Modal onClose={closeModal} track={selectedTrack} />
+      )}
     </>
   );
 };
