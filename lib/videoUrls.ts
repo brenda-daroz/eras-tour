@@ -1,4 +1,8 @@
 export const videoURLs: Record<string, string> = {
+  "The Albatross / Dancing With Our Hands Tied": "https://www.tiktok.com/@tayfield_/video/7386144177488170272?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "This Love / Ours": "https://www.tiktok.com/@rachelkirk.x/video/7386065697056574752?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "State of Grace / You're on Your Own, Kid": "https://www.tiktok.com/@n0t_rusty/video/7385713105851993360?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "Sweet Nothing / hoax": "https://www.tiktok.com/@brrussels/video/7385710551713729799?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "Out of the Woods / Is It Over Now? / Clean":
     "https://www.tiktok.com/@swiftiesupremacy.13/video/7350254816506957061?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "thanK you aIMee / Mean": "https://www.tiktok.com/@dazzlinghazemerch/video/7383492037242309921?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
