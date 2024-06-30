@@ -120,7 +120,10 @@ export default function Tracks({
       />
 
       <Figure>
-        <Img src={`https://raw.githubusercontent.com/brenda-daroz/eras-tour/main/public${cover}`} alt={title}></Img>
+        <Img
+          src={`https://raw.githubusercontent.com/brenda-daroz/eras-tour/main/public${cover}`}
+          alt={title}
+        ></Img>
         <div
           style={{
             fontSize: "28px",
