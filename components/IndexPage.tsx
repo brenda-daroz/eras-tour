@@ -8,7 +8,7 @@ import Info from "./Info";
 import { useState } from "react";
 import { UIDataOutput } from "@/lib/logic";
 import FabYear from "./Fab";
-import { LastPlayed } from "./LastPlayed";
+import { LastPlayedSurpriseSongs } from "./LastPlayedSurpriseSongs";
 
 const Container = styled.div`
   display: flex;
@@ -40,7 +40,7 @@ export default function IndexPage({
 
   return (
     <>
-      <LastPlayed data={tracks} />
+      <LastPlayedSurpriseSongs data={tracks} />
       <Container>
         <FabYear options={options} year={year ? String(year) : "All"} />
         {dataYear.length === 0 ? (
