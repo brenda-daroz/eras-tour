@@ -67,7 +67,9 @@ const Track = ({ track, color }: TrackProps) => {
   const numberOfPlays =
     track.status.type === "surprise" ? track.status.concertInfo.length : 0;
   const instrument =
-    track.status.type === "surprise" ? track.status.instrument : null;
+    track.status.type === "surprise"
+      ? track.status.concertInfo.map((item) => item.instrument)
+      : null;
 
   const trackDetails = (
     <TrackDetails

@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import { UITrack } from "@/lib/logic";
+import { ConcertInfo, UITrack } from "@/lib/logic";
+import parseDate from "@/utils/parseDate";
 
 const DarkBg = styled.div`
   background-color: rgba(0, 0, 0, 0.2);
@@ -56,6 +57,7 @@ const ModalInfo = styled.div`
   gap: 10px;
   height: 100%;
   max-width: 400px;
+  text-align: center;
   padding: 10px 0px;
   @media only screen and (max-width: 641px) {
     min-height: fit-content;
@@ -150,6 +152,17 @@ function videoEmbedUrl(track: UITrack) {
 const Modal = ({ onClose, track }: ModalProps) => {
   const url = videoEmbedUrl(track);
 
+  const sortedConcertInfo =
+    track.status.type === "surprise" &&
+    (track.status.concertInfo.slice().sort((a, b) => {
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      return dateB.getTime() - dateA.getTime();
+    }) as ConcertInfo[]);
+
+    const instrument = track.status.type === "surprise" && track.status.concertInfo.map(item => item.instrument)[0];
+    console.log("instrument", instrument)
+
   return (
     <>
       <DarkBg onClick={onClose}></DarkBg>
@@ -162,15 +175,17 @@ const Modal = ({ onClose, track }: ModalProps) => {
             <ModalTitle>{track.title}</ModalTitle>
 
             {track.status.type === "surprise" &&
-              track.status.concertInfo.map((info, i) => {
+              sortedConcertInfo &&
+              sortedConcertInfo.map((info, i) => {
                 return (
                   <>
                     <ModalCard key={i}>
-                      {track.status.type === "surprise" &&
-                      track.status.concertInfo.length > 1 ? (
-                        <p style={{ margin: "0 0 4px 0" }} key={i}>
-                          Day {track.status.concertInfo.length - i}
-                        </p>
+                      {track.status.type === "surprise" && sortedConcertInfo ? (
+                        sortedConcertInfo.length > 1 ? (
+                          <p style={{ margin: "0 0 4px 0" }} key={i}>
+                            Day {sortedConcertInfo.length - i}
+                          </p>
+                        ) : null
                       ) : null}
                       <ModalText key={i}>Date: {info.date}</ModalText>
                       <ModalText key={i}>Venue: {info.venue.name}</ModalText>
@@ -180,8 +195,9 @@ const Modal = ({ onClose, track }: ModalProps) => {
                       </ModalText>
                       <ModalText>
                         <strong>
-                          Info: {track.status.type === "surprise" &&
-                            track.status.info[i]}
+                          Info:{" "}
+                          {track.status.type === "surprise" &&
+                            sortedConcertInfo.map((item) => item.info)[i]}
                         </strong>
                       </ModalText>
                     </ModalCard>
