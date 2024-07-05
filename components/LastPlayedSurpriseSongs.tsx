@@ -10,7 +10,7 @@ const Latest = styled.div`
   flex-direction: column;
 `;
 const LatestContainer = styled.div`
-  background: linear-gradient(to right, #f0f8ff, #e6e6fa);
+  background: linear-gradient(to right, #f8e5d1, #d8c7e3);
   border-bottom: 3px solid #ccc;
   padding: 10px;
 
