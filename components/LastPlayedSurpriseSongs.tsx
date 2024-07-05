@@ -1,42 +1,65 @@
 import { useLatestSurpriseTracks } from "@/hooks/useLatestSurpriseTracks";
 import { UITrack } from "@/lib/logic";
-import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Modal from "./Modal";
 import { useModal } from "@/hooks/useModal";
 
-const Latest = styled.div``;
+const Latest = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
 const LatestContainer = styled.div`
+  background: linear-gradient(to right, #f0f8ff, #e6e6fa);
+  border-bottom: 3px solid #ccc;
+  padding: 10px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
   font-weight: 700;
+  & p {
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #333;
+    margin: 10px;
+    border-bottom: 1px dotted grey;
 `;
 
 export function LastPlayedSurpriseSongs({ data }: { data: UITrack[] }) {
   const { isOpen, selectedTrack, openModal, closeModal } = useModal();
   const latestSurpriseTracks = useLatestSurpriseTracks(data);
-  const latest = latestSurpriseTracks.map((track) => track.title);
 
-  console.log(latest);
+  console.log(
+    "test",
+    latestSurpriseTracks.map((item, index) =>
+      item.status.type === "surprise"
+        ? item.status.concertInfo.map((info) => info.instrument)[0]
+        : null
+    )
+  );
 
   return (
     <>
       {latestSurpriseTracks.length > 0 && (
         <LatestContainer>
           <Latest>
-            <h2>Last played surprise songs:</h2>
+            <h3 style={{ marginBottom: "0.5rem" }}>
+              {"Latest surprise songs:".toUpperCase()}
+            </h3>
             <div>
               {latestSurpriseTracks.map((item, index) => (
-                <div key={index} onClick={() => openModal(item)}>
+                <p key={index} onClick={() => openModal(item)}>
                   {item.status.type === "surprise"
-                    ? item.status.instrument?.[0] === "piano"
+                    ? item.status.concertInfo.map(
+                        (info) => info.instrument
+                      )[0] === "piano"
                       ? "🎹"
                       : "🎸"
                     : null}
-                  {"  "} - {item.title}
-                </div>
+                  {"  "} {item.title.toUpperCase()}
+                </p>
               ))}
             </div>
           </Latest>
