@@ -158,7 +158,7 @@ const computeAllSongsPlays = ({
             venue: concert.venue,
             mashup:
               (song.info?.includes("mashup") ||
-                song.info?.includes("elements")) ??
+                song.info?.includes("elements") || song.info?.includes("Clara Bow")) ??
               false,
             instrument: instrument(song.info),
             info: song.info ?? "",
