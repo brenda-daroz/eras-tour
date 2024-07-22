@@ -152,11 +152,12 @@ const computeAllSongsPlays = ({
       .flatMap((set) => set.song)
       .filter((song) => !song.tape)
       .map((song) => {
-        const infoLowerCase = song.info?.toLowerCase() ?? '';
-        const isMashup = infoLowerCase.includes("mashup") ||
-                 infoLowerCase.includes("elements") ||
-                 infoLowerCase.includes("clara bow") ||
-                 infoLowerCase.includes("high infidelity");
+        const infoLowerCase = song.info?.toLowerCase() ?? "";
+        const isMashup =
+          infoLowerCase.includes("mashup") ||
+          infoLowerCase.includes("elements") ||
+          infoLowerCase.includes("clara bow") ||
+          infoLowerCase.includes("high infidelity");
 
         return {
           concertInfo: {
@@ -280,18 +281,15 @@ export const computeUIData = ({
 
     const name = mashup.name + " / " + mashedUpSongNames.join(" / ");
 
-    function removeDuplicates(songNames: string): string {
+    function cleanSongNames(songNames: string): string {
       const nameArray = songNames.split(" / ");
-      const uniqueNames = Array.from(new Set(nameArray));
-      return uniqueNames.join(" / ");
+      const uniqueNames = Array.from(
+        new Set(nameArray.map((name) => name.trim()))
+      );
+      return uniqueNames.filter(Boolean).join(" / ");
     }
 
-    function removeTrailingDelimiter(songNames: string): string {
-      const names = removeDuplicates(songNames);
-      return names.endsWith(" / ") ? names.slice(0, -3) : names;
-    }
-
-    const updatedName = removeTrailingDelimiter(name);
+    const updatedName = cleanSongNames(name);
     mashup.name = updatedName;
 
     const videoURL = videoURLs[updatedName] || null;
