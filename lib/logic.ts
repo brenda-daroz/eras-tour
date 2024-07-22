@@ -152,14 +152,17 @@ const computeAllSongsPlays = ({
       .flatMap((set) => set.song)
       .filter((song) => !song.tape)
       .map((song) => {
+        const infoLowerCase = song.info?.toLowerCase() ?? '';
+        const isMashup = infoLowerCase.includes("mashup") ||
+                 infoLowerCase.includes("elements") ||
+                 infoLowerCase.includes("clara bow") ||
+                 infoLowerCase.includes("high infidelity");
+
         return {
           concertInfo: {
             date: concert.eventDate,
             venue: concert.venue,
-            mashup:
-              (song.info?.includes("mashup") ||
-                song.info?.includes("elements") || song.info?.includes("Clara Bow")) ??
-              false,
+            mashup: isMashup,
             instrument: instrument(song.info),
             info: song.info ?? "",
             latest: concert.latest ?? false,
