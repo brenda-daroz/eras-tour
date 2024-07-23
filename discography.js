@@ -411,7 +411,7 @@ export const discography = {
           id: 45,
           title: "red",
           video:
-            "https://www.tiktok.com/@spacey__kacey__/video/7336211664674639106?is_from_webapp=1&sender_device=pc&web_id=7312563721989522977",
+            "https://www.tiktok.com/@bellhut/video/7337089959549209864?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
         },
         {
           id: 46,
