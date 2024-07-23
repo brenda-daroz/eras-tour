@@ -180,8 +180,6 @@ const computeAllSongsPlays = ({
     allSongPlays
   );
 
-  console.log("sorted", sortedSongPlays);
-
   return sortedSongPlays;
 };
 
@@ -307,7 +305,6 @@ export const computeUIData = ({
 
     const dateStr = mashup.concertInfo.date.split("T")[0];
     const key = `${updatedName}_${dateStr}`;
-    console.log("key", key);
     const videoUrl = videoURLs[key] || null;
     mashup.concertInfo.video = videoUrl;
 
