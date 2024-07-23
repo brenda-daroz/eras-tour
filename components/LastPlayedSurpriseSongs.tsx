@@ -31,15 +31,6 @@ export function LastPlayedSurpriseSongs({ data }: { data: UITrack[] }) {
   const { isOpen, selectedTrack, openModal, closeModal } = useModal();
   const latestSurpriseTracks = useLatestSurpriseTracks(data);
 
-  console.log(
-    "test",
-    latestSurpriseTracks.map((item, index) =>
-      item.status.type === "surprise"
-        ? item.status.concertInfo.map((info) => info.instrument)[0]
-        : null
-    )
-  );
-
   return (
     <>
       {latestSurpriseTracks.length > 0 && (
