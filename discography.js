@@ -1324,6 +1324,8 @@ export const discography = {
         {
           id: 221,
           title: "guilty as sin?",
+          video:
+            "https://www.tiktok.com/@leslieri09/video/7370487992500129029?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
         },
         {
           id: 222,
@@ -1371,10 +1373,14 @@ export const discography = {
         {
           id: 232,
           title: "Chloe or Sam or Sophia or Marcus",
+          video:
+            "https://www.tiktok.com/@shasha_simba/video/7377092121548868897?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
         },
         {
           id: 233,
           title: "How Did It End?",
+          video:
+            "https://www.tiktok.com/@brunapasquotto/video/7370849835399875845?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
         },
         {
           id: 234,
