@@ -6,8 +6,8 @@ const Tab = styled.li<{ $active: boolean }>`
   color: grey;
   list-style: none;
   cursor: pointer;
-  opacity: 0.8;
-  font-weight: 500;
+  opacity: 0.9;
+  font-weight: 700;
   padding: 5px 15px;
   font-size: 0.8rem;
   margin: 0 5px;
