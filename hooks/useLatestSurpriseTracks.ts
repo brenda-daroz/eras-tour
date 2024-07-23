@@ -19,8 +19,6 @@ export const useLatestSurpriseTracks = (tracks: UITrack[]): UITrack[] => {
       )
   );
 
-  console.log("latestSurpriseTracks", latestSurpriseTracks);
-
   const combinedTracks = [...latestMashup, ...latestSurpriseTracks];
 
   const uniqueTitles = Array.from(
