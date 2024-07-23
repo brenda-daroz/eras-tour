@@ -1,7 +1,7 @@
 import { z } from "zod";
 import * as R from "ramda";
 import parseDate from "../utils/parseDate";
-import { videoURLs } from "./videoUrls";
+import { videoURLs } from "./videoUrlsMashup";
 
 const venueSchema = z.object({
   name: z.string(),
@@ -57,7 +57,7 @@ export type UITrack = {
   id: number;
   title: string;
   status: Status;
-  video: string | null;
+  // video: string | null;
 };
 
 export type UIAlbum = {
@@ -82,6 +82,7 @@ export type ConcertInfo = {
   instrument: Instrument;
   info: Info;
   mashup: boolean;
+  video: string | null;
 };
 type Track = z.infer<typeof trackSchema>;
 type Status =
@@ -157,7 +158,8 @@ const computeAllSongsPlays = ({
           infoLowerCase.includes("mashup") ||
           infoLowerCase.includes("elements") ||
           infoLowerCase.includes("clara bow") ||
-          infoLowerCase.includes("high infidelity");
+          infoLowerCase.includes("high infidelity") ||
+          infoLowerCase.includes("out of the woods");
 
         return {
           concertInfo: {
@@ -167,6 +169,7 @@ const computeAllSongsPlays = ({
             instrument: instrument(song.info),
             info: song.info ?? "",
             latest: concert.latest ?? false,
+            video: null,
           },
           ...song,
         };
@@ -208,6 +211,7 @@ function status({
       info: play.concertInfo.info,
       latest: play.concertInfo.latest,
       mashup: play.concertInfo.mashup,
+      video: play.concertInfo.video || track.video || null,
     }));
     return {
       type: "surprise",
@@ -243,7 +247,10 @@ export const computeUIData = ({
   const allSongPlays = computeAllSongsPlays({ setlistResponse, year });
   const mashups = allSongPlays.filter((play) => play.concertInfo.mashup);
   const mashupTracks = mashups.map((mashup) => {
-    if (mashup.name === "Is It Over Now?") {
+    if (
+      mashup.name === "Is It Over Now?" &&
+      mashup.concertInfo.date === "25-02-2024"
+    ) {
       mashup.name = "is it over now? / I Wish You Would";
     }
     if (
@@ -270,6 +277,12 @@ export const computeUIData = ({
     ) {
       mashup.name = "The Black Dog / Come Back… Be Here / Maroon";
     }
+    if (
+      mashup.name === "Is It Over Now?" &&
+      mashup.concertInfo.date === "11-11-2023"
+    ) {
+      mashup.name = "Is It Over Now? / Out of the woods";
+    }
 
     const allSongs = discography.albums.flatMap((album) =>
       album.tracks.map((track) => track.title.toLowerCase())
@@ -292,7 +305,11 @@ export const computeUIData = ({
     const updatedName = cleanSongNames(name);
     mashup.name = updatedName;
 
-    const videoURL = videoURLs[updatedName] || null;
+    const dateStr = mashup.concertInfo.date.split("T")[0];
+    const key = `${updatedName}_${dateStr}`;
+    console.log("key", key);
+    const videoUrl = videoURLs[key] || null;
+    mashup.concertInfo.video = videoUrl;
 
     return {
       title: updatedName,
@@ -300,10 +317,8 @@ export const computeUIData = ({
       status: {
         type: "surprise",
         latest: mashup.concertInfo.latest,
-
         concertInfo: [mashup.concertInfo],
       } as Status,
-      video: videoURL,
     };
   });
 
@@ -313,7 +328,6 @@ export const computeUIData = ({
       name,
       type: "surprise",
       concertInfo: mashup.concertInfo,
-
       latest: mashup.concertInfo.latest,
     }));
   });
@@ -343,7 +357,6 @@ export const computeUIData = ({
             id: track.id,
             title: track.title,
             status: status({ track, playsByName }),
-            video: track.video || null,
           };
         }),
       };
