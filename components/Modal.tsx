@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { ConcertInfo, UITrack } from "@/lib/logic";
 import parseDate from "@/utils/parseDate";
+import Tabs from "./Tabs";
 
 const DarkBg = styled.div`
   background-color: rgba(0, 0, 0, 0.2);
@@ -55,8 +56,8 @@ const ModalInfo = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  height: 100%;
-  max-width: 400px;
+  // height: 100%;
+  // max-width: 400px;
   text-align: center;
   padding: 10px 0px;
   @media only screen and (max-width: 641px) {
@@ -65,6 +66,7 @@ const ModalInfo = styled.div`
     margin-top: 1rem;
   }
 `;
+
 const ModalText = styled.p`
   font-size: 0.9rem;
   text-align: center;
@@ -109,7 +111,6 @@ const CloseButton = styled.button`
 const Wrapper = styled.div`
   display: flex;
   gap: 20px;
-  width: 100%;
   align-items: center;
   @media only screen and (max-width: 641px) {
     position: relative;
@@ -132,8 +133,21 @@ const Video = styled.iframe`
 const ModalCard = styled.div`
   background-color: #ebebeb;
   padding: 10px;
-  width: 80%;
+  width: 300px;
+  height: fit-content;
   border-radius: 10px;
+  @media only screen and (max-width: 641px) {
+    width: 240px;
+    align-self: center;
+  }
+`;
+
+const ModalTab = styled.div`
+  display: flex;
+  gap: 20px;
+  @media only screen and (max-width: 641px) {
+    flex-direction: column;
+  }
 `;
 
 type ModalProps = {
@@ -141,27 +155,62 @@ type ModalProps = {
   track: UITrack;
 };
 
-function videoEmbedUrl(track: UITrack) {
-  const regex = /video\/(\d+)/;
-  const match = track.video ? track.video.match(regex) : "";
-  if (match) {
-    return `https://www.tiktok.com/embed/v2/${match[1]}`;
+function videoEmbedUrl(videoUrl: string | null): string | undefined {
+  if (videoUrl) {
+    const regex = /video\/(\d+)/;
+    const match = videoUrl.match(regex);
+    if (match) {
+      return `https://www.tiktok.com/embed/v2/${match[1]}`;
+    }
   }
+  return undefined;
 }
 
 const Modal = ({ onClose, track }: ModalProps) => {
-  const url = videoEmbedUrl(track);
-
   const sortedConcertInfo =
     track.status.type === "surprise" &&
-    (track.status.concertInfo.slice().sort((a, b) => {
+    (track.status.concertInfo.slice().sort((b, a) => {
       const dateA = parseDate(a.date);
       const dateB = parseDate(b.date);
       return dateB.getTime() - dateA.getTime();
     }) as ConcertInfo[]);
 
-    const instrument = track.status.type === "surprise" && track.status.concertInfo.map(item => item.instrument)[0];
-    console.log("instrument", instrument)
+  const tabs =
+    sortedConcertInfo &&
+    sortedConcertInfo.map((info, i) => {
+      const videoUrl = videoEmbedUrl(info.video);
+
+      return {
+        name: info.venue.city.name,
+        content: (
+          <ModalTab key={i}>
+            <ModalCard>
+              <ModalText>Date: {info.date}</ModalText>
+              <ModalText>Venue: {info.venue.name}</ModalText>
+              <ModalText>
+                Location: {info.venue.city.name} -{" "}
+                {info.venue.city.country.code}
+              </ModalText>
+              <ModalText>
+                <strong>Info: {info.info}</strong>
+              </ModalText>
+            </ModalCard>
+            {videoUrl && (
+              <div
+                style={{
+                  height: "700px",
+                  position: "sticky",
+                  top: "0",
+                  margin: "0 auto",
+                }}
+              >
+                <Video src={videoUrl} title={track.title}></Video>
+              </div>
+            )}
+          </ModalTab>
+        ),
+      };
+    });
 
   return (
     <>
@@ -174,51 +223,12 @@ const Modal = ({ onClose, track }: ModalProps) => {
           <ModalInfo>
             <ModalTitle>{track.title}</ModalTitle>
 
-            {track.status.type === "surprise" &&
-              sortedConcertInfo &&
-              sortedConcertInfo.map((info, i) => {
-                return (
-                  <>
-                    <ModalCard key={i}>
-                      {track.status.type === "surprise" && sortedConcertInfo ? (
-                        sortedConcertInfo.length > 1 ? (
-                          <p style={{ margin: "0 0 4px 0" }} key={i}>
-                            Day {sortedConcertInfo.length - i}
-                          </p>
-                        ) : null
-                      ) : null}
-                      <ModalText key={i}>Date: {info.date}</ModalText>
-                      <ModalText key={i}>Venue: {info.venue.name}</ModalText>
-                      <ModalText key={i}>
-                        Location: {info.venue.city.name} -
-                        {info.venue.city.country.code}
-                      </ModalText>
-                      <ModalText>
-                        <strong>
-                          Info:{" "}
-                          {track.status.type === "surprise" &&
-                            sortedConcertInfo.map((item) => item.info)[i]}
-                        </strong>
-                      </ModalText>
-                    </ModalCard>
-                  </>
-                );
-              })}
-          </ModalInfo>
-          <>
-            {track.video && (
-              <div
-                style={{
-                  height: "700px",
-                  position: "sticky",
-                  top: "0",
-                  margin: "0 auto",
-                }}
-              >
-                <Video src={url} title={track.title}></Video>
-              </div>
+            {track.status.type === "surprise" && tabs && tabs.length > 1 ? (
+              <Tabs tabs={tabs} />
+            ) : (
+              tabs && tabs[0]?.content
             )}
-          </>
+          </ModalInfo>
         </Wrapper>
       </ModalDiv>
     </>
