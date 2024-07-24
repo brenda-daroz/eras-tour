@@ -580,7 +580,7 @@ export const discography = {
         fixed: "#5b5b5b",
       },
       cover: "/images/1989.png",
-      coverCredit: "Photographed by Kevin Mazur",
+      coverCredit: "Photographed by Vittorio Zunino Celotto",
       tracks: [
         {
           id: 60,
@@ -1284,7 +1284,7 @@ export const discography = {
         fixed: "#5b5b5b",
       },
       cover: "/images/tortured-poets.png",
-      coverCredit: "Photographed by Beth Garrabrant",
+      coverCredit: "Photographed by Gareth Cattermole",
       tracks: [
         {
           id: 213,
