@@ -1,4 +1,16 @@
 export const videoURLs: Record<string, string> = {
+  "Fresh Out the Slammer / You Are in Love_27-07-2024":
+    "https://www.tiktok.com/@veeri_/video/7396646154978561313?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "ivy / Call It What You Want_27-07-2024":
+    "https://www.tiktok.com/@veeri_/video/7396615449032527136?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "the last great american dynasty / Run_24-07-2024":
+    "https://www.tiktok.com/@juleandsnow/video/7396439918454557985?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "Nothing New / Dear Reader_24-07-2024":
+    "https://www.tiktok.com/@svearlena/video/7395504427165109537?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "Teardrops on My Guitar / The Last Time_23-07-2024":
+    "https://www.tiktok.com/@meggyxoxo/video/7395146527099931936?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "We Were Happy / happiness_23-07-2024":
+    "https://www.tiktok.com/@jaime_thomas/video/7395074189230656810?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "Paper Rings / Stay Stay Stay_19-07-2024":
     "https://www.tiktok.com/@mnttm/video/7394486863135821088?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "it's time to go / Better Man_19-07-2024":
