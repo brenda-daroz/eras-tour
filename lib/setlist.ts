@@ -6,7 +6,7 @@ import {
   discographySchema,
   setlistResponseSchema,
 } from "@/lib/logic";
-// import fs from "fs";
+import fs from "fs";
 
 let cache: SetlistResponse | null = null;
 const SETLIST_API_KEY = process.env.SETLIST_API_KEY;
@@ -47,19 +47,24 @@ async function fetchSetlist(pageNumber: number) {
 }
 
 export async function fetchAndTransformData(year?: number) {
-  const setlistData = await readFromCache();
+  // for deployment:
+  // const setlistData = await readFromCache();
+  // for development:
   // fs.writeFileSync("setlist.json", JSON.stringify(setlistData));
+  const setlistDataRaw = fs.readFileSync('setlistData.json', 'utf8');
+  const setlistData = JSON.parse(setlistDataRaw)
+
   const response = computeUIData({
     discography: discographySchema.parse(discography),
     setlistResponse: setlistResponseSchema.parse(setlistData),
     year: year,
   });
-  // fs.writeFileSync("data.json", JSON.stringify(response));
+  fs.writeFileSync("data2.json", JSON.stringify(response));
   return response;
 }
 
 async function fetchPages(pageNumber = 1): Promise<SetlistResponse> {
-  // await sleep(1000);
+  await sleep(1000);
   const response = await fetchSetlist(pageNumber);
   if (response.itemsPerPage * response.page < response.total) {
     await sleep(600);
@@ -97,4 +102,4 @@ const readFromCache = async () => {
 setInterval(() => {
   console.info("Timebased refreshing cache");
   fillCache().catch((error) => console.error("Error refreshing cache", error));
-}, 1000 * 60 * 11);
+}, 1000 * 60 * 10);
