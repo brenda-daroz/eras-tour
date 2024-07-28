@@ -106,7 +106,9 @@ export const videoURLs: Record<string, string> = {
   "You're on Your Own, Kid / Long Live_25-05-2024":
     "https://www.tiktok.com/@invisblestrings/video/7373060486545378592?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "Come Back…Be Here / The Way I Loved You / The Other Side of the Door_24-05-2024":
-    "https://www.tiktok.com/@swiftiesupremacy.13/video/7372796976561147141?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+    "https://www.tiktok.com/@cris.sanzz/video/7373088379967212833?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "Fresh Out the Slammer / High Infidelity_24-05-2024":
+    "https://www.tiktok.com/@bemtevivs/video/7374442436807970053?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "Message in a Bottle / How You Get The Girl / New Romantics_19-05-2024":
     "https://www.tiktok.com/@kineaks/video/7370823403768532257?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "Say Don't Go / Welcome to New York / Clean_18-05-2024":
