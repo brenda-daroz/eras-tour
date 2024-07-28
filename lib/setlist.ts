@@ -6,7 +6,8 @@ import {
   discographySchema,
   setlistResponseSchema,
 } from "@/lib/logic";
-// import fs from "fs";
+import fs from "fs";
+import setlistData from "../data/setlistData.js";
 
 let cache: SetlistResponse | null = null;
 const SETLIST_API_KEY = process.env.SETLIST_API_KEY;
@@ -47,8 +48,13 @@ async function fetchSetlist(pageNumber: number) {
 }
 
 export async function fetchAndTransformData(year?: number) {
-  const setlistData = await readFromCache();
+  // for deployment:
+  // const setlistData = await readFromCache();
+  // for development:
   // fs.writeFileSync("setlist.json", JSON.stringify(setlistData));
+  // const setlistDataRaw = fs.readFileSync("data/setlistData.js", "utf8");
+  // const setlistData = JSON.parse(setlistDataRaw);
+
   const response = computeUIData({
     discography: discographySchema.parse(discography),
     setlistResponse: setlistResponseSchema.parse(setlistData),
@@ -59,7 +65,6 @@ export async function fetchAndTransformData(year?: number) {
 }
 
 async function fetchPages(pageNumber = 1): Promise<SetlistResponse> {
-  // await sleep(1000);
   const response = await fetchSetlist(pageNumber);
   if (response.itemsPerPage * response.page < response.total) {
     await sleep(600);
