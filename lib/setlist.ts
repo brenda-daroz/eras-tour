@@ -7,7 +7,7 @@ import {
   setlistResponseSchema,
 } from "@/lib/logic";
 import fs from "fs";
-import setlistData from "../data/setlistData.js";
+// import setlistData from "../data/setlistData.js";
 
 let cache: SetlistResponse | null = null;
 const SETLIST_API_KEY = process.env.SETLIST_API_KEY;
@@ -49,7 +49,7 @@ async function fetchSetlist(pageNumber: number) {
 
 export async function fetchAndTransformData(year?: number) {
   // for deployment:
-  // const setlistData = await readFromCache();
+  const setlistData = await readFromCache();
   // for development:
   // fs.writeFileSync("setlist.json", JSON.stringify(setlistData));
   // const setlistDataRaw = fs.readFileSync("data/setlistData.js", "utf8");
@@ -60,7 +60,7 @@ export async function fetchAndTransformData(year?: number) {
     setlistResponse: setlistResponseSchema.parse(setlistData),
     year: year,
   });
-  // fs.writeFileSync("data.json", JSON.stringify(response));
+  // fs.writeFileSync("dataResponse.json", JSON.stringify(response));
   return response;
 }
 
