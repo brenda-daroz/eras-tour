@@ -1,4 +1,12 @@
 export const videoURLs: Record<string, string> = {
+  "mirrorball / Clara Bow_01-08-2024":
+    "https://www.tiktok.com/@wietm/video/7398292162749730081?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "Suburban Legends / New Year's Day_01-08-2024":
+    "https://www.tiktok.com/@uneanamorphose/video/7398290263166258464?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "I Don't Wanna Live Forever / imgonnagetyouback_28-07-2024":
+    "https://www.tiktok.com/@yyyyyyyyasemin/video/7396812936062176545?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "loml / Don't You_28-07-2024":
+    "https://www.tiktok.com/@antonilou/video/7396809929257946400?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "Fresh Out the Slammer / You Are in Love_27-07-2024":
     "https://www.tiktok.com/@veeri_/video/7396646154978561313?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "ivy / Call It What You Want_27-07-2024":
