@@ -123,7 +123,7 @@ const setlistData = {
             song: [
               {
                 name: "I Can Fix Him (No Really I Can) / I Can See You",
-                info: "spoken intro, mashup on guitar",
+                info: "spoken intro; mashup on guitar",
               },
               {
                 name: "Red / Maroon",
