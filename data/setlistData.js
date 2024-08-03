@@ -125,10 +125,10 @@ const setlistData = {
                 name: "Today Was a Fairytale / I think he knows",
                 info: "spoken intro; mashup on guitar",
               },
-              // {
-              //   name: "The Black Dog / ",
-              //   info: "mashup on piano",
-              // },
+              {
+                name: "The Black Dog / exile",
+                info: "mashup on piano",
+              },
             ],
           },
         ],
