@@ -124,7 +124,7 @@ const setlistData = {
             name: "Surprise Songs",
             song: [
               {
-                name: "Everything has changed / End Game",
+                name: "Everything has changed / End Game / Thinking Out Loud",
                 info: "spoken intro; mashup on guitar, with Ed Sheeran",
               },
               // {
