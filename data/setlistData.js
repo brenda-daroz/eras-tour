@@ -127,10 +127,10 @@ const setlistData = {
                 name: "Everything has changed / End Game / Thinking Out Loud",
                 info: "spoken intro; mashup on guitar, with Ed Sheeran",
               },
-              // {
-              //   name: "",
-              //   info: "mashup on piano",
-              // },
+              {
+                name: "King of my heart / The alchemy",
+                info: "mashup on piano",
+              },
             ],
           },
         ],
