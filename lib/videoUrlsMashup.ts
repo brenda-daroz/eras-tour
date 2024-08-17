@@ -1,9 +1,23 @@
 export const videoURLs: Record<string, string> = {
+  "Dear John / Sad Beautiful Tragic_16-08-2024":
+    "https://www.tiktok.com/@audhdanna/video/7404037416283032864?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "Everything has changed / End Game / Thinking Out Loud_15-08-2024":
+    "https://www.tiktok.com/@hanauchocolat/video/7403507422070902049?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "King of my heart / The alchemy_15-08-2024":
+    "https://www.tiktok.com/@jetsetroulette/video/7403537344118279470?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "Today Was a Fairytale / I think he knows_03-08-2024":
+    "https://www.tiktok.com/@yucao2/video/7399755789386157345?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "The Black Dog / exile_03-08-2024":
+    "https://www.tiktok.com/@myoceanblvd/video/7399014347957177633?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "I Can Fix Him (No Really I Can) / I Can See You_02-08-2024":
+    "https://www.tiktok.com/@_honzam/video/7398652055902080289?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+  "Red / Maroon_02-08-2024":
+    "https://www.tiktok.com/@veroborg/video/7398672514563558688?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "mirrorball / Clara Bow_01-08-2024":
-    "https://www.tiktok.com/@wietm/video/7398292162749730081?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+    "https://www.tiktok.com/@aleksajk/video/7399227621776641313?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "Suburban Legends / New Year's Day_01-08-2024":
     "https://www.tiktok.com/@uneanamorphose/video/7398290263166258464?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
-  "I Don't Wanna Live Forever / imgonnagetyouback_28-07-2024":
+  "I don't wanna live forever / imgonnagetyouback_28-07-2024":
     "https://www.tiktok.com/@yyyyyyyyasemin/video/7396812936062176545?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "loml / Don't You_28-07-2024":
     "https://www.tiktok.com/@antonilou/video/7396809929257946400?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
@@ -58,7 +72,7 @@ export const videoURLs: Record<string, string> = {
   "This Love / Ours_29-06-2024":
     "https://www.tiktok.com/@rachelkirk.x/video/7386065697056574752?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "State of Grace / You're on Your Own, Kid_28-06-2024":
-    "https://www.tiktok.com/@n0t_rusty/video/7385713105851993360?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
+    "https://www.tiktok.com/@annaglass02/video/7385727068975238442?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "Sweet Nothing / hoax_28-06-2024":
     "https://www.tiktok.com/@brrussels/video/7385710551713729799?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "Out of the Woods / Is It Over Now? / Clean_23-06-2024":

@@ -881,6 +881,8 @@ export const discography = {
         {
           id: 120,
           title: "london boy",
+          video:
+            "https://www.tiktok.com/@randomizer0306/video/7403856244194282784?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
         },
         {
           id: 121,
