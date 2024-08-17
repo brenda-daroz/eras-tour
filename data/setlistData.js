@@ -90,54 +90,54 @@ const setlistData = {
               { name: "marjorie", info: "shortened" },
               { name: "willow", info: "extended" },
             ],
-          // },
-          // {
-          //   name: "1989",
-          //   song: [
-          //     { name: "Style", info: "shortened" },
-          //     { name: "Blank Space" },
-          //     { name: "Shake It Off" },
-          //     { name: "Wildest Dreams", info: "shortened" },
-          //     { name: "Bad Blood", info: "shortened" },
-          //   ],
-          // },
-          // {
-          //   name: "THE TORTURED POETS DEPARTMENT",
-          //   song: [
-          //     {
-          //       name: "Female Rage: The Musical",
-          //       info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
-          //       tape: true,
-          //     },
-          //     { name: "But Daddy I Love Him / So High School" },
-          //     { name: "Who's Afraid of Little Old Me?", info: "shortened" },
-          //     {
-          //       name: "Down Bad",
-          //       info: 'shortened; with "Fortnight" outro',
-          //     },
-          //     { name: "Fortnight" },
-          //     {
-          //       name: "The Smallest Man Who Ever Lived",
-          //       info: "shortened",
-          //     },
-          //     {
-          //       name: "I Can Do It With a Broken Heart",
-          //       info: "extended intro",
-          //     },
-          //   ],
-          // },
-          // {
-          //   name: "Surprise Songs",
-          //   song: [
-          //     {
-          //       name: "London Boy",
-          //       info: 'spoken intro; on guitar; tour debut; first time since 2019; "I enjoy playing Wembley" lyric',
-          //     },
-          //     {
-          //       name: "Dear John / Sad Beautiful Tragic",
-          //       info: "mashup on piano",
-          //     },
-          //   ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "I did something bad",
+                info: 'spoken intro; on guitar; tour debut',
+              },
+              // {
+              //   name: "Dear John / Sad Beautiful Tragic",
+              //   info: "mashup on piano",
+              // },
+            ],
           // },
           // {
           //   name: "Midnights",
