@@ -133,10 +133,10 @@ const setlistData = {
                 name: "I did something bad",
                 info: 'spoken intro; on guitar; tour debut',
               },
-              // {
-              //   name: "Dear John / Sad Beautiful Tragic",
-              //   info: "mashup on piano",
-              // },
+              {
+                name: "My boy only breaks his favorite toys / coney island",
+                info: "mashup on piano",
+              },
             ],
           // },
           // {
