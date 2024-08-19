@@ -133,10 +133,10 @@ const setlistData = {
                 name: "Long Live / Change",
                 info: 'spoken intro; mashup on guitar',
               },
-              // {
-              //   name: "My boy only breaks his favorite toys / coney island",
-              //   info: "mashup on piano",
-              // },
+              {
+                name: "The archer / You're on your own, kid",
+                info: "mashup on piano",
+              },
             ],
           },
           {
