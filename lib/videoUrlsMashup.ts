@@ -1,4 +1,6 @@
 export const videoURLs: Record<string, string> = {
+  "My boy only breaks his favorite toys / coney island_17-08-2024":
+    "https://www.tiktok.com/@d_rayneday/video/7404265614866386207?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "Dear John / Sad Beautiful Tragic_16-08-2024":
     "https://www.tiktok.com/@audhdanna/video/7404037416283032864?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
   "Everything has changed / End Game / Thinking Out Loud_15-08-2024":

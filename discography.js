@@ -739,6 +739,8 @@ export const discography = {
         {
           id: 97,
           title: "i did something bad",
+          video:
+            "https://www.tiktok.com/@theerastour.diary/video/7404241420921343265?is_from_webapp=1&sender_device=pc&web_id=7367105245619619361",
         },
         {
           id: 98,
