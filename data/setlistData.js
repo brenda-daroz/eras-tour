@@ -131,7 +131,7 @@ const setlistData = {
             song: [
               {
                 name: "Long Live / Change",
-                info: 'spoken intro; mashup on guitar',
+                info: 'spoken intro; mashup on guitar, tour debut for "Change")',
               },
               {
                 name: "The archer / You're on your own, kid",
