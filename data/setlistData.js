@@ -126,19 +126,19 @@ const setlistData = {
               },
             ],
           },
-          // {
-          //   name: "Surprise Songs",
-          //   song: [
-          //     {
-          //       name: "Long Live / Change",
-          //       info: 'spoken intro; mashup on guitar, tour debut for "Change")',
-          //     },
-          //     {
-          //       name: "The archer / You're on your own, kid",
-          //       info: "mashup on piano",
-          //     },
-          //   ],
-          // },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "Death by a thousand cuts / Getaway Car",
+                info: 'spoken intro; mashup on guitar; with special guest Jack Antonoff',
+              },
+              // {
+              //   name: "The archer / You're on your own, kid",
+              //   info: "mashup on piano",
+              // },
+            ],
+          },
           {
             name: "Midnights",
             song: [
