@@ -133,10 +133,10 @@ const setlistData = {
                 name: "Death by a thousand cuts / Getaway Car",
                 info: 'spoken intro; mashup on guitar; with special guest Jack Antonoff',
               },
-              // {
-              //   name: "The archer / You're on your own, kid",
-              //   info: "mashup on piano",
-              // },
+              {
+                name: "So Long, London",
+                info: "on piano",
+              },
             ],
           },
           {
