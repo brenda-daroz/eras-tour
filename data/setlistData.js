@@ -110,6 +110,7 @@ const setlistData = {
                 tape: true,
               },
               { name: "But Daddy I Love Him / So High School" },
+              { name: "Florida!!!", info: "with Florence Welch, performed inside TTPD act" },
               { name: "Who's Afraid of Little Old Me?", info: "shortened" },
               {
                 name: "Down Bad",
@@ -131,7 +132,7 @@ const setlistData = {
             song: [
               {
                 name: "Death by a thousand cuts / Getaway Car",
-                info: 'spoken intro; mashup on guitar; with special guest Jack Antonoff',
+                info: "spoken intro; mashup on guitar; with special guest Jack Antonoff",
               },
               {
                 name: "So Long, London",
@@ -439,7 +440,7 @@ const setlistData = {
             song: [
               {
                 name: "I did something bad",
-                info: 'spoken intro; on guitar; tour debut',
+                info: "spoken intro; on guitar; tour debut",
               },
               {
                 name: "My boy only breaks his favorite toys / coney island",
