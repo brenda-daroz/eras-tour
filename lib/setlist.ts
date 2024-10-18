@@ -111,7 +111,7 @@ setInterval(() => {
   } else {
     console.info("Cache refresh skipped. Outside of time window.");
   }
-}, 1000 * 60 * 1);
+}, 1000 * 60 * 5);
 
 
 // setInterval(() => {
