@@ -36,9 +36,8 @@ const ModalDiv = styled.div`
   transform: translate(-50%, -50%);
   margin: 0 auto;
   @media only screen and (max-width: 641px) {
-    width: 80%;
     flex-direction: column;
-    padding: 10px;
+    padding: 5px 10px;
   }
   @media (min-width: 641px) and (max-width: 1024px) {
     width: 85%;
@@ -147,6 +146,7 @@ const ModalTab = styled.div`
   gap: 20px;
   @media only screen and (max-width: 641px) {
     flex-direction: column;
+    padding: 0 15px;
   }
 `;
 
@@ -224,7 +224,8 @@ const Modal = ({ onClose, track }: ModalProps) => {
             <ModalTitle>{track.title}</ModalTitle>
 
             {track.status.type === "surprise" && tabs && tabs.length > 1 ? (
-              <Tabs tabs={tabs} />
+              <Tabs tabs={tabs} customTabStyles="opacity: 100; font-size: 0.8rem; padding: 5px 10px" layout="mobile"/>
+              
             ) : (
               tabs && tabs[0]?.content
             )}
