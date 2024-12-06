@@ -102,8 +102,8 @@ const readFromCache = async () => {
 setInterval(() => {
   const now = new Date().getUTCHours();
 
-  const startHour = 0;
-  const endHour = 4;
+  const startHour = 4;
+  const endHour = 8;
 
   if (now >= startHour && now < endHour) {
     console.info("Time-based refreshing cache (UTC)");
@@ -112,9 +112,3 @@ setInterval(() => {
     console.info("Cache refresh skipped. Outside of time window.");
   }
 }, 1000 * 60 * 5);
-
-
-// setInterval(() => {
-//   console.info("Timebased refreshing cache");
-//   fillCache().catch((error) => console.error("Error refreshing cache", error));
-// }, 1000 * 60 * 5);
