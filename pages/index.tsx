@@ -94,22 +94,17 @@ export default function Page({
 }
 
 export const getServerSideProps: GetServerSideProps<{
-  data: { data2023: UIDataOutput; data2024: UIDataOutput; data: UIDataOutput };
-}> = async (context) => {
+  data?: { data2023: UIDataOutput; data2024: UIDataOutput; data: UIDataOutput };
+}> = async () => {
   try {
     const data2023 = await fetchAndTransformData(2023);
     const data2024 = await fetchAndTransformData(2024);
     const data = await fetchAndTransformData();
+
     return { props: { data: { data2023, data2024, data } } };
   } catch (error) {
-    console.error("Error fetching data:", error);
+    console.error("Error in getServerSideProps:", error);
 
-    // Redirect to the 500 error page
-    return {
-      redirect: {
-        destination: "/500",
-        permanent: false,
-      },
-    };
+    return { props: { error: true } };
   }
 };

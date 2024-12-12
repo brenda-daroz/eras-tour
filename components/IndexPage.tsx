@@ -9,6 +9,7 @@ import { useState } from "react";
 import { UIDataOutput } from "@/lib/logic";
 import FabYear from "./Fab";
 import { LastPlayedSurpriseSongs } from "./LastPlayedSurpriseSongs";
+import Custom500 from "@/pages/500";
 
 const Container = styled.div`
   display: flex;
@@ -22,10 +23,13 @@ const Loading = styled.div`
 `;
 
 export default function IndexPage({
-  data,
+  data
 }: {
-  data: { data2023: UIDataOutput; data2024: UIDataOutput; data: UIDataOutput };
+  data?: { data2023: UIDataOutput; data2024: UIDataOutput; data: UIDataOutput }, error?: boolean;
 }) {
+  if (!data) {
+    return <Custom500 />;
+  }
   const [year, setYear] = useState<number | null>(2024);
   const dataYear =
     year === 2024 ? data.data2024 : year === 2023 ? data.data2023 : data.data;
