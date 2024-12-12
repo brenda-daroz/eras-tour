@@ -50,6 +50,7 @@ async function fetchSetlist(pageNumber: number) {
 export async function fetchAndTransformData(year?: number) {
   // for deployment:
   const setlistData = await readFromCache();
+  // console.log(setlistData)
   // for development:
   // fs.writeFileSync("setlist.json", JSON.stringify(setlistData));
   // const setlistDataRaw = fs.readFileSync("data/setlistData.js", "utf8");
@@ -89,26 +90,38 @@ const readFromCache = async () => {
     console.info("Cache hit");
   } else {
     console.info("Cache miss");
+    
     try {
-      await fillCache();
+      const timeout = new Promise((_, reject) =>
+        setTimeout(() => reject(new Error("Cache not ready: Timeout")), 5000) // 5 seconds timeout
+      );
+
+      await Promise.race([fillCache(), timeout]); // Attempt to fill cache or timeout after 5 seconds
     } catch (error) {
       console.error(error);
       throw new Error("Cache not ready", { cause: error });
     }
   }
+  
   return cache;
 };
 
+// setInterval(() => {
+//   const now = new Date().getUTCHours();
+
+//   const startHour = 4;
+//   const endHour = 8;
+
+//   if (now >= startHour && now < endHour) {
+//     console.info("Time-based refreshing cache (UTC)");
+//     fillCache().catch((error) => console.error("Error refreshing cache", error));
+//   } else {
+//     console.info("Cache refresh skipped. Outside of time window.");
+//   }
+// }, 1000 * 60 * 5);
+
+
 setInterval(() => {
-  const now = new Date().getUTCHours();
-
-  const startHour = 4;
-  const endHour = 8;
-
-  if (now >= startHour && now < endHour) {
-    console.info("Time-based refreshing cache (UTC)");
-    fillCache().catch((error) => console.error("Error refreshing cache", error));
-  } else {
-    console.info("Cache refresh skipped. Outside of time window.");
-  }
+  console.info("Timebased refreshing cache");
+  fillCache().catch((error) => console.error("Error refreshing cache", error));
 }, 1000 * 60 * 5);
