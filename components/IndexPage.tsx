@@ -30,19 +30,21 @@ export default function IndexPage({
 }) {
   if (error) {
     return (
-      <div style={{ textAlign: 'center', padding: '50px' }}>
-        <h1>Oops! Something went wrong.</h1>
-        <p>We're sorry, but an error occurred while processing the website. Please try again later.</p>
-      </div>
+      <Custom500 />
+      // <div style={{ textAlign: 'center', padding: '50px' }}>
+      //   <h1>Oops! Something went wrong.</h1>
+      //   <p>We're sorry, but an error occurred while processing the website. Please try again later.</p>
+      // </div>
     );
   }
 
   if (!data) {
     return (
-      <div style={{ textAlign: 'center', padding: '50px' }}>
-        <h1>Oops! Something went wrong.</h1>
-        <p>We're sorry, but an error occurred while processing the website. Please try again later.</p>
-      </div>
+      <Custom500 />
+      // <div style={{ textAlign: 'center', padding: '50px' }}>
+      //   <h1>Oops! Something went wrong.</h1>
+      //   <p>We're sorry, but an error occurred while processing the website. Please try again later.</p>
+      // </div>
     );
   }
   const [year, setYear] = useState<number | null>(2024);
