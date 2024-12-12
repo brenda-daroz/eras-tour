@@ -1,8 +1,9 @@
 export default function formatDate(date) {
   const [d, m, y] = date.split("-");
+  const day = parseInt(d, 10);
   const monthNum = parseInt(m) - 1;
   const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][monthNum];
-  return month + " " + ordinal(d) + ", " + y;
+  return month + " " + ordinal(day) + ", " + y;
 }
 
 function ordinal(n) {

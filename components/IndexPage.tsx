@@ -24,28 +24,13 @@ const Loading = styled.div`
 
 export default function IndexPage({
   data,
-  error
 }: {
-  data?: { data2023: UIDataOutput; data2024: UIDataOutput; data: UIDataOutput }, error?: boolean;
+  data?: { data2023: UIDataOutput; data2024: UIDataOutput; data: UIDataOutput };
+  error?: boolean;
 }) {
-  if (error) {
-    return (
-      <Custom500 />
-      // <div style={{ textAlign: 'center', padding: '50px' }}>
-      //   <h1>Oops! Something went wrong.</h1>
-      //   <p>We're sorry, but an error occurred while processing the website. Please try again later.</p>
-      // </div>
-    );
-  }
 
   if (!data) {
-    return (
-      <Custom500 />
-      // <div style={{ textAlign: 'center', padding: '50px' }}>
-      //   <h1>Oops! Something went wrong.</h1>
-      //   <p>We're sorry, but an error occurred while processing the website. Please try again later.</p>
-      // </div>
-    );
+    return <Custom500 />;
   }
   const [year, setYear] = useState<number | null>(2024);
   const dataYear =

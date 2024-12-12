@@ -5,6 +5,7 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { ConcertInfo, UITrack } from "@/lib/logic";
 import parseDate from "@/utils/parseDate";
 import Tabs from "./Tabs";
+import formatDate from "@/utils/formatDate";
 
 const DarkBg = styled.div`
   background-color: rgba(0, 0, 0, 0.2);
@@ -175,13 +176,29 @@ const Modal = ({ onClose, track }: ModalProps) => {
       return dateB.getTime() - dateA.getTime();
     }) as ConcertInfo[]);
 
+  const concertCountByCity =
+    Array.isArray(sortedConcertInfo) &&
+    sortedConcertInfo.reduce<Record<string, number>>(
+      (acc: { [x: string]: any }, info: { venue: { city: { name: any } } }) => {
+        const city = info.venue.city.name;
+        acc[city] = (acc[city] || 0) + 1;
+        return acc;
+      },
+      {}
+    );
+
   const tabs =
     sortedConcertInfo &&
     sortedConcertInfo.map((info, i) => {
       const videoUrl = videoEmbedUrl(info.video);
 
+      const isMultipleDates =
+        concertCountByCity && concertCountByCity[info.venue.city.name] > 1;
+
       return {
-        name: info.venue.city.name,
+        name: isMultipleDates
+          ? `${info.venue.city.name} (${formatDate(info.date)})`
+          : info.venue.city.name,
         content: (
           <ModalTab key={i}>
             <ModalCard>
@@ -192,7 +209,7 @@ const Modal = ({ onClose, track }: ModalProps) => {
                 {info.venue.city.country.code}
               </ModalText>
               <ModalText>
-                <strong>Info: {info.info}</strong>
+                {info.info ? <strong>Info: {info.info}</strong> : ""}
               </ModalText>
             </ModalCard>
             {videoUrl && (
@@ -224,8 +241,11 @@ const Modal = ({ onClose, track }: ModalProps) => {
             <ModalTitle>{track.title}</ModalTitle>
 
             {track.status.type === "surprise" && tabs && tabs.length > 1 ? (
-              <Tabs tabs={tabs} customTabStyles="opacity: 100; font-size: 0.8rem; padding: 5px 10px" layout="mobile"/>
-              
+              <Tabs
+                tabs={tabs}
+                customTabStyles="opacity: 100; font-size: 0.8rem; padding: 5px 10px"
+                layout="mobile"
+              />
             ) : (
               tabs && tabs[0]?.content
             )}

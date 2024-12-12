@@ -1,10 +1,10 @@
 const setlistData = {
   setlist: [
     {
-      eventDate: "20-08-2024",
+      eventDate: "08-12-2024",
       venue: {
-        name: "Wembley Stadium",
-        city: { name: "London", country: { code: "GB" } },
+        name: "BC Place Stadium",
+        city: { name: "Vancouver", country: { code: "CA" } },
       },
       sets: {
         set: [
@@ -12,7 +12,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -43,13 +43,2794 @@ const setlistData = {
             song: [
               {
                 name: "Red - Intro",
-                info: 'contains elements of "State of Grace". "Holy Ground" and "Red"',
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
                 tape: true,
               },
               { name: "22" },
               {
                 name: "We Are Never Ever Getting Back Together",
-                info: 'Kam Saunders: "what a knobhead!"',
+                info: 'Kam Saunders: "For the last time, no!”',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "spoken intro; shortened" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM?", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "A Place in This World / New Romantics",
+                info: "spoken intro; mashup on guitar",
+              },
+              {
+                name: "Long Live / New Year's Day / The Manuscript",
+                info: 'mashup on piano; "end of an era" lyric',
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              {
+                name: "Karma",
+                info: '"guy on the Chiefs" lyric; extended outro',
+              },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "07-12-2024",
+      venue: {
+        name: "BC Place Stadium",
+        city: { name: "Vancouver", country: { code: "CA" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "Like ever!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM?", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "I Love You, I'm Sorry / Last Kiss",
+                info: "mashup on guitar; spoken intro",
+              },
+              {
+                name: "The Tortured Poets Department / Maroon",
+                info: "mashup on piano",
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "06-12-2024",
+      venue: {
+        name: "BC Place Stadium",
+        city: { name: "Vancouver", country: { code: "CA" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "Like ever!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM?", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "Haunted / Wonderland",
+                info: "mashup on guitar; spoken intro",
+              },
+              {
+                name: "Never Grow Up / The Best Day",
+                info: "mashup on piano",
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "23-11-2024",
+      venue: {
+        name: "Rogers Centre",
+        city: { name: "Toronto", country: { code: "CA" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "Ew, David! EW!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "Sparks Fly / Message in a Bottle",
+                info: "mashup on guitar; spoken intro",
+              },
+              {
+                name: "You're Losing Me / How Did It End?",
+                info: "mashup on piano",
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "22-11-2024",
+      venue: {
+        name: "Rogers Centre",
+        city: { name: "Toronto", country: { code: "CA" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "Hoser, take off, eh?"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "Ours / the last great american dynasty",
+                info: "mashup on guitar; spoken intro",
+              },
+              {
+                name: "Cassandra / mad woman / I Did Something Bad",
+                info: 'mashup on piano; live debut for "Cassandra"',
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "21-11-2024",
+      venue: {
+        name: "Rogers Centre",
+        city: { name: "Toronto", country: { code: "CA" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "Naw, you\'re dust, fam!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "Mr. Perfectly Fine / Better Than Revenge",
+                info: "mashup on guitar; spoken intro",
+              },
+              {
+                name: "State of Grace / Labyrinth",
+                info: "mashup on piano",
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              {
+                name: "Anti‐Hero",
+                info: "a large part of the screen glitched out during the first chorus",
+              },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "16-11-2024",
+      venue: {
+        name: "Rogers Centre",
+        city: { name: "Toronto", country: { code: "CA" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "Yeah, no, for sure, no."',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "us. / Out of the Woods",
+                info: "mashup on guitar; spoken intro",
+              },
+              {
+                name: "You're on Your Own, Kid / long story short",
+                info: "mashup on piano",
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "15-11-2024",
+      venue: {
+        name: "Rogers Centre",
+        city: { name: "Toronto", country: { code: "CA" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "Get lost, bud!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "I Don't Wanna Live Forever / Mine",
+                info: "mashup on guitar; spoken intro",
+              },
+              { name: "evermore / Peter", info: "mashup on piano" },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "14-11-2024",
+      venue: {
+        name: "Rogers Centre",
+        city: { name: "Toronto", country: { code: "CA" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: "Kam Saunders: “Sorry aboot it.”",
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: "shortened; with “Fortnight” outro",
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "My Boy Only Breaks His Favorite Toys / This Is Why We Can't Have Nice Things",
+                info: "mashup on guitar; spoken intro",
+              },
+              {
+                name: "False God / 'tis the damn season",
+                info: "mashup on piano",
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "03-11-2024",
+      venue: {
+        name: "Lucas Oil Stadium",
+        city: { name: "Indianapolis", country: { code: "US" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "Scram!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              { name: "I Can Do It With a Broken Heart", info: "shortened" },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "Cornelia Street / The Bolter",
+                info: "mashup on guitar; spoken intro",
+              },
+              {
+                name: "Death by a Thousand Cuts",
+                info: 'on piano; "my body, my love, my choice, my trust"; contains elements of "The Great War"',
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "02-11-2024",
+      venue: {
+        name: "Lucas Oil Stadium",
+        city: { name: "Indianapolis", country: { code: "US" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "Ope, no!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "The Prophecy / This Love",
+                info: "mashup on guitar; spoken intro",
+              },
+              { name: "Maroon / cowboy like me", info: "mashup on piano" },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              {
+                name: "Karma",
+                info: '"guy on the Chiefs" lyric; extended outro',
+              },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "01-11-2024",
+      venue: {
+        name: "Lucas Oil Stadium",
+        city: { name: "Indianapolis", country: { code: "US" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "No, yeah, no."',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" Outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "The Albatross / Holy Ground",
+                info: "mashup on guitar; spoken intro",
+              },
+              { name: "Cold as You / exile", info: "mashup on piano" },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              {
+                name: "Lavender Haze",
+                info: "Taylor's mic pack ran out of batteries towards the end of this performance",
+              },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              {
+                name: "Mastermind",
+                info: "delayed start due to the mic pack problems above",
+              },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "27-10-2024",
+      venue: {
+        name: "Caesars Superdome",
+        city: { name: "New Orleans", country: { code: "US" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "She said what she said!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              {
+                name: "Who's Afraid of Little Old Me?",
+                info: "shortened; the device Taylor stands on during this performance malfunctioned",
+              },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "Afterglow / Dress",
+                info: "mashup on guitar; spoken intro",
+              },
+              {
+                name: "How You Get the Girl / Clean",
+                info: "mashup on piano; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              {
+                name: "Karma",
+                info: '"guy on the Chiefs" lyric; extended outro',
+              },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "26-10-2024",
+      venue: {
+        name: "Caesars Superdome",
+        city: { name: "New Orleans", country: { code: "US" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: "Kam Saunders: \"Uh uh, ain't gon' happen!\"",
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "Espresso / Is It Over Now? / Please Please Please",
+                info: "mashup on guitar; spoken intro",
+              },
+              {
+                name: "Hits Different / Welcome to New York",
+                info: "mashup on piano",
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "25-10-2024",
+      venue: {
+        name: "Caesars Superdome",
+        city: { name: "New Orleans", country: { code: "US" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "Oh no, baby!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version, spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "Our Song / Call It What You Want",
+                info: "mashup on guitar; spoken intro",
+              },
+              { name: "The Black Dog / Haunted", info: "mashup on piano" },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "20-10-2024",
+      venue: {
+        name: "Hard Rock Stadium",
+        city: { name: "Miami Gardens", country: { code: "US" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "Irregardless, no!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Florida!!!", info: "extended outro" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "Out of the Woods / All You Had to Do Was Stay",
+                info: "mashup on guitar; spoken intro",
+              },
+              {
+                name: "mirrorball / Guilty as Sin?",
+                info: "mashup on piano",
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              {
+                name: "Karma",
+                info: '"guy on the Chiefs" lyric; extended outro',
+              },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "19-10-2024",
+      venue: {
+        name: "Hard Rock Stadium",
+        city: { name: "Miami Gardens", country: { code: "US" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "Literally never!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Florida!!!", info: "extended outro" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "Should've Said No / I Did Something Bad",
+                info: "mashup on guitar; spoken intro",
+              },
+              { name: "loml / White Horse", info: "mashup on piano" },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "18-10-2024",
+      venue: {
+        name: "Hard Rock Stadium",
+        city: { name: "Miami Gardens", country: { code: "US" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "pero like, never!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version: spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "shortened; spoken intro" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Florida!!!", info: "extended outro" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: "shortened; with “Fortnight” outro",
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "Tim McGraw / Timeless",
+                info: "spoken intro; mashup on guitar",
+              },
+              {
+                name: "this is me trying / Daylight",
+                info: "mashup on piano",
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "20-08-2024",
+      venue: {
+        name: "Wembley Stadium",
+        city: { name: "London", country: { code: "GB" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "get outta my pub!"',
               },
               { name: "I Knew You Were Trouble", info: "shortened" },
               {
@@ -110,7 +2891,7 @@ const setlistData = {
                 tape: true,
               },
               { name: "But Daddy I Love Him / So High School" },
-              { name: "Florida!!!", info: "with Florence Welch, performed inside TTPD act" },
+              { name: "Florida!!!", info: "live debut; extended outro" },
               { name: "Who's Afraid of Little Old Me?", info: "shortened" },
               {
                 name: "Down Bad",
@@ -131,13 +2912,10 @@ const setlistData = {
             name: "Surprise Songs",
             song: [
               {
-                name: "Death by a thousand cuts / Getaway Car",
-                info: "spoken intro; mashup on guitar; with special guest Jack Antonoff",
+                name: "Death by a Thousand Cuts",
+                info: 'spoken intro; on guitar; contains elements of "Getaway Car"',
               },
-              {
-                name: "So Long, London",
-                info: "on piano",
-              },
+              { name: "So Long, London", info: "on piano; live debut" },
             ],
           },
           {
@@ -150,6 +2928,16 @@ const setlistData = {
               { name: "Bejeweled" },
               { name: "Mastermind" },
               { name: "Karma", info: "extended outro" },
+            ],
+          },
+          {
+            name: "",
+            song: [
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "music video announcement/premiere",
+                tape: true,
+              },
             ],
           },
         ],
@@ -167,7 +2955,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -198,13 +2986,13 @@ const setlistData = {
             song: [
               {
                 name: "Red - Intro",
-                info: 'contains elements of "State of Grace". "Holy Ground" and "Red"',
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
                 tape: true,
               },
               { name: "22" },
               {
                 name: "We Are Never Ever Getting Back Together",
-                info: 'Kam Saunders: "what a knobhead!"',
+                info: 'Kam Saunders: "you having a laugh?!"',
               },
               { name: "I Knew You Were Trouble", info: "shortened" },
               {
@@ -286,10 +3074,10 @@ const setlistData = {
             song: [
               {
                 name: "Long Live / Change",
-                info: 'spoken intro; mashup on guitar, tour debut for "Change")',
+                info: 'spoken intro; mashup on guitar; tour debut for "Change"',
               },
               {
-                name: "The archer / You're on your own, kid",
+                name: "The Archer / You're on Your Own, Kid",
                 info: "mashup on piano",
               },
             ],
@@ -321,7 +3109,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -352,13 +3140,13 @@ const setlistData = {
             song: [
               {
                 name: "Red - Intro",
-                info: 'contains elements of "State of Grace". "Holy Ground" and "Red"',
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
                 tape: true,
               },
               { name: "22" },
               {
                 name: "We Are Never Ever Getting Back Together",
-                info: 'Kam Saunders: "what a knobhead!"',
+                info: 'Kam Saunders: "nah bruv!"',
               },
               { name: "I Knew You Were Trouble", info: "shortened" },
               {
@@ -439,11 +3227,11 @@ const setlistData = {
             name: "Surprise Songs",
             song: [
               {
-                name: "I did something bad",
-                info: "spoken intro; on guitar; tour debut",
+                name: "I Did Something Bad",
+                info: "spoken intro; on guitar; tour debut; first time since 2018",
               },
               {
-                name: "My boy only breaks his favorite toys / coney island",
+                name: "My Boy Only Breaks His Favorite Toys / coney island",
                 info: "mashup on piano",
               },
             ],
@@ -475,7 +3263,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -546,7 +3334,10 @@ const setlistData = {
             song: [
               { name: "cardigan", info: "shortened" },
               { name: "betty", info: "spoken intro; shortened" },
-              { name: "champagne problems", info: "spoken intro" },
+              {
+                name: "champagne problems",
+                info: "spoken intro; followed by 4-5 minutes of applause",
+              },
               { name: "august" },
               { name: "illicit affairs", info: "shortened" },
               { name: "my tears ricochet" },
@@ -629,7 +3420,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -733,19 +3524,25 @@ const setlistData = {
                 info: 'shortened; with "Fortnight" outro',
               },
               { name: "Fortnight" },
-              { name: "The Smallest Man Who Ever Lived", info: "shortened" },
-              { name: "I Can Do It With a Broken Heart", info: "Shortened" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
             ],
           },
           {
             name: "Surprise Songs",
             song: [
               {
-                name: "Everything has changed / End Game / Thinking Out Loud",
-                info: "spoken intro; mashup on guitar, with Ed Sheeran",
+                name: "Everything Has Changed / End Game / Thinking Out Loud",
+                info: "spoken intro; mashup on guitar",
               },
               {
-                name: "King of my heart / The alchemy",
+                name: "King of My Heart / The Alchemy",
                 info: "mashup on piano",
               },
             ],
@@ -776,8 +3573,8 @@ const setlistData = {
           {
             song: [
               {
-                name: "Intro",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -814,7 +3611,7 @@ const setlistData = {
               { name: "22" },
               {
                 name: "We Are Never Ever Getting Back Together",
-                info: 'Kam Saunders: "Żartujesz?!" - Polish for "Are you kidding me?!"',
+                info: 'Kam Saunders: "chyba śnisz!" - Polish for "in your dreams!"',
               },
               { name: "I Knew You Were Trouble", info: "shortened" },
               {
@@ -831,20 +3628,20 @@ const setlistData = {
                 info: 'contains elements of "Castles Crumbling"',
                 tape: true,
               },
-              { name: "Enchanted" },
+              { name: "Enchanted", info: "shortened" },
             ],
           },
           {
             name: "reputation",
             song: [
-              { name: "...Ready For It?" },
+              { name: "...Ready for It?" },
               { name: "Delicate" },
               { name: "Don't Blame Me", info: "shortened" },
               { name: "Look What You Made Me Do", info: "extended outro" },
             ],
           },
           {
-            name: "folklore / evermore",
+            name: "folkmore / evermore",
             song: [
               { name: "cardigan", info: "shortened" },
               { name: "betty", info: "spoken intro; shortened" },
@@ -867,33 +3664,50 @@ const setlistData = {
             ],
           },
           {
-            name: "The Tortured Poets Department",
+            name: "THE TORTURED POETS DEPARTMENT",
             song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
               { name: "But Daddy I Love Him / So High School" },
-              { name: "Who's Afraid of Little Old Me?", info: "Shortened" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
               {
                 name: "Down Bad",
-                info: 'Shortened with "Fortnight Outro"',
+                info: 'shortened; with "Fortnight" outro',
               },
               { name: "Fortnight" },
               {
                 name: "The Smallest Man Who Ever Lived",
-                info: "Shortened",
+                info: "shortened",
               },
-              { name: "I Can Do It With a Broken Heart", info: "Shortened" },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
             ],
           },
           {
             name: "Surprise Songs",
             song: [
               {
-                name: "Today Was a Fairytale / I think he knows",
+                name: "Today Was a Fairytale / I Think He Knows",
                 info: "spoken intro; mashup on guitar",
               },
-              {
-                name: "The Black Dog / exile",
-                info: "mashup on piano",
-              },
+              { name: "The Black Dog / exile", info: "mashup on piano" },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
             ],
           },
         ],
@@ -910,276 +3724,8 @@ const setlistData = {
           {
             song: [
               {
-                name: "Intro",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
-                tape: true,
-              },
-            ],
-          },
-          {
-            name: "Lover",
-            song: [
-              {
-                name: "Miss Americana & the Heartbreak Prince",
-                info: "shortened",
-              },
-              { name: "Cruel Summer", info: "extended outro" },
-              { name: "The Man", info: "spoken intro" },
-              { name: "You Need to Calm Down", info: "shortened" },
-              { name: "Lover", info: "spoken intro; extended outro" },
-            ],
-          },
-          {
-            name: "Fearless",
-            song: [
-              { name: "Fearless", info: "shortened" },
-              { name: "You Belong With Me" },
-              { name: "Love Story" },
-            ],
-          },
-          {
-            name: "Red",
-            song: [
-              {
-                name: "Red - Intro",
-                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
-                tape: true,
-              },
-              { name: "22" },
-              {
-                name: "We Are Never Ever Getting Back Together",
-                info: 'Kam Saunders: "Żartujesz?!" - Polish for "Are you kidding me?!"',
-              },
-              { name: "I Knew You Were Trouble", info: "shortened" },
-              {
-                name: "All Too Well",
-                info: "10 Minute Version; spoken intro",
-              },
-            ],
-          },
-          {
-            name: "Speak Now",
-            song: [
-              {
-                name: "Speak Now - Intro",
-                info: 'contains elements of "Castles Crumbling"',
-                tape: true,
-              },
-              { name: "Enchanted" },
-            ],
-          },
-          {
-            name: "reputation",
-            song: [
-              { name: "...Ready For It?" },
-              { name: "Delicate" },
-              { name: "Don't Blame Me", info: "shortened" },
-              { name: "Look What You Made Me Do", info: "extended outro" },
-            ],
-          },
-          {
-            name: "folklore / evermore",
-            song: [
-              { name: "cardigan", info: "shortened" },
-              { name: "betty", info: "spoken intro; shortened" },
-              { name: "champagne problems", info: "spoken intro" },
-              { name: "august" },
-              { name: "illicit affairs", info: "shortened" },
-              { name: "my tears ricochet" },
-              { name: "marjorie", info: "shortened" },
-              { name: "willow", info: "extended" },
-            ],
-          },
-          {
-            name: "1989",
-            song: [
-              { name: "Style", info: "shortened" },
-              { name: "Blank Space" },
-              { name: "Shake It Off" },
-              { name: "Wildest Dreams", info: "shortened" },
-              { name: "Bad Blood", info: "shortened" },
-            ],
-          },
-          {
-            name: "The Tortured Poets Department",
-            song: [
-              { name: "But Daddy I Love Him / So High School" },
-              { name: "Who's Afraid of Little Old Me?", info: "Shortened" },
-              {
-                name: "Down Bad",
-                info: 'Shortened with "Fortnight Outro"',
-              },
-              { name: "Fortnight" },
-              {
-                name: "The Smallest Man Who Ever Lived",
-                info: "Shortened",
-              },
-              { name: "I Can Do It With a Broken Heart", info: "Shortened" },
-            ],
-          },
-          {
-            name: "Surprise Songs",
-            song: [
-              {
-                name: "I Can Fix Him (No Really I Can) / I Can See You",
-                info: "spoken intro; mashup on guitar",
-              },
-              {
-                name: "Red / Maroon",
-                info: "mashup on piano",
-              },
-            ],
-          },
-        ],
-      },
-    },
-    {
-      eventDate: "01-08-2024",
-      venue: {
-        name: "PGE Narodowy",
-        city: { name: "Warsaw", country: { code: "PL" } },
-      },
-      sets: {
-        set: [
-          {
-            song: [
-              {
-                name: "Intro",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
-                tape: true,
-              },
-            ],
-          },
-          {
-            name: "Lover",
-            song: [
-              {
-                name: "Miss Americana & the Heartbreak Prince",
-                info: "shortened",
-              },
-              { name: "Cruel Summer", info: "extended outro" },
-              { name: "The Man", info: "spoken intro" },
-              { name: "You Need to Calm Down", info: "shortened" },
-              { name: "Lover", info: "spoken intro; extended outro" },
-            ],
-          },
-          {
-            name: "Fearless",
-            song: [
-              { name: "Fearless", info: "shortened" },
-              { name: "You Belong With Me" },
-              { name: "Love Story" },
-            ],
-          },
-          {
-            name: "Red",
-            song: [
-              {
-                name: "Red - Intro",
-                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
-                tape: true,
-              },
-              { name: "22" },
-              {
-                name: "We Are Never Ever Getting Back Together",
-                info: 'Kam Saunders: "Żartujesz?!" - Polish for "Are you kidding me?!"',
-              },
-              { name: "I Knew You Were Trouble", info: "shortened" },
-              {
-                name: "All Too Well",
-                info: "10 Minute Version; spoken intro",
-              },
-            ],
-          },
-          {
-            name: "Speak Now",
-            song: [
-              {
-                name: "Speak Now - Intro",
-                info: 'contains elements of "Castles Crumbling"',
-                tape: true,
-              },
-              { name: "Enchanted" },
-            ],
-          },
-          {
-            name: "reputation",
-            song: [
-              { name: "...Ready For It?" },
-              { name: "Delicate" },
-              { name: "Don't Blame Me", info: "shortened" },
-              { name: "Look What You Made Me Do", info: "extended outro" },
-            ],
-          },
-          {
-            name: "folklore / evermore",
-            song: [
-              { name: "cardigan", info: "shortened" },
-              { name: "betty", info: "spoken intro; shortened" },
-              { name: "champagne problems", info: "spoken intro" },
-              { name: "august" },
-              { name: "illicit affairs", info: "shortened" },
-              { name: "my tears ricochet" },
-              { name: "marjorie", info: "shortened" },
-              { name: "willow", info: "extended" },
-            ],
-          },
-          {
-            name: "1989",
-            song: [
-              { name: "Style", info: "shortened" },
-              { name: "Blank Space" },
-              { name: "Shake It Off" },
-              { name: "Wildest Dreams", info: "shortened" },
-              { name: "Bad Blood", info: "shortened" },
-            ],
-          },
-          {
-            name: "The Tortured Poets Department",
-            song: [
-              { name: "But Daddy I Love Him / So High School" },
-              { name: "Who's Afraid of Little Old Me?", info: "Shortened" },
-              {
-                name: "Down Bad",
-                info: 'Shortened with "Fortnight Outro"',
-              },
-              { name: "Fortnight" },
-              {
-                name: "The Smallest Man Who Ever Lived",
-                info: "Shortened",
-              },
-              { name: "I Can Do It With a Broken Heart", info: "Shortened" },
-            ],
-          },
-          {
-            name: "Surprise Songs",
-            song: [
-              {
-                name: "mirrorball / Clara Bow",
-                info: "spoken intro; mashup on guitar",
-              },
-              {
-                name: "Suburban Legends / New Year's Day",
-                info: "mashup on piano",
-              },
-            ],
-          },
-        ],
-      },
-    },
-    {
-      eventDate: "28-07-2024",
-      venue: {
-        name: " Olympiastadion",
-        city: { name: "Munich", country: { code: "DE" } },
-      },
-      sets: {
-        set: [
-          {
-            song: [
-              {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -1216,7 +3762,7 @@ const setlistData = {
               { name: "22" },
               {
                 name: "We Are Never Ever Getting Back Together",
-                info: 'Kam Saunders: "im leben nicht!" - German for "not in this life!"',
+                info: 'Kam Saunders: "Żartujesz?!" - Polish for "Are you kidding me?!"',
               },
               { name: "I Knew You Were Trouble", info: "shortened" },
               {
@@ -1297,13 +3843,10 @@ const setlistData = {
             name: "Surprise Songs",
             song: [
               {
-                name: "I don't wanna live forever / imgonnagetyouback",
-                info: "spoken intro; mashup on guitar",
+                name: "I Can Fix Him (No Really I Can) / I Can See You",
+                info: 'spoken intro; mashup on guitar; "I Can Fix Him" live debut',
               },
-              {
-                name: "loml / Don't You",
-                info: 'mashup on piano, "Don\'t You" live debut',
-              },
+              { name: "Red / Maroon", info: "mashup on piano" },
             ],
           },
           {
@@ -1322,10 +3865,10 @@ const setlistData = {
       },
     },
     {
-      eventDate: "27-07-2024",
+      eventDate: "01-08-2024",
       venue: {
-        name: " Olympiastadion",
-        city: { name: "Munich", country: { code: "DE" } },
+        name: "PGE Narodowy",
+        city: { name: "Warsaw", country: { code: "PL" } },
       },
       sets: {
         set: [
@@ -1333,7 +3876,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -1370,7 +3913,315 @@ const setlistData = {
               { name: "22" },
               {
                 name: "We Are Never Ever Getting Back Together",
-                info: 'Kam Saunders: "im leben nicht!" - German for "not in this life!"',
+                info: 'Kam Saunders: "Nigdy przenigdy!" - Polish for "Never ever!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "spoken intro; shortened" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "mirrorball / Clara Bow",
+                info: "spoken intro; mashup on guitar",
+              },
+              {
+                name: "Suburban Legends / New Year's Day",
+                info: "mashup on piano",
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "28-07-2024",
+      venue: {
+        name: "Olympiastadion",
+        city: { name: "Munich", country: { code: "DE" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "vergiss es!" - German for "forget about it!"',
+              },
+              { name: "I Knew You Were Trouble", info: "shortened" },
+              {
+                name: "All Too Well",
+                info: "10 Minute Version; spoken intro",
+              },
+            ],
+          },
+          {
+            name: "Speak Now",
+            song: [
+              {
+                name: "Speak Now - Intro",
+                info: 'contains elements of "Castles Crumbling"',
+                tape: true,
+              },
+              { name: "Enchanted", info: "shortened" },
+            ],
+          },
+          {
+            name: "reputation",
+            song: [
+              { name: "...Ready for It?" },
+              { name: "Delicate" },
+              { name: "Don't Blame Me", info: "shortened" },
+              { name: "Look What You Made Me Do", info: "extended outro" },
+            ],
+          },
+          {
+            name: "folklore / evermore",
+            song: [
+              { name: "cardigan", info: "shortened" },
+              { name: "betty", info: "spoken intro; shortened" },
+              { name: "champagne problems", info: "spoken intro" },
+              { name: "august" },
+              { name: "illicit affairs", info: "shortened" },
+              { name: "my tears ricochet" },
+              { name: "marjorie", info: "shortened" },
+              { name: "willow", info: "extended" },
+            ],
+          },
+          {
+            name: "1989",
+            song: [
+              { name: "Style", info: "shortened" },
+              { name: "Blank Space" },
+              { name: "Shake It Off" },
+              { name: "Wildest Dreams", info: "shortened" },
+              { name: "Bad Blood", info: "shortened" },
+            ],
+          },
+          {
+            name: "THE TORTURED POETS DEPARTMENT",
+            song: [
+              {
+                name: "Female Rage: The Musical",
+                info: 'contains elements of "MBOBHFT", "WAOLOM", "loml", "So Long, London" and "BDILH"',
+                tape: true,
+              },
+              { name: "But Daddy I Love Him / So High School" },
+              { name: "Who's Afraid of Little Old Me?", info: "shortened" },
+              {
+                name: "Down Bad",
+                info: 'shortened; with "Fortnight" outro',
+              },
+              { name: "Fortnight" },
+              {
+                name: "The Smallest Man Who Ever Lived",
+                info: "shortened",
+              },
+              {
+                name: "I Can Do It With a Broken Heart",
+                info: "extended intro",
+              },
+            ],
+          },
+          {
+            name: "Surprise Songs",
+            song: [
+              {
+                name: "I Don't Wanna Live Forever / imgonnagetyouback",
+                info: "spoken intro; mashup on guitar",
+              },
+              {
+                name: "loml / Don't You",
+                info: 'mashup on piano; "Don\'t You" live debut',
+              },
+            ],
+          },
+          {
+            name: "Midnights",
+            song: [
+              { name: "Lavender Haze" },
+              { name: "Anti‐Hero" },
+              { name: "Midnight Rain" },
+              { name: "Vigilante Shit" },
+              { name: "Bejeweled" },
+              { name: "Mastermind" },
+              { name: "Karma", info: "extended outro" },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      eventDate: "27-07-2024",
+      venue: {
+        name: "Olympiastadion",
+        city: { name: "Munich", country: { code: "DE" } },
+      },
+      sets: {
+        set: [
+          {
+            song: [
+              {
+                name: "",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
+                tape: true,
+              },
+            ],
+          },
+          {
+            name: "Lover",
+            song: [
+              {
+                name: "Miss Americana & the Heartbreak Prince",
+                info: "shortened",
+              },
+              { name: "Cruel Summer", info: "extended outro" },
+              { name: "The Man", info: "spoken intro" },
+              { name: "You Need to Calm Down", info: "shortened" },
+              { name: "Lover", info: "spoken intro; extended outro" },
+            ],
+          },
+          {
+            name: "Fearless",
+            song: [
+              { name: "Fearless", info: "shortened" },
+              { name: "You Belong With Me" },
+              { name: "Love Story" },
+            ],
+          },
+          {
+            name: "Red",
+            song: [
+              {
+                name: "Red - Intro",
+                info: 'contains elements of "State of Grace", "Holy Ground" and "Red"',
+                tape: true,
+              },
+              { name: "22" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: 'Kam Saunders: "verpiss dich!" - German for "fuck off!"',
               },
               { name: "I Knew You Were Trouble", info: "shortened" },
               {
@@ -1487,7 +4338,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -1524,7 +4375,7 @@ const setlistData = {
               { name: "22" },
               {
                 name: "We Are Never Ever Getting Back Together",
-                info: 'Kam Saunders: "im leben nicht!" - German for "not in this life!"',
+                info: 'Kam Saunders: "auf gar keinen fall!" - German for "absolutely no way!"',
               },
               { name: "I Knew You Were Trouble", info: "shortened" },
               {
@@ -1608,10 +4459,7 @@ const setlistData = {
                 name: "the last great american dynasty / Run",
                 info: 'spoken intro; mashup on guitar; "Run" live debut',
               },
-              {
-                name: "Nothing New / Dear Reader",
-                info: "mashup on piano",
-              },
+              { name: "Nothing New / Dear Reader", info: "mashup on piano" },
             ],
           },
           {
@@ -1641,7 +4489,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -1795,7 +4643,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -1949,7 +4797,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -2106,7 +4954,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -2414,7 +5262,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -2568,7 +5416,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -2722,7 +5570,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -2876,7 +5724,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -3033,7 +5881,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -3190,7 +6038,7 @@ const setlistData = {
             song: [
               {
                 name: "Intro",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -3341,7 +6189,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -3495,7 +6343,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -3646,7 +6494,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -4268,7 +7116,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -4576,7 +7424,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -4730,7 +7578,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -5343,7 +8191,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -5648,7 +8496,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -5683,7 +8531,10 @@ const setlistData = {
                 tape: true,
               },
               { name: "22" },
-              { name: "We Are Never Ever Getting Back Together" },
+              {
+                name: "We Are Never Ever Getting Back Together",
+                info: "Kam Saunders: “¡ni borracha!”",
+              },
               { name: "I Knew You Were Trouble", info: "shortened" },
               {
                 name: "All Too Well",
@@ -6252,7 +9103,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -6400,7 +9251,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -6551,7 +9402,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -6853,7 +9704,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
@@ -6998,7 +9849,7 @@ const setlistData = {
             song: [
               {
                 name: "",
-                info: "The Alchemy/Fearless/End Game/Speak Now/gold rush/TTPD/evermore/Red/Lavender Haze/Lover/Bejeweled",
+                info: "w/ elements of MA&tHP, The Alchemy, Fearless, EG, SN, gr, TTPD, evermore, Red, LH, Lover & Bejeweled",
                 tape: true,
               },
             ],
