@@ -32,9 +32,9 @@ export default function IndexPage({
   if (!data) {
     return <Custom500 />;
   }
-  const [year, setYear] = useState<number | null>(2024);
+  const [year, setYear] = useState<number | null>(null);
   const dataYear =
-    year === 2024 ? data.data2024 : year === 2023 ? data.data2023 : data.data;
+    year === null ? data.data : year === 2024 ? data.data2024 : data.data2023;
 
   const options = [
     { name: "All", onSelect: () => setYear(null) },
@@ -48,7 +48,7 @@ export default function IndexPage({
     <>
       <LastPlayedSurpriseSongs data={tracks} />
       <Container>
-        <FabYear options={options} year={year ? String(year) : "All"} />
+        <FabYear options={options} year={year === null ?  "All" : String(year)} />
         {dataYear.length === 0 ? (
           <Loading>
             <Loader />
