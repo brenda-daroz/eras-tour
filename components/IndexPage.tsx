@@ -10,6 +10,8 @@ import { UIDataOutput } from "@/lib/logic";
 import FabYear from "./Fab";
 import { LastPlayedSurpriseSongs } from "./LastPlayedSurpriseSongs";
 import Custom500 from "@/pages/500";
+import MapboxExample from "./Map";
+import mapData from "@/data/mapData";
 
 const Container = styled.div`
   display: flex;
@@ -46,9 +48,13 @@ export default function IndexPage({
 
   return (
     <>
+      <MapboxExample locations={mapData.map}></MapboxExample>
       <LastPlayedSurpriseSongs data={tracks} />
       <Container>
-        <FabYear options={options} year={year === null ?  "All" : String(year)} />
+        <FabYear
+          options={options}
+          year={year === null ? "All" : String(year)}
+        />
         {dataYear.length === 0 ? (
           <Loading>
             <Loader />
